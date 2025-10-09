@@ -1,0 +1,236 @@
+{
+  "web-development": {
+    "id": "web-development",
+    "icon": "FaRocket",
+    "title": "Web Development",
+    "description": "Custom websites and web applications built with modern technologies.",
+    "longDescription": "Transform your business with cutting-edge web development solutions. Our expert team creates responsive, fast, and scalable websites that deliver exceptional user experiences and drive business growth.\n\nWe specialize in modern web technologies and frameworks, ensuring your website is not only visually stunning but also performs optimally across all devices and platforms. From simple business websites to complex web applications, we have the expertise to bring your vision to life.",
+    "features": [
+      "Custom Website Design & Development",
+      "React & Vue.js Applications",
+      "Node.js Backend Development",
+      "Database Design & Integration",
+      "API Development & Integration",
+      "E-commerce Solutions",
+      "Content Management Systems",
+      "Mobile-Responsive Design",
+      "Performance Optimization",
+      "SEO-Friendly Development"
+    ],
+    "technologies": ["React", "Vue.js", "Node.js", "MongoDB", "PostgreSQL", "AWS", "Docker"],
+    "price": "Starting at $2,500",
+    "duration": "4-8 weeks",
+    "color": "from-blue-500 to-blue-600",
+    "bgColor": "bg-blue-50",
+    "process": [
+      { "step": "Discovery & Planning", "description": "Understanding your requirements and creating a detailed project plan" },
+      { "step": "Design & Prototyping", "description": "Creating wireframes and visual designs for your approval" },
+      { "step": "Development", "description": "Building your website with clean, efficient code" },
+      { "step": "Testing & Optimization", "description": "Thorough testing and performance optimization" },
+      { "step": "Launch & Support", "description": "Deploying your site and providing ongoing support" }
+    ],
+    "benefits": [
+      "Increased Online Visibility",
+      "Better User Experience",
+      "Mobile-Responsive Design",
+      "Fast Loading Times",
+      "SEO Optimization",
+      "Scalable Architecture"
+    ]
+  },
+  "mobile-apps": {
+    "id": "mobile-apps",
+    "icon": "FaMobile",
+    "title": "Mobile App Development",
+    "description": "Native and cross-platform mobile applications for iOS and Android.",
+    "longDescription": "Reach your customers wherever they are with our comprehensive mobile app development services. We create native and cross-platform mobile applications that provide seamless user experiences and drive engagement.\n\nOur mobile apps are built with the latest technologies and follow industry best practices to ensure optimal performance, security, and user satisfaction. Whether you need a simple business app or a complex enterprise solution, we have the expertise to deliver.",
+    "features": [
+      "iOS & Android Development",
+      "React Native Applications",
+      "Flutter Development",
+      "Native App Development",
+      "App Store Optimization",
+      "Push Notifications",
+      "Offline Functionality",
+      "Payment Integration",
+      "Social Media Integration",
+      "Analytics & Tracking"
+    ],
+    "technologies": ["React Native", "Flutter", "Swift", "Kotlin", "Firebase", "AWS"],
+    "price": "Starting at $5,000",
+    "duration": "6-12 weeks",
+    "color": "from-green-500 to-green-600",
+    "bgColor": "bg-green-50",
+    "process": [
+      { "step": "App Strategy", "description": "Defining your app concept and target audience" },
+      { "step": "UI/UX Design", "description": "Creating intuitive and engaging user interfaces" },
+      { "step": "Development", "description": "Building your app with clean, efficient code" },
+      { "step": "Testing", "description": "Comprehensive testing across devices and platforms" },
+      { "step": "App Store Submission", "description": "Preparing and submitting to app stores" }
+    ],
+    "benefits": [
+      "Increased Customer Engagement",
+      "24/7 Accessibility",
+      "Push Notifications",
+      "Offline Functionality",
+      "App Store Presence",
+      "Cross-Platform Compatibility"
+    ]
+  },
+  "seo-services": {
+    "id": "seo-services",
+    "icon": "FaSearch",
+    "title": "SEO Services",
+    "description": "Comprehensive search engine optimization to improve your visibility.",
+    "longDescription": "Boost your online visibility and drive more organic traffic with our comprehensive SEO services. Our data-driven approach helps your website rank higher in search results, attracting more qualified leads and customers.\n\nWe use the latest SEO techniques and tools to analyze your current performance, identify opportunities, and implement strategies that deliver measurable results. Our ongoing optimization ensures your website continues to improve its search rankings over time.",
+    "features": [
+      "Keyword Research & Analysis",
+      "On-Page SEO Optimization",
+      "Technical SEO Audits",
+      "Link Building Campaigns",
+      "Content Strategy & Creation",
+      "Local SEO Optimization",
+      "Competitor Analysis",
+      "Performance Monitoring",
+      "Google Analytics Setup",
+      "Monthly Reporting"
+    ],
+    "technologies": ["Google Analytics", "Google Search Console", "SEMrush", "Ahrefs", "Screaming Frog"],
+    "price": "Starting at $800/month",
+    "duration": "Ongoing",
+    "color": "from-purple-500 to-purple-600",
+    "bgColor": "bg-purple-50",
+    "process": [
+      { "step": "SEO Audit", "description": "Comprehensive analysis of your current SEO performance" },
+      { "step": "Strategy Development", "description": "Creating a customized SEO strategy for your business" },
+      { "step": "Implementation", "description": "Executing on-page and technical SEO optimizations" },
+      { "step": "Content Creation", "description": "Developing high-quality, SEO-optimized content" },
+      { "step": "Monitoring & Reporting", "description": "Tracking progress and providing detailed reports" }
+    ],
+    "benefits": [
+      "Increased Organic Traffic",
+      "Higher Search Rankings",
+      "Better Online Visibility",
+      "Qualified Lead Generation",
+      "Long-term Growth",
+      "Competitive Advantage"
+    ]
+  },
+  "ui-ux-design": {
+    "id": "ui-ux-design",
+    "icon": "FaPenFancy",
+    "title": "UI/UX Design",
+    "description": "Beautiful, user-centered designs that convert visitors into customers.",
+    "longDescription": "Create exceptional user experiences that drive conversions and customer satisfaction. Our UI/UX design services focus on understanding your users' needs and creating intuitive, engaging interfaces that deliver results.\n\nWe combine creativity with data-driven insights to design interfaces that not only look beautiful but also provide seamless user experiences. Our designs are optimized for conversions and built with your business goals in mind.",
+    "features": [
+      "User Research & Analysis",
+      "Wireframing & Prototyping",
+      "Visual Design & Branding",
+      "User Experience Design",
+      "Design Systems",
+      "Responsive Design",
+      "Usability Testing",
+      "Conversion Optimization",
+      "Accessibility Design",
+      "Design Handoff"
+    ],
+    "technologies": ["Figma", "Adobe XD", "Sketch", "InVision", "Principle", "Framer"],
+    "price": "Starting at $1,500",
+    "duration": "2-4 weeks",
+    "color": "from-pink-500 to-pink-600",
+    "bgColor": "bg-pink-50",
+    "process": [
+      { "step": "User Research", "description": "Understanding your users and their needs" },
+      { "step": "Information Architecture", "description": "Structuring content and navigation" },
+      { "step": "Wireframing", "description": "Creating low-fidelity layouts and user flows" },
+      { "step": "Visual Design", "description": "Developing high-fidelity designs and prototypes" },
+      { "step": "Testing & Iteration", "description": "Testing designs and refining based on feedback" }
+    ],
+    "benefits": [
+      "Improved User Experience",
+      "Higher Conversion Rates",
+      "Better User Engagement",
+      "Reduced Bounce Rates",
+      "Brand Consistency",
+      "Competitive Advantage"
+    ]
+  },
+  "digital-marketing": {
+    "id": "digital-marketing",
+    "icon": "FaBullhorn",
+    "title": "Digital Marketing",
+    "description": "Data-driven marketing strategies to grow your business online.",
+    "longDescription": "Accelerate your business growth with our comprehensive digital marketing services. We create and execute data-driven marketing strategies that reach your target audience, build brand awareness, and drive qualified leads and sales.\n\nOur multi-channel approach ensures your message reaches customers wherever they are, while our analytics and reporting provide insights into what's working and what can be improved. We focus on delivering measurable ROI for your marketing investment.",
+    "features": [
+      "Social Media Marketing",
+      "Pay-Per-Click (PPC) Campaigns",
+      "Content Marketing",
+      "Email Marketing",
+      "Influencer Marketing",
+      "Video Marketing",
+      "Marketing Automation",
+      "Analytics & Reporting",
+      "A/B Testing",
+      "Conversion Optimization"
+    ],
+    "technologies": ["Google Ads", "Facebook Ads", "HubSpot", "Mailchimp", "Hootsuite", "Google Analytics"],
+    "price": "Starting at $1,200/month",
+    "duration": "Ongoing",
+    "color": "from-orange-500 to-orange-600",
+    "bgColor": "bg-orange-50",
+    "process": [
+      { "step": "Strategy Development", "description": "Creating a comprehensive digital marketing strategy" },
+      { "step": "Campaign Setup", "description": "Setting up and optimizing marketing campaigns" },
+      { "step": "Content Creation", "description": "Developing engaging content for all channels" },
+      { "step": "Execution & Monitoring", "description": "Running campaigns and monitoring performance" },
+      { "step": "Optimization", "description": "Continuously improving based on data and results" }
+    ],
+    "benefits": [
+      "Increased Brand Awareness",
+      "Higher Lead Generation",
+      "Better Customer Engagement",
+      "Improved ROI",
+      "Data-Driven Insights",
+      "Scalable Growth"
+    ]
+  },
+  "ecommerce": {
+    "id": "ecommerce",
+    "icon": "FaShoppingCart",
+    "title": "E-commerce Development",
+    "description": "Complete e-commerce platforms with payment integration.",
+    "longDescription": "Launch and grow your online store with our comprehensive e-commerce development services. We create secure, scalable, and user-friendly e-commerce platforms that provide seamless shopping experiences and drive sales.\n\nFrom simple online stores to complex marketplace solutions, we have the expertise to build e-commerce platforms that meet your specific business needs. Our solutions are optimized for conversions and built to scale with your business growth.",
+    "features": [
+      "Custom E-commerce Development",
+      "Payment Gateway Integration",
+      "Inventory Management",
+      "Order Processing System",
+      "Customer Management",
+      "Product Catalog Management",
+      "Shopping Cart & Checkout",
+      "Multi-vendor Support",
+      "Analytics & Reporting",
+      "Mobile Commerce"
+    ],
+    "technologies": ["Shopify", "WooCommerce", "Magento", "React", "Node.js", "Stripe", "PayPal"],
+    "price": "Starting at $3,500",
+    "duration": "6-10 weeks",
+    "color": "from-red-500 to-red-600",
+    "bgColor": "bg-red-50",
+    "process": [
+      { "step": "Requirements Analysis", "description": "Understanding your e-commerce needs and goals" },
+      { "step": "Platform Selection", "description": "Choosing the best e-commerce platform for your business" },
+      { "step": "Design & Development", "description": "Creating your online store with custom features" },
+      { "step": "Payment Integration", "description": "Setting up secure payment processing" },
+      { "step": "Testing & Launch", "description": "Thorough testing and launching your store" }
+    ],
+    "benefits": [
+      "24/7 Online Sales",
+      "Global Market Reach",
+      "Automated Order Processing",
+      "Customer Data Insights",
+      "Scalable Growth",
+      "Reduced Operating Costs"
+    ]
+  }
+}

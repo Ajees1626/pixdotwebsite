@@ -1,0 +1,242 @@
+import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useTheme } from '../contexts/ThemeContext'
+import projectsData from '../data/projectsData.json'
+
+const ProjectsSection = () => {
+  const { isDarkMode } = useTheme()
+  const navigate = useNavigate()
+  const [isVisible, setIsVisible] = useState(false)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+        }
+      },
+      { threshold: 0.1 }
+    )
+
+    const element = document.getElementById('projects-section')
+    if (element) {
+      observer.observe(element)
+    }
+
+    return () => {
+      if (element) {
+        observer.unobserve(element)
+      }
+    }
+  }, [])
+
+  // Define 6 design-focused categories with images and colors
+  const categories = [
+    { 
+      id: 'logo-design',
+      name: 'Logo Design', 
+      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=center',
+      color: 'from-blue-500 to-blue-600', 
+      bgColor: 'bg-blue-50'
+    },
+    { 
+      id: 'poster-design',
+      name: 'Poster Design', 
+      image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=300&fit=crop&crop=center',
+      color: 'from-green-500 to-green-600', 
+      bgColor: 'bg-green-50'
+    },
+    { 
+      id: 'packaging-design',
+      name: 'Packaging Design', 
+      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center',
+      color: 'from-purple-500 to-purple-600', 
+      bgColor: 'bg-purple-50'
+    },
+    { 
+      id: 'branding',
+      name: 'Branding', 
+      image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=300&fit=crop&crop=center',
+      color: 'from-pink-500 to-pink-600', 
+      bgColor: 'bg-pink-50'
+    },
+    { 
+      id: 'digital-marketing',
+      name: 'Digital Marketing', 
+      image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop&crop=center',
+      color: 'from-orange-500 to-orange-600', 
+      bgColor: 'bg-orange-50'
+    },
+    { 
+      id: 'web-design',
+      name: 'Web Design', 
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
+      color: 'from-red-500 to-red-600', 
+      bgColor: 'bg-red-50'
+    }
+  ]
+
+
+  // Handle category click - navigate to projects page with data
+  const handleCategoryClick = (categoryId) => {
+    // Store the projects data in localStorage for the next page
+    localStorage.setItem('projectsData', JSON.stringify(projectsData))
+    localStorage.setItem('selectedCategory', categoryId)
+    
+    // Navigate to projects page
+    navigate(`/projects/${categoryId}`)
+  }
+
+  return (
+    <section id="projects-section" className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-gradient-to-br from-gray-50 to-white'}`}>
+      <div className="container-custom">
+        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="inline-flex items-center bg-secondary/10 rounded-full px-6 py-3 mb-6 animate-fadeInUp">
+            <span className="text-secondary font-semibold text-sm">Creative Portfolio</span>
+          </div>
+          <h2 className={`text-4xl md:text-5xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6 animate-fadeInUp delay-200`}>
+            Design <span className="text-gradient">Categories</span>
+          </h2>
+          <p className={`text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto animate-fadeInUp delay-400`}>
+            Choose a design category to explore our creative projects across logo design, branding, and digital marketing.
+          </p>
+        </div>
+
+        {/* 6 Category Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          {categories.map((category, index) => (
+            <div
+              key={index}
+              onClick={() => handleCategoryClick(category.id)}
+              className="group cursor-pointer animate-slideInUp"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <div className={`relative ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border overflow-hidden`}>
+                {/* Background Gradient */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
+                
+                {/* Category Image */}
+                <div className="relative mb-6">
+                  <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 group-hover:scale-105 transition-transform duration-300">
+                    <img
+                      src={category.image}
+                      alt={category.name}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}></div>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="relative">
+                  <h3 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-3 group-hover:text-secondary transition-colors`}>
+                    {category.name}
+                  </h3>
+                  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-6 leading-relaxed`}>
+                    {projectsData[category.id]?.description || `Explore our ${category.name.toLowerCase()} projects and see how we create stunning visual designs that make brands stand out.`}
+                  </p>
+
+                  {/* Project Count */}
+                  <div className="flex justify-between items-center mb-6">
+                    <div>
+                      <div className={`text-lg font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>
+                        {projectsData[category.id]?.varieties 
+                          ? Object.values(projectsData[category.id].varieties).reduce((total, variety) => total + variety.projects.length, 0)
+                          : projectsData[category.id]?.projects?.length || 0
+                        } Projects
+                      </div>
+                      <div className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Click to view all</div>
+                    </div>
+                    <div className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-12">
+                      <span className="text-secondary group-hover:text-white transition-colors font-bold">→</span>
+                    </div>
+                  </div>
+
+                  {/* Hover Effect Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Total Project Count */}
+        <div className={`text-center transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className={`inline-flex items-center ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-full px-8 py-4 shadow-lg border transform hover:scale-105 transition-transform duration-300`}>
+            <span className={`text-3xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mr-3 animate-counter`}>
+              {Object.values(projectsData).reduce((total, category) => {
+                if (category.varieties) {
+                  return total + Object.values(category.varieties).reduce((varietyTotal, variety) => varietyTotal + variety.projects.length, 0)
+                }
+                return total + (category.projects?.length || 0)
+              }, 0)}
+            </span>
+            <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} font-semibold`}>Total Projects</span>
+          </div>
+        </div>
+      </div>
+      
+      {/* Custom Animations */}
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fadeInUp {
+          animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        @keyframes slideInUp {
+          from {
+            opacity: 0;
+            transform: translateY(50px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-slideInUp {
+          animation: slideInUp 0.6s ease-out forwards;
+        }
+        
+        @keyframes counter {
+          from {
+            transform: scale(0.8);
+            opacity: 0;
+          }
+          to {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+        
+        .animate-counter {
+          animation: counter 0.6s ease-out forwards;
+        }
+        
+        .delay-200 {
+          animation-delay: 0.2s;
+        }
+        
+        .delay-400 {
+          animation-delay: 0.4s;
+        }
+        
+        .delay-600 {
+          animation-delay: 0.6s;
+        }
+      `}</style>
+    </section>
+  )
+}
+
+export default ProjectsSection

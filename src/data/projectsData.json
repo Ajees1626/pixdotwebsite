@@ -1,0 +1,719 @@
+{
+  "logo-design": {
+    "category": "Logo Design",
+    "description": "Professional logo design services that create memorable brand identities",
+    "varieties": {
+      "company-logo": {
+        "name": "Company Logo",
+        "description": "Professional corporate logos for businesses and organizations",
+        "projects": [
+          {
+            "id": 1,
+            "title": "TechCorp Logo Design",
+            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center",
+            "description": "Modern tech company logo with clean lines and professional typography",
+            "client": "TechCorp Inc.",
+            "date": "2024-01-15",
+            "technologies": ["Adobe Illustrator", "Photoshop", "Figma"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+60%" },
+              { "metric": "Client Satisfaction", "value": "+98%" }
+            ]
+          },
+          {
+            "id": 2,
+            "title": "HealthCare Plus Logo",
+            "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&crop=center",
+            "description": "Medical logo design conveying trust and professionalism",
+            "client": "HealthCare Plus",
+            "date": "2024-02-12",
+            "technologies": ["Adobe Illustrator", "Medical Design", "Brand Guidelines"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+55%" },
+              { "metric": "Client Satisfaction", "value": "+97%" }
+            ]
+          },
+          {
+            "id": 3,
+            "title": "StartupHub Logo",
+            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center",
+            "description": "Dynamic startup logo representing innovation and growth",
+            "client": "StartupHub",
+            "date": "2024-02-20",
+            "technologies": ["Adobe Illustrator", "Modern Design", "Brand Identity"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+65%" },
+              { "metric": "Client Satisfaction", "value": "+94%" }
+            ]
+          },
+          {
+            "id": 4,
+            "title": "Global Solutions Logo",
+            "image": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=400&fit=crop&crop=center",
+            "description": "Corporate logo for international consulting firm",
+            "client": "Global Solutions",
+            "date": "2024-03-01",
+            "technologies": ["Adobe Illustrator", "Corporate Design", "Brand Strategy"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+70%" },
+              { "metric": "Client Satisfaction", "value": "+96%" }
+            ]
+          }
+        ]
+      },
+      "shop-logo": {
+        "name": "Shop Logo",
+        "description": "Retail and e-commerce logos that attract customers and build trust",
+        "projects": [
+          {
+            "id": 5,
+            "title": "Fashion Forward Logo",
+            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center",
+            "description": "Elegant fashion brand logo with sophisticated typography",
+            "client": "Fashion Forward",
+            "date": "2024-02-05",
+            "technologies": ["Adobe Illustrator", "Photoshop", "Typography"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+70%" },
+              { "metric": "Client Satisfaction", "value": "+92%" }
+            ]
+          },
+          {
+            "id": 6,
+            "title": "ShopSmart Logo",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+            "description": "Modern e-commerce logo with smart shopping appeal",
+            "client": "ShopSmart",
+            "date": "2024-03-10",
+            "technologies": ["Adobe Illustrator", "E-commerce Design", "Digital Branding"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+65%" },
+              { "metric": "Client Satisfaction", "value": "+93%" }
+            ]
+          },
+          {
+            "id": 7,
+            "title": "Bella Vista Restaurants Logo",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+            "description": "Upscale restaurant logo with elegant design",
+            "client": "Bella Vista Restaurants",
+            "date": "2024-03-15",
+            "technologies": ["Adobe Illustrator", "Restaurant Branding", "Menu Design"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+75%" },
+              { "metric": "Client Satisfaction", "value": "+95%" }
+            ]
+          },
+          {
+            "id": 8,
+            "title": "PowerFit Gyms Logo",
+            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center",
+            "description": "Energetic fitness center logo with dynamic design",
+            "client": "PowerFit Gyms",
+            "date": "2024-03-20",
+            "technologies": ["Adobe Illustrator", "Fitness Branding", "Sports Design"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+68%" },
+              { "metric": "Client Satisfaction", "value": "+91%" }
+            ]
+          }
+        ]
+      },
+      "product-logo": {
+        "name": "Product Logo",
+        "description": "Product-specific logos that enhance brand recognition and appeal",
+        "projects": [
+          {
+            "id": 9,
+            "title": "EcoGreen Logo Design",
+            "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop&crop=center",
+            "description": "Sustainable brand logo emphasizing environmental values",
+            "client": "EcoGreen Solutions",
+            "date": "2024-01-22",
+            "technologies": ["Adobe Illustrator", "InDesign", "Creative Suite"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+45%" },
+              { "metric": "Client Satisfaction", "value": "+95%" }
+            ]
+          },
+          {
+            "id": 10,
+            "title": "Mountain Peak Coffee Logo",
+            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center",
+            "description": "Premium coffee brand logo with mountain-inspired design",
+            "client": "Mountain Peak Coffee",
+            "date": "2024-03-05",
+            "technologies": ["Adobe Illustrator", "Product Branding", "Packaging Design"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+50%" },
+              { "metric": "Client Satisfaction", "value": "+94%" }
+            ]
+          },
+          {
+            "id": 11,
+            "title": "Glow Beauty Logo",
+            "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&crop=center",
+            "description": "Luxury skincare product logo with premium feel",
+            "client": "Glow Beauty",
+            "date": "2024-03-12",
+            "technologies": ["Adobe Illustrator", "Beauty Branding", "Luxury Design"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+55%" },
+              { "metric": "Client Satisfaction", "value": "+96%" }
+            ]
+          },
+          {
+            "id": 12,
+            "title": "Crunchy Bites Logo",
+            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center",
+            "description": "Fun and colorful logo for healthy snack brand",
+            "client": "Crunchy Bites",
+            "date": "2024-03-20",
+            "technologies": ["Adobe Illustrator", "Food Branding", "Child-Friendly Design"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+60%" },
+              { "metric": "Client Satisfaction", "value": "+92%" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "poster-design": {
+    "category": "Poster Design",
+    "description": "Eye-catching poster designs for events, promotions, and marketing campaigns",
+    "varieties": {
+      "event-poster": {
+        "name": "Event Poster",
+        "description": "Dynamic posters for concerts, festivals, and special events",
+        "projects": [
+          {
+            "id": 16,
+            "title": "Music Festival Poster",
+            "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop&crop=center",
+            "description": "Vibrant poster design for summer music festival",
+            "client": "SummerFest 2024",
+            "date": "2024-02-10",
+            "technologies": ["Photoshop", "Illustrator", "InDesign"],
+            "results": [
+              { "metric": "Event Attendance", "value": "+30%" },
+              { "metric": "Social Media Engagement", "value": "+75%" }
+            ]
+          },
+          {
+            "id": 17,
+            "title": "Art Exhibition Poster",
+            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center",
+            "description": "Elegant poster for contemporary art exhibition",
+            "client": "Modern Art Gallery",
+            "date": "2024-02-18",
+            "technologies": ["Photoshop", "Typography", "Print Design"],
+            "results": [
+              { "metric": "Gallery Visits", "value": "+40%" },
+              { "metric": "Art Sales", "value": "+25%" }
+            ]
+          },
+          {
+            "id": 18,
+            "title": "Food Festival Poster",
+            "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&crop=center",
+            "description": "Appetizing poster design for local food festival",
+            "client": "Taste of the City",
+            "date": "2024-03-01",
+            "technologies": ["Photoshop", "Food Photography", "Marketing Design"],
+            "results": [
+              { "metric": "Festival Attendance", "value": "+50%" },
+              { "metric": "Vendor Participation", "value": "+35%" }
+            ]
+          }
+        ]
+      },
+      "promotional-poster": {
+        "name": "Promotional Poster",
+        "description": "Marketing posters for product launches and brand promotions",
+        "projects": [
+          {
+            "id": 19,
+            "title": "Product Launch Poster",
+            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center",
+            "description": "Eye-catching poster for new product launch campaign",
+            "client": "TechInnovate",
+            "date": "2024-03-05",
+            "technologies": ["Photoshop", "Product Photography", "Brand Design"],
+            "results": [
+              { "metric": "Product Awareness", "value": "+60%" },
+              { "metric": "Pre-orders", "value": "+45%" }
+            ]
+          },
+          {
+            "id": 20,
+            "title": "Sale Promotion Poster",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+            "description": "Compelling poster for seasonal sale promotion",
+            "client": "Fashion Store",
+            "date": "2024-03-12",
+            "technologies": ["Photoshop", "Typography", "Color Theory"],
+            "results": [
+              { "metric": "Sales Increase", "value": "+80%" },
+              { "metric": "Store Traffic", "value": "+55%" }
+            ]
+          }
+        ]
+      },
+      "educational-poster": {
+        "name": "Educational Poster",
+        "description": "Informative posters for educational and awareness campaigns",
+        "projects": [
+          {
+            "id": 21,
+            "title": "Health Awareness Poster",
+            "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop&crop=center",
+            "description": "Educational poster for public health awareness campaign",
+            "client": "Health Department",
+            "date": "2024-03-18",
+            "technologies": ["Illustrator", "Infographic Design", "Public Health"],
+            "results": [
+              { "metric": "Awareness Level", "value": "+70%" },
+              { "metric": "Information Retention", "value": "+65%" }
+            ]
+          },
+          {
+            "id": 22,
+            "title": "Environmental Poster",
+            "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop&crop=center",
+            "description": "Environmental awareness poster for sustainability campaign",
+            "client": "Green Earth Foundation",
+            "date": "2024-03-25",
+            "technologies": ["Photoshop", "Environmental Design", "Sustainability"],
+            "results": [
+              { "metric": "Public Engagement", "value": "+55%" },
+              { "metric": "Behavior Change", "value": "+40%" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "packaging-design": {
+    "category": "Packaging Design",
+    "description": "Innovative packaging solutions that make products stand out on shelves",
+    "varieties": {
+      "food-packaging": {
+        "name": "Food Packaging",
+        "description": "Appetizing packaging designs for food and beverage products",
+        "projects": [
+          {
+            "id": 31,
+            "title": "Organic Coffee Packaging",
+            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center",
+            "description": "Sustainable packaging design for premium organic coffee brand",
+            "client": "Mountain Peak Coffee",
+            "date": "2024-03-05",
+            "technologies": ["Adobe Illustrator", "3D Mockups", "Print Design"],
+            "results": [
+              { "metric": "Sales Increase", "value": "+40%" },
+              { "metric": "Brand Recognition", "value": "+55%" }
+            ]
+          },
+          {
+            "id": 33,
+            "title": "Snack Food Packaging",
+            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center",
+            "description": "Fun and colorful packaging for healthy snack brand",
+            "client": "Crunchy Bites",
+            "date": "2024-03-20",
+            "technologies": ["Illustrator", "Food Packaging", "Child-Friendly Design"],
+            "results": [
+              { "metric": "Market Share", "value": "+35%" },
+              { "metric": "Customer Engagement", "value": "+50%" }
+            ]
+          },
+          {
+            "id": 34,
+            "title": "Premium Tea Packaging",
+            "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop&crop=center",
+            "description": "Elegant packaging for luxury tea collection",
+            "client": "Royal Tea Co.",
+            "date": "2024-03-28",
+            "technologies": ["Illustrator", "Luxury Design", "Premium Materials"],
+            "results": [
+              { "metric": "Brand Premium", "value": "+65%" },
+              { "metric": "Customer Loyalty", "value": "+45%" }
+            ]
+          }
+        ]
+      },
+      "beauty-packaging": {
+        "name": "Beauty Packaging",
+        "description": "Luxury packaging designs for cosmetics and skincare products",
+        "projects": [
+          {
+            "id": 32,
+            "title": "Skincare Product Packaging",
+            "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&crop=center",
+            "description": "Luxury skincare packaging with premium feel",
+            "client": "Glow Beauty",
+            "date": "2024-03-12",
+            "technologies": ["3D Design", "Luxury Packaging", "Brand Identity"],
+            "results": [
+              { "metric": "Product Sales", "value": "+60%" },
+              { "metric": "Brand Perception", "value": "+45%" }
+            ]
+          },
+          {
+            "id": 35,
+            "title": "Makeup Collection Packaging",
+            "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop&crop=center",
+            "description": "Modern makeup packaging with sleek design",
+            "client": "Beauty Studio",
+            "date": "2024-04-02",
+            "technologies": ["3D Design", "Cosmetic Packaging", "Modern Aesthetics"],
+            "results": [
+              { "metric": "Product Appeal", "value": "+70%" },
+              { "metric": "Social Media Shares", "value": "+85%" }
+            ]
+          }
+        ]
+      },
+      "tech-packaging": {
+        "name": "Tech Packaging",
+        "description": "Modern packaging designs for electronic and tech products",
+        "projects": [
+          {
+            "id": 36,
+            "title": "Smartphone Packaging",
+            "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&h=400&fit=crop&crop=center",
+            "description": "Minimalist packaging for premium smartphone",
+            "client": "TechCorp",
+            "date": "2024-04-08",
+            "technologies": ["3D Design", "Tech Packaging", "Minimalist Design"],
+            "results": [
+              { "metric": "Unboxing Experience", "value": "+90%" },
+              { "metric": "Brand Perception", "value": "+55%" }
+            ]
+          },
+          {
+            "id": 37,
+            "title": "Gaming Accessory Packaging",
+            "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&h=400&fit=crop&crop=center",
+            "description": "Dynamic packaging for gaming peripherals",
+            "client": "GameTech",
+            "date": "2024-04-15",
+            "technologies": ["3D Design", "Gaming Aesthetics", "Interactive Elements"],
+            "results": [
+              { "metric": "Gamer Engagement", "value": "+75%" },
+              { "metric": "Product Excitement", "value": "+80%" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "branding": {
+    "category": "Branding",
+    "description": "Complete brand identity systems that tell your unique story",
+    "varieties": {
+      "corporate-branding": {
+        "name": "Corporate Branding",
+        "description": "Professional brand identity for businesses and corporations",
+        "projects": [
+          {
+            "id": 46,
+            "title": "Startup Brand Identity",
+            "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&crop=center",
+            "description": "Complete brand identity for innovative tech startup",
+            "client": "InnovateLab",
+            "date": "2024-03-20",
+            "technologies": ["Brand Guidelines", "Logo Design", "Color Palette"],
+            "results": [
+              { "metric": "Brand Consistency", "value": "+90%" },
+              { "metric": "Market Position", "value": "+35%" }
+            ]
+          },
+          {
+            "id": 49,
+            "title": "Financial Services Branding",
+            "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop&crop=center",
+            "description": "Trustworthy brand identity for financial services company",
+            "client": "Secure Finance",
+            "date": "2024-04-10",
+            "technologies": ["Brand Strategy", "Corporate Identity", "Trust Design"],
+            "results": [
+              { "metric": "Client Trust", "value": "+75%" },
+              { "metric": "Brand Authority", "value": "+60%" }
+            ]
+          }
+        ]
+      },
+      "hospitality-branding": {
+        "name": "Hospitality Branding",
+        "description": "Warm and inviting brand identities for restaurants and hotels",
+        "projects": [
+          {
+            "id": 47,
+            "title": "Restaurant Brand Identity",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+            "description": "Complete branding for upscale restaurant chain",
+            "client": "Bella Vista Restaurants",
+            "date": "2024-03-28",
+            "technologies": ["Brand Strategy", "Visual Identity", "Menu Design"],
+            "results": [
+              { "metric": "Brand Recognition", "value": "+70%" },
+              { "metric": "Customer Loyalty", "value": "+55%" }
+            ]
+          },
+          {
+            "id": 50,
+            "title": "Boutique Hotel Branding",
+            "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&crop=center",
+            "description": "Luxury brand identity for boutique hotel chain",
+            "client": "Serenity Hotels",
+            "date": "2024-04-18",
+            "technologies": ["Luxury Branding", "Hotel Identity", "Guest Experience"],
+            "results": [
+              { "metric": "Guest Satisfaction", "value": "+85%" },
+              { "metric": "Brand Premium", "value": "+70%" }
+            ]
+          }
+        ]
+      },
+      "lifestyle-branding": {
+        "name": "Lifestyle Branding",
+        "description": "Dynamic brand identities for fitness, wellness, and lifestyle brands",
+        "projects": [
+          {
+            "id": 48,
+            "title": "Fitness Brand Identity",
+            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center",
+            "description": "Energetic brand identity for fitness center chain",
+            "client": "PowerFit Gyms",
+            "date": "2024-04-05",
+            "technologies": ["Brand Guidelines", "Fitness Branding", "Marketing Materials"],
+            "results": [
+              { "metric": "Member Acquisition", "value": "+45%" },
+              { "metric": "Brand Awareness", "value": "+65%" }
+            ]
+          },
+          {
+            "id": 51,
+            "title": "Wellness Brand Identity",
+            "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop&crop=center",
+            "description": "Calming brand identity for wellness and spa center",
+            "client": "Zen Wellness",
+            "date": "2024-04-22",
+            "technologies": ["Wellness Branding", "Spa Identity", "Mindfulness Design"],
+            "results": [
+              { "metric": "Client Retention", "value": "+80%" },
+              { "metric": "Brand Trust", "value": "+70%" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "digital-marketing": {
+    "category": "Digital Marketing",
+    "description": "Strategic digital marketing campaigns that drive engagement and conversions",
+    "varieties": {
+      "social-media-marketing": {
+        "name": "Social Media Marketing",
+        "description": "Engaging social media campaigns and content strategies",
+        "projects": [
+          {
+            "id": 61,
+            "title": "Social Media Campaign",
+            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center",
+            "description": "Comprehensive social media marketing strategy and content creation",
+            "client": "Fashion Forward",
+            "date": "2024-04-12",
+            "technologies": ["Social Media", "Content Creation", "Analytics"],
+            "results": [
+              { "metric": "Engagement Rate", "value": "+120%" },
+              { "metric": "Follower Growth", "value": "+80%" }
+            ]
+          },
+          {
+            "id": 64,
+            "title": "Influencer Marketing Campaign",
+            "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&crop=center",
+            "description": "Strategic influencer partnership campaign for beauty brand",
+            "client": "Glow Beauty",
+            "date": "2024-05-05",
+            "technologies": ["Influencer Marketing", "Content Strategy", "Brand Partnerships"],
+            "results": [
+              { "metric": "Brand Reach", "value": "+300%" },
+              { "metric": "Product Sales", "value": "+180%" }
+            ]
+          }
+        ]
+      },
+      "ecommerce-marketing": {
+        "name": "E-commerce Marketing",
+        "description": "Digital marketing strategies for online stores and e-commerce platforms",
+        "projects": [
+          {
+            "id": 62,
+            "title": "E-commerce Marketing",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+            "description": "Complete digital marketing strategy for online store",
+            "client": "ShopSmart",
+            "date": "2024-04-20",
+            "technologies": ["Google Ads", "SEO", "Email Marketing"],
+            "results": [
+              { "metric": "Online Sales", "value": "+150%" },
+              { "metric": "Website Traffic", "value": "+90%" }
+            ]
+          },
+          {
+            "id": 65,
+            "title": "Amazon Marketing Campaign",
+            "image": "https://images.unsplash.com/photo-1607082349566-187342175e2f?w=600&h=400&fit=crop&crop=center",
+            "description": "Amazon PPC and SEO optimization for product sales",
+            "client": "TechGadgets",
+            "date": "2024-05-12",
+            "technologies": ["Amazon PPC", "Product SEO", "Conversion Optimization"],
+            "results": [
+              { "metric": "Amazon Sales", "value": "+220%" },
+              { "metric": "Product Ranking", "value": "+150%" }
+            ]
+          }
+        ]
+      },
+      "b2b-marketing": {
+        "name": "B2B Marketing",
+        "description": "Professional marketing strategies for business-to-business companies",
+        "projects": [
+          {
+            "id": 63,
+            "title": "B2B Marketing Campaign",
+            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center",
+            "description": "Professional B2B marketing campaign for software company",
+            "client": "TechSolutions Inc.",
+            "date": "2024-04-28",
+            "technologies": ["LinkedIn Marketing", "Content Strategy", "Lead Generation"],
+            "results": [
+              { "metric": "Lead Generation", "value": "+200%" },
+              { "metric": "Conversion Rate", "value": "+75%" }
+            ]
+          },
+          {
+            "id": 66,
+            "title": "SaaS Marketing Strategy",
+            "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop&crop=center",
+            "description": "Comprehensive marketing strategy for SaaS platform",
+            "client": "CloudTech Solutions",
+            "date": "2024-05-18",
+            "technologies": ["SaaS Marketing", "Content Marketing", "Customer Acquisition"],
+            "results": [
+              { "metric": "Trial Signups", "value": "+250%" },
+              { "metric": "Customer Retention", "value": "+85%" }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "web-design": {
+    "category": "Web Design",
+    "description": "Modern, responsive web designs that deliver exceptional user experiences",
+    "varieties": {
+      "ecommerce-website": {
+        "name": "E-commerce Website",
+        "description": "Online stores and e-commerce platforms with optimized shopping experiences",
+        "projects": [
+          {
+            "id": 76,
+            "title": "E-commerce Website",
+            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center",
+            "description": "Modern e-commerce platform with seamless user experience",
+            "client": "ShopSmart",
+            "date": "2024-04-25",
+            "technologies": ["React", "Figma", "Responsive Design"],
+            "results": [
+              { "metric": "Conversion Rate", "value": "+65%" },
+              { "metric": "User Experience", "value": "+85%" }
+            ]
+          },
+          {
+            "id": 79,
+            "title": "Fashion E-commerce Store",
+            "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop&crop=center",
+            "description": "Stylish e-commerce website for fashion retailer",
+            "client": "StyleHub",
+            "date": "2024-05-20",
+            "technologies": ["Shopify", "Custom Design", "Mobile Optimization"],
+            "results": [
+              { "metric": "Mobile Sales", "value": "+120%" },
+              { "metric": "Average Order Value", "value": "+45%" }
+            ]
+          }
+        ]
+      },
+      "corporate-website": {
+        "name": "Corporate Website",
+        "description": "Professional websites for businesses and organizations",
+        "projects": [
+          {
+            "id": 77,
+            "title": "Corporate Website",
+            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center",
+            "description": "Professional corporate website with modern design",
+            "client": "Global Solutions",
+            "date": "2024-05-02",
+            "technologies": ["WordPress", "Custom Design", "SEO Optimization"],
+            "results": [
+              { "metric": "Website Traffic", "value": "+110%" },
+              { "metric": "Lead Generation", "value": "+80%" }
+            ]
+          },
+          {
+            "id": 80,
+            "title": "Law Firm Website",
+            "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop&crop=center",
+            "description": "Professional website for law firm with trust-building design",
+            "client": "Legal Associates",
+            "date": "2024-05-25",
+            "technologies": ["WordPress", "Legal Design", "Trust Elements"],
+            "results": [
+              { "metric": "Client Inquiries", "value": "+90%" },
+              { "metric": "Trust Score", "value": "+75%" }
+            ]
+          }
+        ]
+      },
+      "portfolio-website": {
+        "name": "Portfolio Website",
+        "description": "Creative portfolio websites for individuals and agencies",
+        "projects": [
+          {
+            "id": 78,
+            "title": "Portfolio Website",
+            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center",
+            "description": "Creative portfolio website for freelance designer",
+            "client": "Creative Studio",
+            "date": "2024-05-10",
+            "technologies": ["HTML/CSS", "JavaScript", "Portfolio Design"],
+            "results": [
+              { "metric": "Client Inquiries", "value": "+140%" },
+              { "metric": "Portfolio Views", "value": "+95%" }
+            ]
+          },
+          {
+            "id": 81,
+            "title": "Photography Portfolio",
+            "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=400&fit=crop&crop=center",
+            "description": "Stunning portfolio website for professional photographer",
+            "client": "Lens Master",
+            "date": "2024-05-28",
+            "technologies": ["React", "Image Optimization", "Gallery Design"],
+            "results": [
+              { "metric": "Booking Inquiries", "value": "+180%" },
+              { "metric": "Portfolio Engagement", "value": "+120%" }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+

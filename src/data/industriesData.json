@@ -1,0 +1,326 @@
+{
+  "healthcare": {
+    "id": "healthcare",
+    "name": "Healthcare",
+    "icon": "FaHospital",
+    "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=300&fit=crop&crop=center",
+    "color": "from-blue-500 to-blue-600",
+    "bgColor": "bg-blue-50",
+    "description": "Transforming healthcare through innovative digital solutions and patient-centered design.",
+    "longDescription": "The healthcare industry is undergoing a digital transformation, and we're at the forefront of this revolution. Our healthcare solutions combine cutting-edge technology with deep understanding of medical workflows to create systems that improve patient outcomes, streamline operations, and enhance the overall healthcare experience.\n\nWe work with hospitals, clinics, medical practices, and healthcare organizations to develop custom solutions that address their unique challenges. From patient management systems to telemedicine platforms, our healthcare technology solutions are designed to be secure, compliant, and user-friendly.",
+    "services": [
+      "Medical Apps & Patient Portals",
+      "Telemedicine Platforms",
+      "Health Analytics & Reporting",
+      "Electronic Health Records (EHR)",
+      "Medical Device Integration",
+      "Healthcare CRM Systems",
+      "Appointment Scheduling Systems",
+      "Health Monitoring Solutions",
+      "Medical Billing Software",
+      "Clinical Decision Support"
+    ],
+    "technologies": ["HIPAA Compliance", "HL7 Integration", "FHIR Standards", "Cloud Security", "Mobile Health"],
+    "projects": "50+",
+    "clients": "25+ Healthcare Organizations",
+    "growth": "+40%",
+    "features": [
+      "HIPAA Compliant Solutions",
+      "Real-time Health Monitoring",
+      "Secure Patient Data Management",
+      "Telemedicine Integration",
+      "Medical Device Connectivity",
+      "Clinical Workflow Optimization"
+    ],
+    "benefits": [
+      "Improved Patient Outcomes",
+      "Enhanced Operational Efficiency",
+      "Reduced Administrative Burden",
+      "Better Care Coordination",
+      "Increased Patient Satisfaction",
+      "Compliance with Healthcare Regulations"
+    ],
+    "caseStudies": [
+      {
+        "title": "Hospital Management System",
+        "description": "Comprehensive system for a 500-bed hospital",
+        "results": "40% reduction in administrative time"
+      },
+      {
+        "title": "Telemedicine Platform",
+        "description": "Remote consultation platform for rural clinics",
+        "results": "60% increase in patient accessibility"
+      }
+    ]
+  },
+  "finance": {
+    "id": "finance",
+    "name": "Finance",
+    "icon": "FaUniversity",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop&crop=center",
+    "color": "from-green-500 to-green-600",
+    "bgColor": "bg-green-50",
+    "description": "Secure, scalable financial solutions that drive growth and enhance customer experience.",
+    "longDescription": "The financial services industry demands the highest levels of security, compliance, and performance. Our financial technology solutions are built with these requirements in mind, providing banks, fintech companies, and financial institutions with robust, scalable platforms that meet regulatory standards while delivering exceptional user experiences.\n\nWe specialize in developing secure financial applications that handle sensitive data with the utmost care. Our solutions include banking applications, payment processing systems, risk management tools, and financial analytics platforms that help institutions make data-driven decisions.",
+    "services": [
+      "Banking Applications",
+      "Payment Processing Systems",
+      "Fintech Solutions",
+      "Risk Management Tools",
+      "Financial Analytics",
+      "Cryptocurrency Platforms",
+      "Investment Management Systems",
+      "Loan Management Software",
+      "Fraud Detection Systems",
+      "Regulatory Compliance Tools"
+    ],
+    "technologies": ["PCI DSS Compliance", "Blockchain", "AI/ML", "Real-time Processing", "Advanced Security"],
+    "projects": "35+",
+    "clients": "20+ Financial Institutions",
+    "growth": "+35%",
+    "features": [
+      "Bank-Grade Security",
+      "Real-time Transaction Processing",
+      "Advanced Fraud Detection",
+      "Regulatory Compliance",
+      "Multi-currency Support",
+      "API Integration"
+    ],
+    "benefits": [
+      "Enhanced Security & Compliance",
+      "Improved Customer Experience",
+      "Reduced Operational Costs",
+      "Faster Transaction Processing",
+      "Better Risk Management",
+      "Scalable Infrastructure"
+    ],
+    "caseStudies": [
+      {
+        "title": "Digital Banking Platform",
+        "description": "Complete digital banking solution for regional bank",
+        "results": "50% increase in digital transactions"
+      },
+      {
+        "title": "Payment Gateway",
+        "description": "High-volume payment processing system",
+        "results": "99.9% uptime with 2M+ daily transactions"
+      }
+    ]
+  },
+  "ecommerce": {
+    "id": "ecommerce",
+    "name": "E-commerce",
+    "icon": "FaShoppingCart",
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&crop=center",
+    "color": "from-purple-500 to-purple-600",
+    "bgColor": "bg-purple-50",
+    "description": "Powerful e-commerce platforms that convert visitors into loyal customers.",
+    "longDescription": "E-commerce is more than just online shopping - it's about creating seamless, engaging experiences that drive conversions and build customer loyalty. Our e-commerce solutions are designed to help businesses of all sizes succeed in the digital marketplace, from small boutique stores to large enterprise platforms.\n\nWe create comprehensive e-commerce ecosystems that include everything from product catalogs and shopping carts to payment processing and order management. Our solutions are optimized for performance, mobile responsiveness, and user experience, ensuring that your customers have a smooth shopping experience from discovery to purchase.",
+    "services": [
+      "Online Store Development",
+      "Marketplace Platforms",
+      "Mobile Commerce Apps",
+      "E-commerce Analytics",
+      "Inventory Management",
+      "Payment Gateway Integration",
+      "Customer Relationship Management",
+      "Order Processing Systems",
+      "Product Catalog Management",
+      "Multi-vendor Platforms"
+    ],
+    "technologies": ["React", "Node.js", "MongoDB", "Payment APIs", "Cloud Infrastructure"],
+    "projects": "80+",
+    "clients": "60+ E-commerce Brands",
+    "growth": "+60%",
+    "features": [
+      "Mobile-First Design",
+      "Advanced Search & Filtering",
+      "Personalized Recommendations",
+      "Multi-payment Options",
+      "Real-time Inventory",
+      "Analytics Dashboard"
+    ],
+    "benefits": [
+      "Increased Sales & Revenue",
+      "Better Customer Experience",
+      "Improved Conversion Rates",
+      "Streamlined Operations",
+      "Global Market Reach",
+      "Data-Driven Insights"
+    ],
+    "caseStudies": [
+      {
+        "title": "Fashion E-commerce Platform",
+        "description": "Multi-brand fashion marketplace with 10,000+ products",
+        "results": "200% increase in online sales"
+      },
+      {
+        "title": "B2B E-commerce Solution",
+        "description": "Enterprise platform for wholesale distribution",
+        "results": "80% reduction in order processing time"
+      }
+    ]
+  },
+  "education": {
+    "id": "education",
+    "name": "Education",
+    "icon": "FaGraduationCap",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&crop=center",
+    "color": "from-orange-500 to-orange-600",
+    "bgColor": "bg-orange-50",
+    "description": "Educational technology solutions that enhance learning and engagement.",
+    "longDescription": "Education is evolving rapidly with the integration of technology, and we're helping educational institutions embrace this transformation. Our educational technology solutions are designed to enhance learning experiences, improve administrative efficiency, and provide educators with the tools they need to succeed in the digital age.\n\nWe work with schools, universities, training organizations, and educational technology companies to create solutions that support both traditional and online learning environments. Our platforms are designed to be intuitive for both educators and students, ensuring widespread adoption and maximum impact.",
+    "services": [
+      "Learning Management Systems",
+      "Student Information Systems",
+      "Online Course Platforms",
+      "Assessment & Testing Tools",
+      "Virtual Classroom Solutions",
+      "Educational Mobile Apps",
+      "Campus Management Systems",
+      "Library Management Software",
+      "Parent-Teacher Communication",
+      "Educational Analytics"
+    ],
+    "technologies": ["LMS Integration", "Video Streaming", "AI Tutoring", "Gamification", "Cloud Learning"],
+    "projects": "25+",
+    "clients": "15+ Educational Institutions",
+    "growth": "+45%",
+    "features": [
+      "Interactive Learning Modules",
+      "Real-time Collaboration",
+      "Progress Tracking",
+      "Automated Assessments",
+      "Mobile Learning Support",
+      "Analytics & Reporting"
+    ],
+    "benefits": [
+      "Enhanced Learning Outcomes",
+      "Improved Student Engagement",
+      "Streamlined Administration",
+      "Better Parent Communication",
+      "Data-Driven Education",
+      "Scalable Learning Solutions"
+    ],
+    "caseStudies": [
+      {
+        "title": "University LMS",
+        "description": "Comprehensive learning management system for 50,000+ students",
+        "results": "90% student satisfaction rate"
+      },
+      {
+        "title": "K-12 Learning Platform",
+        "description": "Interactive learning platform for elementary schools",
+        "results": "35% improvement in test scores"
+      }
+    ]
+  },
+  "real-estate": {
+    "id": "real-estate",
+    "name": "Real Estate",
+    "icon": "FaHome",
+    "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop&crop=center",
+    "color": "from-red-500 to-red-600",
+    "bgColor": "bg-red-50",
+    "description": "Property management and real estate platforms that streamline operations.",
+    "longDescription": "The real estate industry is embracing digital transformation to meet the evolving needs of buyers, sellers, and property managers. Our real estate technology solutions are designed to streamline operations, enhance customer experiences, and provide valuable insights that drive business growth.\n\nWe create comprehensive platforms that handle everything from property listings and virtual tours to customer relationship management and transaction processing. Our solutions are designed to work seamlessly across desktop and mobile devices, ensuring that real estate professionals can work efficiently from anywhere.",
+    "services": [
+      "Property Listing Platforms",
+      "Virtual Tour Solutions",
+      "Real Estate CRM Systems",
+      "Property Management Software",
+      "Market Analytics Tools",
+      "Lead Management Systems",
+      "Document Management",
+      "Transaction Processing",
+      "Real Estate Mobile Apps",
+      "Investment Analysis Tools"
+    ],
+    "technologies": ["3D Visualization", "AR/VR", "GIS Mapping", "CRM Integration", "Mobile Apps"],
+    "projects": "40+",
+    "clients": "30+ Real Estate Agencies",
+    "growth": "+50%",
+    "features": [
+      "Virtual Property Tours",
+      "Advanced Search Filters",
+      "Market Analysis Tools",
+      "Lead Tracking System",
+      "Document Management",
+      "Mobile-First Design"
+    ],
+    "benefits": [
+      "Increased Property Visibility",
+      "Better Lead Management",
+      "Improved Customer Experience",
+      "Streamlined Operations",
+      "Data-Driven Decisions",
+      "Mobile Accessibility"
+    ],
+    "caseStudies": [
+      {
+        "title": "Real Estate Marketplace",
+        "description": "Multi-property platform with virtual tours and AI recommendations",
+        "results": "150% increase in property inquiries"
+      },
+      {
+        "title": "Property Management System",
+        "description": "Comprehensive system for managing 500+ rental properties",
+        "results": "60% reduction in administrative tasks"
+      }
+    ]
+  },
+  "manufacturing": {
+    "id": "manufacturing",
+    "name": "Manufacturing",
+    "icon": "FaIndustry",
+    "image": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&h=300&fit=crop&crop=center",
+    "color": "from-indigo-500 to-indigo-600",
+    "bgColor": "bg-indigo-50",
+    "description": "Industrial solutions that optimize production and improve efficiency.",
+    "longDescription": "Manufacturing is at the heart of Industry 4.0, and we're helping manufacturers embrace digital transformation to improve efficiency, reduce costs, and enhance product quality. Our manufacturing technology solutions integrate IoT, AI, and advanced analytics to create smart factories that are more productive and sustainable.\n\nWe work with manufacturers across various sectors to implement solutions that optimize production processes, improve quality control, and provide real-time insights into operations. Our solutions are designed to integrate seamlessly with existing systems while providing the flexibility to scale as businesses grow.",
+    "services": [
+      "IoT Integration Solutions",
+      "Supply Chain Management",
+      "Quality Control Systems",
+      "Production Monitoring",
+      "Predictive Maintenance",
+      "Inventory Management",
+      "Manufacturing Analytics",
+      "Equipment Management",
+      "Safety Management Systems",
+      "Energy Management"
+    ],
+    "technologies": ["IoT Sensors", "Machine Learning", "Predictive Analytics", "Cloud Computing", "Edge Computing"],
+    "projects": "30+",
+    "clients": "20+ Manufacturing Companies",
+    "growth": "+30%",
+    "features": [
+      "Real-time Production Monitoring",
+      "Predictive Maintenance Alerts",
+      "Quality Control Automation",
+      "Supply Chain Optimization",
+      "Energy Usage Tracking",
+      "Safety Compliance Monitoring"
+    ],
+    "benefits": [
+      "Increased Production Efficiency",
+      "Reduced Downtime",
+      "Improved Product Quality",
+      "Lower Operational Costs",
+      "Better Resource Utilization",
+      "Enhanced Safety Compliance"
+    ],
+    "caseStudies": [
+      {
+        "title": "Smart Factory Implementation",
+        "description": "IoT-based production monitoring for automotive manufacturer",
+        "results": "25% increase in production efficiency"
+      },
+      {
+        "title": "Quality Control System",
+        "description": "AI-powered quality inspection system for electronics",
+        "results": "40% reduction in defect rates"
+      }
+    ]
+  }
+}
