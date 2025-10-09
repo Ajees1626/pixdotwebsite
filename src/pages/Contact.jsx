@@ -110,13 +110,14 @@ const Contact = () => {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-primary text-white">
-        <div className="container-custom">
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container-custom relative z-10">
           <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fadeInUp">
-              Get In <span className="text-accent">Touch</span>
+              Get In <span className="text-white">Touch</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed animate-fadeInUp delay-300">
+            <p className="text-xl md:text-2xl text-white/90 leading-relaxed animate-fadeInUp delay-300">
               Ready to start your next project? Let's discuss how we can help 
               transform your business with innovative digital solutions.
             </p>
@@ -129,7 +130,7 @@ const Contact = () => {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+            <div className={`${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-8 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} shadow-lg transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
               <h2 className={`text-3xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-primary'} animate-fadeInUp`}>Send us a Message</h2>
               
               {isSubmitted ? (
@@ -263,13 +264,13 @@ const Contact = () => {
             </div>
 
             {/* Contact Information */}
-            <div>
+            <div className={`${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-8 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} shadow-lg`}>
               <h2 className={`text-3xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6`}>Contact Information</h2>
               
               <div className="space-y-8">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start">
-                    <div className="w-12 h-12 bg-gradient-secondary rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                    <div className={`w-12 h-12 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-lg flex items-center justify-center mr-4 flex-shrink-0 shadow-lg`}>
                       <info.icon className="text-white text-xl" />
                     </div>
                     <div>
@@ -294,7 +295,7 @@ const Contact = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className={`text-3xl md:text-4xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6`}>
-              Our <span className="text-gradient">Offices</span>
+              Our <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Offices</span>
             </h2>
             <p className={`text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
               We have offices worldwide to serve our global clientele with local expertise.
@@ -303,7 +304,7 @@ const Contact = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {offices.map((office, index) => (
-              <div key={index} className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300`}>
+              <div key={index} className={`${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}>
                 <h3 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-4`}>{office.city}</h3>
                 <div className="space-y-3">
                   <div className="flex items-start">
@@ -330,7 +331,7 @@ const Contact = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className={`text-3xl md:text-4xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6`}>
-              Frequently Asked <span className="text-gradient">Questions</span>
+              Frequently Asked <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Questions</span>
             </h2>
             <p className={`text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
               Find answers to common questions about our services and process.
@@ -360,7 +361,7 @@ const Contact = () => {
                 answer: "We have rigorous quality assurance processes including code reviews, automated testing, performance optimization, and security audits. Our team follows industry best practices."
               }
             ].map((faq, index) => (
-              <div key={index} className={`${isDarkMode ? 'bg-gray-700' : 'bg-gray-50'} rounded-lg p-6`}>
+              <div key={index} className={`${isDarkMode ? 'bg-gray-700/50' : 'bg-gray-50'} rounded-lg p-6 border ${isDarkMode ? 'border-gray-600' : 'border-gray-200'} hover:shadow-lg transition-all duration-300`}>
                 <h3 className={`text-lg font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-3`}>{faq.question}</h3>
                 <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>{faq.answer}</p>
               </div>
@@ -370,20 +371,21 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-primary text-white">
-        <div className="container-custom">
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container-custom relative z-10">
           <div className="text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Start Your Project?
             </h2>
-            <p className="text-xl mb-8 text-gray-200">
+            <p className="text-xl mb-8 text-white/90">
               Let's discuss your ideas and create something amazing together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#contact-form" className="btn-primary bg-white text-primary hover:bg-gray-100">
+              <a href="#contact-form" className={`${isDarkMode ? 'bg-white text-primary hover:bg-gray-100' : 'bg-white text-primary hover:bg-gray-100'} font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105`}>
                 Get Started Today
               </a>
-              <a href="/casestudy" className="btn-outline border-white text-white hover:bg-white hover:text-primary">
+              <a href="/casestudy" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
                 View Our Work
               </a>
             </div>

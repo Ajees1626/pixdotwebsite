@@ -72,13 +72,14 @@ const About = () => {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-primary text-white">
-        <div className="container-custom">
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container-custom relative z-10">
           <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 animate-fadeInUp">
-              About <span className="text-accent">Pixdot</span>
+              About <span className="text-white">Pixdot</span>
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-gray-200 leading-relaxed px-4 sm:px-0 animate-fadeInUp delay-300">
+            <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed px-4 sm:px-0 animate-fadeInUp delay-300">
               We are a team of passionate innovators dedicated to transforming businesses 
               through cutting-edge digital solutions and exceptional user experiences.
             </p>
@@ -90,7 +91,7 @@ const About = () => {
       <section className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div>
+            <div className={`${isDarkMode ? 'bg-gray-700/50' : 'bg-gray-50'} rounded-2xl p-6 sm:p-8 border ${isDarkMode ? 'border-gray-600' : 'border-gray-200'}`}>
               <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
                 Our Mission
               </h2>
@@ -104,9 +105,9 @@ const About = () => {
                 simple, effective solutions.
               </p>
             </div>
-            <div className="bg-gradient-secondary rounded-2xl p-6 sm:p-8 text-white">
+            <div className={`${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-2xl p-6 sm:p-8 text-white shadow-xl`}>
               <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Our Vision</h3>
-              <p className="text-base sm:text-lg leading-relaxed">
+              <p className="text-base sm:text-lg leading-relaxed text-white/90">
                 To be the leading digital innovation partner that businesses trust to 
                 navigate the future of technology, creating meaningful connections between 
                 brands and their audiences worldwide.
@@ -121,7 +122,7 @@ const About = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
-              Our <span className="text-gradient">Values</span>
+              Our <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Values</span>
             </h2>
             <p className={`text-lg sm:text-xl max-w-3xl mx-auto px-4 sm:px-0 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               These core values guide everything we do and shape our company culture.
@@ -130,8 +131,8 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {values.map((value, index) => (
-              <div key={index} className="text-center">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6">
+              <div key={index} className={`text-center ${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-6 sm:p-8 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
+                <div className={`w-16 h-16 sm:w-20 sm:h-20 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg`}>
                   <value.icon className="text-white text-2xl sm:text-3xl" />
                 </div>
                 <h3 className={`text-lg sm:text-xl font-bold mb-3 sm:mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{value.title}</h3>
@@ -147,7 +148,7 @@ const About = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
-              Meet Our <span className="text-gradient">Team</span>
+              Meet Our <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Team</span>
             </h2>
             <p className={`text-lg sm:text-xl max-w-3xl mx-auto px-4 sm:px-0 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               The talented individuals who make Pixdot's success possible.
@@ -156,14 +157,14 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {team.map((member, index) => (
-              <div key={index} className="text-center animate-slideInUp" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="relative mb-6 transform hover:scale-105 transition-transform duration-300">
+              <div key={index} className={`text-center ${isDarkMode ? 'bg-gray-700/30' : 'bg-gray-50'} rounded-2xl p-6 border ${isDarkMode ? 'border-gray-600' : 'border-gray-200'} hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-slideInUp`} style={{ animationDelay: `${index * 0.1}s` }}>
+                <div className="relative mb-6">
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full mx-auto object-cover shadow-lg"
+                    className="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full mx-auto object-cover shadow-lg border-4 border-white"
                   />
-                  <div className="absolute inset-0 rounded-full bg-gradient-secondary opacity-0 hover:opacity-20 transition-opacity duration-300"></div>
+                  <div className={`absolute inset-0 rounded-full ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} opacity-0 hover:opacity-20 transition-opacity duration-300`}></div>
                 </div>
                 <h3 className={`text-lg sm:text-xl font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{member.name}</h3>
                 <p className="text-secondary font-semibold mb-2 sm:mb-3 text-sm sm:text-base">{member.role}</p>
@@ -179,7 +180,7 @@ const About = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
-              Our <span className="text-gradient">Journey</span>
+              Our <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Journey</span>
             </h2>
             <p className={`text-lg sm:text-xl max-w-3xl mx-auto px-4 sm:px-0 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               Key milestones in our company's growth and evolution.
@@ -188,27 +189,27 @@ const About = () => {
 
           <div className="relative">
             {/* Timeline Line - Hidden on mobile, visible on large screens */}
-            <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-secondary"></div>
+            <div className={`hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full ${isDarkMode ? 'bg-gradient-to-b from-primary via-secondary to-accent' : 'bg-gradient-to-b from-primary via-secondary to-accent'}`}></div>
             
             {/* Mobile Timeline Line - Vertical line on the left */}
-            <div className="lg:hidden absolute left-8 top-0 w-1 h-full bg-gradient-secondary"></div>
+            <div className={`lg:hidden absolute left-8 top-0 w-1 h-full ${isDarkMode ? 'bg-gradient-to-b from-primary via-secondary to-accent' : 'bg-gradient-to-b from-primary via-secondary to-accent'}`}></div>
             
             <div className="space-y-8 sm:space-y-12">
               {milestones.map((milestone, index) => (
                 <div key={index} className={`flex flex-col lg:flex-row items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
                   <div className={`w-full lg:w-1/2 ${index % 2 === 0 ? 'lg:pr-8 lg:text-right' : 'lg:pl-8 lg:text-left'} mb-4 lg:mb-0`}>
-                    <div className={`rounded-lg p-4 sm:p-6 shadow-lg ${isDarkMode ? 'bg-gray-800' : 'bg-white'} relative`}>
+                    <div className={`rounded-2xl p-4 sm:p-6 shadow-xl border ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} relative hover:shadow-2xl transition-all duration-300 transform hover:scale-105`}>
                       {/* Mobile timeline dot - positioned on the left */}
-                      <div className={`lg:hidden absolute -left-12 top-6 w-4 h-4 bg-secondary rounded-full border-4 shadow-lg z-10 ${isDarkMode ? 'border-gray-900' : 'border-white'}`}></div>
+                      <div className={`lg:hidden absolute -left-12 top-6 w-4 h-4 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-full border-4 shadow-lg z-10 ${isDarkMode ? 'border-gray-900' : 'border-white'}`}></div>
                       
-                      <div className="text-secondary font-bold text-base sm:text-lg mb-2">{milestone.year}</div>
+                      <div className={`font-bold text-base sm:text-lg mb-2 ${isDarkMode ? 'text-secondary' : 'text-secondary'}`}>{milestone.year}</div>
                       <h3 className={`text-lg sm:text-xl font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{milestone.title}</h3>
                       <p className={`text-sm sm:text-base ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{milestone.description}</p>
                     </div>
                   </div>
                   
                   {/* Desktop Timeline Dot */}
-                  <div className={`hidden lg:block w-4 h-4 bg-secondary rounded-full border-4 shadow-lg z-10 ${isDarkMode ? 'border-gray-900' : 'border-white'}`}></div>
+                  <div className={`hidden lg:block w-4 h-4 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-full border-4 shadow-lg z-10 ${isDarkMode ? 'border-gray-900' : 'border-white'}`}></div>
                   
                   <div className="w-full lg:w-1/2"></div>
                 </div>
@@ -219,24 +220,25 @@ const About = () => {
       </section>
 
       {/* Stats */}
-      <section className="section-padding bg-gradient-primary text-white">
-        <div className="container-custom">
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container-custom relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center">
-            <div>
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-accent mb-1 sm:mb-2">50+</div>
-              <div className="text-sm sm:text-base lg:text-lg text-gray-200">Team Members</div>
+            <div className={`${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 sm:mb-2">50+</div>
+              <div className="text-sm sm:text-base lg:text-lg text-white/90">Team Members</div>
             </div>
-            <div>
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-accent mb-1 sm:mb-2">25+</div>
-              <div className="text-sm sm:text-base lg:text-lg text-gray-200">Countries Served</div>
+            <div className={`${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 sm:mb-2">25+</div>
+              <div className="text-sm sm:text-base lg:text-lg text-white/90">Countries Served</div>
             </div>
-            <div>
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-accent mb-1 sm:mb-2">500+</div>
-              <div className="text-sm sm:text-base lg:text-lg text-gray-200">Projects Completed</div>
+            <div className={`${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 sm:mb-2">500+</div>
+              <div className="text-sm sm:text-base lg:text-lg text-white/90">Projects Completed</div>
             </div>
-            <div>
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-accent mb-1 sm:mb-2">98%</div>
-              <div className="text-sm sm:text-base lg:text-lg text-gray-200">Client Satisfaction</div>
+            <div className={`${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 sm:mb-2">98%</div>
+              <div className="text-sm sm:text-base lg:text-lg text-white/90">Client Satisfaction</div>
             </div>
           </div>
         </div>

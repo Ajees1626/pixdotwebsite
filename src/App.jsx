@@ -44,7 +44,7 @@ function App() {
           <Footer />
           <ScrollToTop />
           <WhatsAppWidget />
-          <ChatWidget />
+          {/* <ChatWidget /> */}
         </div>
       </Router>
     </ThemeProvider>

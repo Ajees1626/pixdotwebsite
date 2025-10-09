@@ -41,15 +41,16 @@ const Service = () => {
   ]
 
   return (
-    <div className="min-h-screen transition-colors duration-300">
+    <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-primary text-white">
-        <div className="container-custom">
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Our <span className="text-accent">Services</span>
+              Our <span className="text-white">Services</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
               Comprehensive digital solutions designed to accelerate your business growth 
               and enhance your online presence.
             </p>
@@ -62,7 +63,7 @@ const Service = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className={`text-3xl md:text-4xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
-              What We <span className="text-gradient">Offer</span>
+              What We <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Offer</span>
             </h2>
             <p className={`text-xl max-w-3xl mx-auto ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               From web development to digital marketing, we provide end-to-end solutions 
@@ -79,8 +80,8 @@ const Service = () => {
                   to={`/service/${service.id}`}
                   className="group block"
                 >
-                  <div className={`rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border group-hover:border-secondary ${isDarkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-100'}`}>
-                    <div className="w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <div className={`rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border group-hover:border-secondary ${isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-white border-gray-200'} hover:shadow-2xl`}>
+                    <div className={`w-16 h-16 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                       <IconComponent className="text-white text-2xl" />
                     </div>
                     
@@ -108,7 +109,7 @@ const Service = () => {
                       </div>
                       <div className="flex justify-between items-center">
                         <span className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Duration</span>
-                        <span className="font-semibold text-secondary">{service.duration}</span>
+                        <span className={`font-semibold ${isDarkMode ? 'text-secondary' : 'text-secondary'}`}>{service.duration}</span>
                       </div>
                     </div>
                   </div>
@@ -124,7 +125,7 @@ const Service = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className={`text-3xl md:text-4xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
-              Our <span className="text-gradient">Process</span>
+              Our <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Process</span>
             </h2>
             <p className={`text-xl max-w-3xl mx-auto ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               A proven methodology that ensures successful project delivery and client satisfaction.
@@ -133,17 +134,17 @@ const Service = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className={`text-center ${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-6 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
                 <div className="relative mb-6">
-                  <div className="w-20 h-20 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className={`w-20 h-20 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg`}>
                     <span className="text-white text-2xl font-bold">{step.step}</span>
                   </div>
                   {index < process.length - 1 && (
-                    <div className="hidden lg:block absolute top-10 left-full w-full h-0.5 bg-gradient-secondary transform translate-x-4"></div>
+                    <div className={`hidden lg:block absolute top-10 left-full w-full h-0.5 ${isDarkMode ? 'bg-gradient-to-r from-primary via-secondary to-accent' : 'bg-gradient-to-r from-primary via-secondary to-accent'} transform translate-x-4`}></div>
                   )}
                 </div>
                 <h3 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{step.title}</h3>
-                <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>{step.description}</p>
+                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{step.description}</p>
               </div>
             ))}
           </div>
@@ -153,20 +154,23 @@ const Service = () => {
       {/* CTA Section */}
       <section className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
         <div className="container-custom">
-          <div className="bg-gradient-secondary rounded-3xl p-8 md:p-12 text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Get Started?
-            </h2>
-            <p className="text-xl mb-8 opacity-90">
-              Let's discuss your project requirements and create a custom solution for your business.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="/contact" className="btn-primary bg-white text-primary hover:bg-gray-100">
-                Start Your Project
-              </a>
-              <a href="/casestudy" className="btn-outline border-white text-white hover:bg-white hover:text-primary">
-                View Our Work
-              </a>
+          <div className={`${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-3xl p-8 md:p-12 text-center text-white shadow-xl relative overflow-hidden`}>
+            <div className="absolute inset-0 bg-black/10"></div>
+            <div className="relative z-10">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Get Started?
+              </h2>
+              <p className="text-xl mb-8 text-white/90">
+                Let's discuss your project requirements and create a custom solution for your business.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact" className={`${isDarkMode ? 'bg-white text-primary hover:bg-gray-100' : 'bg-white text-primary hover:bg-gray-100'} font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105`}>
+                  Start Your Project
+                </a>
+                <a href="/casestudy" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
+                  View Our Work
+                </a>
+              </div>
             </div>
           </div>
         </div>

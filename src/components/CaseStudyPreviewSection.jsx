@@ -44,7 +44,7 @@ const CaseStudyPreviewSection = () => {
           <div className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 animate-slideInUp`} style={{ animationDelay: '0.4s' }}>
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mr-4 transform hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">E</span>
+                <span className="text-secondary font-bold text-xl">E</span>
               </div>
               <div>
                 <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>E-commerce Platform</h3>
@@ -69,7 +69,7 @@ const CaseStudyPreviewSection = () => {
           <div className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 animate-slideInUp`} style={{ animationDelay: '0.6s' }}>
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mr-4 transform hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold text-xl">H</span>
+                <span className="text-secondary font-bold text-xl">H</span>
               </div>
               <div>
                 <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>Healthcare System</h3>

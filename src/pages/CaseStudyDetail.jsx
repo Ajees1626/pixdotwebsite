@@ -48,14 +48,15 @@ const CaseStudyDetail = () => {
   }
 
   return (
-    <div className="min-h-screen transition-colors duration-300">
+    <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Header */}
-      <div className={`${isDarkMode ? 'bg-gray-900' : 'bg-gradient-primary'} text-white py-20`}>
-        <div className="container-custom">
+      <div className={`${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white py-20 relative overflow-hidden`}>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container-custom relative z-10">
           <div className="flex justify-between items-center mb-8">
             <Link 
               to="/casestudy" 
-              className="inline-flex items-center text-white hover:text-accent transition-colors"
+              className="inline-flex items-center text-white hover:text-white/80 transition-colors"
             >
               <FaArrowLeft className="mr-2" />
               Back to Case Studies
@@ -72,17 +73,17 @@ const CaseStudyDetail = () => {
                 {caseStudy.title}
               </h1>
               
-              <p className="text-xl text-gray-200 mb-8 leading-relaxed">
+              <p className="text-xl text-white/90 mb-8 leading-relaxed">
                 {caseStudy.fullDescription}
               </p>
               
               <div className="flex flex-wrap gap-6">
-                <div className="flex items-center text-gray-200">
-                  <FaClock className="mr-2 text-accent" />
+                <div className="flex items-center text-white/90">
+                  <FaClock className="mr-2 text-white" />
                   <span className="font-semibold">{caseStudy.duration}</span>
                 </div>
-                <div className="flex items-center text-gray-200">
-                  <FaUsers className="mr-2 text-accent" />
+                <div className="flex items-center text-white/90">
+                  <FaUsers className="mr-2 text-white" />
                   <span className="font-semibold">{caseStudy.team}</span>
                 </div>
               </div>
@@ -171,9 +172,9 @@ const CaseStudyDetail = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {caseStudy.results.map((result, index) => (
-                    <div key={index} className={`rounded-lg p-6 ${
-                      isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
-                    }`}>
+                    <div key={index} className={`rounded-lg p-6 border ${
+                      isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-gray-50 border-gray-200'
+                    } hover:shadow-lg transition-all duration-300`}>
                       <div className="flex items-center justify-between mb-2">
                         <h4 className={`font-semibold ${isDarkMode ? 'text-white' : 'text-primary'}`}>
                           {result.metric}
@@ -228,9 +229,9 @@ const CaseStudyDetail = () => {
             {/* Sidebar */}
             <div className="space-y-8">
               {/* Project Info */}
-              <div className={`rounded-2xl p-6 ${
-                isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
-              }`}>
+              <div className={`rounded-2xl p-6 border ${
+                isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-gray-50 border-gray-200'
+              } shadow-lg`}>
                 <h3 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
                   Project Information
                 </h3>
@@ -257,9 +258,9 @@ const CaseStudyDetail = () => {
               </div>
               
               {/* Technologies */}
-              <div className={`rounded-2xl p-6 ${
-                isDarkMode ? 'bg-gray-700' : 'bg-gray-50'
-              }`}>
+              <div className={`rounded-2xl p-6 border ${
+                isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-gray-50 border-gray-200'
+              } shadow-lg`}>
                 <h3 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
                   Technologies Used
                 </h3>
@@ -267,7 +268,7 @@ const CaseStudyDetail = () => {
                   {caseStudy.technologies.map((tech, index) => (
                     <span key={index} className={`px-3 py-1 rounded-full text-sm ${
                       isDarkMode 
-                        ? 'bg-gray-600 text-gray-300' 
+                        ? 'bg-gray-600/50 text-gray-300 border border-gray-500' 
                         : 'bg-secondary text-white'
                     }`}>
                       {tech}
@@ -277,19 +278,22 @@ const CaseStudyDetail = () => {
               </div>
               
               {/* CTA */}
-              <div className={`rounded-2xl p-6 text-white ${
+              <div className={`rounded-2xl p-6 text-white shadow-lg ${
                 isDarkMode 
-                  ? 'bg-gradient-to-r from-gray-700 to-gray-600' 
-                  : 'bg-gradient-to-r from-primary to-secondary'
-              }`}>
-                <h3 className="text-xl font-bold mb-4">Ready to Start Your Project?</h3>
-                <p className="text-white/90 mb-6">Let's discuss how we can help you achieve similar results.</p>
-                <Link 
-                  to="/contact" 
-                  className="bg-white text-primary font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors inline-block w-full text-center"
-                >
-                  Get Free Consultation
-                </Link>
+                  ? 'bg-gradient-to-br from-primary via-secondary to-accent' 
+                  : 'bg-gradient-to-br from-primary via-secondary to-accent'
+              } relative overflow-hidden`}>
+                <div className="absolute inset-0 bg-black/10"></div>
+                <div className="relative z-10">
+                  <h3 className="text-xl font-bold mb-4">Ready to Start Your Project?</h3>
+                  <p className="text-white/90 mb-6">Let's discuss how we can help you achieve similar results.</p>
+                  <Link 
+                    to="/contact" 
+                    className="bg-white text-primary font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block w-full text-center"
+                  >
+                    Get Free Consultation
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -303,11 +307,11 @@ const CaseStudyDetail = () => {
             {previousCase ? (
               <Link
                 to={`/casestudy/${previousCase.id}`}
-                className={`flex items-center px-6 py-3 rounded-lg transition-all duration-300 ${
+                className={`flex items-center px-6 py-3 rounded-lg transition-all duration-300 border ${
                   isDarkMode
-                    ? 'bg-gray-800 text-white hover:bg-gray-700'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                } shadow-lg`}
+                    ? 'bg-gray-800/50 text-white hover:bg-gray-700 border-gray-700'
+                    : 'bg-white text-gray-700 hover:bg-gray-100 border-gray-200'
+                } shadow-lg hover:shadow-xl transform hover:scale-105`}
               >
                 <FaChevronLeft className="mr-2" />
                 <div className="text-left">
@@ -322,11 +326,11 @@ const CaseStudyDetail = () => {
             {nextCase ? (
               <Link
                 to={`/casestudy/${nextCase.id}`}
-                className={`flex items-center px-6 py-3 rounded-lg transition-all duration-300 ${
+                className={`flex items-center px-6 py-3 rounded-lg transition-all duration-300 border ${
                   isDarkMode
-                    ? 'bg-gray-800 text-white hover:bg-gray-700'
-                    : 'bg-white text-gray-700 hover:bg-gray-100'
-                } shadow-lg`}
+                    ? 'bg-gray-800/50 text-white hover:bg-gray-700 border-gray-700'
+                    : 'bg-white text-gray-700 hover:bg-gray-100 border-gray-200'
+                } shadow-lg hover:shadow-xl transform hover:scale-105`}
               >
                 <div className="text-right">
                   <div className="text-sm text-gray-500">Next</div>
