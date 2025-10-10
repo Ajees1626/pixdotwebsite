@@ -113,7 +113,7 @@ const IndustryDetail = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {industry.features.map((feature, index) => (
                     <div key={index} className="flex items-center">
-                      <FaLock className="text-accent mr-3 flex-shrink-0" />
+                      <FaLock className="text-secondary mr-3 flex-shrink-0" />
                       <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} font-medium`}>{feature}</span>
                     </div>
                   ))}

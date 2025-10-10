@@ -128,7 +128,7 @@ const IndustriesSection = () => {
                   </div>
 
                   {/* Hover Effect Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
                 </div>
               </div>
             </Link>
@@ -139,7 +139,7 @@ const IndustriesSection = () => {
         <div className={`text-center transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-white transform hover:scale-105 transition-transform duration-500">
             <div className="flex items-center justify-center mb-6">
-              <FaAward className="text-4xl text-accent mr-4 animate-bounce-slow" />
+              <FaAward className="text-4xl text-secondary mr-4 animate-bounce-slow" />
               <h3 className="text-3xl font-bold animate-fadeInUp">Trusted by Industry Leaders</h3>
             </div>
             <p className="text-xl mb-8 opacity-90 animate-fadeInUp delay-200">

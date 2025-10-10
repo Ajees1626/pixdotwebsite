@@ -123,7 +123,7 @@ const ScrollToTop = () => {
               {/* Button Content */}
               <button
                 onClick={scrollToTop}
-                className="relative z-10 w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white hover:from-secondary hover:to-accent transition-all duration-300 transform hover:scale-110 hover:shadow-xl group"
+                className="relative z-10 w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white hover:from-secondary hover:to-white transition-all duration-300 transform hover:scale-110 hover:shadow-xl group"
                 aria-label="Scroll to top"
               >
                 <FaChevronUp className="text-lg group-hover:animate-bounce" />
@@ -132,8 +132,8 @@ const ScrollToTop = () => {
           </div>
 
           {/* Floating Animation Elements */}
-          <div className="absolute -top-2 -right-2 w-6 h-6 bg-accent rounded-full animate-ping opacity-75"></div>
-          <div className="absolute -top-1 -right-1 w-4 h-4 bg-accent rounded-full animate-pulse"></div>
+          <div className="absolute -top-2 -right-2 w-6 h-6 bg-secondary rounded-full animate-ping opacity-75"></div>
+          <div className="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full animate-pulse"></div>
         </div>
       )}
 
@@ -142,7 +142,7 @@ const ScrollToTop = () => {
         <div className="fixed bottom-8 left-8 z-50 animate-slide-in">
           <button
             onClick={scrollToTop}
-            className="group relative w-14 h-14 bg-gradient-to-br from-secondary to-accent rounded-full shadow-2xl flex items-center justify-center text-white hover:shadow-3xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2"
+            className="group relative w-14 h-14 bg-gradient-to-br from-secondary to-white rounded-full shadow-2xl flex items-center justify-center text-white hover:shadow-3xl transition-all duration-500 transform hover:scale-110 hover:-translate-y-2"
             aria-label="Rocket to top"
           >
             {/* Rocket Icon */}
@@ -153,7 +153,7 @@ const ScrollToTop = () => {
             
             {/* Sparkle Effects */}
             <div className="absolute -top-1 -right-1 w-2 h-2 bg-white rounded-full animate-ping opacity-0 group-hover:opacity-100"></div>
-            <div className="absolute -bottom-1 -left-1 w-1.5 h-1.5 bg-accent rounded-full animate-pulse opacity-0 group-hover:opacity-100"></div>
+            <div className="absolute -bottom-1 -left-1 w-1.5 h-1.5 bg-secondary rounded-full animate-pulse opacity-0 group-hover:opacity-100"></div>
           </button>
         </div>
       )}
@@ -161,7 +161,7 @@ const ScrollToTop = () => {
       {/* Page Progress Bar */}
       <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
         <div 
-          className="h-full bg-gradient-to-r from-primary via-secondary to-accent transition-all duration-300 ease-out"
+          className="h-full bg-gradient-to-r from-primary to-secondary transition-all duration-300 ease-out"
           style={{ width: `${scrollProgress}%` }}
         ></div>
       </div>

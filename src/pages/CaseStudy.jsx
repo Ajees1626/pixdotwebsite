@@ -47,7 +47,7 @@ const CaseStudy = () => {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Hero Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -312,7 +312,7 @@ const CaseStudy = () => {
       )}
 
       {/* Stats Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container-custom relative z-10">
           <div className="text-center mb-12">
@@ -348,7 +348,7 @@ const CaseStudy = () => {
       {/* CTA Section */}
       <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
         <div className="container-custom">
-          <div className={`${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-3xl p-8 md:p-12 text-center text-white shadow-xl relative overflow-hidden`}>
+          <div className={`${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-3xl p-8 md:p-12 text-center text-white shadow-xl relative overflow-hidden`}>
             <div className="absolute inset-0 bg-black/10"></div>
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">

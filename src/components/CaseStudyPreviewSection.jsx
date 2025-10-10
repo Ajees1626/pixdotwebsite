@@ -56,11 +56,11 @@ const CaseStudyPreviewSection = () => {
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl font-bold text-accent animate-counter">+128%</div>
+                <div className="text-2xl font-bold text-secondary animate-counter">+128%</div>
                 <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Conversion Rate</div>
               </div>
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl font-bold text-accent animate-counter">+67%</div>
+                <div className="text-2xl font-bold text-secondary animate-counter">+67%</div>
                 <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Order Value</div>
               </div>
             </div>
@@ -81,11 +81,11 @@ const CaseStudyPreviewSection = () => {
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl font-bold text-accent animate-counter">-60%</div>
+                <div className="text-2xl font-bold text-secondary animate-counter">-60%</div>
                 <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Wait Time</div>
               </div>
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl font-bold text-accent animate-counter">+42%</div>
+                <div className="text-2xl font-bold text-secondary animate-counter">+42%</div>
                 <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Efficiency</div>
               </div>
             </div>

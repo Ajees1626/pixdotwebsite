@@ -185,7 +185,7 @@ const ClientLogosSection = () => {
                 <div className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} font-semibold`}>Satisfaction Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-accent mb-2">24/7</div>
+                <div className="text-4xl font-bold text-secondary mb-2">24/7</div>
                 <div className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} font-semibold`}>Support Available</div>
               </div>
             </div>

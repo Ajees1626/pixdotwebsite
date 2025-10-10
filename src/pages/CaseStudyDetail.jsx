@@ -50,7 +50,7 @@ const CaseStudyDetail = () => {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Header */}
-      <div className={`${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white py-20 relative overflow-hidden`}>
+      <div className={`${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white py-20 relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container-custom relative z-10">
           <div className="flex justify-between items-center mb-8">
@@ -179,7 +179,7 @@ const CaseStudyDetail = () => {
                         <h4 className={`font-semibold ${isDarkMode ? 'text-white' : 'text-primary'}`}>
                           {result.metric}
                         </h4>
-                        <span className="text-accent font-bold">{result.improvement}</span>
+                        <span className="text-secondary font-bold">{result.improvement}</span>
                       </div>
                       <div className={`flex items-center justify-between text-sm ${
                         isDarkMode ? 'text-gray-300' : 'text-gray-600'
@@ -280,8 +280,8 @@ const CaseStudyDetail = () => {
               {/* CTA */}
               <div className={`rounded-2xl p-6 text-white shadow-lg ${
                 isDarkMode 
-                  ? 'bg-gradient-to-br from-primary via-secondary to-accent' 
-                  : 'bg-gradient-to-br from-primary via-secondary to-accent'
+                  ? 'bg-gradient-to-tr from-primary to-secondary' 
+                  : 'bg-gradient-to-tr from-primary to-secondary'
               } relative overflow-hidden`}>
                 <div className="absolute inset-0 bg-black/10"></div>
                 <div className="relative z-10">

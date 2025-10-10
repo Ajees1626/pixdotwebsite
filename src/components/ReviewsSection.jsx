@@ -153,7 +153,7 @@ const ReviewsSection = () => {
           {/* Main Review Display */}
           <div className={`relative ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-3xl p-8 md:p-12 shadow-2xl border overflow-hidden transform hover:scale-105 transition-transform duration-500`}>
             {/* Background Pattern */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-secondary/10 to-accent/10 rounded-full -translate-y-16 translate-x-16 animate-float"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-secondary/10 to-white/10 rounded-full -translate-y-16 translate-x-16 animate-float"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-primary/10 to-secondary/10 rounded-full translate-y-12 -translate-x-12 animate-float delay-1000"></div>
             
             <div className="relative z-10">

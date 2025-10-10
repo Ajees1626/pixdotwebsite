@@ -116,7 +116,7 @@ const Header = () => {
                   to={item.href}
                   className={`block px-3 py-2 text-base font-medium transition-all duration-300 ease-out transform hover:scale-105 hover:translate-x-2 ${
                     location.pathname === item.href
-                      ? 'text-secondary bg-accent'
+                      ? 'text-secondary bg-secondary'
                       : `${isDarkMode ? 'text-gray-300 hover:bg-gray-800' : 'text-primary hover:bg-gray-50'} hover:text-secondary`
                   }`}
                   onClick={() => setIsMenuOpen(false)}

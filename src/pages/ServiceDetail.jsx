@@ -129,7 +129,7 @@ const ServiceDetail = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {service.benefits.map((benefit, index) => (
                     <div key={index} className="flex items-center">
-                      <FaStar className="text-accent mr-3 flex-shrink-0" />
+                      <FaStar className="text-secondary mr-3 flex-shrink-0" />
                       <span className={`font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>{benefit}</span>
                     </div>
                   ))}

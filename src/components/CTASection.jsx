@@ -31,7 +31,7 @@ const CTASection = () => {
   return (
     <section id="cta-section" className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
       <div className="container-custom">
-        <div className={`${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-3xl p-8 md:p-12 text-center text-white transform hover:scale-105 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-3xl p-8 md:p-12 text-center text-white transform hover:scale-105 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="text-3xl md:text-4xl font-bold mb-6 animate-fadeInUp">
             Ready to Transform Your Business?
           </h2>

@@ -160,14 +160,14 @@ The project features advanced functionality, responsive design, and seamless use
                   {project.results.map((result, index) => (
                     <div key={index} className="flex justify-between items-center transform hover:scale-105 transition-transform duration-300">
                       <span className="text-gray-600">{result.metric}</span>
-                      <span className="text-2xl font-bold text-accent animate-counter">{result.value}</span>
+                      <span className="text-2xl font-bold text-secondary animate-counter">{result.value}</span>
                     </div>
                   ))}
                 </div>
               </div>
               
               {/* CTA */}
-              <div className="bg-gradient-to-r from-secondary to-accent rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform duration-300 animate-slideInUp" style={{ animationDelay: '1.2s' }}>
+              <div className="bg-gradient-to-r from-secondary to-white rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-transform duration-300 animate-slideInUp" style={{ animationDelay: '1.2s' }}>
                 <h3 className="text-xl font-bold mb-4">Ready to Start Your Project?</h3>
                 <p className="text-white/90 mb-6">Let's discuss how we can help you achieve similar results.</p>
                 <Link 

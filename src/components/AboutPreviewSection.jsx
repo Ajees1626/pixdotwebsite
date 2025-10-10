@@ -32,7 +32,7 @@ const AboutPreviewSection = () => {
           </div>
           
           <div className="relative">
-            <div className={`${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-2xl p-8 ${isDarkMode ? 'text-white' : 'text-white'}`}>
+            <div className={`${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-2xl p-8 ${isDarkMode ? 'text-white' : 'text-white'}`}>
               <h3 className="text-2xl font-bold mb-6">Why Choose Pixdot?</h3>
               <div className="space-y-4">
                 <div className="flex items-center">

@@ -166,7 +166,7 @@ const Solutions = () => {
   return (
     <div id="solutions-page" className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Hero Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container-custom relative z-10">
           <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -227,12 +227,12 @@ const Solutions = () => {
                 className={`rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border animate-slideInUp ${isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-white border-gray-200'} hover:shadow-2xl`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className={`w-16 h-16 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-2xl flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                <div className={`w-16 h-16 ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-2xl flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <solution.icon className="text-white text-2xl" />
                 </div>
                 
                 <div className="mb-4">
-                  <span className={`inline-block ${isDarkMode ? 'bg-accent text-white' : 'bg-accent text-primary'} text-sm font-semibold px-3 py-1 rounded-full`}>
+                  <span className={`inline-block ${isDarkMode ? 'bg-secondary text-white' : 'bg-secondary text-primary'} text-sm font-semibold px-3 py-1 rounded-full`}>
                     {solution.category}
                   </span>
                 </div>
@@ -257,7 +257,7 @@ const Solutions = () => {
                   <ul className="space-y-1">
                     {solution.benefits.map((benefit, idx) => (
                       <li key={idx} className={`flex items-center text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                        <div className={`w-1.5 h-1.5 ${isDarkMode ? 'bg-accent' : 'bg-accent'} rounded-full mr-2`}></div>
+                        <div className={`w-1.5 h-1.5 ${isDarkMode ? 'bg-secondary' : 'bg-secondary'} rounded-full mr-2`}></div>
                         {benefit}
                       </li>
                     ))}
@@ -285,11 +285,11 @@ const Solutions = () => {
             {process.map((step, index) => (
               <div key={index} className={`text-center ${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-6 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
                 <div className="relative mb-6">
-                  <div className={`w-20 h-20 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg`}>
+                  <div className={`w-20 h-20 ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg`}>
                     <span className="text-white text-2xl font-bold">{step.step}</span>
                   </div>
                   {index < process.length - 1 && (
-                    <div className={`hidden lg:block absolute top-10 left-full w-full h-0.5 ${isDarkMode ? 'bg-gradient-to-r from-primary via-secondary to-accent' : 'bg-gradient-to-r from-primary via-secondary to-accent'} transform translate-x-4`}></div>
+                    <div className={`hidden lg:block absolute top-10 left-full w-full h-0.5 ${isDarkMode ? 'bg-gradient-to-r from-primary to-secondary' : 'bg-gradient-to-r from-primary to-secondary'} transform translate-x-4`}></div>
                   )}
                 </div>
                 <h3 className={`text-lg font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{step.title}</h3>
@@ -329,7 +329,7 @@ const Solutions = () => {
       </section>
 
       {/* CTA Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container-custom relative z-10">
           <div className="text-center">

@@ -63,11 +63,11 @@ const StatsSection = () => {
   }, [isVisible])
 
   return (
-    <section id="stats-section" className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-gradient-to-br from-primary via-secondary to-accent'}`}>
+    <section id="stats-section" className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-gradient-to-tr from-primary to-secondary'}`}>
       <div className="container-custom">
         <div className={`text-center mb-12 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className={`text-3xl md:text-4xl font-bold ${isDarkMode ? 'text-white' : 'text-white'} mb-6 animate-fadeInUp`}>
-            Our <span className={`${isDarkMode ? 'text-accent' : 'text-white'}`}>Impact</span>
+            Our <span className={`${isDarkMode ? 'text-secondary' : 'text-white'}`}>Impact</span>
           </h2>
           <p className={`text-xl ${isDarkMode ? 'text-gray-200' : 'text-white/90'} max-w-3xl mx-auto animate-fadeInUp delay-200`}>
             The numbers speak for themselves - our solutions deliver measurable results.
@@ -77,7 +77,7 @@ const StatsSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div key={index} className={`text-center ${isDarkMode ? 'text-white' : 'text-white'} animate-slideInUp`} style={{ animationDelay: `${index * 0.2}s` }}>
-              <div className={`text-4xl md:text-5xl font-bold ${isDarkMode ? 'text-accent' : 'text-white'} mb-2 transform hover:scale-110 transition-transform duration-300`}>
+              <div className={`text-4xl md:text-5xl font-bold ${isDarkMode ? 'text-secondary' : 'text-white'} mb-2 transform hover:scale-110 transition-transform duration-300`}>
                 {isVisible ? countedStats[index] : 0}{stat.suffix}
               </div>
               <div className={`text-lg ${isDarkMode ? 'text-gray-200' : 'text-white/80'}`}>

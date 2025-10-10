@@ -43,7 +43,7 @@ const Service = () => {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Hero Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -81,7 +81,7 @@ const Service = () => {
                   className="group block"
                 >
                   <div className={`rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border group-hover:border-secondary ${isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-white border-gray-200'} hover:shadow-2xl`}>
-                    <div className={`w-16 h-16 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                    <div className={`w-16 h-16 ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-br from-white to-secondary'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                       <IconComponent className="text-white text-2xl" />
                     </div>
                     
@@ -136,11 +136,11 @@ const Service = () => {
             {process.map((step, index) => (
               <div key={index} className={`text-center ${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-6 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
                 <div className="relative mb-6">
-                  <div className={`w-20 h-20 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg`}>
+                  <div className={`w-20 h-20 ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-br from-white to-secondary'} rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg`}>
                     <span className="text-white text-2xl font-bold">{step.step}</span>
                   </div>
                   {index < process.length - 1 && (
-                    <div className={`hidden lg:block absolute top-10 left-full w-full h-0.5 ${isDarkMode ? 'bg-gradient-to-r from-primary via-secondary to-accent' : 'bg-gradient-to-r from-primary via-secondary to-accent'} transform translate-x-4`}></div>
+                    <div className={`hidden lg:block absolute top-10 left-full w-full h-0.5 ${isDarkMode ? 'bg-gradient-to-r from-primary to-secondary' : 'bg-gradient-to-r from-primary to-secondary'} transform translate-x-4`}></div>
                   )}
                 </div>
                 <h3 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{step.title}</h3>
@@ -154,7 +154,7 @@ const Service = () => {
       {/* CTA Section */}
       <section className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
         <div className="container-custom">
-          <div className={`${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-3xl p-8 md:p-12 text-center text-white shadow-xl relative overflow-hidden`}>
+          <div className={`${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-3xl p-8 md:p-12 text-center text-white shadow-xl relative overflow-hidden`}>
             <div className="absolute inset-0 bg-black/10"></div>
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">

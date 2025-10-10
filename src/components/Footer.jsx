@@ -79,16 +79,16 @@ const Footer = () => {
         {isDarkMode ? (
           <>
             {/* Dark Theme Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary via-secondary to-accent"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-primary/20 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-black/20 to-black/40"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-primary/20"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-black/40"></div>
           </>
         ) : (
           <>
             {/* Light Theme Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-secondary/80 to-accent/70"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/20"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-secondary/80"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-white/10"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-white/20"></div>
           </>
         )}
         
@@ -123,7 +123,7 @@ const Footer = () => {
                       </div>
                     </div>
                     <div className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-white/90'} transform hover:translate-x-2 transition-transform duration-300 group`}>
-                      <div className="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-r from-secondary to-white rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                         <FaEnvelope className="text-white" />
                       </div>
                       <div>
@@ -132,7 +132,7 @@ const Footer = () => {
                       </div>
                     </div>
                     <div className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-white/90'} transform hover:translate-x-2 transition-transform duration-300 group`}>
-                      <div className="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                      <div className="w-12 h-12 bg-gradient-to-r from-white to-primary rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
                         <FaMapMarkerAlt className="text-white" />
                       </div>
                       <div>
@@ -162,7 +162,7 @@ const Footer = () => {
 
                 {/* Company */}
                 <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                  <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">Company</h3>
+                  <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-secondary to-white bg-clip-text text-transparent">Company</h3>
                   <ul className="space-y-3">
                     {footerLinks.company.map((link) => (
                       <li key={link.name}>
@@ -170,7 +170,7 @@ const Footer = () => {
                           to={link.href}
                           className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-all duration-300 transform hover:translate-x-2 block group`}
                         >
-                          <span className="group-hover:text-accent transition-colors duration-300">{link.name}</span>
+                          <span className="group-hover:text-secondary transition-colors duration-300">{link.name}</span>
                         </Link>
                       </li>
                     ))}
@@ -179,7 +179,7 @@ const Footer = () => {
 
                 {/* Industries */}
                 <div className={`transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                  <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-accent to-white bg-clip-text text-transparent">Industries</h3>
+                  <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">Industries</h3>
                   <ul className="space-y-3">
                     {footerLinks.industries.map((link) => (
                       <li key={link.name}>
@@ -187,7 +187,7 @@ const Footer = () => {
                           to={link.href}
                           className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-all duration-300 transform hover:translate-x-2 block group`}
                         >
-                          <span className="group-hover:text-accent transition-colors duration-300">{link.name}</span>
+                          <span className="group-hover:text-secondary transition-colors duration-300">{link.name}</span>
                         </Link>
                       </li>
                     ))}
@@ -200,7 +200,7 @@ const Footer = () => {
             <div className={`border-t ${isDarkMode ? 'border-white/20' : 'border-white/30'} py-12`}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className={`transition-all duration-1000 delay-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                  <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-white via-secondary to-accent bg-clip-text text-transparent">
+                  <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">
                     Stay Updated
                   </h3>
                   <p className={`${isDarkMode ? 'text-gray-300' : 'text-white/90'} text-lg`}>
@@ -236,7 +236,7 @@ const Footer = () => {
                       Terms & Conditions
                     </button>
                     <Link to="/privacy" className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-colors duration-300 flex items-center gap-2 group`}>
-                      <FaShieldAlt className="group-hover:text-accent transition-colors duration-300" />
+                      <FaShieldAlt className="group-hover:text-secondary transition-colors duration-300" />
                       Privacy Policy
                     </Link>
                     <Link to="/cookies" className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-colors duration-300 flex items-center gap-2 group`}>
@@ -278,7 +278,7 @@ const Footer = () => {
           {/* Modal */}
           <div className={`relative ${isDarkMode ? 'bg-gray-900' : 'bg-white'} rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}>
             {/* Header */}
-            <div className="bg-gradient-to-r from-primary via-secondary to-accent p-6 text-white">
+            <div className="bg-gradient-to-r from-primary to-secondary p-6 text-white">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
@@ -313,9 +313,9 @@ const Footer = () => {
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-accent pl-4">
+                  <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
-                      <span className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
+                      <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
                       Use License
                     </h3>
                     <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed mb-4`}>
@@ -342,9 +342,9 @@ const Footer = () => {
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-accent pl-4">
+                  <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
-                      <span className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
+                      <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
                       User Responsibilities
                     </h3>
                     <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
@@ -364,9 +364,9 @@ const Footer = () => {
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-accent pl-4">
+                  <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
-                      <span className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
+                      <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
                       Privacy Policy
                     </h3>
                     <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
@@ -387,9 +387,9 @@ const Footer = () => {
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-accent pl-4">
+                  <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
-                      <span className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">8</span>
+                      <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">8</span>
                       Governing Law
                     </h3>
                     <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
@@ -409,9 +409,9 @@ const Footer = () => {
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-accent pl-4">
+                  <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
-                      <span className="w-8 h-8 bg-accent text-white rounded-full flex items-center justify-center text-sm font-bold">10</span>
+                      <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">10</span>
                       Contact Information
                     </h3>
                     <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed mb-4`}>

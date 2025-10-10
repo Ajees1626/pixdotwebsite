@@ -110,7 +110,7 @@ const Contact = () => {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       {/* Hero Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container-custom relative z-10">
           <div className={`max-w-4xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -270,7 +270,7 @@ const Contact = () => {
               <div className="space-y-8">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start">
-                    <div className={`w-12 h-12 ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} rounded-lg flex items-center justify-center mr-4 flex-shrink-0 shadow-lg`}>
+                    <div className={`w-12 h-12 ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-lg flex items-center justify-center mr-4 flex-shrink-0 shadow-lg`}>
                       <info.icon className="text-white text-xl" />
                     </div>
                     <div>
@@ -371,7 +371,7 @@ const Contact = () => {
       </section>
 
       {/* CTA Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-br from-primary via-secondary to-accent' : 'bg-gradient-to-br from-primary via-secondary to-accent'} text-white relative overflow-hidden`}>
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="container-custom relative z-10">
           <div className="text-center">

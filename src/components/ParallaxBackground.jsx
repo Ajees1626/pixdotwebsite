@@ -43,7 +43,7 @@ const ParallaxBackground = ({ sectionId, imageUrl, children }) => {
           backgroundAttachment: 'fixed'
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/80 to-secondary/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-secondary/90"></div>
       </div>
       
       {/* Content */}
