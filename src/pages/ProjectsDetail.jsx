@@ -206,22 +206,22 @@ const ProjectsDetail = () => {
       {/* Modal for Full Project View */}
       {isModalOpen && selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/90 backdrop-blur-md">
-         <div className="relative bg-white rounded-xl sm:rounded-2xl w-[650px] h-[650px] max-w-[650px] max-h-[650px] overflow-hidden shadow-2xl">
+         <div className="relative bg-white rounded-xl sm:rounded-2xl w-[90vw] h-[90vw] sm:w-[650px] sm:h-[650px] max-w-[90vw] max-h-[90vh] sm:max-w-[650px] sm:max-h-[650px] overflow-hidden shadow-2xl">
            {/* Close Button */}
            <button
              onClick={closeModal}
-             className="absolute top-3 sm:top-4 right-3 sm:right-4 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
+             className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
            >
-             <FaTimes className="text-gray-700 text-lg sm:text-xl" />
+             <FaTimes className="text-gray-700 text-sm sm:text-lg md:text-xl" />
            </button>
 
            {/* Left Navigation Arrow */}
            {projects.length > 1 && (
              <button
                onClick={() => navigateProject('prev')}
-               className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
+               className="absolute left-2 top-1/2 transform -translate-y-1/2 sm:left-3 md:left-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
              >
-               <FaChevronLeft className="text-gray-700 text-lg sm:text-xl" />
+               <FaChevronLeft className="text-gray-700 text-sm sm:text-lg md:text-xl" />
              </button>
            )}
 
@@ -229,9 +229,9 @@ const ProjectsDetail = () => {
            {projects.length > 1 && (
              <button
                onClick={() => navigateProject('next')}
-               className="absolute right-3 sm:right-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
+               className="absolute right-2 top-1/2 transform -translate-y-1/2 sm:right-3 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
              >
-               <FaChevronRight className="text-gray-700 text-lg sm:text-xl" />
+               <FaChevronRight className="text-gray-700 text-sm sm:text-lg md:text-xl" />
              </button>
            )}
 
@@ -248,9 +248,9 @@ const ProjectsDetail = () => {
 
            {/* Project Counter */}
            {projects.length > 1 && (
-             <div className="absolute bottom-3 sm:bottom-4 left-1/2 transform -translate-x-1/2 z-10">
-               <div className="bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
-                 <span className="text-gray-700 text-sm font-medium">
+             <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 sm:bottom-3 md:bottom-4 z-10">
+               <div className="bg-white/95 backdrop-blur-sm rounded-full px-3 py-1.5 sm:px-4 sm:py-2 shadow-lg">
+                 <span className="text-gray-700 text-xs sm:text-sm font-medium">
                    {projects.findIndex(p => p.id === selectedProject.id) + 1} / {projects.length}
                  </span>
                </div>

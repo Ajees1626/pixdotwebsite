@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from './contexts/ThemeContext'
-import LoadingScreen from './components/LoadingScreen'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -21,26 +20,6 @@ import Project from './pages/Project'
 import ProjectsDetail from './pages/ProjectsDetail'
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
-
-  const handleLoadingComplete = () => {
-    setIsLoading(false)
-  }
-
-  // Show loading screen on first visit
-  useEffect(() => {
-    const hasVisited = localStorage.getItem('pixdot-visited')
-    if (hasVisited) {
-      setIsLoading(false)
-    } else {
-      localStorage.setItem('pixdot-visited', 'true')
-    }
-  }, [5000])
-
-  if (isLoading) {
-    return <LoadingScreen onLoadingComplete={handleLoadingComplete} />
-  }
-
   return (
     <ThemeProvider>
       <Router>
