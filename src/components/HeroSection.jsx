@@ -12,117 +12,113 @@ const HeroSection = () => {
   }, [])
   
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-gray-50 to-white">
+    <section className={`relative min-h-screen flex items-center overflow-hidden ${isDarkMode ? 'bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800' : 'bg-gradient-to-br from-gray-50 to-white'}`}>
       {/* Subtle Background Elements */}
       <div className="absolute inset-0">
-        {/* Light gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5"></div>
+        {/* Background tint overlay */}
+        <div className={`absolute inset-0 ${isDarkMode ? 'bg-gradient-to-br from-primary/20 to-secondary/20' : 'bg-gradient-to-br from-secondary/5 to-primary/5'}`}></div>
         
-        {/* Subtle floating shapes */}
-        <div className="absolute top-20 left-10 w-20 h-20 bg-secondary/10 rounded-full animate-pulse animate-float"></div>
-        <div className="absolute top-40 right-20 w-16 h-16 bg-primary/10 rounded-full animate-bounce animate-float-delayed"></div>
-        <div className="absolute bottom-40 left-20 w-12 h-12 bg-secondary/15 rounded-full animate-pulse animate-float-slow"></div>
-        <div className="absolute bottom-20 right-10 w-24 h-24 bg-primary/10 rounded-full animate-bounce animate-float-reverse"></div>
+        {/* Subtle floating shapes - Responsive */}
+        <div className={`absolute top-10 sm:top-20 left-4 sm:left-10 w-12 h-12 sm:w-20 sm:h-20 rounded-full animate-pulse animate-float ${isDarkMode ? 'bg-secondary/20' : 'bg-secondary/10'}`}></div>
+        <div className={`absolute top-20 sm:top-40 right-4 sm:right-20 w-10 h-10 sm:w-16 sm:h-16 rounded-full animate-bounce animate-float-delayed ${isDarkMode ? 'bg-primary/20' : 'bg-primary/10'}`}></div>
+        <div className={`absolute bottom-20 sm:bottom-40 left-4 sm:left-20 w-8 h-8 sm:w-12 sm:h-12 rounded-full animate-pulse animate-float-slow ${isDarkMode ? 'bg-secondary/25' : 'bg-secondary/15'}`}></div>
+        <div className={`absolute bottom-10 sm:bottom-20 right-4 sm:right-10 w-16 h-16 sm:w-24 sm:h-24 rounded-full animate-bounce animate-float-reverse ${isDarkMode ? 'bg-primary/20' : 'bg-primary/10'}`}></div>
       </div>
 
-      <div className="container-custom relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-screen">
+      <div className="container-custom relative z-10 px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center min-h-screen py-4 sm:py-8 lg:py-16">
           
-
-          {/* left Content - Standing Lady PNG Image */}
-          <div className={`relative h-full flex items-end transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            {/* Circular Gradient Background */}
+          {/* Left Content - Standing Lady PNG Image */}
+          <div className={`relative h-full flex items-end order-2 lg:order-1 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+            {/* Circular Gradient Background - Mobile Optimized */}
             <div className="absolute inset-0 w-full h-full">
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-secondary to-primary rounded-full opacity-30 animate-pulse"></div>
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-secondary to-primary rounded-full opacity-30 animate-pulse"></div>
             </div>
             
-            {/* Person Image Container */}
-            <div className="relative z-10 flex justify-center items-center">
-              <div className="relative">
+            {/* Person Image Container - Mobile Responsive */}
+            <div className="relative z-10 flex justify-center items-center w-full px-2 sm:px-0">
+              <div className="relative max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
                 {/* PNG Image - Standing Lady */}
-                <div className="w-full h-full rounded-2xl relative overflow-hidden bg-transparent flex items-center justify-center">
+                <div className="w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl relative overflow-hidden bg-transparent flex items-center justify-center">
                   <img 
                     src="/hero.png" 
                     alt="Professional Business Lady"
-                    className="w-full h-full object-cover rounded-2xl"
+                    className="w-full h-full object-cover rounded-lg sm:rounded-xl md:rounded-2xl"
                   />
                   {/* Foreground bottom-to-top overlay (shadow) */}
-                  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-white/50 via-white/20 to-transparent"></div>
+                  <div className={`pointer-events-none absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t ${isDarkMode ? 'from-black/40 via-black/20' : 'from-white/50 via-white/20'} to-transparent`}></div>
                 </div>
                 
-                {/* Lightbulb Icon */}
-                <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center shadow-xl animate-bounce">
-                  <FaLightbulb className="text-white text-xl" />
+                {/* Lightbulb Icon - Mobile Responsive */}
+                <div className="absolute -bottom-1 -left-1 sm:-bottom-2 sm:-left-2 md:-bottom-4 md:-left-4 w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center shadow-xl animate-bounce">
+                  <FaLightbulb className="text-white text-xs sm:text-sm md:text-xl" />
                 </div>
               </div>
             </div>
           </div>
 
-          {/* right Content */}
-          <div className={`text-primary transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-           
+          {/* Right Content */}
+          <div className={`${isDarkMode ? 'text-white' : 'text-primary'} transition-all duration-1000 order-1 lg:order-2 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             
-            {/* Main Heading */}
-            <h1 className={`text-5xl md:text-6xl lg:text-6xl font-bold leading-tight mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            {/* Main Heading - Mobile Optimized */}
+            <h1 className={`text-6xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6 md:mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <span className="block animate-fadeInUp">
                 We Don't Just Build <span className="text-secondary">Brands</span>
               </span>
-              <span className="block text-primary animate-fadeInUp delay-500">
+              <span className={`block animate-fadeInUp delay-500 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
                 We Build <span className="text-secondary">Legacies</span> 
               </span>
             </h1>
             
-            
-            
-            {/* CTA Buttons */}
-            <div className={`flex flex-col sm:flex-row gap-6 mb-12 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            {/* CTA Buttons - Mobile Optimized */}
+            <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8 md:mb-12 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <Link 
                 to="/contact" 
-                className="group bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center justify-center"
+                className="group bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-2.5 sm:py-3 md:py-4 px-4 sm:px-6 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center justify-center text-xs sm:text-sm md:text-base"
               >
                 <span>Get Free Consultation</span>
-                <FaArrowRight className="ml-3 group-hover:translate-x-1 transition-transform" />
+                <FaArrowRight className="ml-1.5 sm:ml-2 md:ml-3 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link 
                 to="/service" 
-                className="group bg-white border-2 border-secondary hover:bg-secondary hover:text-white text-primary font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center"
+                className={`group border-2 border-secondary font-semibold py-2.5 sm:py-3 md:py-4 px-4 sm:px-6 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center text-xs sm:text-sm md:text-base ${isDarkMode ? 'bg-transparent text-white hover:bg-secondary hover:text-white' : 'bg-white text-primary hover:bg-secondary hover:text-white'}`}
               >
                 <span>Our Services</span>
               </Link>
             </div>
             
-            {/* Stats Grid */}
-            <div className={`grid grid-cols-3 gap-8 transition-all duration-1000 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            {/* Stats Grid - Mobile Optimized */}
+            <div className={`grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 transition-all duration-1000 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="text-center group animate-counter">
-                <div className="text-4xl md:text-5xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">500+</div>
-                <div className="text-sm text-gray-600 font-medium">Projects Delivered</div>
+                <div className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">500+</div>
+                <div className={`text-xs sm:text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Projects Delivered</div>
               </div>
               <div className="text-center group animate-counter delay-200">
-                <div className="text-4xl md:text-5xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">98%</div>
-                <div className="text-sm text-gray-600 font-medium">Success Rate</div>
+                <div className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">98%</div>
+                <div className={`text-xs sm:text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Success Rate</div>
               </div>
               <div className="text-center group animate-counter delay-400">
-                <div className="text-4xl md:text-5xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
-                <div className="text-sm text-gray-600 font-medium">Support</div>
+                <div className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
+                <div className={`text-xs sm:text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Support</div>
               </div>
             </div>
           </div>
         </div>
       </div>
       
-      {/* Enhanced Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-        <div className="flex flex-col items-center space-y-2">
-          <span className="text-gray-500 text-sm font-medium">Scroll</span>
-          <div className="w-6 h-10 border-2 border-gray-300 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-bounce"></div>
+      {/* Enhanced Scroll Indicator - Mobile Optimized */}
+      <div className="absolute bottom-2 sm:bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="flex flex-col items-center space-y-1 sm:space-y-2">
+          <span className={`text-xs sm:text-sm font-medium ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Scroll</span>
+          <div className={`w-4 h-6 sm:w-5 sm:h-8 md:w-6 md:h-10 border-2 ${isDarkMode ? 'border-gray-500/40' : 'border-gray-300'} rounded-full flex justify-center`}>
+            <div className={`w-1 h-1.5 sm:h-2 md:h-3 ${isDarkMode ? 'bg-gray-300' : 'bg-gray-400'} rounded-full mt-0.5 sm:mt-1 md:mt-2 animate-bounce`}></div>
           </div>
         </div>
       </div>
 
       
       {/* Custom CSS Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes scrollBackground {
           0% {
             background-position: 0% 50%;
@@ -145,6 +141,63 @@ const HeroSection = () => {
           }
           .animate-scroll-bg {
             animation-duration: 40s;
+          }
+          
+          /* Mobile optimizations */
+          .container-custom {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+          }
+          
+          /* Reduce animation intensity on mobile */
+          .animate-float,
+          .animate-float-delayed,
+          .animate-float-slow,
+          .animate-float-reverse {
+            animation-duration: 8s;
+          }
+          
+          /* Mobile-specific adjustments */
+          .min-h-screen {
+            min-height: 100vh;
+            min-height: 100dvh; /* Dynamic viewport height for mobile */
+          }
+        }
+        
+        @media (max-width: 640px) {
+          /* Extra small mobile optimizations */
+          .animate-fadeInUp {
+            animation-duration: 0.6s;
+          }
+          
+          .animate-counter {
+            animation-duration: 0.4s;
+          }
+          
+          /* Ultra mobile adjustments */
+          .container-custom {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+          }
+          
+          /* Reduce floating shapes on very small screens */
+          .animate-float,
+          .animate-float-delayed,
+          .animate-float-slow,
+          .animate-float-reverse {
+            animation-duration: 10s;
+            opacity: 0.7;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          /* Extra small screens */
+          .animate-fadeInUp {
+            animation-duration: 0.5s;
+          }
+          
+          .animate-counter {
+            animation-duration: 0.3s;
           }
         }
         

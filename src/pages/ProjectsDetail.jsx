@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { FaArrowLeft, FaExternalLinkAlt, FaCalendarAlt, FaUser, FaTimes } from 'react-icons/fa'
+import { FaArrowLeft, FaExternalLinkAlt, FaCalendarAlt, FaUser, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { useTheme } from '../contexts/ThemeContext'
 import projectsData from '../data/projectsData.json'
 
@@ -23,14 +23,6 @@ const ProjectsDetail = () => {
     setSelectedProject(null)
     document.body.style.overflow = 'unset'
   }
-
-  // Set default variety for categories with varieties
-  useEffect(() => {
-    if (projectsData[categoryId]?.varieties && !selectedVariety) {
-      const firstVarietyKey = Object.keys(projectsData[categoryId].varieties)[0]
-      setSelectedVariety(firstVarietyKey)
-    }
-  }, [categoryId, selectedVariety])
 
   if (!projectsData[categoryId]) {
     return (
@@ -70,11 +62,50 @@ const ProjectsDetail = () => {
     projects = categoryData.projects || []
   }
 
+  const navigateProject = (direction) => {
+    const currentIndex = projects.findIndex(p => p.id === selectedProject.id)
+    let newIndex
+    
+    if (direction === 'prev') {
+      newIndex = currentIndex > 0 ? currentIndex - 1 : projects.length - 1
+    } else {
+      newIndex = currentIndex < projects.length - 1 ? currentIndex + 1 : 0
+    }
+    
+    setSelectedProject(projects[newIndex])
+  }
+
+  // Set default variety for categories with varieties
+  useEffect(() => {
+    if (projectsData[categoryId]?.varieties && !selectedVariety) {
+      const firstVarietyKey = Object.keys(projectsData[categoryId].varieties)[0]
+      setSelectedVariety(firstVarietyKey)
+    }
+  }, [categoryId, selectedVariety])
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (!isModalOpen) return
+      
+      if (e.key === 'ArrowLeft') {
+        navigateProject('prev')
+      } else if (e.key === 'ArrowRight') {
+        navigateProject('next')
+      } else if (e.key === 'Escape') {
+        closeModal()
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyPress)
+    return () => document.removeEventListener('keydown', handleKeyPress)
+  }, [isModalOpen, selectedProject, projects])
+
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-gradient-to-br from-gray-50 to-white'}`}>
       <div className="container-custom section-padding">
         {/* Back Button */}
-        <div className="mb-8">
+        <div className="mb-8 px-4 sm:px-6 lg:py-6">
           <button
             onClick={() => navigate('/')}
             className="inline-flex items-center text-primary hover:text-secondary transition-colors"
@@ -137,85 +168,24 @@ const ProjectsDetail = () => {
         )}
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 mb-12">
           {projects.map((project, index) => (
             <div
               key={project.id}
               onClick={() => openModal(project)}
               className="group cursor-pointer"
             >
-              <div className="relative bg-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 overflow-hidden">
+              <div className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 sm:hover:-translate-y-4 border border-gray-100 overflow-hidden">
                 {/* Project Image */}
-                <div className="relative mb-6">
-                  <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 group-hover:scale-105 transition-transform duration-300">
+                <div className="relative">
+                  <div className="w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden group-hover:scale-105 transition-transform duration-300">
                     <img
                       src={project.image}
-                      alt={project.title}
+                      alt="Project"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </div>
-                </div>
-
-                {/* Content */}
-                <div className="relative">
-                  <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-                    {project.description}
-                  </p>
-
-                  {/* Project Details */}
-                  <div className="grid grid-cols-2 gap-3 mb-4">
-                    <div className="bg-gray-50 rounded-lg p-3">
-                      <div className="flex items-center mb-1">
-                        <FaUser className="text-secondary mr-2 text-xs" />
-                        <span className="font-semibold text-gray-700 text-xs">Client</span>
-                      </div>
-                      <p className="text-gray-600 text-xs">{project.client}</p>
-                    </div>
-                    <div className="bg-gray-50 rounded-lg p-3">
-                      <div className="flex items-center mb-1">
-                        <FaCalendarAlt className="text-secondary mr-2 text-xs" />
-                        <span className="font-semibold text-gray-700 text-xs">Date</span>
-                      </div>
-                      <p className="text-gray-600 text-xs">{project.date}</p>
-                    </div>
-                  </div>
-
-                  {/* Technologies */}
-                  <div className="mb-4">
-                    <div className="flex flex-wrap gap-1">
-                      {project.technologies.slice(0, 3).map((tech, idx) => (
-                        <span key={idx} className="bg-secondary/10 text-secondary px-2 py-1 rounded-full text-xs font-medium">
-                          {tech}
-                        </span>
-                      ))}
-                      {project.technologies.length > 3 && (
-                        <span className="bg-gray-100 text-gray-600 px-2 py-1 rounded-full text-xs font-medium">
-                          +{project.technologies.length - 3} more
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Results Preview */}
-                  <div className="mb-4">
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-600 text-sm font-medium">Results:</span>
-                      <div className="flex space-x-2">
-                        {project.results.slice(0, 2).map((result, idx) => (
-                          <span key={idx} className="text-secondary font-bold text-sm">
-                            {result.value}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Hover Effect Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
                 </div>
               </div>
             </div>
@@ -235,100 +205,59 @@ const ProjectsDetail = () => {
 
       {/* Modal for Full Project View */}
       {isModalOpen && selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-          <div className="relative bg-white rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-hidden shadow-2xl">
-            {/* Close Button */}
-            <button
-              onClick={closeModal}
-              className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-colors"
-            >
-              <FaTimes className="text-gray-600" />
-            </button>
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/90 backdrop-blur-md">
+         <div className="relative bg-white rounded-xl sm:rounded-2xl w-[650px] h-[650px] max-w-[650px] max-h-[650px] overflow-hidden shadow-2xl">
+           {/* Close Button */}
+           <button
+             onClick={closeModal}
+             className="absolute top-3 sm:top-4 right-3 sm:right-4 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
+           >
+             <FaTimes className="text-gray-700 text-lg sm:text-xl" />
+           </button>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-              {/* Image Section */}
-              <div className="relative">
-                <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  className="w-full h-96 lg:h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <div className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold mb-2 inline-block">
-                    {currentVariety ? currentVariety.name : categoryData.category}
-                  </div>
-                  <h2 className="text-white font-bold text-2xl mb-1">{selectedProject.title}</h2>
-                </div>
-              </div>
+           {/* Left Navigation Arrow */}
+           {projects.length > 1 && (
+             <button
+               onClick={() => navigateProject('prev')}
+               className="absolute left-3 sm:left-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
+             >
+               <FaChevronLeft className="text-gray-700 text-lg sm:text-xl" />
+             </button>
+           )}
 
-              {/* Content Section */}
-              <div className="p-8 overflow-y-auto max-h-[90vh]">
-                <div className="space-y-6">
-                  {/* Project Info */}
-                  <div>
-                    <h3 className="text-2xl font-bold text-primary mb-4">Project Overview</h3>
-                    <p className="text-gray-600 leading-relaxed">{selectedProject.description}</p>
-                  </div>
+           {/* Right Navigation Arrow */}
+           {projects.length > 1 && (
+             <button
+               onClick={() => navigateProject('next')}
+               className="absolute right-3 sm:right-4 top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 sm:w-12 sm:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
+             >
+               <FaChevronRight className="text-gray-700 text-lg sm:text-xl" />
+             </button>
+           )}
 
-                  {/* Project Details */}
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-gray-50 rounded-xl p-4">
-                      <div className="flex items-center mb-2">
-                        <FaUser className="text-secondary mr-2" />
-                        <span className="font-semibold text-gray-700">Client</span>
-                      </div>
-                      <p className="text-gray-600">{selectedProject.client}</p>
-                    </div>
-                    <div className="bg-gray-50 rounded-xl p-4">
-                      <div className="flex items-center mb-2">
-                        <FaCalendarAlt className="text-secondary mr-2" />
-                        <span className="font-semibold text-gray-700">Date</span>
-                      </div>
-                      <p className="text-gray-600">{selectedProject.date}</p>
-                    </div>
-                  </div>
+           {/* Full Image Display */}
+           <div className="relative">
+             <div className="w-full h-full rounded-xl sm:rounded-2xl overflow-hidden">
+               <img
+                 src={selectedProject.image}
+                 alt="Project"
+                 className="w-full h-full object-cover"
+               />
+             </div>
+           </div>
 
-                  {/* Technologies */}
-                  <div>
-                    <h4 className="text-lg font-bold text-primary mb-3">Technologies Used</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {selectedProject.technologies.map((tech, index) => (
-                        <span key={index} className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Results */}
-                  <div>
-                    <h4 className="text-lg font-bold text-primary mb-3">Project Results</h4>
-                    <div className="space-y-3">
-                      {selectedProject.results.map((result, index) => (
-                        <div key={index} className="flex justify-between items-center bg-gray-50 rounded-lg p-3">
-                          <span className="text-gray-700 font-medium">{result.metric}</span>
-                          <span className="text-secondary font-bold text-lg">{result.value}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* CTA Buttons */}
-                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                    <button className="bg-gradient-to-r from-primary to-secondary text-white font-bold py-3 px-6 rounded-xl hover:shadow-lg transition-all duration-300 flex items-center justify-center">
-                      <FaExternalLinkAlt className="mr-2" />
-                      View Live Project
-                    </button>
-                    <button className="bg-white border-2 border-secondary text-secondary font-semibold py-3 px-6 rounded-xl hover:bg-secondary hover:text-white transition-all duration-300">
-                      Get Similar Project
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+           {/* Project Counter */}
+           {projects.length > 1 && (
+             <div className="absolute bottom-3 sm:bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+               <div className="bg-white/95 backdrop-blur-sm rounded-full px-4 py-2 shadow-lg">
+                 <span className="text-gray-700 text-sm font-medium">
+                   {projects.findIndex(p => p.id === selectedProject.id) + 1} / {projects.length}
+                 </span>
+               </div>
+             </div>
+           )}
+         </div>
+      </div>
       )}
     </div>
   )

@@ -80,8 +80,7 @@ const About = () => {
               About <span className="text-white">Pixdot</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed px-4 sm:px-0 animate-fadeInUp delay-300">
-              We are a team of passionate innovators dedicated to transforming businesses 
-              through cutting-edge digital solutions and exceptional user experiences.
+            At Pixdot, we blend strategy, creativity, and technology to build impactful digital experiences.
             </p>
           </div>
         </div>
@@ -96,21 +95,14 @@ const About = () => {
                 Our Mission
               </h2>
               <p className={`text-base sm:text-lg mb-4 sm:mb-6 leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                To empower businesses with innovative digital solutions that drive growth, 
-                enhance user experiences, and create lasting value in an ever-evolving digital landscape.
+              To empower businesses by delivering creative design and digital strategies that fuel growth, engagement, and lasting impact. We are committed to quality, innovation, and creating meaningful brand experiences that resonate globally.
               </p>
-              <p className={`text-base sm:text-lg leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                We believe technology should be accessible, intuitive, and transformative. 
-                Our mission is to bridge the gap between complex digital challenges and 
-                simple, effective solutions.
-              </p>
+              
             </div>
             <div className={`${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-2xl p-6 sm:p-8 text-white shadow-xl`}>
               <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Our Vision</h3>
               <p className="text-base sm:text-lg leading-relaxed text-white/90">
-                To be the leading digital innovation partner that businesses trust to 
-                navigate the future of technology, creating meaningful connections between 
-                brands and their audiences worldwide.
+              To become a global leader in design and digital solutions by transforming brands into enduring legacies through purposeful creativity, strategic execution, and client-focused partnerships.
               </p>
             </div>
           </div>
