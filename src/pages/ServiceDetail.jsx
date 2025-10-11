@@ -17,6 +17,14 @@ const ServiceDetail = () => {
     FaShoppingCart
   }
 
+  const pickWhyIcon = (text) => {
+    const t = String(text || '').toLowerCase()
+    if (t.includes('client') || t.includes('customer')) return FaUsers
+    if (t.includes('award')) return FaAward
+    if (t.includes('rating') || t.includes('star')) return FaStar
+    return FaStar
+  }
+
   const service = servicesData[id]
 
   if (!service) {
@@ -54,13 +62,19 @@ const ServiceDetail = () => {
                 <span className="text-sm font-medium text-primary">{service.title}</span>
               </div>
               
-              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+              {service.headerTagline && (
+                <p className="text-secondary font-semibold tracking-wide uppercase mb-2">{service.headerTagline}</p>
+              )}
+              <h1 className="text-4xl md:text-5xl font-bold text-primary mb-2">
                 {service.title}
               </h1>
               
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                {service.longDescription}
-              </p>
+              {service.overview && (
+                <p className={`text-lg mb-6 leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                  {service.overview}
+                </p>
+              )}
+              <p className={`text-xl mb-8 leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{service.longDescription}</p>
               
               <div className="flex flex-wrap gap-6">
                 <div className="flex items-center text-gray-600">
@@ -81,6 +95,7 @@ const ServiceDetail = () => {
                   return <IconComponent className="text-white text-6xl" />
                 })()}
               </div>
+              {/* Stats cards removed as requested; keeping only the static CTA and sidebar stats */}
             </div>
           </div>
         </div>
@@ -167,18 +182,19 @@ const ServiceDetail = () => {
               <div className={`border rounded-2xl p-6 ${isDarkMode ? 'bg-gray-800 border-gray-600' : 'bg-white border-gray-200'}`}>
                 <h3 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>Why Choose Us?</h3>
                 <div className="space-y-4">
-                  <div className="flex items-center">
-                    <FaUsers className="text-secondary mr-3" />
-                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-700'}>150+ Happy Clients</span>
-                  </div>
-                  <div className="flex items-center">
-                    <FaAward className="text-secondary mr-3" />
-                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-700'}>Award-Winning Team</span>
-                  </div>
-                  <div className="flex items-center">
-                    <FaStar className="text-secondary mr-3" />
-                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-700'}>4.9/5 Client Rating</span>
-                  </div>
+                  {(
+                    service.whyChoose && service.whyChoose.length > 0
+                      ? service.whyChoose
+                      : ['150+ Happy Clients', 'Award-Winning Team', '4.9/5 Client Rating']
+                  ).map((item, idx) => {
+                    const IconC = pickWhyIcon(item)
+                    return (
+                      <div key={idx} className="flex items-center">
+                        <IconC className="text-secondary mr-3" />
+                        <span className={isDarkMode ? 'text-gray-300' : 'text-gray-700'}>{item}</span>
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
             </div>

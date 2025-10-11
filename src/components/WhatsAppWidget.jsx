@@ -62,7 +62,7 @@ const WhatsAppWidget = () => {
       </div>
 
       {/* Mobile Responsive Adjustments */}
-      <style jsx>{`
+      <style>{`
         @media (max-width: 640px) {
           .fixed.bottom-6.right-6 {
             bottom: 1rem;

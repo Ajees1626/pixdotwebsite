@@ -167,7 +167,7 @@ const ScrollToTop = () => {
       </div>
 
       {/* Custom Styles */}
-      <style jsx>{`
+      <style>{`
         .animate-bounce {
           animation: bounce 1s infinite;
         }

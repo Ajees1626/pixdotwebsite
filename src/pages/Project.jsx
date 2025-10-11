@@ -183,7 +183,7 @@ The project features advanced functionality, responsive design, and seamless use
       </div>
       
       {/* Custom Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;

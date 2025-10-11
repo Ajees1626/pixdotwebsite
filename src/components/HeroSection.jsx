@@ -12,17 +12,17 @@ const HeroSection = () => {
   }, [])
   
   return (
-    <section className={`relative h-[90vh] flex items-center overflow-hidden ${isDarkMode ? 'bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800' : 'bg-gradient-to-br from-gray-50 to-white'}`}>
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-gray-50 to-white">
       {/* Subtle Background Elements */}
       <div className="absolute inset-0">
-        {/* Background tint overlay */}
-        <div className={`absolute inset-0 ${isDarkMode ? 'bg-gradient-to-br from-primary/20 to-secondary/20' : 'bg-gradient-to-br from-secondary/5 to-primary/5'}`}></div>
+        {/* Light gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5"></div>
         
         {/* Subtle floating shapes */}
-        <div className={`absolute top-20 left-10 w-20 h-20 rounded-full animate-pulse animate-float ${isDarkMode ? 'bg-secondary/20' : 'bg-secondary/10'}`}></div>
-        <div className={`absolute top-40 right-20 w-16 h-16 rounded-full animate-bounce animate-float-delayed ${isDarkMode ? 'bg-primary/20' : 'bg-primary/10'}`}></div>
-        <div className={`absolute bottom-40 left-20 w-12 h-12 rounded-full animate-pulse animate-float-slow ${isDarkMode ? 'bg-secondary/25' : 'bg-secondary/15'}`}></div>
-        <div className={`absolute bottom-20 right-10 w-24 h-24 rounded-full animate-bounce animate-float-reverse ${isDarkMode ? 'bg-primary/20' : 'bg-primary/10'}`}></div>
+        <div className="absolute top-20 left-10 w-20 h-20 bg-secondary/10 rounded-full animate-pulse animate-float"></div>
+        <div className="absolute top-40 right-20 w-16 h-16 bg-primary/10 rounded-full animate-bounce animate-float-delayed"></div>
+        <div className="absolute bottom-40 left-20 w-12 h-12 bg-secondary/15 rounded-full animate-pulse animate-float-slow"></div>
+        <div className="absolute bottom-20 right-10 w-24 h-24 bg-primary/10 rounded-full animate-bounce animate-float-reverse"></div>
       </div>
 
       <div className="container-custom relative z-10">
@@ -47,7 +47,7 @@ const HeroSection = () => {
                     className="w-full h-full object-cover rounded-2xl"
                   />
                   {/* Foreground bottom-to-top overlay (shadow) */}
-                  <div className={`pointer-events-none absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t ${isDarkMode ? 'from-black/40 via-black/20' : 'from-white/50 via-white/20'} to-transparent`}></div>
+                  <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-white/50 via-white/20 to-transparent"></div>
                 </div>
                 
                 {/* Lightbulb Icon */}
@@ -59,54 +59,54 @@ const HeroSection = () => {
           </div>
 
           {/* right Content */}
-          <div className={`${isDarkMode ? 'text-white' : 'text-primary'} transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-             
-             
-             {/* Main Heading */}
-             <h1 className={`text-5xl md:text-6xl lg:text-6xl font-bold leading-tight mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-               <span className="block animate-fadeInUp">
-                 We Don't Just Build <span className="text-secondary">Brands</span>
-               </span>
-               <span className={`block animate-fadeInUp delay-500 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
-                 We Build <span className="text-secondary">Legacies</span> 
-               </span>
-             </h1>
-             
-             
-             
-             {/* CTA Buttons */}
-             <div className={`flex flex-col sm:flex-row gap-6 mb-12 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-               <Link 
-                 to="/contact" 
-                 className="group bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center justify-center"
-               >
-                 <span>Get Free Consultation</span>
-                 <FaArrowRight className="ml-3 group-hover:translate-x-1 transition-transform" />
-               </Link>
-               <Link 
-                 to="/service" 
-                 className={`group border-2 border-secondary font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center ${isDarkMode ? 'bg-transparent text-white hover:bg-secondary hover:text-white' : 'bg-white text-primary hover:bg-secondary hover:text-white'}`}
-               >
-                 <span>Our Services</span>
-               </Link>
-             </div>
-             
-             {/* Stats Grid */}
-             <div className={`grid grid-cols-3 gap-8 transition-all duration-1000 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-               <div className="text-center group animate-counter">
-                 <div className="text-4xl md:text-5xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">500+</div>
-                 <div className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Projects Delivered</div>
-               </div>
-               <div className="text-center group animate-counter delay-200">
-                 <div className="text-4xl md:text-5xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">98%</div>
-                 <div className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Success Rate</div>
-               </div>
-               <div className="text-center group animate-counter delay-400">
-                 <div className="text-4xl md:text-5xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
-                 <div className={`text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Support</div>
-               </div>
-             </div>
-           </div>
+          <div className={`text-primary transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+           
+            
+            {/* Main Heading */}
+            <h1 className={`text-5xl md:text-6xl lg:text-6xl font-bold leading-tight mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <span className="block animate-fadeInUp">
+                We Don't Just Build <span className="text-secondary">Brands</span>
+              </span>
+              <span className="block text-primary animate-fadeInUp delay-500">
+                We Build <span className="text-secondary">Legacies</span> 
+              </span>
+            </h1>
+            
+            
+            
+            {/* CTA Buttons */}
+            <div className={`flex flex-col sm:flex-row gap-6 mb-12 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <Link 
+                to="/contact" 
+                className="group bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center justify-center"
+              >
+                <span>Get Free Consultation</span>
+                <FaArrowRight className="ml-3 group-hover:translate-x-1 transition-transform" />
+              </Link>
+              <Link 
+                to="/service" 
+                className="group bg-white border-2 border-secondary hover:bg-secondary hover:text-white text-primary font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 inline-flex items-center justify-center"
+              >
+                <span>Our Services</span>
+              </Link>
+            </div>
+            
+            {/* Stats Grid */}
+            <div className={`grid grid-cols-3 gap-8 transition-all duration-1000 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+              <div className="text-center group animate-counter">
+                <div className="text-4xl md:text-5xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">500+</div>
+                <div className="text-sm text-gray-600 font-medium">Projects Delivered</div>
+              </div>
+              <div className="text-center group animate-counter delay-200">
+                <div className="text-4xl md:text-5xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">98%</div>
+                <div className="text-sm text-gray-600 font-medium">Success Rate</div>
+              </div>
+              <div className="text-center group animate-counter delay-400">
+                <div className="text-4xl md:text-5xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">24/7</div>
+                <div className="text-sm text-gray-600 font-medium">Support</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       

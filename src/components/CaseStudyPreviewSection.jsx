@@ -100,7 +100,7 @@ const CaseStudyPreviewSection = () => {
       </div>
       
       {/* Custom Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;

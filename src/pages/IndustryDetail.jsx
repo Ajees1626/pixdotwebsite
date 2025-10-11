@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { FaArrowLeft, FaCheck, FaHospital, FaUniversity, FaShoppingCart, FaGraduationCap, FaHome, FaIndustry, FaUsers, FaChartLine, FaAward, FaRocket, FaLock, FaMobile, FaGlobe } from 'react-icons/fa'
+import { FaArrowLeft, FaCheck, FaHospital, FaUniversity, FaShoppingCart, FaGraduationCap, FaHome, FaIndustry, FaUtensils, FaUsers, FaChartLine, FaAward, FaRocket, FaLock, FaMobile, FaGlobe } from 'react-icons/fa'
 import { useTheme } from '../contexts/ThemeContext'
 import industriesData from '../data/industriesData.json'
 
@@ -15,7 +15,8 @@ const IndustryDetail = () => {
     FaShoppingCart,
     FaGraduationCap,
     FaHome,
-    FaIndustry
+    FaIndustry,
+    FaUtensils
   }
 
   const industry = industriesData[id]
@@ -98,7 +99,7 @@ const IndustryDetail = () => {
               <div>
                 <h2 className={`text-3xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-8`}>Our Services</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {industry.services.map((service, index) => (
+                  {(industry.services || []).map((service, index) => (
                     <div key={index} className={`flex items-center ${isDarkMode ? 'bg-gray-700' : 'bg-gray-50'} rounded-lg p-4`}>
                       <FaCheck className="text-secondary mr-3 flex-shrink-0" />
                       <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} font-medium`}>{service}</span>
@@ -111,7 +112,7 @@ const IndustryDetail = () => {
               <div>
                 <h2 className={`text-3xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-8`}>Key Features</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {industry.features.map((feature, index) => (
+                  {(industry.features || []).map((feature, index) => (
                     <div key={index} className="flex items-center">
                       <FaLock className="text-secondary mr-3 flex-shrink-0" />
                       <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} font-medium`}>{feature}</span>
@@ -124,7 +125,7 @@ const IndustryDetail = () => {
               <div>
                 <h2 className={`text-3xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-8`}>Benefits</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {industry.benefits.map((benefit, index) => (
+                  {(industry.benefits || []).map((benefit, index) => (
                     <div key={index} className="flex items-center">
                       <FaAward className="text-secondary mr-3 flex-shrink-0" />
                       <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-700'} font-medium`}>{benefit}</span>
@@ -137,7 +138,7 @@ const IndustryDetail = () => {
               <div>
                 <h2 className={`text-3xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-8`}>Success Stories</h2>
                 <div className="space-y-6">
-                  {industry.caseStudies.map((study, index) => (
+                  {(industry.caseStudies || []).map((study, index) => (
                     <div key={index} className={`${isDarkMode ? 'bg-gray-700' : 'bg-gray-50'} rounded-2xl p-6`}>
                       <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2`}>{study.title}</h3>
                       <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-4`}>{study.description}</p>
@@ -157,7 +158,7 @@ const IndustryDetail = () => {
               <div className={`${isDarkMode ? 'bg-gray-700' : 'bg-gray-50'} rounded-2xl p-6`}>
                 <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-4`}>Technologies Used</h3>
                 <div className="flex flex-wrap gap-2">
-                  {industry.technologies.map((tech, index) => (
+                  {(industry.technologies || []).map((tech, index) => (
                     <span key={index} className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">
                       {tech}
                     </span>

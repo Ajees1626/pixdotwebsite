@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaHospital, FaUniversity, FaShoppingCart, FaGraduationCap, FaHome, FaIndustry } from 'react-icons/fa'
+import { FaHospital, FaUniversity, FaShoppingCart, FaGraduationCap, FaHome, FaIndustry,FaUtensils } from 'react-icons/fa'
 import industriesData from '../data/industriesData.json'
 import { useTheme } from '../contexts/ThemeContext'
 
@@ -17,7 +17,8 @@ const Industrie = () => {
     FaShoppingCart,
     FaGraduationCap,
     FaHome,
-    FaIndustry
+    FaIndustry,
+    FaUtensils
   }
 
   const stats = [

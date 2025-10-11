@@ -14,12 +14,10 @@ const AboutPreviewSection = () => {
               About <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Pixdot</span>
             </h2>
             <p className={`text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-6 leading-relaxed`}>
-              We are a team of passionate innovators dedicated to transforming businesses 
-              through cutting-edge digital solutions and exceptional user experiences.
+            At Pixdot, we deliver creative and strategic branding, digital, and business development solutions that drive real results. 
             </p>
             <p className={`text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-8 leading-relaxed`}>
-              With over 500 successful projects and 150+ happy clients, we have established 
-              ourselves as a trusted partner for digital transformation.
+            With over 1,000 projects and 500+ satisfied clients, we build brands that inspire trust and create lasting impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to="/about" className="btn-primary">
@@ -37,25 +35,25 @@ const AboutPreviewSection = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white font-bold">✓</span>
+                    <span className="text-secondary font-bold">✓</span>
                   </div>
                   <span>Expert team with 10+ years experience</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white font-bold">✓</span>
+                    <span className="text-secondary font-bold">✓</span>
                   </div>
                   <span>Cutting-edge technology stack</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white font-bold">✓</span>
+                    <span className="text-secondary font-bold">✓</span>
                   </div>
                   <span>24/7 support and maintenance</span>
                 </div>
                 <div className="flex items-center">
                   <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-white font-bold">✓</span>
+                    <span className="text-secondary font-bold">✓</span>
                   </div>
                   <span>Proven track record of success</span>
                 </div>

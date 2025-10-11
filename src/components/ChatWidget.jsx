@@ -248,7 +248,7 @@ const ChatWidget = () => {
       )}
 
       {/* Mobile Responsive Adjustments */}
-      <style jsx>{`
+      <style>{`
         @media (max-width: 750px) {
           .fixed.bottom-40.right-6 {
             bottom: 1rem;

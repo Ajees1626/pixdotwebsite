@@ -49,10 +49,10 @@ const ServicesSection = () => {
             <span className="text-secondary font-semibold text-sm">Our Services</span>
           </div>
           <h2 className={`text-4xl md:text-5xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6 animate-fadeInUp delay-200`}>
-            Digital Solutions That <span className="text-gradient">Drive Results</span>
+           Solutions That <span className="text-gradient">Drive Results</span>
           </h2>
           <p className={`text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto animate-fadeInUp delay-400`}>
-            We provide comprehensive digital solutions to help your business thrive in the modern world.
+            We provide comprehensive solutions to help your business thrive in the modern world.
           </p>
         </div>
 
@@ -151,7 +151,7 @@ const ServicesSection = () => {
       </div>
       
       {/* Custom Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;
