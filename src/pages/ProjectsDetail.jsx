@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { FaArrowLeft, FaExternalLinkAlt, FaCalendarAlt, FaUser, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { FaArrowLeft, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { useTheme } from '../contexts/ThemeContext'
 import projectsData from '../data/projectsData.json'
 
@@ -9,7 +9,6 @@ const ProjectsDetail = () => {
   const navigate = useNavigate()
   const [selectedProject, setSelectedProject] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
-  const [selectedVariety, setSelectedVariety] = useState(null)
   const { isDarkMode } = useTheme()
 
   const openModal = (project) => {
@@ -42,23 +41,11 @@ const ProjectsDetail = () => {
 
   const categoryData = projectsData[categoryId]
   
-  // Handle categories with varieties
+  // Build a single project list. If varieties exist, flatten them into one array.
   let projects = []
-  let currentVariety = null
-  
   if (categoryData.varieties) {
-    if (selectedVariety && categoryData.varieties[selectedVariety]) {
-      currentVariety = categoryData.varieties[selectedVariety]
-      projects = currentVariety.projects
-    } else {
-      // Default to first variety if none selected
-      const firstVarietyKey = Object.keys(categoryData.varieties)[0]
-      currentVariety = categoryData.varieties[firstVarietyKey]
-      projects = currentVariety.projects
-      setSelectedVariety(firstVarietyKey)
-    }
+    projects = Object.values(categoryData.varieties).flatMap(v => v.projects)
   } else {
-    // Handle categories without varieties
     projects = categoryData.projects || []
   }
 
@@ -75,13 +62,8 @@ const ProjectsDetail = () => {
     setSelectedProject(projects[newIndex])
   }
 
-  // Set default variety for categories with varieties
-  useEffect(() => {
-    if (projectsData[categoryId]?.varieties && !selectedVariety) {
-      const firstVarietyKey = Object.keys(projectsData[categoryId].varieties)[0]
-      setSelectedVariety(firstVarietyKey)
-    }
-  }, [categoryId, selectedVariety])
+  // No variety selection UI; nothing to initialize
+  useEffect(() => {}, [categoryId])
 
   // Keyboard navigation
   useEffect(() => {
@@ -130,42 +112,7 @@ const ProjectsDetail = () => {
           </p>
         </div>
 
-        {/* Variety Selection */}
-        {categoryData.varieties && (
-          <div className="mb-12">
-            <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold text-primary mb-4">Choose {categoryData.category} Type</h2>
-              <p className="text-gray-600">Select the type of {categoryData.category.toLowerCase()} you're interested in</p>
-            </div>
-            
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              {Object.entries(categoryData.varieties).map(([varietyKey, variety]) => (
-                <button
-                  key={varietyKey}
-                  onClick={() => setSelectedVariety(varietyKey)}
-                  className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
-                    selectedVariety === varietyKey
-                      ? 'bg-gradient-to-r from-primary to-secondary text-white shadow-lg transform scale-105'
-                      : 'bg-white text-gray-700 border-2 border-gray-200 hover:border-secondary hover:text-secondary hover:shadow-md'
-                  }`}
-                >
-                  {variety.name}
-                </button>
-              ))}
-            </div>
-
-            {/* Current Variety Description */}
-            {currentVariety && (
-              <div className="text-center">
-                <div className="inline-flex items-center bg-white rounded-full px-6 py-3 shadow-lg border border-gray-100">
-                  <span className="text-primary font-semibold">{currentVariety.name}</span>
-                  <span className="mx-2 text-gray-400">•</span>
-                  <span className="text-gray-600 text-sm">{currentVariety.description}</span>
-                </div>
-              </div>
-            )}
-          </div>
-        )}
+        {/* Variety Selection removed - showing all projects together */}
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 mb-12">
@@ -196,9 +143,7 @@ const ProjectsDetail = () => {
         <div className="text-center">
           <div className="inline-flex items-center bg-white rounded-full px-8 py-4 shadow-lg border border-gray-100">
             <span className="text-3xl font-bold text-primary mr-3">{projects.length}</span>
-            <span className="text-gray-600 font-semibold">
-              {currentVariety ? `${currentVariety.name} Projects` : `${categoryData.category} Projects`}
-            </span>
+            <span className="text-gray-600 font-semibold">{categoryData.category} Projects</span>
           </div>
         </div>
       </div>

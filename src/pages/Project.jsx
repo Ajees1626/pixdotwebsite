@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { FaArrowLeft, FaCalendar, FaUser, FaTag, FaExternalLinkAlt } from 'react-icons/fa'
+import { FaArrowLeft } from 'react-icons/fa'
 
 const Project = () => {
   const { id } = useParams()
@@ -138,4 +138,3 @@ const Project = () => {
 }
 
 export default Project
-

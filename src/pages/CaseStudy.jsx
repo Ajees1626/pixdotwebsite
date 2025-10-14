@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowRight, FaExternalLinkAlt, FaChartLine, FaUsers, FaClock, FaDollarSign, FaChevronLeft, FaChevronRight, FaTimes, FaEye } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import { useTheme } from '../contexts/ThemeContext'
 import caseStudiesData from '../data/caseStudiesData.json'
 
 const CaseStudy = () => {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [currentPage, setCurrentPage] = useState(1)
   const [selectedCase, setSelectedCase] = useState(null)
-  const { isDarkMode } = useTheme()
+  const [isDarkMode, setIsDarkMode] = useState(false)
   const itemsPerPage = 9
 
   // Get all case studies from all categories
@@ -35,6 +34,11 @@ const CaseStudy = () => {
     setCurrentPage(1)
   }, [selectedCategory])
 
+  // Toggle dark mode
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode)
+  }
+
   const categories = [
     { key: 'all', name: 'All Cases', count: allCaseStudies.length },
     { key: 'logo', name: 'Logo Design', count: caseStudiesData.logo?.caseStudies.length || 0 },
@@ -45,16 +49,27 @@ const CaseStudy = () => {
   ]
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'dark' : ''}`}>
       {/* Hero Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container-custom relative z-10">
+      <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-gradient-primary'} text-white`}>
+        <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="flex justify-end mb-4">
+              <button
+                onClick={toggleDarkMode}
+                className={`px-4 py-2 rounded-full transition-all duration-300 ${
+                  isDarkMode 
+                    ? 'bg-white text-gray-900 hover:bg-gray-100' 
+                    : 'bg-white/20 text-white hover:bg-white/30'
+                }`}
+              >
+                {isDarkMode ? '☀️ Light' : '🌙 Dark'}
+              </button>
+            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Case <span className="text-white">Studies</span>
+              Case <span className="text-accent">Studies</span>
             </h1>
-            <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
               Real-world success stories showcasing how we've helped businesses 
               transform and achieve remarkable results.
             </p>
@@ -96,7 +111,7 @@ const CaseStudy = () => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className={`text-3xl md:text-4xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
-              Success <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Stories</span>
+              Success <span className="text-gradient">Stories</span>
             </h2>
             <p className={`text-xl max-w-3xl mx-auto ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
               Explore our portfolio of successful projects across various industries 
@@ -110,9 +125,9 @@ const CaseStudy = () => {
                 key={caseStudy.id}
                 className={`rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 border overflow-hidden cursor-pointer group ${
                   isDarkMode 
-                    ? 'bg-gray-800/50 border-gray-700 hover:border-secondary' 
-                    : 'bg-white border-gray-200 hover:border-secondary'
-                } hover:shadow-2xl`}
+                    ? 'bg-gray-800 border-gray-700 hover:border-secondary' 
+                    : 'bg-white border-gray-100 hover:border-secondary'
+                }`}
                 onClick={() => setSelectedCase(caseStudy)}
                 style={{
                   animationDelay: `${index * 100}ms`,
@@ -132,7 +147,7 @@ const CaseStudy = () => {
                   </div>
                   <div className="absolute top-4 right-4">
                     <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                      isDarkMode ? 'bg-gray-700/80 text-gray-300' : 'bg-white/90 text-gray-700'
+                      isDarkMode ? 'bg-gray-700 text-gray-300' : 'bg-white/90 text-gray-700'
                     }`}>
                       {caseStudy.category}
                     </span>
@@ -219,8 +234,8 @@ const CaseStudy = () => {
       {/* Case Study Popup Modal */}
       {selectedCase && (
         <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-          <div className={`rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border ${
-            isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'
+          <div className={`rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto ${
+            isDarkMode ? 'bg-gray-800' : 'bg-white'
           }`}>
             {/* Banner Image */}
             <div className="relative">
@@ -236,7 +251,7 @@ const CaseStudy = () => {
               </div>
               <div className="absolute top-4 right-4">
                 <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                  isDarkMode ? 'bg-gray-700/80 text-gray-300' : 'bg-white/90 text-gray-700'
+                  isDarkMode ? 'bg-gray-700 text-gray-300' : 'bg-white/90 text-gray-700'
                 }`}>
                   {selectedCase.category}
                 </span>
@@ -297,10 +312,10 @@ const CaseStudy = () => {
               </Link>
                 <button
                   onClick={() => setSelectedCase(null)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 border ${
+                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                   isDarkMode
-                    ? 'bg-gray-700 text-white hover:bg-gray-600 border-gray-600'
-                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300 border-gray-300'
+                    ? 'bg-gray-700 text-white hover:bg-gray-600'
+                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
                 }`}
               >
                 <FaTimes className="mr-2" />
@@ -312,34 +327,33 @@ const CaseStudy = () => {
       )}
 
       {/* Stats Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container-custom relative z-10">
+      <section className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-gradient-primary'} text-white`}>
+        <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Our <span className="text-white">Impact</span>
+              Our <span className="text-accent">Impact</span>
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               The numbers speak for themselves - our solutions deliver measurable results.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className={`text-center ${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">90+</div>
-              <div className="text-lg text-white/90">Case Studies</div>
+            <div className="text-center transform hover:scale-105 transition-transform duration-300">
+              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">90+</div>
+              <div className="text-lg text-gray-200">Case Studies</div>
             </div>
-            <div className={`text-center ${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">150+</div>
-              <div className="text-lg text-white/90">Happy Clients</div>
+            <div className="text-center transform hover:scale-105 transition-transform duration-300">
+              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">150+</div>
+              <div className="text-lg text-gray-200">Happy Clients</div>
             </div>
-            <div className={`text-center ${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">98%</div>
-              <div className="text-lg text-white/90">Success Rate</div>
+            <div className="text-center transform hover:scale-105 transition-transform duration-300">
+              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">98%</div>
+              <div className="text-lg text-gray-200">Success Rate</div>
             </div>
-            <div className={`text-center ${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">$50M+</div>
-              <div className="text-lg text-white/90">Client ROI Generated</div>
+            <div className="text-center transform hover:scale-105 transition-transform duration-300">
+              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">$50M+</div>
+              <div className="text-lg text-gray-200">Client ROI Generated</div>
             </div>
           </div>
         </div>
@@ -348,30 +362,29 @@ const CaseStudy = () => {
       {/* CTA Section */}
       <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
         <div className="container-custom">
-          <div className={`${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-3xl p-8 md:p-12 text-center text-white shadow-xl relative overflow-hidden`}>
-            <div className="absolute inset-0 bg-black/10"></div>
-            <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Be Our Next Success Story?
-              </h2>
-              <p className="text-xl mb-8 text-white/90">
-                Let's discuss your project and create a custom solution that delivers exceptional results.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact" className={`${isDarkMode ? 'bg-white text-primary hover:bg-gray-100' : 'bg-white text-primary hover:bg-gray-100'} font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105`}>
-                  Start Your Project
-                </Link>
-                <Link to="/solutions" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
-                  Explore Solutions
-                </Link>
-              </div>
+          <div className={`rounded-3xl p-8 md:p-12 text-center text-white ${
+            isDarkMode ? 'bg-gradient-to-r from-gray-800 to-gray-700' : 'bg-gradient-secondary'
+          }`}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Ready to Be Our Next Success Story?
+            </h2>
+            <p className="text-xl mb-8 opacity-90">
+              Let's discuss your project and create a custom solution that delivers exceptional results.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link to="/contact" className="btn-primary bg-white text-primary hover:bg-gray-100">
+                Start Your Project
+              </Link>
+              <Link to="/solutions" className="btn-outline border-white text-white hover:bg-white hover:text-primary">
+                Explore Solutions
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* CSS Animations */}
-      <style>{`
+      <style jsx>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;

@@ -153,7 +153,7 @@ const ProjectsSection = () => {
                   </div>
 
                   {/* Hover Effect Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ const ProjectsSection = () => {
       </div>
       
       {/* Custom Animations */}
-      <style>{`
+      <style jsx>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;
