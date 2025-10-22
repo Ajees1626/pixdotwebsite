@@ -9,76 +9,52 @@ const ReviewsSection = () => {
   const reviews = [
     {
       name: 'KarthiKeyan K',
-      company: 'TechCorp Inc.',
-      role: 'CEO',
+      company: 'Velan Bhavan & Velan Non Veg Restaurant',
+      role: 'Owner',
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face',
       rating: 5,
-      text: 'Pixdot transformed our digital presence completely. Their expertise and dedication exceeded our expectations.'
+      text: 'We are very happy with the digital marketing, social media management, and poster design service by Pixdot – chennai and Tenkasi. Their creative work for Velan Bhavan & Velan Non Veg Restaurant is excellent. We truly recommend Pixdot to other businesses looking to grow online with professional marketing support.'
     },
     {
-      name: 'Michael Chen',
-      company: 'StartupXYZ',
-      role: 'Founder',
+      name: 'Pradeep kumar',
+      company: 'Velan Sweets & Bakery',
+      role: 'Owner',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
       rating: 5,
-      text: 'Outstanding work! The team delivered a world-class solution that helped us scale our business rapidly.'
+      text: 'We are very happy with the social media management and poster design service provided by Pixdot for our brand Velan Sweets & Bakery – Surandai, near Tenkasi.Their creative team designs attractive and eye-catching posters that perfectly match our brand identity.'
     },
     {
-      name: 'Emily Rodriguez',
-      company: 'Global Solutions',
-      role: 'CTO',
+      name: 'Jaabir Mohamed',
+      company: 'National College',
+      role: 'proffessor head of the department',
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
       rating: 5,
-      text: 'Professional, innovative, and results-driven. Pixdot is our go-to partner for all digital initiatives.'
+      text: 'Quick people to get the work done as we expect. Promises delivered with good leads. They made our promotions easy and reachable with elite posters and videos. Happy to seek their services again.'
     },
     {
-      name: 'David Thompson',
-      company: 'InnovateLab',
-      role: 'Product Manager',
+      name: 'JAHIR HUSSAIN',
+      company: 'Crescent Halwa',
+      role: 'Owner',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
       rating: 5,
-      text: 'Exceptional service and incredible attention to detail. They brought our vision to life perfectly.'
+      text: 'We’re very happy with the packaging design and social media marketing support provided by Pixdot. They understood our brand and created designs that reflect our tradition beautifully. Their team made the process smooth and professional. We highly recommend their services — Crescent Halwa'
     },
     {
-      name: 'Lisa Wang',
-      company: 'Digital Dynamics',
-      role: 'Marketing Director',
+      name: 'Azhagi Homemade products',
+      company: 'Azhagi Homemade products',
+      role: 'Owner',
       image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face',
       rating: 5,
-      text: 'The team at Pixdot is simply amazing. They delivered beyond our expectations and on time.'
+      text: 'We are very satisfied with the video editing, YouTube handling, and digital marketing services provided by Pixdot. Their team is creative, professional, and understands our brand’s needs perfectly. With their support, we’ve seen better audience reach and engagement. Highly recommend Pixdot for anyone looking for complete digital solutions! -Azhagi '
     },
     {
-      name: 'James Wilson',
-      company: 'FutureTech',
-      role: 'Operations Director',
+      name: 'Bhavani Gopinath',
+      company: 'the brand box',
+      role: 'Owner',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face',
       rating: 5,
-      text: 'Outstanding results and seamless collaboration. Pixdot made our digital transformation effortless.'
-    },
-    {
-      name: 'Maria Garcia',
-      company: 'CloudFirst',
-      role: 'VP of Engineering',
-      image: 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=100&h=100&fit=crop&crop=face',
-      rating: 5,
-      text: 'Technical excellence and creative solutions. Pixdot delivered exactly what we needed and more.'
-    },
-    {
-      name: 'Robert Kim',
-      company: 'NextGen Solutions',
-      role: 'CEO',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
-      rating: 5,
-      text: 'Professional, reliable, and innovative. Pixdot is the best digital partner we have ever worked with.'
-    },
-    {
-      name: 'Jennifer Lee',
-      company: 'Smart Systems',
-      role: 'CTO',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
-      rating: 5,
-      text: 'Incredible work quality and customer service. They truly understand our business needs.'
-    }
+      text: 'Working with Pixdot team for my Store Branding nd Marketing. Professional Team .Their work was excellent beyond my expectations. Very much comfortable for communication nd approchable . Happy with their work . Much recommended for businesses looking to grow online ..'
+    } 
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
