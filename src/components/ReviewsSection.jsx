@@ -8,7 +8,7 @@ const ReviewsSection = () => {
   
   const reviews = [
     {
-      name: 'Sarah Johnson',
+      name: 'KarthiKeyan K',
       company: 'TechCorp Inc.',
       role: 'CEO',
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face',

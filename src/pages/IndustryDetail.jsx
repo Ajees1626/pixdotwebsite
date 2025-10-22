@@ -8,6 +8,12 @@ const IndustryDetail = () => {
   const { id } = useParams()
   const { isDarkMode } = useTheme()
   
+  const formatMetric = (value) => {
+    const s = String(value || '')
+    const match = s.match(/[+]?\d+\+?%?/)
+    return match ? match[0] : s
+  }
+  
   // Icon mapping for dynamic icon rendering
   const iconMap = {
     FaHospital,
@@ -67,15 +73,15 @@ const IndustryDetail = () => {
               <div className="flex flex-wrap gap-6">
                 <div className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   <FaRocket className="mr-2 text-secondary" />
-                  <span className="font-semibold">{industry.projects} Projects</span>
+                  <span className="font-bold text-xl">{formatMetric(industry.projects)}</span>
                 </div>
                 <div className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   <FaUsers className="mr-2 text-secondary" />
-                  <span className="font-semibold">{industry.clients}</span>
+                  <span className="font-bold text-xl">{formatMetric(industry.clients)}</span>
                 </div>
                 <div className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                   <FaChartLine className="mr-2 text-secondary" />
-                  <span className="font-semibold">{industry.growth} Growth</span>
+                  <span className="font-bold text-xl">{formatMetric(industry.growth)}</span>
                 </div>
               </div>
             </div>
@@ -154,17 +160,7 @@ const IndustryDetail = () => {
             
             {/* Sidebar */}
             <div className="space-y-8">
-              {/* Technologies */}
-              <div className={`${isDarkMode ? 'bg-gray-700' : 'bg-gray-50'} rounded-2xl p-6`}>
-                <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-4`}>Technologies Used</h3>
-                <div className="flex flex-wrap gap-2">
-                  {(industry.technologies || []).map((tech, index) => (
-                    <span key={index} className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
+             
               
               {/* CTA */}
               <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-6 text-white text-center">

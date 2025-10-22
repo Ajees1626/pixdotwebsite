@@ -61,7 +61,7 @@ const ClientLogosSection = () => {
             <span className="text-secondary font-semibold text-sm">Our Partners</span>
           </div>
           <h2 className={`text-4xl md:text-5xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6`}>
-            Trusted by <span className="text-gradient">30+ Companies</span>
+            Trusted by <span className="text-gradient">150+ Companies</span>
           </h2>
           <p className={`text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
             We're proud to work with industry leaders, innovative startups, and growing businesses worldwide.
@@ -173,24 +173,7 @@ const ClientLogosSection = () => {
        
 
         {/* Stats Section */}
-        <div className="text-center mt-16">
-          <div className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-3xl p-8 shadow-lg border transition-colors duration-300`}>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className={`text-4xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2`}>30+</div>
-                <div className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} font-semibold`}>Happy Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-secondary mb-2">100%</div>
-                <div className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} font-semibold`}>Satisfaction Rate</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-secondary mb-2">24/7</div>
-                <div className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} font-semibold`}>Support Available</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
 
       {/* Custom CSS for animations */}

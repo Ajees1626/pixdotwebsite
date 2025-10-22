@@ -196,31 +196,7 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Newsletter Section */}
-            <div className={`border-t ${isDarkMode ? 'border-white/20' : 'border-white/30'} py-12`}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div className={`transition-all duration-1000 delay-800 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                  <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">
-                    Stay Updated
-                  </h3>
-                  <p className={`${isDarkMode ? 'text-gray-300' : 'text-white/90'} text-lg`}>
-                    Subscribe to our newsletter for the latest updates, tips, and industry insights.
-                  </p>
-                </div>
-                <div className={`transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                  <div className="flex flex-col sm:flex-row gap-4">
-                    <input
-                      type="email"
-                      placeholder="Enter your email"
-                      className={`flex-1 px-6 py-4 rounded-full ${isDarkMode ? 'bg-white/10' : 'bg-white/20'} backdrop-blur-sm border ${isDarkMode ? 'border-white/20' : 'border-white/30'} text-white ${isDarkMode ? 'placeholder-gray-300' : 'placeholder-white/70'} focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent`}
-                    />
-                    <button className="px-8 py-4 bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 rounded-full font-semibold transition-all duration-300 transform hover:scale-105">
-                      Subscribe
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
 
             {/* Bottom Footer */}
             <div className={`border-t ${isDarkMode ? 'border-white/20' : 'border-white/30'} py-8`}>

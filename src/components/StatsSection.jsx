@@ -7,9 +7,9 @@ const StatsSection = () => {
   const [countedStats, setCountedStats] = useState([0, 0, 0, 0])
   
   const stats = [
-    { number: 500, label: 'Projects Completed', suffix: '+' },
-    { number: 150, label: 'Happy Clients', suffix: '+' },
-    { number: 98, label: 'Success Rate', suffix: '%' },
+    { number: 1000, label: 'Projects Completed', suffix: '+' },
+    { number: 350, label: 'Happy Clients', suffix: '+' },
+    { number: 87, label: 'Success Rate', suffix: '%' },
     { number: 24, label: 'Support Available', suffix: '/7' }
   ]
 

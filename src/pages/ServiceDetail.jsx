@@ -154,18 +154,19 @@ const ServiceDetail = () => {
             
             {/* Sidebar */}
             <div className="space-y-8">
-              {/* Technologies */}
-              <div className={`rounded-2xl p-6 ${isDarkMode ? 'bg-gray-700' : 'bg-gray-50'}`}>
-                <h3 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>Technologies Used</h3>
-                <div className="flex flex-wrap gap-2">
-                  {service.technologies.map((tech, index) => (
-                    <span key={index} className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {tech}
-                    </span>
-                  ))}
+              {/* Technical Tools */}
+              {Array.isArray(service.technicalTools) && service.technicalTools.length > 0 && (
+                <div className={`rounded-2xl p-6 ${isDarkMode ? 'bg-gray-700' : 'bg-gray-50'}`}>
+                  <h3 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>Technical Tools</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {service.technicalTools.map((tool, index) => (
+                      <span key={index} className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-medium">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              
+              )}
               {/* CTA */}
               <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-6 text-white text-center">
                 <h3 className="text-xl font-bold mb-4">Ready to Get Started?</h3>

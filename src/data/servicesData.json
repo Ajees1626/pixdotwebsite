@@ -4,7 +4,7 @@
     "icon": "FaRocket",
     "title": "Brand & Creative",
     "headerTagline": "Build a memorable brand",
-    "description": "Custom websites and web applications built with modern technologies.",
+    "description": "We create unique brand designs that make your business look professional and memorable.",
     "overview": "End‑to‑end creative services to craft a distinct, consistent and scalable brand presence across every touchpoint.",
     "longDescription": "Elevate your business identity with our complete brand and creative solutions. We design and develop impactful visual identities, compelling brand messaging, and cohesive creative assets that resonate with your audience. From logos and packaging to marketing collateral and campaigns, we ensure your brand stands out and leaves a lasting impression. Our approach focuses on creativity, consistency, and measurable impact.",
     "features": [
@@ -19,8 +19,15 @@
       "Campaign Creative Development",
       "Print & Digital Assets"
     ],
-    "technologies": ["React", "Vue.js", "Node.js", "MongoDB", "PostgreSQL", "AWS", "Docker"],
-    "price": "Starting at $1,500",
+    "technicalTools": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Figma",
+      "Adobe After Effects",
+      "Canva"
+    ],
+    "price": "Starting at $120",
     "duration": "Ongoing",
     "color": "from-blue-500 to-blue-600",
     "bgColor": "bg-blue-50",
@@ -51,7 +58,7 @@
     "icon": "FaMobile",
     "title": "Digital Marketing",
     "headerTagline": "Reach users everywhere",
-    "description": "Native and cross-platform mobile applications for iOS and Android.",
+    "description": "We promote your business online to reach more people and get real results.",
     "overview": "Design, build and ship high‑performance mobile apps with native feel, modern stacks and robust CI/CD.",
     "longDescription": "Accelerate your business growth with our comprehensive digital marketing services. We create and execute data-driven strategies that reach your target audience, boost brand visibility, and drive qualified leads and sales. Our multi-channel approach ensures your message reaches customers everywhere, while analytics provide insights for continuous improvement.",
     "features": [
@@ -66,8 +73,15 @@
       "A/B Testing",
       "Conversion Optimization"
     ],
-    "technologies": ["Google Ads", "Facebook Ads", "HubSpot", "Mailchimp", "Hootsuite", "Google Analytics"],
-    "price": "Starting at $1,200",
+    "technicalTools": [
+      "Google Ads",
+      "Facebook Ads",
+      "HubSpot",
+      "Mailchimp",
+      "Hootsuite",
+      "Google Analytics"
+    ],
+    "price": "Starting at $180",
     "duration": "Ongoing",
     "color": "from-green-500 to-green-600",
     "bgColor": "bg-green-50",
@@ -98,7 +112,7 @@
     "icon": "FaSearch",
     "title": "Packaging Design",
     "headerTagline": "Be found first",
-    "description": "Comprehensive search engine optimization to improve your visibility.",
+    "description": "We design attractive packaging that catches attention and increases product sales.",
     "overview": "Holistic SEO programs that increase qualified traffic, improve rankings and compound long‑term growth.",
     "longDescription": "Transform your product’s shelf appeal with our innovative packaging design services. We craft eye-catching, functional, and brand-aligned packaging that attracts customers and enhances brand perception. From concept to final design, we focus on creativity, usability, and market impact, ensuring your product stands out and drives sales.",
     "features": [
@@ -112,8 +126,14 @@
       "Print-Ready File Preparation",
       "Design Revisions & Final Delivery"
     ],
-    "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign", "CorelDRAW", "3D Mockup Tools (ArtiosCAD, Esko)"],
-    "price": "Starting at $800/month",
+    "technicalTools": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "CorelDRAW",
+      "3D Mockup Tools (ArtiosCAD, Esko)"
+    ],
+    "price": "Starting at $60",
     "duration": "Ongoing",
     "color": "from-purple-500 to-purple-600",
     "bgColor": "bg-purple-50",
@@ -144,7 +164,7 @@
     "icon": "FaPenFancy",
     "title": "Website Development",
     "headerTagline": "Delight users, drive results",
-    "description": "Beautiful, user-centered designs that convert visitors into customers.",
+    "description": "We build fast, modern, and easy-to-use websites for your business.",
     "overview": "Research‑driven product design that blends aesthetics and usability to increase conversions and retention.",
     "longDescription": "Build a strong online presence with our expert website development services. We create fast, secure, and user-friendly websites tailored to your business goals. From responsive designs to seamless functionality, we deliver websites that engage visitors, enhance user experience, and drive conversions.",
     "features": [
@@ -159,8 +179,22 @@
       "Website Speed & Performance Optimization",
       "Security & Backup Solutions"
     ],
-    "technologies": ["HTML, CSS, JavaScript", "WordPress, Shopify, WooCommerce", "React, PHP, MySQL", "Figma, Adobe XD","Google Analytics, GTM"],
-    "price": "Starting at $1,000",
+    "technicalTools": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "WordPress",
+      "Shopify",
+      "E-Commerce",
+      "React",
+      "PHP",
+      "MySQL",
+      "Figma",
+      "Adobe XD",
+      "Google Analytics",
+      "GTM"
+    ],
+    "price": "Starting at $240",
     "duration": "Ongoing",
     "color": "from-pink-500 to-pink-600",
     "bgColor": "bg-pink-50",
@@ -191,7 +225,7 @@
     "icon": "FaBullhorn",
     "title": "App Development",
     "headerTagline": "Accelerate growth",
-    "description": "Data-driven marketing strategies to grow your business online.",
+    "description": "We create mobile apps that are simple, smart, and help your business grow.",
     "overview": "Integrated campaigns across paid, owned and earned media to scale awareness, leads and revenue.",
     "longDescription": "Turn your ideas into powerful mobile experiences with our end-to-end app development services. We design and build intuitive, high-performance mobile applications for iOS and Android that engage users, streamline business processes, and drive growth. Our solutions combine creativity, functionality, and scalability for maximum impact.",
     "features": [
@@ -206,8 +240,21 @@
       "Maintenance & Upgrades",
       "Performance Optimization"
     ],
-    "technologies": ["Google Analytics, App Store & Play Store Tools", "Figma, Adobe XD", "Firebase, Node.js, MySQ", "Swift, Kotlin, Flutter, React Native"],
-    "price": "Starting at $1,500/month",
+    "technicalTools": [
+      "Firebase",
+      "Node.js",
+      "MySQL",
+      "Swift",
+      "Kotlin",
+      "Flutter",
+      "React Native",
+      "Figma",
+      "Adobe XD",
+      "Google Analytics",
+      "App Store Connect",
+      "Google Play Console"
+    ],
+    "price": "Starting at $480",
     "duration": "Ongoing",
     "color": "from-orange-500 to-orange-600",
     "bgColor": "bg-orange-50",
@@ -238,7 +285,7 @@
     "icon": "FaShoppingCart",
     "title": "Personal Branding",
     "headerTagline": "Sell everywhere",
-    "description": "Complete e-commerce platforms with payment integration.",
+    "description": "We help you build your name, style, and online presence to stand out.",
     "overview": "Custom storefronts and robust commerce backends built for speed, security and scale.",
     "longDescription": "Build a strong and authentic personal brand that sets you apart. We help individuals define their unique identity, craft compelling messaging, and create a consistent visual presence across all platforms. From social media to professional profiles, we position you as a thought leader and amplify your influence.",
     "features": [
@@ -253,8 +300,20 @@
       "Brand Guidelines for Consistency",
       "Campaigns & Promotions"
     ],
-    "technologies": ["Video Editing Tools (Premiere Pro, After Effects)", "Google Analytics", "Social Media Platforms (LinkedIn, Instagram, Twitter)", "Figma, Adobe XD", "Canva, Adobe Photoshop & Illustrator"],
-    "price": "Starting at $800",
+    "technicalTools": [
+      "Premiere Pro",
+      "After Effects",
+      "Google Analytics",
+      "LinkedIn",
+      "Instagram",
+      "Twitter",
+      "Figma",
+      "Adobe XD",
+      "Canva",
+      "Photoshop",
+      "Illustrator"
+    ],
+    "price": "Starting at $300",
     "duration": "Ongoing",
     "color": "from-red-500 to-red-600",
     "bgColor": "bg-red-50",

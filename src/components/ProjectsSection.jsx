@@ -30,51 +30,39 @@ const ProjectsSection = () => {
     }
   }, [])
 
-  // Define 6 design-focused categories with images and colors
-  const categories = [
-    { 
-      id: 'logo-design',
+  // Define category configurations with images and colors
+  const categoryConfigs = {
+    'logo-design': {
       name: 'Logo Design', 
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=center',
       color: 'from-blue-500 to-blue-600', 
       bgColor: 'bg-blue-50'
     },
-    { 
-      id: 'poster-design',
+    'poster-design': {
       name: 'Poster Design', 
       image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=300&fit=crop&crop=center',
       color: 'from-green-500 to-green-600', 
       bgColor: 'bg-green-50'
     },
-    { 
-      id: 'packaging-design',
+    'packaging-design': {
       name: 'Packaging Design', 
       image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center',
       color: 'from-purple-500 to-purple-600', 
       bgColor: 'bg-purple-50'
     },
-    { 
-      id: 'branding',
+    'branding': {
       name: 'Branding', 
       image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=300&fit=crop&crop=center',
       color: 'from-pink-500 to-pink-600', 
       bgColor: 'bg-pink-50'
-    },
-    { 
-      id: 'digital-marketing',
-      name: 'Digital Marketing', 
-      image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=300&fit=crop&crop=center',
-      color: 'from-orange-500 to-orange-600', 
-      bgColor: 'bg-orange-50'
-    },
-    { 
-      id: 'web-design',
-      name: 'Web Design', 
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&crop=center',
-      color: 'from-red-500 to-red-600', 
-      bgColor: 'bg-red-50'
     }
-  ]
+  }
+
+  // Generate categories dynamically from projectsData.json
+  const categories = Object.keys(projectsData).map(categoryId => ({
+    id: categoryId,
+    ...categoryConfigs[categoryId]
+  }))
 
 
   // Handle category click - navigate to projects page with data
@@ -103,7 +91,7 @@ const ProjectsSection = () => {
         </div>
 
         {/* 6 Category Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {categories.map((category, index) => (
             <div
               key={index}

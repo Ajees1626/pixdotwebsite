@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaUsers, FaAward, FaRocket, FaHeart, FaGlobe, FaLightbulb } from 'react-icons/fa'
 import { useTheme } from '../contexts/ThemeContext'
+import StatsSection from '../components/StatsSection'
 
 const About = () => {
   const { isDarkMode } = useTheme()
@@ -60,13 +61,13 @@ const About = () => {
   ]
 
   const milestones = [
-    { year: '2018', title: 'Company Founded', description: 'Started with a vision to transform digital experiences.' },
-    { year: '2019', title: 'First Major Client', description: 'Secured our first enterprise client and expanded our team.' },
-    { year: '2020', title: 'Remote Work Revolution', description: 'Adapted to remote work and expanded globally.' },
-    { year: '2021', title: 'Award Recognition', description: 'Received industry awards for innovation and excellence.' },
-    { year: '2022', title: 'Team Expansion', description: 'Grew to 50+ team members across multiple countries.' },
-    { year: '2023', title: 'AI Integration', description: 'Launched AI-powered solutions for our clients.' },
-    { year: '2024', title: 'Global Presence', description: 'Expanded to serve clients in 25+ countries.' }
+    { year: '2023', title: 'Company Founded', description: 'Started with a vision to deliver high-quality digital, branding, and creative solutions for businesses in India and abroad.' },
+    { year: '2023', title: 'First Major Client', description: 'Secured our first enterprise client and successfully executed branding and digital marketing projects.' },
+    { year: '2024', title: 'Team Expansion', description: 'Expanded the Pixdot team to include designers, developers, and marketers to serve multiple industries efficiently.' },
+    { year: '2024', title: 'Service Diversification', description: 'Introduced website development, app development, and personal branding solutions to meet growing client demands.' },
+    { year: '2025', title: 'Recognition & Growth', description: ' Achieved 100+ satisfied clients with over 1000 successful projects delivered across sectors like health, education, IT, retail, and more.' },
+    { year: '2025', title: 'Global Outreach', description: 'Expanded operations to serve international clients while maintaining a strong Indian client base.' }
+    
   ]
 
   return (
@@ -211,30 +212,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container-custom relative z-10">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 text-center">
-            <div className={`${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 sm:mb-2">50+</div>
-              <div className="text-sm sm:text-base lg:text-lg text-white/90">Team Members</div>
-            </div>
-            <div className={`${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 sm:mb-2">25+</div>
-              <div className="text-sm sm:text-base lg:text-lg text-white/90">Countries Served</div>
-            </div>
-            <div className={`${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 sm:mb-2">500+</div>
-              <div className="text-sm sm:text-base lg:text-lg text-white/90">Projects Completed</div>
-            </div>
-            <div className={`${isDarkMode ? 'bg-white/10' : 'bg-white/10'} backdrop-blur-sm rounded-2xl p-4 sm:p-6 border ${isDarkMode ? 'border-white/20' : 'border-white/20'} hover:bg-white/20 transition-all duration-300 transform hover:scale-105`}>
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 sm:mb-2">98%</div>
-              <div className="text-sm sm:text-base lg:text-lg text-white/90">Client Satisfaction</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <StatsSection/>
+      
       
       {/* Custom Animations */}
       <style>{`

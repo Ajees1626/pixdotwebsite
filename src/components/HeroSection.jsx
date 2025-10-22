@@ -90,11 +90,11 @@ const HeroSection = () => {
             {/* Stats Grid - Mobile Optimized */}
             <div className={`grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 transition-all duration-1000 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="text-center group animate-counter">
-                <div className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">500+</div>
+                <div className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">1000+</div>
                 <div className={`text-xs sm:text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Projects Delivered</div>
               </div>
               <div className="text-center group animate-counter delay-200">
-                <div className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">98%</div>
+                <div className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">89%</div>
                 <div className={`text-xs sm:text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Success Rate</div>
               </div>
               <div className="text-center group animate-counter delay-400">

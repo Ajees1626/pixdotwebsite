@@ -84,44 +84,14 @@
         "name": "Shop Logo",
         "description": "Retail and e-commerce logos that attract customers and build trust",
         "projects": [
-          {
-            "id": 5,
-            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 6,
-            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 7,
-            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 8,
-            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center"
-          }
+          
         ]
       },
       "product-logo": {
         "name": "Product Logo",
         "description": "Product-specific logos that enhance brand recognition and appeal",
         "projects": [
-          {
-            "id": 9,
-            "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 10,
-            "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 11,
-            "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 12,
-            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center"
-          }
+         
         ]
       }
     }
@@ -263,28 +233,14 @@
         "name": "Promotional Poster",
         "description": "Marketing posters for product launches and brand promotions",
         "projects": [
-          {
-            "id": 19,
-            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 20,
-            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
-          }
+           
         ]
       },
       "educational-poster": {
         "name": "Educational Poster",
         "description": "Informative posters for educational and awareness campaigns",
         "projects": [
-          {
-            "id": 21,
-            "image": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 22,
-            "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=400&fit=crop&crop=center"
-          }
+           
         ]
       }
     }
@@ -399,29 +355,110 @@
         "name": "Beauty Packaging",
         "description": "Luxury packaging designs for cosmetics and skincare products",
         "projects": [
-          {
-            "id": 32,
-            "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 35,
-            "image": "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&h=400&fit=crop&crop=center"
-          }
+           
         ]
       },
       "tech-packaging": {
         "name": "Tech Packaging",
         "description": "Modern packaging designs for electronic and tech products",
         "projects": [
-          {
-            "id": 36,
-            "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 37,
-            "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=600&h=400&fit=crop&crop=center"
-          }
-        ]
+  { "id": 1, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442848/ALL_packaging_deisgn-97-_iobdjz.webp" },
+  { "id": 2, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442827/ALL_packaging_deisgn-96-_tuhrki.webp" },
+  { "id": 3, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442805/ALL_packaging_deisgn-94-_uwsvdc.webp" },
+  { "id": 4, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442805/ALL_packaging_deisgn-93-_xgwbox.webp" },
+  { "id": 5, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442805/ALL_packaging_deisgn-95-_h4pduz.webp" },
+  { "id": 6, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442804/ALL_packaging_deisgn-90-_v3z2ek.webp" },
+  { "id": 7, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442804/ALL_packaging_deisgn-91-_raauyl.webp" },
+  { "id": 8, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442804/ALL_packaging_deisgn-92-_eoxeuy.webp" },
+  { "id": 9, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442765/ALL_packaging_deisgn-85-_s1knnt.webp" },
+  { "id": 10, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442764/ALL_packaging_deisgn-84-_gxcvmu.webp" },
+  { "id": 11, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442765/ALL_packaging_deisgn-86-_nnrbcc.webp" },
+  { "id": 12, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442764/ALL_packaging_deisgn-87-_xxekr0.webp" },
+  { "id": 13, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442764/ALL_packaging_deisgn-77-_zo4ozv.webp" },
+  { "id": 14, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442765/ALL_packaging_deisgn-88-_xdlo8v.webp" },
+  { "id": 15, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442765/ALL_packaging_deisgn-89-_gv5ou7.webp" },
+  { "id": 16, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442763/ALL_packaging_deisgn-79-_raas5w.webp" },
+  { "id": 17, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442764/ALL_packaging_deisgn-82-_xj4rfa.webp" },
+  { "id": 18, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442763/ALL_packaging_deisgn-81-_kkdywg.webp" },
+  { "id": 19, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442763/ALL_packaging_deisgn-80-_lokneg.webp" },
+  { "id": 20, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442764/ALL_packaging_deisgn-83-_chhxyb.webp" },
+  { "id": 21, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442763/ALL_packaging_deisgn-76-_ui0z38.webp" },
+  { "id": 22, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442756/ALL_packaging_deisgn-74-_ndjjov.webp" },
+  { "id": 23, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442755/ALL_packaging_deisgn-73-_ncpv8i.webp" },
+  { "id": 24, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442754/ALL_packaging_deisgn-70-_ichklp.webp" },
+  { "id": 25, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442755/ALL_packaging_deisgn-75-_mnjucp.webp" },
+  { "id": 26, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442754/ALL_packaging_deisgn-71-_dbojxw.webp" },
+  { "id": 27, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442754/ALL_packaging_deisgn-72-_fnslkk.webp" },
+  { "id": 28, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442753/ALL_packaging_deisgn-66-_i5aj80.webp" },
+  { "id": 29, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442754/ALL_packaging_deisgn-69-_u68jyv.webp" },
+  { "id": 30, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442754/ALL_packaging_deisgn-68-_r0lmvs.webp" },
+  { "id": 31, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442754/ALL_packaging_deisgn-67-_kxwzdo.webp" },
+  { "id": 32, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442753/ALL_packaging_deisgn-65-_d2agr4.webp" },
+  { "id": 33, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442753/ALL_packaging_deisgn-64-_dquczr.webp" },
+  { "id": 34, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442753/ALL_packaging_deisgn-63-_gdlzcb.webp" },
+  { "id": 35, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442744/ALL_packaging_deisgn-62-_ntc3tm.webp" },
+  { "id": 36, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442743/ALL_packaging_deisgn-59-_s4cmji.webp" },
+  { "id": 37, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442742/ALL_packaging_deisgn-56-_vy6l3p.webp" },
+  { "id": 38, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442743/ALL_packaging_deisgn-61-_osxet4.webp" },
+  { "id": 39, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442742/ALL_packaging_deisgn-54-_v6hgol.webp" },
+  { "id": 40, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442743/ALL_packaging_deisgn-58-_fpttry.webp" },
+  { "id": 41, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442742/ALL_packaging_deisgn-57-_pjdxfw.webp" },
+  { "id": 42, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442742/ALL_packaging_deisgn-55-_sgknje.webp" },
+  { "id": 43, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442743/ALL_packaging_deisgn-60-_fcjkdm.webp" },
+  { "id": 44, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442742/ALL_packaging_deisgn-53-_udmdza.webp" },
+  { "id": 45, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442741/ALL_packaging_deisgn-50-_o3ubrv.webp" },
+  { "id": 46, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442741/ALL_packaging_deisgn-51-_rqlg3f.webp" },
+  { "id": 47, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442741/ALL_packaging_deisgn-52-_zcradg.webp" },
+  { "id": 48, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442741/ALL_packaging_deisgn-46-_sec3a5.webp" },
+  { "id": 49, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442741/ALL_packaging_deisgn-47-_dst2lg.webp" },
+  { "id": 50, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442741/ALL_packaging_deisgn-48-_rep8hi.webp" },
+  { "id": 51, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442730/ALL_packaging_deisgn-40-_c5lutk.webp" },
+  { "id": 52, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442729/ALL_packaging_deisgn-42-_dh2unr.webp" },
+  { "id": 53, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442729/ALL_packaging_deisgn-43-_xhmsjl.webp" },
+  { "id": 54, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442728/ALL_packaging_deisgn-35-_khq2v1.webp" },
+  { "id": 55, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442729/ALL_packaging_deisgn-36-_ssompb.webp" },
+  { "id": 56, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442727/ALL_packaging_deisgn-32-_bwuwfv.webp" },
+  { "id": 57, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442730/ALL_packaging_deisgn-45-_t9k6fp.webp" },
+  { "id": 58, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442729/ALL_packaging_deisgn-39-_r1hdte.webp" },
+  { "id": 59, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442729/ALL_packaging_deisgn-44-_nmo4kh.webp" },
+  { "id": 60, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442728/ALL_packaging_deisgn-28-_hnoyuu.webp" },
+  { "id": 61, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442728/ALL_packaging_deisgn-37-_shhup0.webp" },
+  { "id": 62, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442728/ALL_packaging_deisgn-33-_hfmwjk.webp" },
+  { "id": 63, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442729/ALL_packaging_deisgn-38-_os0rkf.webp" },
+  { "id": 64, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442728/ALL_packaging_deisgn-34-_qie2i2.webp" },
+  { "id": 65, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442727/ALL_packaging_deisgn-30-_xzblus.webp" },
+  { "id": 66, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442727/ALL_packaging_deisgn-31-_eq7ulc.webp" },
+  { "id": 67, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442726/ALL_packaging_deisgn-11-_dmhfop.webp" },
+  { "id": 68, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442726/ALL_packaging_deisgn-26-_ryllcz.webp" },
+  { "id": 69, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442726/ALL_packaging_deisgn-29-_hlcuey.webp" },
+  { "id": 70, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442726/ALL_packaging_deisgn-27-_k8pf2a.webp" },
+  { "id": 71, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442726/ALL_packaging_deisgn-25-_pdgtrh.webp" },
+  { "id": 72, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442725/ALL_packaging_deisgn-07-_qrsa0b.webp" },
+  { "id": 73, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442725/ALL_packaging_deisgn-24-_cmol60.webp" },
+  { "id": 74, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442725/ALL_packaging_deisgn-22-_nktcen.webp" },
+  { "id": 75, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442725/ALL_packaging_deisgn-23-_bjohdq.webp" },
+  { "id": 76, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442725/ALL_packaging_deisgn-04-_ywl5op.webp" },
+  { "id": 77, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442725/ALL_packaging_deisgn-06-_b1obhj.webp" },
+  { "id": 78, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442724/ALL_packaging_deisgn-18-_tm8dm6.webp" },
+  { "id": 79, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442724/ALL_packaging_deisgn-21-_g1dcue.webp" },
+  { "id": 80, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442724/ALL_packaging_deisgn-19-_enraur.webp" },
+  { "id": 81, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442724/ALL_packaging_deisgn-09-_xapwym.webp" },
+  { "id": 82, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442724/ALL_packaging_deisgn-10-_lzkd7d.webp" },
+  { "id": 83, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442724/ALL_packaging_deisgn-17-_cjk2kc.webp" },
+  { "id": 84, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442724/ALL_packaging_deisgn-20-_kmmshz.webp" },
+  { "id": 85, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442723/ALL_packaging_deisgn-08-_jzjmf0.webp" },
+  { "id": 86, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442723/ALL_packaging_deisgn-16-_jjdvbn.webp" },
+  { "id": 87, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442723/ALL_packaging_deisgn-15-_lebuy6.webp" },
+  { "id": 88, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442723/ALL_packaging_deisgn-14-_ldymux.webp" },
+  { "id": 89, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442722/ALL_packaging_deisgn-05-_ja6tmb.webp" },
+  { "id": 90, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442723/ALL_packaging_deisgn-03-_keqdf6.webp" },
+  { "id": 91, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442722/ALL_packaging_deisgn-01-_i0vq2m.webp" },
+  { "id": 92, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442722/ALL_packaging_deisgn-13-_v9hyxw.webp" },
+  { "id": 93, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442722/ALL_packaging_deisgn-02-_waqdvu.webp" },
+  { "id": 94, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442722/ALL_packaging_deisgn-12-_xg7glc.webp" },
+  { "id": 95, "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760442721/ALL_packaging_deisgn-98-_rcxwn4.webp" }
+]
+
       }
     }
   },
@@ -434,139 +471,117 @@
         "description": "Professional brand identity for businesses and corporations",
         "projects": [
           {
-            "id": 46,
-            "image": "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=400&fit=crop&crop=center"
+            "id": 1,
+            "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504407/1_yrlxqw.webp",
+            "relatedImages": [
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504405/1.1_abmfsr.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504406/1.2_v34ipr.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504407/1.3_zytf6m.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504416/1.4_qnlxuo.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504406/1.5_t9u1hk.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504413/1.6_gcguox.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504414/1.7_ghbb5v.webp"
+            ]
           },
           {
-            "id": 49,
-            "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop&crop=center"
-          }
-        ]
-      },
-      "hospitality-branding": {
-        "name": "Hospitality Branding",
-        "description": "Warm and inviting brand identities for restaurants and hotels",
-        "projects": [
-          {
-            "id": 47,
-            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
+            "id": 2,
+            "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504410/2_mw2mes.webp",
+            "relatedImages": [
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504407/2.1_uyeeny.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504408/2.2_k1uono.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504409/2.3_bk0xl5.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504409/2.4_tfrrn1.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504414/2.5_juqhuk.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504409/2.6_zqlzhv.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504410/2.7_rljw4p.webp"
+            ]
           },
           {
-            "id": 50,
-            "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&crop=center"
-          }
-        ]
-      },
-      "lifestyle-branding": {
-        "name": "Lifestyle Branding",
-        "description": "Dynamic brand identities for fitness, wellness, and lifestyle brands",
-        "projects": [
-          {
-            "id": 48,
-            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center"
+            "id": 3,
+            "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504415/3_d0ii7i.webp",
+            "relatedImages": [
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504410/3.1_o8nrel.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504410/3.2_uvyago.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504416/3.3_nexr6d.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504417/3.4_y5rkqe.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504411/3.5_zkcrdg.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504419/3.6_ixeq8e.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504413/3.7_h1nblb.webp"
+            ]
           },
           {
-            "id": 51,
-            "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop&crop=center"
-          }
-        ]
-      }
-    }
-  },
-  "digital-marketing": {
-    "category": "Digital Marketing",
-    "description": "Strategic digital marketing campaigns that drive engagement and conversions",
-    "varieties": {
-      "social-media-marketing": {
-        "name": "Social Media Marketing",
-        "description": "Engaging social media campaigns and content strategies",
-        "projects": [
-          {
-            "id": 61,
-            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center"
+            "id": 4,
+            "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504408/4_uvha5u.webp",
+            "relatedImages": [
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504420/4.1_gokdki.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504408/4.2_v2m2qc.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504416/4.3_ensmsw.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504411/4.4_nkan2j.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504411/4.5_dvawub.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504412/4.6_zuj7mw.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504414/4.7_gnxqxp.webp"
+            ]
           },
           {
-            "id": 64,
-            "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&crop=center"
-          }
-        ]
-      },
-      "ecommerce-marketing": {
-        "name": "E-commerce Marketing",
-        "description": "Digital marketing strategies for online stores and e-commerce platforms",
-        "projects": [
-          {
-            "id": 62,
-            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
+            "id": 5,
+            "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504413/5_xhe0dc.webp",
+            "relatedImages": [
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504410/5.1_k2lx9v.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504414/5.2_xle0fi.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504412/5.3_mbcu3k.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504408/5.4_ohcqes.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504414/5.5_nionpi.webp"
+            ]
           },
           {
-            "id": 65,
-            "image": "https://images.unsplash.com/photo-1607082349566-187342175e2f?w=600&h=400&fit=crop&crop=center"
-          }
-        ]
-      },
-      "b2b-marketing": {
-        "name": "B2B Marketing",
-        "description": "Professional marketing strategies for business-to-business companies",
-        "projects": [
-          {
-            "id": 63,
-            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center"
+            "id": 6,
+            "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504412/6_dwxzlm.webp",
+            "relatedImages": [
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504416/6.1_ggqpit.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504412/6.2_oa7l1z.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504411/6.3_umfs0q.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504405/6.4_rywx3p.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504419/6.5_fi4vap.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504414/6.6_jkbvm0.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504415/6.7_kgf4dj.webp"
+            ]
           },
           {
-            "id": 66,
-            "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop&crop=center"
-          }
-        ]
-      }
-    }
-  },
-  "web-design": {
-    "category": "Web Design",
-    "description": "Modern, responsive web designs that deliver exceptional user experiences",
-    "varieties": {
-      "ecommerce-website": {
-        "name": "E-commerce Website",
-        "description": "Online stores and e-commerce platforms with optimized shopping experiences",
-        "projects": [
-          {
-            "id": 76,
-            "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&crop=center"
+            "id": 7,
+            "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504413/7_xrpywq.webp",
+            "relatedImages": [
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504410/7.1_blgw08.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504420/7.2_qcywua.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504409/7.3_kbqzob.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504414/7.4_s8dptq.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504416/7.5_xkmai3.webp"
+            ]
           },
           {
-            "id": 79,
-            "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop&crop=center"
-          }
-        ]
-      },
-      "corporate-website": {
-        "name": "Corporate Website",
-        "description": "Professional websites for businesses and organizations",
-        "projects": [
-          {
-            "id": 77,
-            "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop&crop=center"
+            "id": 8,
+            "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504406/8_nmkvkx.webp",
+            "relatedImages": [
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504417/8.1_tzipwg.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504405/8.2_w901ka.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504413/8.3_zcol2z.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504415/8.4_toz2qa.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504417/8.5_h7o5t8.webp"
+            ]
           },
           {
-            "id": 80,
-            "image": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=600&h=400&fit=crop&crop=center"
-          }
-        ]
-      },
-      "portfolio-website": {
-        "name": "Portfolio Website",
-        "description": "Creative portfolio websites for individuals and agencies",
-        "projects": [
-          {
-            "id": 78,
-            "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center"
-          },
-          {
-            "id": 81,
-            "image": "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=600&h=400&fit=crop&crop=center"
+            "id": 9,
+            "image": "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504412/9_pwygqq.webp",
+            "relatedImages": [
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504418/9.1_axwm06.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504407/9.2_ifnpfm.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504416/9.3_cydcex.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504415/9.4_nnphw6.webp",
+              "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1760504419/9.5_ffskps.webp"
+            ]
           }
         ]
       }
+     
     }
   }
 }

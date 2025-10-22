@@ -12,7 +12,10 @@ const ProjectsDetail = () => {
   const { isDarkMode } = useTheme()
 
   const openModal = (project) => {
-    setSelectedProject(project)
+    setSelectedProject({
+      ...project,
+      currentImage: project.relatedImages ? project.relatedImages[0] : project.image
+    })
     setIsModalOpen(true)
     document.body.style.overflow = 'hidden'
   }
@@ -62,6 +65,24 @@ const ProjectsDetail = () => {
     setSelectedProject(projects[newIndex])
   }
 
+  const navigateImage = (direction) => {
+    if (!selectedProject.relatedImages || selectedProject.relatedImages.length <= 1) return
+    
+    const currentImageIndex = selectedProject.relatedImages.findIndex(img => img === selectedProject.currentImage)
+    let newImageIndex
+    
+    if (direction === 'prev') {
+      newImageIndex = currentImageIndex > 0 ? currentImageIndex - 1 : selectedProject.relatedImages.length - 1
+    } else {
+      newImageIndex = currentImageIndex < selectedProject.relatedImages.length - 1 ? currentImageIndex + 1 : 0
+    }
+    
+    setSelectedProject({
+      ...selectedProject,
+      currentImage: selectedProject.relatedImages[newImageIndex]
+    })
+  }
+
   // No variety selection UI; nothing to initialize
   useEffect(() => {}, [categoryId])
 
@@ -71,9 +92,17 @@ const ProjectsDetail = () => {
       if (!isModalOpen) return
       
       if (e.key === 'ArrowLeft') {
-        navigateProject('prev')
+        if (selectedProject.relatedImages && selectedProject.relatedImages.length > 1) {
+          navigateImage('prev')
+        } else {
+          navigateProject('prev')
+        }
       } else if (e.key === 'ArrowRight') {
-        navigateProject('next')
+        if (selectedProject.relatedImages && selectedProject.relatedImages.length > 1) {
+          navigateImage('next')
+        } else {
+          navigateProject('next')
+        }
       } else if (e.key === 'Escape') {
         closeModal()
       }
@@ -161,9 +190,15 @@ const ProjectsDetail = () => {
            </button>
 
            {/* Left Navigation Arrow */}
-           {projects.length > 1 && (
+           {(projects.length > 1 || (selectedProject.relatedImages && selectedProject.relatedImages.length > 1)) && (
              <button
-               onClick={() => navigateProject('prev')}
+               onClick={() => {
+                 if (selectedProject.relatedImages && selectedProject.relatedImages.length > 1) {
+                   navigateImage('prev')
+                 } else {
+                   navigateProject('prev')
+                 }
+               }}
                className="absolute left-2 top-1/2 transform -translate-y-1/2 sm:left-3 md:left-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
              >
                <FaChevronLeft className="text-gray-700 text-sm sm:text-lg md:text-xl" />
@@ -171,9 +206,15 @@ const ProjectsDetail = () => {
            )}
 
            {/* Right Navigation Arrow */}
-           {projects.length > 1 && (
+           {(projects.length > 1 || (selectedProject.relatedImages && selectedProject.relatedImages.length > 1)) && (
              <button
-               onClick={() => navigateProject('next')}
+               onClick={() => {
+                 if (selectedProject.relatedImages && selectedProject.relatedImages.length > 1) {
+                   navigateImage('next')
+                 } else {
+                   navigateProject('next')
+                 }
+               }}
                className="absolute right-2 top-1/2 transform -translate-y-1/2 sm:right-3 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
              >
                <FaChevronRight className="text-gray-700 text-sm sm:text-lg md:text-xl" />
@@ -184,7 +225,7 @@ const ProjectsDetail = () => {
            <div className="relative">
              <div className="w-full h-full rounded-xl sm:rounded-2xl overflow-hidden">
                <img
-                 src={selectedProject.image}
+                 src={selectedProject.currentImage || selectedProject.image}
                  alt="Project"
                  className="w-full h-full object-cover"
                />
@@ -192,11 +233,14 @@ const ProjectsDetail = () => {
            </div>
 
            {/* Project Counter */}
-           {projects.length > 1 && (
+           {(projects.length > 1 || (selectedProject.relatedImages && selectedProject.relatedImages.length > 1)) && (
              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 sm:bottom-3 md:bottom-4 z-10">
                <div className="bg-white/95 backdrop-blur-sm rounded-full px-3 py-1.5 sm:px-4 sm:py-2 shadow-lg">
                  <span className="text-gray-700 text-xs sm:text-sm font-medium">
-                   {projects.findIndex(p => p.id === selectedProject.id) + 1} / {projects.length}
+                   {selectedProject.relatedImages && selectedProject.relatedImages.length > 1 
+                     ? `${selectedProject.relatedImages.findIndex(img => img === selectedProject.currentImage) + 1} / ${selectedProject.relatedImages.length}`
+                     : `${projects.findIndex(p => p.id === selectedProject.id) + 1} / ${projects.length}`
+                   }
                  </span>
                </div>
              </div>
