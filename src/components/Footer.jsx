@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt, FaTimes, FaChevronUp, FaGavel, FaShieldAlt, FaLock, FaUserShield } from 'react-icons/fa'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaTimes, FaChevronUp, FaGavel, FaShieldAlt, FaLock, FaUserShield, FaFacebookSquare, FaInstagram, FaBehanceSquare, FaWhatsapp, FaPinterestSquare, FaLinkedin } from 'react-icons/fa'
+import { MdPhoneCallback, MdMarkEmailRead } from 'react-icons/md'
+import { CiLocationArrow1 } from 'react-icons/ci'
+import { IoLogoYoutube } from 'react-icons/io'
+import { BsTwitterX } from 'react-icons/bs'
 import { useTheme } from '../contexts/ThemeContext'
 
 const Footer = () => {
@@ -66,10 +70,14 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { icon: FaFacebookF, href: '#', label: 'Facebook' },
-    { icon: FaTwitter, href: '#', label: 'Twitter' },
-    { icon: FaLinkedinIn, href: '#', label: 'LinkedIn' },
-    { icon: FaInstagram, href: '#', label: 'Instagram' }
+    { icon: FaFacebookSquare, href: '#', label: 'Facebook' },
+    { icon: FaInstagram, href: '#', label: 'Instagram' },
+    { icon: IoLogoYoutube, href: '#', label: 'YouTube' },
+    { icon: BsTwitterX, href: '#', label: 'Twitter X' },
+    { icon: FaBehanceSquare, href: '#', label: 'Behance' },
+    { icon: FaWhatsapp, href: '#', label: 'WhatsApp' },
+    { icon: FaPinterestSquare, href: '#', label: 'Pinterest' },
+    { icon: FaLinkedin, href: '#', label: 'LinkedIn' }
   ]
 
   return (
@@ -78,21 +86,21 @@ const Footer = () => {
         {/* Light/Dark Theme Background */}
         {isDarkMode ? (
           <>
-            {/* Dark Theme Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-primary/20"></div>
+            {/* Dark Theme Background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20"></div>
             <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-black/40"></div>
           </>
         ) : (
           <>
-            {/* Light Theme Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-secondary/80"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-white/10"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-white/20"></div>
+            {/* Light Theme Background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-50"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-blue-50/30 to-purple-50/30"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-white/40"></div>
           </>
         )}
         
-        <div className={`relative z-10 ${isDarkMode ? 'text-white' : 'text-white'}`}>
+        <div className={`relative z-10 ${isDarkMode ? 'text-gray-100' : 'text-gray-800'}`}>
           <div className="container-custom">
             {/* Main Footer Content */}
             <div className="section-padding">
@@ -100,44 +108,52 @@ const Footer = () => {
                 {/* Company Info */}
                 <div className={`lg:col-span-2 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                   <Link to="/" className="mb-6 block transform hover:scale-105 transition-transform duration-300">
-                    <img 
-                      src="/3.png" 
-                      alt="Pixdot Logo" 
-                      className="h-20 w-auto"
-                    />
+                    {isDarkMode ? (
+                      <img 
+                        src="/2.png" 
+                        alt="Pixdot Logo" 
+                        className="h-20 w-auto"
+                      />
+                    ) : (
+                      <img 
+                        src="/1.png" 
+                        alt="Pixdot Logo" 
+                        className="h-20 w-auto"
+                      />
+                    )}
                   </Link>
-                  <p className={`${isDarkMode ? 'text-gray-300' : 'text-white/90'} mb-8 leading-relaxed text-lg`}>
+                  <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} mb-8 leading-relaxed text-lg`}>
                     Transforming businesses through innovative digital solutions. 
                     We help companies grow and succeed in the digital world with cutting-edge technology.
                   </p>
                   
                   {/* Contact Info */}
                   <div className="space-y-4">
-                    <div className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-white/90'} transform hover:translate-x-2 transition-transform duration-300 group`}>
-                      <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                        <FaPhone className="text-white" />
+                    <div className={`flex items-center ${isDarkMode ? 'text-gray-200' : 'text-gray-700'} transform hover:translate-x-2 transition-all duration-300 group`}>
+                      <div className="w-14 h-14 flex items-center justify-center mr-4 group-hover:scale-110 transition-all duration-300">
+                        <MdPhoneCallback className={`${isDarkMode ? 'text-secondary hover:text-primary' : 'text-primary hover:text-secondary'} text-xl group-hover:scale-110 transition-all duration-300`} />
                       </div>
                       <div>
-                        <p className="font-semibold">Phone</p>
-                        <p>+1 (555) 123-4567</p>
+                        <p className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Phone</p>
+                        <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>+1 (555) 123-4567</p>
                       </div>
                     </div>
-                    <div className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-white/90'} transform hover:translate-x-2 transition-transform duration-300 group`}>
-                      <div className="w-12 h-12 bg-gradient-to-r from-secondary to-white rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                        <FaEnvelope className="text-white" />
+                    <div className={`flex items-center ${isDarkMode ? 'text-gray-200' : 'text-gray-700'} transform hover:translate-x-2 transition-all duration-300 group`}>
+                      <div className="w-14 h-14 flex items-center justify-center mr-4 group-hover:scale-110 transition-all duration-300">
+                        <MdMarkEmailRead className={`${isDarkMode ? 'text-secondary hover:text-primary' : 'text-primary hover:text-secondary'} text-xl group-hover:scale-110 transition-all duration-300`} />
                       </div>
                       <div>
-                        <p className="font-semibold">Email</p>
-                        <p>info@pixdot.com</p>
+                        <p className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Email</p>
+                        <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>info@pixdot.com</p>
                       </div>
                     </div>
-                    <div className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-white/90'} transform hover:translate-x-2 transition-transform duration-300 group`}>
-                      <div className="w-12 h-12 bg-gradient-to-r from-white to-primary rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                        <FaMapMarkerAlt className="text-white" />
+                    <div className={`flex items-center ${isDarkMode ? 'text-gray-200' : 'text-gray-700'} transform hover:translate-x-2 transition-all duration-300 group`}>
+                      <div className="w-14 h-14 flex items-center justify-center mr-4 group-hover:scale-110 transition-all duration-300">
+                        <CiLocationArrow1 className={`${isDarkMode ? 'text-secondary hover:text-primary' : 'text-primary hover:text-secondary'} text-xl group-hover:scale-110 transition-all duration-300`} />
                       </div>
                       <div>
-                        <p className="font-semibold">Address</p>
-                        <p>123 Business St, City, State 12345</p>
+                        <p className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Address</p>
+                        <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>123 Business St, City, State 12345</p>
                       </div>
                     </div>
                   </div>
@@ -145,13 +161,13 @@ const Footer = () => {
 
                 {/* Services */}
                 <div className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                  <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">Services</h3>
+                  <h3 className={`text-xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Services</h3>
                   <ul className="space-y-3">
                     {footerLinks.services.map((link, index) => (
                       <li key={link.name}>
                         <Link
                           to={link.href}
-                          className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-all duration-300 transform hover:translate-x-2 block group`}
+                          className={`${isDarkMode ? 'text-gray-200 hover:text-secondary' : 'text-gray-600 hover:text-primary'} transition-all duration-300 transform hover:translate-x-2 block group`}
                         >
                           <span className="group-hover:text-secondary transition-colors duration-300">{link.name}</span>
                         </Link>
@@ -162,13 +178,13 @@ const Footer = () => {
 
                 {/* Company */}
                 <div className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                  <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-secondary to-white bg-clip-text text-transparent">Company</h3>
+                  <h3 className={`text-xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Company</h3>
                   <ul className="space-y-3">
                     {footerLinks.company.map((link) => (
                       <li key={link.name}>
                         <Link
                           to={link.href}
-                          className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-all duration-300 transform hover:translate-x-2 block group`}
+                          className={`${isDarkMode ? 'text-gray-200 hover:text-secondary' : 'text-gray-600 hover:text-primary'} transition-all duration-300 transform hover:translate-x-2 block group`}
                         >
                           <span className="group-hover:text-secondary transition-colors duration-300">{link.name}</span>
                         </Link>
@@ -179,13 +195,13 @@ const Footer = () => {
 
                 {/* Industries */}
                 <div className={`transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-                  <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-white to-secondary bg-clip-text text-transparent">Industries</h3>
+                  <h3 className={`text-xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Industries</h3>
                   <ul className="space-y-3">
                     {footerLinks.industries.map((link) => (
                       <li key={link.name}>
                         <Link
                           to={link.href}
-                          className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-all duration-300 transform hover:translate-x-2 block group`}
+                          className={`${isDarkMode ? 'text-gray-200 hover:text-secondary' : 'text-gray-600 hover:text-primary'} transition-all duration-300 transform hover:translate-x-2 block group`}
                         >
                           <span className="group-hover:text-secondary transition-colors duration-300">{link.name}</span>
                         </Link>
@@ -199,40 +215,40 @@ const Footer = () => {
             
 
             {/* Bottom Footer */}
-            <div className={`border-t ${isDarkMode ? 'border-white/20' : 'border-white/30'} py-8`}>
+            <div className={`border-t ${isDarkMode ? 'border-gray-700' : 'border-gray-300'} py-8`}>
               <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
-                <div className={`${isDarkMode ? 'text-gray-300' : 'text-white/90'} text-center lg:text-left`}>
-                  <p>&copy; {currentYear} Pixdot. All rights reserved.</p>
+                <div className={`${isDarkMode ? 'text-gray-200' : 'text-gray-700'} text-center lg:text-left`}>
+                  <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>&copy; {currentYear} Pixdot. All rights reserved.</p>
                   <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-2">
                     <button
                       onClick={() => setShowTermsModal(true)}
-                      className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-colors duration-300 flex items-center gap-2 group`}
+                      className={`${isDarkMode ? 'text-gray-200 hover:text-secondary' : 'text-gray-600 hover:text-primary'} transition-colors duration-300 flex items-center gap-2 group hover:scale-105 transform`}
                     >
-                      <FaGavel className="group-hover:text-secondary transition-colors duration-300" />
+                      <FaGavel className={`group-hover:${isDarkMode ? 'text-blue-300' : 'text-blue-600'} transition-colors duration-300`} />
                       Terms & Conditions
                     </button>
-                    <Link to="/privacy" className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-colors duration-300 flex items-center gap-2 group`}>
-                      <FaShieldAlt className="group-hover:text-secondary transition-colors duration-300" />
+                    <Link to="/privacy" className={`${isDarkMode ? 'text-gray-200 hover:text-blue-300' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-300 flex items-center gap-2 group hover:scale-105 transform`}>
+                      <FaShieldAlt className={`group-hover:${isDarkMode ? 'text-blue-300' : 'text-blue-600'} transition-colors duration-300`} />
                       Privacy Policy
                     </Link>
-                    <Link to="/cookies" className={`${isDarkMode ? 'text-gray-300 hover:text-white' : 'text-white/90 hover:text-white'} transition-colors duration-300 flex items-center gap-2 group`}>
-                      <FaLock className="group-hover:text-secondary transition-colors duration-300" />
+                    <Link to="/cookies" className={`${isDarkMode ? 'text-gray-200 hover:text-blue-300' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-300 flex items-center gap-2 group hover:scale-105 transform`}>
+                      <FaLock className={`group-hover:${isDarkMode ? 'text-blue-300' : 'text-blue-600'} transition-colors duration-300`} />
                       Cookie Policy
                     </Link>
                   </div>
                 </div>
                 
                 {/* Social Links */}
-                <div className="flex space-x-4">
+                <div className="flex flex-wrap justify-center lg:justify-end gap-3">
                   {socialLinks.map((social, index) => (
                     <a
                       key={social.label}
                       href={social.href}
-                      className={`w-12 h-12 ${isDarkMode ? 'bg-white/10 hover:bg-white/20' : 'bg-white/20 hover:bg-white/30'} backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 border ${isDarkMode ? 'border-white/20' : 'border-white/30'}`}
+                      className={`w-14 h-14 flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group`}
                       aria-label={social.label}
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
-                      <social.icon size={18} className="text-white" />
+                      <social.icon size={28} className={`${isDarkMode ? 'text-secondary hover:text-primary' : 'text-primary hover:text-secondary'} group-hover:scale-110 transition-all duration-300`} />
                     </a>
                   ))}
                 </div>

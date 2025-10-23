@@ -157,24 +157,7 @@ const IndustriesSection = () => {
                           {industry.description}
                         </p>
 
-                        {/* Stats */}
-                        <div className="grid grid-cols-2 gap-2 sm:gap-4 mb-4 sm:mb-6">
-                          <div className={`${isDarkMode ? 'bg-gray-700' : 'bg-gray-50'} rounded-lg sm:rounded-xl p-2 sm:p-3 transform hover:scale-105 transition-transform duration-300`}>
-                            <div className="flex items-center mb-1">
-                              <FaChartLine className="text-secondary mr-1 sm:mr-2 text-xs sm:text-sm animate-pulse" />
-                              <span className={`text-xs ${isDarkMode ? 'text-gray-400' : 'text-gray-500'} font-medium`}>Projects</span>
-                            </div>
-                            <div className={`text-sm sm:text-lg font-bold ${isDarkMode ? 'text-white' : 'text-primary'} animate-counter`}>{industry.projects}</div>
-                          </div>
-                          <div className={`${isDarkMode ? 'bg-gray-700' : 'bg-gray-50'} rounded-lg sm:rounded-xl p-2 sm:p-3 transform hover:scale-105 transition-transform duration-300`}>
-                            <div className="flex items-center mb-1">
-                              <FaUsers className="text-secondary mr-1 sm:mr-2 text-xs sm:text-sm animate-pulse" />
-                              <span className={`text-xs ${isDarkMode ? 'text-gray-400' : 'text-gray-500'} font-medium`}>Growth</span>
-                            </div>
-                            <div className={`text-sm sm:text-lg font-bold ${isDarkMode ? 'text-white' : 'text-primary'} animate-counter`}>{industry.growth}</div>
-                          </div>
-                        </div>
-
+                        
                         {/* Services Preview */}
                         <div className="mb-4 sm:mb-6">
                           <div className="flex flex-wrap gap-1 sm:gap-2">

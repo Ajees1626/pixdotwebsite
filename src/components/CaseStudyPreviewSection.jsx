@@ -44,24 +44,24 @@ const CaseStudyPreviewSection = () => {
           <div className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 animate-slideInUp`} style={{ animationDelay: '0.4s' }}>
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mr-4 transform hover:scale-110 transition-transform duration-300">
-                <span className="text-secondary font-bold text-xl">E</span>
+                <span className="text-secondary font-bold text-xl">I</span>
               </div>
               <div>
-                <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>E-commerce Platform</h3>
-                <p className="text-secondary">Fashion Forward</p>
+                <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>Interior Design</h3>
+                <p className="text-secondary">Magnaa Interiors</p>
               </div>
             </div>
             <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-6`}>
-              Complete platform redesign with modern UI/UX, mobile optimization, and advanced analytics.
+            End-to-end interior solutions including workspace design, layout optimization, and creative styling.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl font-bold text-secondary animate-counter">+128%</div>
-                <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Conversion Rate</div>
+                <div className="text-2xl font-bold text-secondary animate-counter">+120%</div>
+                <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Client Engagement</div>
               </div>
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl font-bold text-secondary animate-counter">+67%</div>
-                <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Order Value</div>
+                <div className="text-2xl font-bold text-secondary animate-counter">+4x</div>
+                <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Project Conversions</div>
               </div>
             </div>
           </div>
@@ -69,24 +69,24 @@ const CaseStudyPreviewSection = () => {
           <div className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500 transform hover:-translate-y-2 animate-slideInUp`} style={{ animationDelay: '0.6s' }}>
             <div className="flex items-center mb-6">
               <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mr-4 transform hover:scale-110 transition-transform duration-300">
-                <span className="text-secondary font-bold text-xl">H</span>
+                <span className="text-secondary font-bold text-xl">B</span>
               </div>
               <div>
-                <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>Healthcare System</h3>
-                <p className="text-secondary">MediCare Plus</p>
+                <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>Business Consulting</h3>
+                <p className="text-secondary">Stratovate Consulting</p>
               </div>
             </div>
             <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-6`}>
-              Comprehensive digital health platform with patient portals and telemedicine capabilities.
+            Comprehensive business strategy solutions with market analysis, process optimization, and brand positioning.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl font-bold text-secondary animate-counter">-60%</div>
-                <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Wait Time</div>
+                <div className="text-2xl font-bold text-secondary animate-counter">+85%</div>
+                <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Operational Efficiency</div>
               </div>
               <div className="text-center transform hover:scale-105 transition-transform duration-300">
-                <div className="text-2xl font-bold text-secondary animate-counter">+42%</div>
-                <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Efficiency</div>
+                <div className="text-2xl font-bold text-secondary animate-counter">+60%</div>
+                <div className={`text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Client Retention</div>
               </div>
             </div>
           </div>

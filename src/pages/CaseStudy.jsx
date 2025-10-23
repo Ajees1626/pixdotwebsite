@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowRight, FaExternalLinkAlt, FaChartLine, FaUsers, FaClock, FaDollarSign, FaChevronLeft, FaChevronRight, FaTimes, FaEye } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { useTheme } from '../contexts/ThemeContext'
 import caseStudiesData from '../data/caseStudiesData.json'
 
 const CaseStudy = () => {
+  const { isDarkMode } = useTheme()
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [currentPage, setCurrentPage] = useState(1)
   const [selectedCase, setSelectedCase] = useState(null)
-  const [isDarkMode, setIsDarkMode] = useState(false)
   const itemsPerPage = 9
 
   // Get all case studies from all categories
@@ -34,11 +35,6 @@ const CaseStudy = () => {
     setCurrentPage(1)
   }, [selectedCategory])
 
-  // Toggle dark mode
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode)
-  }
-
   const categories = [
     { key: 'all', name: 'All Cases', count: allCaseStudies.length },
     { key: 'logo', name: 'Logo Design', count: caseStudiesData.logo?.caseStudies.length || 0 },
@@ -51,25 +47,14 @@ const CaseStudy = () => {
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'dark' : ''}`}>
       {/* Hero Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-gradient-primary'} text-white`}>
-        <div className="container-custom">
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex justify-end mb-4">
-              <button
-                onClick={toggleDarkMode}
-                className={`px-4 py-2 rounded-full transition-all duration-300 ${
-                  isDarkMode 
-                    ? 'bg-white text-gray-900 hover:bg-gray-100' 
-                    : 'bg-white/20 text-white hover:bg-white/30'
-                }`}
-              >
-                {isDarkMode ? '☀️ Light' : '🌙 Dark'}
-              </button>
-            </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Case <span className="text-accent">Studies</span>
+              Case <span className="text-white">Studies</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-200 leading-relaxed">
+            <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
               Real-world success stories showcasing how we've helped businesses 
               transform and achieve remarkable results.
             </p>
@@ -327,33 +312,34 @@ const CaseStudy = () => {
       )}
 
       {/* Stats Section */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-gradient-primary'} text-white`}>
-        <div className="container-custom">
+      <section className={`section-padding ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} text-white relative overflow-hidden`}>
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="container-custom relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Our <span className="text-accent">Impact</span>
+              Our <span className="text-white">Impact</span>
             </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
               The numbers speak for themselves - our solutions deliver measurable results.
             </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">90+</div>
-              <div className="text-lg text-gray-200">Case Studies</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">90+</div>
+              <div className="text-lg text-white/90">Case Studies</div>
             </div>
             <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">150+</div>
-              <div className="text-lg text-gray-200">Happy Clients</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">150+</div>
+              <div className="text-lg text-white/90">Happy Clients</div>
             </div>
             <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">98%</div>
-              <div className="text-lg text-gray-200">Success Rate</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">98%</div>
+              <div className="text-lg text-white/90">Success Rate</div>
             </div>
             <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl md:text-5xl font-bold text-accent mb-2">$50M+</div>
-              <div className="text-lg text-gray-200">Client ROI Generated</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">$50M+</div>
+              <div className="text-lg text-white/90">Client ROI Generated</div>
             </div>
           </div>
         </div>
@@ -363,21 +349,24 @@ const CaseStudy = () => {
       <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
         <div className="container-custom">
           <div className={`rounded-3xl p-8 md:p-12 text-center text-white ${
-            isDarkMode ? 'bg-gradient-to-r from-gray-800 to-gray-700' : 'bg-gradient-secondary'
-          }`}>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Be Our Next Success Story?
-            </h2>
-            <p className="text-xl mb-8 opacity-90">
-              Let's discuss your project and create a custom solution that delivers exceptional results.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/contact" className="btn-primary bg-white text-primary hover:bg-gray-100">
-                Start Your Project
-              </Link>
-              <Link to="/solutions" className="btn-outline border-white text-white hover:bg-white hover:text-primary">
-                Explore Solutions
-              </Link>
+            isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'
+          } relative overflow-hidden`}>
+            <div className="absolute inset-0 bg-black/20"></div>
+            <div className="relative z-10">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Be Our Next Success Story?
+              </h2>
+              <p className="text-xl mb-8 text-white/90">
+                Let's discuss your project and create a custom solution that delivers exceptional results.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/contact" className="bg-white text-primary font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block">
+                  Start Your Project
+                </Link>
+                <Link to="/solutions" className="border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 inline-block">
+                  Explore Solutions
+                </Link>
+              </div>
             </div>
           </div>
         </div>

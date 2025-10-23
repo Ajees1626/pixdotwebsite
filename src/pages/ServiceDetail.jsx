@@ -1,6 +1,12 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { FaArrowLeft, FaCheck, FaClock, FaDollarSign, FaRocket, FaMobile, FaSearch, FaPenFancy, FaBullhorn, FaShoppingCart, FaStar, FaUsers, FaAward } from 'react-icons/fa'
+import { IoIosPeople } from "react-icons/io";
+import { CiMobile1 } from "react-icons/ci";
+import { TbWorldCheck } from "react-icons/tb";
+import { VscPackage } from "react-icons/vsc";
+import { GiArcheryTarget } from "react-icons/gi";
+import { FaLightbulb, FaArrowLeft, FaDollarSign, FaClock, FaCheck, FaStar, FaUsers, FaAward } from "react-icons/fa";
+
 import { useTheme } from '../contexts/ThemeContext'
 import servicesData from '../data/servicesData.json'
 
@@ -9,12 +15,12 @@ const ServiceDetail = () => {
   const { isDarkMode } = useTheme()
   
   const iconMap = {
-    FaRocket,
-    FaMobile,
-    FaSearch,
-    FaPenFancy,
-    FaBullhorn,
-    FaShoppingCart
+    IoIosPeople,
+    CiMobile1,
+    TbWorldCheck,
+    VscPackage,
+    GiArcheryTarget,
+    FaLightbulb
   }
 
   const pickWhyIcon = (text) => {

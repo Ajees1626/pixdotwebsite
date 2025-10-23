@@ -49,14 +49,14 @@ const Header = () => {
                 <img 
                   src="/1.png" 
                   alt="Pixdot Logo" 
-                  className="h-24 w-auto"
+                  className="h-16  w-auto"
                 />
               )}
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex space-x-8">
+          <nav className="hidden md:flex space-x-8">
             {navigation.map((item, index) => (
               <Link
                 key={item.name}
@@ -74,7 +74,7 @@ const Header = () => {
           </nav>
 
           {/* Theme Toggle & CTA Button */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={toggleTheme}
               className={`p-2 rounded-lg ${isDarkMode ? 'bg-gray-800 text-gray-300 hover:bg-gray-700' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} transition-all duration-300 transform hover:scale-110 hover:rotate-12`}
@@ -88,7 +88,7 @@ const Header = () => {
           </div>
 
           {/* Mobile menu button & theme toggle */}
-          <div className="lg:hidden flex items-center space-x-2">
+          <div className="md:hidden flex items-center space-x-2">
             <button
               onClick={toggleTheme}
               className={`p-2 rounded-lg ${isDarkMode ? 'bg-gray-800 text-gray-300 hover:bg-gray-700' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} transition-all duration-300 transform hover:scale-110`}
@@ -98,7 +98,7 @@ const Header = () => {
             </button>
             <button
               onClick={toggleMenu}
-              className={`${isDarkMode ? 'text-gray-300' : 'text-primary'} hover:text-secondary transition-all duration-300 transform hover:scale-110`}
+              className={`${isDarkMode ? 'text-white hover:text-secondary' : 'text-primary hover:text-secondary'} transition-all duration-300 transform hover:scale-110`}
               aria-label="Toggle menu"
             >
               {isMenuOpen ? <FaTimes size={24} className="animate-spin" /> : <FaBars size={24} className="animate-bounce" />}
@@ -108,16 +108,16 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="lg:hidden animate-fadeInDown">
-            <div className={`px-2 pt-2 pb-3 space-y-1 ${isDarkMode ? 'bg-gray-900 border-gray-700' : 'bg-white border-gray-200'} border-t`}>
+          <div className="md:hidden animate-fadeInDown">
+            <div className={`px-4 pt-4 pb-4 space-y-2 ${isDarkMode ? 'bg-gray-900 border-gray-700' : 'bg-white border-gray-200'} border-t shadow-lg`}>
               {navigation.map((item, index) => (
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-all duration-300 ease-out transform hover:scale-105 hover:translate-x-2 ${
+                  className={`block px-4 py-3 text-base font-medium rounded-lg transition-all duration-300 ease-out transform hover:scale-105 hover:translate-x-2 ${
                     location.pathname === item.href
-                      ? 'text-secondary bg-secondary'
-                      : `${isDarkMode ? 'text-gray-300 hover:bg-gray-800' : 'text-primary hover:bg-gray-50'} hover:text-secondary`
+                      ? `${isDarkMode ? 'text-white bg-secondary shadow-lg' : 'text-white bg-secondary shadow-lg'}`
+                      : `${isDarkMode ? 'text-gray-300 hover:bg-gray-800 hover:text-white' : 'text-gray-700 hover:bg-gray-50 hover:text-primary'}`
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                   style={{ animationDelay: `${index * 0.1}s` }}
@@ -125,10 +125,10 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-3 py-2">
+              <div className="px-4 py-3">
                 <Link
                   to="/contact"
-                  className="btn-primary w-full text-center block transform hover:scale-105 transition-all duration-300 ease-out"
+                  className="btn-primary w-full text-center block transform hover:scale-105 transition-all duration-300 ease-out rounded-lg py-3 font-semibold"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Get Started

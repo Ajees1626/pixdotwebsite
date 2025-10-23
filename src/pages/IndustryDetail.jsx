@@ -1,6 +1,17 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
-import { FaArrowLeft, FaCheck, FaHospital, FaUniversity, FaShoppingCart, FaGraduationCap, FaHome, FaIndustry, FaUtensils, FaUsers, FaChartLine, FaAward, FaRocket, FaLock, FaMobile, FaGlobe } from 'react-icons/fa'
+import { FaShoppingCart, FaUtensils, FaBasketballBall, FaCar, FaArrowLeft, FaRocket, FaUsers, FaChartLine, FaCheck, FaLock, FaAward } from "react-icons/fa";
+import { GiHospitalCross, GiForkKnifeSpoon, GiAppleSeeds, GiTempleDoor, GiAmpleDress } from "react-icons/gi";
+import { LiaSchoolSolid } from "react-icons/lia";
+import { CiLaptop } from "react-icons/ci";
+import { ImTruck } from "react-icons/im";
+import { GiOpenedFoodCan } from "react-icons/gi";
+import { IoBagHandle } from "react-icons/io5";
+import { IoMdMedal } from "react-icons/io";
+import { MdFastfood, MdRealEstateAgent, MdDryCleaning, MdTravelExplore } from "react-icons/md";
+import { RiBrushAiFill } from "react-icons/ri";
+import { PiBowlFoodFill } from "react-icons/pi";
+import { SiBlockchaindotcom } from "react-icons/si";
 import { useTheme } from '../contexts/ThemeContext'
 import industriesData from '../data/industriesData.json'
 
@@ -16,13 +27,27 @@ const IndustryDetail = () => {
   
   // Icon mapping for dynamic icon rendering
   const iconMap = {
-    FaHospital,
-    FaUniversity,
     FaShoppingCart,
-    FaGraduationCap,
-    FaHome,
-    FaIndustry,
-    FaUtensils
+    GiOpenedFoodCan,
+    FaBasketballBall, 
+    FaCar, 
+    ImTruck,
+    GiHospitalCross,
+    GiForkKnifeSpoon,
+    GiAppleSeeds,
+    GiTempleDoor,
+    GiAmpleDress,
+    LiaSchoolSolid,
+    CiLaptop,
+    IoBagHandle,
+    IoMdMedal,
+    MdFastfood,
+    MdRealEstateAgent,
+    MdDryCleaning,
+    MdTravelExplore,
+    RiBrushAiFill,
+    PiBowlFoodFill,
+    SiBlockchaindotcom
   }
 
   const industry = industriesData[id]
@@ -180,7 +205,7 @@ const IndustryDetail = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <FaRocket className="text-secondary mr-3" />
-                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-700'}>{industry.projects} Projects Delivered</span>
+                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-700'}>{industry.projects} </span>
                   </div>
                   <div className="flex items-center">
                     <FaUsers className="text-secondary mr-3" />
@@ -188,7 +213,7 @@ const IndustryDetail = () => {
                   </div>
                   <div className="flex items-center">
                     <FaChartLine className="text-secondary mr-3" />
-                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-700'}>{industry.growth} Average Growth</span>
+                    <span className={isDarkMode ? 'text-gray-300' : 'text-gray-700'}>{industry.growth} </span>
                   </div>
                 </div>
               </div>

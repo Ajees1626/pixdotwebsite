@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane, FaUser, FaBuilding, FaComment } from 'react-icons/fa'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane, FaUser, FaBuilding, FaComment, FaWhatsapp, FaTelegram } from 'react-icons/fa'
 import { useTheme } from '../contexts/ThemeContext'
 
 const Contact = () => {
@@ -290,38 +290,84 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Office Locations */}
+      {/* Map Section */}
       <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className={`text-3xl md:text-4xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6`}>
-              Our <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Offices</span>
+              Find <span className={`${isDarkMode ? 'text-white' : 'text-gradient'}`}>Us</span>
             </h2>
             <p className={`text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto`}>
-              We have offices worldwide to serve our global clientele with local expertise.
+              Visit our office or get in touch with us for your next project.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {offices.map((office, index) => (
-              <div key={index} className={`${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}>
-                <h3 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-4`}>{office.city}</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start">
-                    <FaMapMarkerAlt className="text-secondary mr-3 mt-1" />
-                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>{office.address}</p>
-                  </div>
-                  <div className="flex items-center">
-                    <FaPhone className="text-secondary mr-3" />
-                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>{office.phone}</p>
-                  </div>
-                  <div className="flex items-center">
-                    <FaEnvelope className="text-secondary mr-3" />
-                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>{office.email}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Map */}
+            <div className="relative">
+              <div className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-8 shadow-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+                <div className="aspect-video bg-gray-200 rounded-xl flex items-center justify-center">
+                  <div className="text-center">
+                    <FaMapMarkerAlt className="text-4xl text-secondary mx-auto mb-4" />
+                    <p className={`text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                      Interactive Map
+                    </p>
+                    <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mt-2`}>
+                      Click to view location
+                    </p>
                   </div>
                 </div>
               </div>
-            ))}
+            </div>
+
+            {/* Contact Info */}
+            <div className="space-y-8">
+              <div className={`${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-8 shadow-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+                <h3 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6`}>
+                  Main Office
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <FaMapMarkerAlt className="text-secondary mr-3 mt-1" />
+                    <div>
+                      <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                        123 Business District<br />
+                        Chennai, Tamil Nadu 600001<br />
+                        India
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center">
+                    <FaPhone className="text-secondary mr-3" />
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+91 98765 43210</p>
+                  </div>
+                  <div className="flex items-center">
+                    <FaEnvelope className="text-secondary mr-3" />
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>info@pixdot.com</p>
+                  </div>
+                  <div className="flex items-center">
+                    <FaClock className="text-secondary mr-3" />
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-8 shadow-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}>
+                <h3 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6`}>
+                  Quick Contact
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-center">
+                    <FaWhatsapp className="text-green-500 mr-3" />
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+91 98765 43210</p>
+                  </div>
+                  <div className="flex items-center">
+                    <FaTelegram className="text-blue-500 mr-3" />
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>@pixdot_support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

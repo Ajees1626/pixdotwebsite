@@ -1,6 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { FaHospital, FaUniversity, FaShoppingCart, FaGraduationCap, FaHome, FaIndustry,FaUtensils } from 'react-icons/fa'
+import { FaShoppingCart, FaUtensils, FaBasketballBall, FaCar } from "react-icons/fa";
+import { GiHospitalCross, GiForkKnifeSpoon, GiAppleSeeds, GiTempleDoor, GiAmpleDress } from "react-icons/gi";
+import { ImTruck } from "react-icons/im";
+import { GiOpenedFoodCan } from "react-icons/gi";
+import { LiaSchoolSolid } from "react-icons/lia";
+import { CiLaptop } from "react-icons/ci";
+import { IoBagHandle } from "react-icons/io5";
+import { IoMdMedal } from "react-icons/io";
+import { MdFastfood, MdRealEstateAgent, MdDryCleaning, MdTravelExplore } from "react-icons/md";
+import { RiBrushAiFill } from "react-icons/ri";
+import { PiBowlFoodFill } from "react-icons/pi";
+import { SiBlockchaindotcom } from "react-icons/si";
 import industriesData from '../data/industriesData.json'
 import { useTheme } from '../contexts/ThemeContext'
 
@@ -12,13 +23,27 @@ const Industrie = () => {
   
   // Icon mapping for dynamic icon rendering
   const iconMap = {
-    FaHospital,
-    FaUniversity,
     FaShoppingCart,
-    FaGraduationCap,
-    FaHome,
-    FaIndustry,
-    FaUtensils
+    GiOpenedFoodCan,
+    FaBasketballBall, 
+    FaCar, 
+    ImTruck,
+    GiHospitalCross,
+    GiForkKnifeSpoon,
+    GiAppleSeeds,
+    GiTempleDoor,
+    GiAmpleDress,
+    LiaSchoolSolid,
+    CiLaptop,
+    IoBagHandle,
+    IoMdMedal,
+    MdFastfood,
+    MdRealEstateAgent,
+    MdDryCleaning,
+    MdTravelExplore,
+    RiBrushAiFill,
+    PiBowlFoodFill,
+    SiBlockchaindotcom
   }
 
   const stats = [

@@ -1,7 +1,7 @@
 {
   "Brand & Creative": {
     "id": "Brand & Creative",
-    "icon": "FaRocket",
+    "icon": "FaLightbulb",
     "title": "Brand & Creative",
     "headerTagline": "Build a memorable brand",
     "description": "We create unique brand designs that make your business look professional and memorable.",
@@ -55,7 +55,7 @@
   },
   "Digital Marketing": {
     "id": "Digital Marketing",
-    "icon": "FaMobile",
+    "icon": "GiArcheryTarget",
     "title": "Digital Marketing",
     "headerTagline": "Reach users everywhere",
     "description": "We promote your business online to reach more people and get real results.",
@@ -109,7 +109,7 @@
   },
   "Packaging Design": {
     "id": "Packaging Design",
-    "icon": "FaSearch",
+    "icon": "VscPackage",
     "title": "Packaging Design",
     "headerTagline": "Be found first",
     "description": "We design attractive packaging that catches attention and increases product sales.",
@@ -161,7 +161,7 @@
   },
   "Website Development": {
     "id": "Website Development",
-    "icon": "FaPenFancy",
+    "icon": "TbWorldCheck",
     "title": "Website Development",
     "headerTagline": "Delight users, drive results",
     "description": "We build fast, modern, and easy-to-use websites for your business.",
@@ -222,7 +222,7 @@
   },
   "App Development": {
     "id": "App Development",
-    "icon": "FaBullhorn",
+    "icon": "CiMobile1",
     "title": "App Development",
     "headerTagline": "Accelerate growth",
     "description": "We create mobile apps that are simple, smart, and help your business grow.",
@@ -282,7 +282,7 @@
   },
   "Personal Branding": {
     "id": "Personal Branding",
-    "icon": "FaShoppingCart",
+    "icon": "IoIosPeople",
     "title": "Personal Branding",
     "headerTagline": "Sell everywhere",
     "description": "We help you build your name, style, and online presence to stand out.",

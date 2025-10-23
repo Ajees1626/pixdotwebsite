@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useCallback, useMemo } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { FaArrowLeft, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 import { useTheme } from '../contexts/ThemeContext'
@@ -11,20 +11,20 @@ const ProjectsDetail = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const { isDarkMode } = useTheme()
 
-  const openModal = (project) => {
+  const openModal = useCallback((project) => {
     setSelectedProject({
       ...project,
       currentImage: project.relatedImages ? project.relatedImages[0] : project.image
     })
     setIsModalOpen(true)
     document.body.style.overflow = 'hidden'
-  }
+  }, [])
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setIsModalOpen(false)
     setSelectedProject(null)
     document.body.style.overflow = 'unset'
-  }
+  }, [])
 
   if (!projectsData[categoryId]) {
     return (
@@ -45,14 +45,15 @@ const ProjectsDetail = () => {
   const categoryData = projectsData[categoryId]
   
   // Build a single project list. If varieties exist, flatten them into one array.
-  let projects = []
-  if (categoryData.varieties) {
-    projects = Object.values(categoryData.varieties).flatMap(v => v.projects)
-  } else {
-    projects = categoryData.projects || []
-  }
+  const projects = useMemo(() => {
+    if (categoryData.varieties) {
+      return Object.values(categoryData.varieties).flatMap(v => v.projects)
+    } else {
+      return categoryData.projects || []
+    }
+  }, [categoryData])
 
-  const navigateProject = (direction) => {
+  const navigateProject = useCallback((direction) => {
     const currentIndex = projects.findIndex(p => p.id === selectedProject.id)
     let newIndex
     
@@ -63,9 +64,9 @@ const ProjectsDetail = () => {
     }
     
     setSelectedProject(projects[newIndex])
-  }
+  }, [projects, selectedProject])
 
-  const navigateImage = (direction) => {
+  const navigateImage = useCallback((direction) => {
     if (!selectedProject.relatedImages || selectedProject.relatedImages.length <= 1) return
     
     const currentImageIndex = selectedProject.relatedImages.findIndex(img => img === selectedProject.currentImage)
@@ -77,40 +78,43 @@ const ProjectsDetail = () => {
       newImageIndex = currentImageIndex < selectedProject.relatedImages.length - 1 ? currentImageIndex + 1 : 0
     }
     
-    setSelectedProject({
-      ...selectedProject,
-      currentImage: selectedProject.relatedImages[newImageIndex]
-    })
-  }
+    setSelectedProject(prev => ({
+      ...prev,
+      currentImage: prev.relatedImages[newImageIndex]
+    }))
+  }, [selectedProject])
 
   // No variety selection UI; nothing to initialize
   useEffect(() => {}, [categoryId])
 
   // Keyboard navigation
   useEffect(() => {
+    if (!isModalOpen) return
+    
     const handleKeyPress = (e) => {
-      if (!isModalOpen) return
-      
       if (e.key === 'ArrowLeft') {
+        e.preventDefault()
         if (selectedProject.relatedImages && selectedProject.relatedImages.length > 1) {
           navigateImage('prev')
         } else {
           navigateProject('prev')
         }
       } else if (e.key === 'ArrowRight') {
+        e.preventDefault()
         if (selectedProject.relatedImages && selectedProject.relatedImages.length > 1) {
           navigateImage('next')
         } else {
           navigateProject('next')
         }
       } else if (e.key === 'Escape') {
+        e.preventDefault()
         closeModal()
       }
     }
 
     document.addEventListener('keydown', handleKeyPress)
     return () => document.removeEventListener('keydown', handleKeyPress)
-  }, [isModalOpen, selectedProject, projects])
+  }, [isModalOpen, selectedProject])
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-gradient-to-br from-gray-50 to-white'}`}>
@@ -145,22 +149,34 @@ const ProjectsDetail = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8 mb-12">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
               key={project.id}
               onClick={() => openModal(project)}
               className="group cursor-pointer"
             >
-              <div className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 sm:hover:-translate-y-4 border border-gray-100 overflow-hidden">
+              <div className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 overflow-hidden">
                 {/* Project Image */}
                 <div className="relative">
-                  <div className="w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden group-hover:scale-105 transition-transform duration-300">
+                  <div className="w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden bg-gray-100">
                     <img
                       src={project.image}
                       alt="Project"
                       className="w-full h-full object-cover"
+                      loading="lazy"
+                      style={{ 
+                        objectFit: 'cover',
+                        width: '100%',
+                        height: '100%'
+                      }}
+                      onError={(e) => {
+                        e.target.style.display = 'none'
+                        e.target.nextSibling.style.display = 'flex'
+                      }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500 text-sm" style={{ display: 'none' }}>
+                      Image not available
+                    </div>
                   </div>
                 </div>
               </div>
@@ -179,12 +195,16 @@ const ProjectsDetail = () => {
 
       {/* Modal for Full Project View */}
       {isModalOpen && selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/90 backdrop-blur-md">
-         <div className="relative bg-white rounded-xl sm:rounded-2xl w-[90vw] h-[90vw] sm:w-[650px] sm:h-[650px] max-w-[90vw] max-h-[90vh] sm:max-w-[650px] sm:max-h-[650px] overflow-hidden shadow-2xl">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/90">
+         <div className={`relative bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl ${
+           categoryId === 'branding' 
+             ? 'w-[90vw] h-[90vw] sm:w-[700px] sm:h-[700px] max-w-[90vw] max-h-[90vh] sm:max-w-[700px] sm:max-h-[700px]' 
+             : 'w-[90vw] h-[90vw] sm:w-[650px] sm:h-[650px] max-w-[90vw] max-h-[90vh] sm:max-w-[650px] sm:max-h-[650px]'
+         }`}>
            {/* Close Button */}
            <button
              onClick={closeModal}
-             className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
+             className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
            >
              <FaTimes className="text-gray-700 text-sm sm:text-lg md:text-xl" />
            </button>
@@ -199,7 +219,7 @@ const ProjectsDetail = () => {
                    navigateProject('prev')
                  }
                }}
-               className="absolute left-2 top-1/2 transform -translate-y-1/2 sm:left-3 md:left-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
+               className="absolute left-2 top-1/2 transform -translate-y-1/2 sm:left-3 md:left-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
              >
                <FaChevronLeft className="text-gray-700 text-sm sm:text-lg md:text-xl" />
              </button>
@@ -215,27 +235,40 @@ const ProjectsDetail = () => {
                    navigateProject('next')
                  }
                }}
-               className="absolute right-2 top-1/2 transform -translate-y-1/2 sm:right-3 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white/95 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white transition-all duration-300 shadow-lg"
+               className="absolute right-2 top-1/2 transform -translate-y-1/2 sm:right-3 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
              >
                <FaChevronRight className="text-gray-700 text-sm sm:text-lg md:text-xl" />
              </button>
            )}
 
            {/* Full Image Display */}
-           <div className="relative">
-             <div className="w-full h-full rounded-xl sm:rounded-2xl overflow-hidden">
-               <img
-                 src={selectedProject.currentImage || selectedProject.image}
-                 alt="Project"
-                 className="w-full h-full object-cover"
-               />
+           <div className="relative w-full h-full bg-gray-50">
+             <img
+               src={selectedProject.currentImage || selectedProject.image}
+               alt="Project"
+               className="w-full h-full object-contain"
+               style={{ 
+                 maxWidth: '100%', 
+                 maxHeight: '100%',
+                 objectFit: 'contain'
+               }}
+               onError={(e) => {
+                 e.target.style.display = 'none'
+                 e.target.nextSibling.style.display = 'flex'
+               }}
+             />
+             <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500 text-lg" style={{ display: 'none' }}>
+               <div className="text-center">
+                 <div className="text-4xl mb-2">📷</div>
+                 <div>Image not available</div>
+               </div>
              </div>
            </div>
 
            {/* Project Counter */}
            {(projects.length > 1 || (selectedProject.relatedImages && selectedProject.relatedImages.length > 1)) && (
              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 sm:bottom-3 md:bottom-4 z-10">
-               <div className="bg-white/95 backdrop-blur-sm rounded-full px-3 py-1.5 sm:px-4 sm:py-2 shadow-lg">
+               <div className="bg-white rounded-full px-3 py-1.5 sm:px-4 sm:py-2 shadow-lg">
                  <span className="text-gray-700 text-xs sm:text-sm font-medium">
                    {selectedProject.relatedImages && selectedProject.relatedImages.length > 1 
                      ? `${selectedProject.relatedImages.findIndex(img => img === selectedProject.currentImage) + 1} / ${selectedProject.relatedImages.length}`

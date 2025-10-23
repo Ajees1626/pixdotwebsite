@@ -10,16 +10,16 @@ const ReviewsSection = () => {
     {
       name: 'KarthiKeyan K',
       company: 'Velan Bhavan & Velan Non Veg Restaurant',
-      role: 'Owner',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face',
+      role: 'Founder',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761202250/KarthiKeyan_K-01_vixye3.jpg',
       rating: 5,
       text: 'We are very happy with the digital marketing, social media management, and poster design service by Pixdot – chennai and Tenkasi. Their creative work for Velan Bhavan & Velan Non Veg Restaurant is excellent. We truly recommend Pixdot to other businesses looking to grow online with professional marketing support.'
     },
     {
       name: 'Pradeep kumar',
       company: 'Velan Sweets & Bakery',
-      role: 'Owner',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face',
+      role: 'Founder',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761202250/Pradeep_kumar-01_pyo95l.jpg',
       rating: 5,
       text: 'We are very happy with the social media management and poster design service provided by Pixdot for our brand Velan Sweets & Bakery – Surandai, near Tenkasi.Their creative team designs attractive and eye-catching posters that perfectly match our brand identity.'
     },
@@ -27,31 +27,31 @@ const ReviewsSection = () => {
       name: 'Jaabir Mohamed',
       company: 'National College',
       role: 'proffessor head of the department',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761202249/Jaabir_Mohamed-01_ia5cmj.jpg',
       rating: 5,
       text: 'Quick people to get the work done as we expect. Promises delivered with good leads. They made our promotions easy and reachable with elite posters and videos. Happy to seek their services again.'
     },
     {
       name: 'JAHIR HUSSAIN',
       company: 'Crescent Halwa',
-      role: 'Owner',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face',
+      role: 'Founder',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761202249/JAHIR_HUSSAIN-01_tqseiz.jpg',
       rating: 5,
       text: 'We’re very happy with the packaging design and social media marketing support provided by Pixdot. They understood our brand and created designs that reflect our tradition beautifully. Their team made the process smooth and professional. We highly recommend their services — Crescent Halwa'
     },
     {
       name: 'Azhagi Homemade products',
       company: 'Azhagi Homemade products',
-      role: 'Owner',
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face',
+      role: 'Founder',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761202257/Azhagi_Homemade_products-01_ug9vty.jpg',
       rating: 5,
       text: 'We are very satisfied with the video editing, YouTube handling, and digital marketing services provided by Pixdot. Their team is creative, professional, and understands our brand’s needs perfectly. With their support, we’ve seen better audience reach and engagement. Highly recommend Pixdot for anyone looking for complete digital solutions! -Azhagi '
     },
     {
       name: 'Bhavani Gopinath',
       company: 'the brand box',
-      role: 'Owner',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face',
+      role: 'Founder',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761202249/Bhavani_Gopinath-01_oejgu9.jpg',
       rating: 5,
       text: 'Working with Pixdot team for my Store Branding nd Marketing. Professional Team .Their work was excellent beyond my expectations. Very much comfortable for communication nd approchable . Happy with their work . Much recommended for businesses looking to grow online ..'
     } 
