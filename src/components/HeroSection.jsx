@@ -61,7 +61,7 @@ const HeroSection = () => {
           <div className={`${isDarkMode ? 'text-white' : 'text-primary'} transition-all duration-1000 order-1 md:order-2 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             
             {/* Main Heading - Mobile & Tablet Optimized */}
-            <h1 className={`text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 sm:mb-6 md:mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <h1 className={`text-6xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 sm:mb-6 md:mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <span className="block animate-fadeInUp">
                 We Don't Just Build <span className="text-secondary">Brands</span>
               </span>
