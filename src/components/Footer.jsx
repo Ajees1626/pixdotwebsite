@@ -37,28 +37,26 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      { name: 'Web Development', href: '/service' },
-      { name: 'Digital Marketing', href: '/service' },
-      { name: 'SEO Services', href: '/service' },
-      { name: 'UI/UX Design', href: '/service' },
-      { name: 'Mobile Apps', href: '/service' },
-      { name: 'Cloud Solutions', href: '/service' }
+      { name: 'Website Development', href: '/service/Website Development' },
+      { name: 'Digital Marketing', href: '/service/Digital Marketing' },
+      { name: 'Packaging Design', href: '/service/Packaging Design' },
+      { name: 'App Development', href: '/service/App Development' },
+      { name: 'Personal Branding', href: '/service/Personal Branding' },
+      { name: 'Brand & Creative', href: '/service/Brand & Creative' }
     ],
     company: [
       { name: 'About Us', href: '/about' },
-      { name: 'Our Team', href: '/about' },
+      { name: 'Solutions', href: '/solutions' },
       { name: 'Case Studies', href: '/casestudy' },
-      { name: 'Careers', href: '/contact' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'News', href: '/news' }
+      { name: 'contact', href: '/contact' } 
     ],
     industries: [
-      { name: 'Healthcare', href: '/industrie' },
-      { name: 'Finance', href: '/industrie' },
-      { name: 'E-commerce', href: '/industrie' },
-      { name: 'Education', href: '/industrie' },
-      { name: 'Real Estate', href: '/industrie' },
-      { name: 'Manufacturing', href: '/industrie' }
+      { name: 'Health Care ', href: '/industrie/healthcare' },
+      { name: 'E-commerce ', href: '/industrie/E-commerce' },
+      { name: 'Education ', href: '/industrie/Education' },
+      { name: 'Real Estate ', href: '/industrie/real-estate' },
+      { name: 'Food ', href: '/industrie/food' },
+      { name: 'IT Industry ', href: '/industrie/IT Industry' }
     ],
     support: [
       { name: 'Help Center', href: '/help' },
@@ -70,14 +68,13 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { icon: FaFacebookSquare, href: '#', label: 'Facebook' },
-    { icon: FaInstagram, href: '#', label: 'Instagram' },
+    { icon: FaFacebookSquare, href: 'https://www.facebook.com/profile.php?id=61560584369932', label: 'Facebook' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/pixdotsolutions/', label: 'Instagram' },
     { icon: IoLogoYoutube, href: '#', label: 'YouTube' },
-    { icon: BsTwitterX, href: '#', label: 'Twitter X' },
-    { icon: FaBehanceSquare, href: '#', label: 'Behance' },
-    { icon: FaWhatsapp, href: '#', label: 'WhatsApp' },
-    { icon: FaPinterestSquare, href: '#', label: 'Pinterest' },
-    { icon: FaLinkedin, href: '#', label: 'LinkedIn' }
+    { icon: BsTwitterX, href: 'https://x.com/pixdot24', label: 'Twitter X' },
+    { icon: FaBehanceSquare, href: 'https://www.behance.net/pixdotworkup', label: 'Behance' },
+    { icon: FaWhatsapp, href: 'https://wa.me/918778996278', label: 'WhatsApp' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/pixdot/', label: 'LinkedIn' }
   ]
 
   return (
@@ -135,7 +132,7 @@ const Footer = () => {
                       </div>
                       <div>
                         <p className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Phone</p>
-                        <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>+1 (555) 123-4567</p>
+                        <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>+91 87789 96278,+91 87789 64644</p>
                       </div>
                     </div>
                     <div className={`flex items-center ${isDarkMode ? 'text-gray-200' : 'text-gray-700'} transform hover:translate-x-2 transition-all duration-300 group`}>
@@ -144,7 +141,7 @@ const Footer = () => {
                       </div>
                       <div>
                         <p className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Email</p>
-                        <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>info@pixdot.com</p>
+                        <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>info@pixdotsolutions.com</p>
                       </div>
                     </div>
                     <div className={`flex items-center ${isDarkMode ? 'text-gray-200' : 'text-gray-700'} transform hover:translate-x-2 transition-all duration-300 group`}>
@@ -153,7 +150,8 @@ const Footer = () => {
                       </div>
                       <div>
                         <p className={`font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>Address</p>
-                        <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>123 Business St, City, State 12345</p>
+                        <p className={`${isDarkMode ? 'text-gray-200' : 'text-gray-600'}`}>No:40, First Floor, G.K Industrial Estate,<br />
+                        Alapakkam, Porur, Chennai - 600 116.</p>
                       </div>
                     </div>
                   </div>
@@ -244,6 +242,8 @@ const Footer = () => {
                     <a
                       key={social.label}
                       href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`w-14 h-14 flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group`}
                       aria-label={social.label}
                       style={{ animationDelay: `${index * 0.1}s` }}
@@ -417,9 +417,10 @@ const Footer = () => {
                         <h4 className={`font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>Legal Department</h4>
                       </div>
                       <div className={`space-y-2 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                        <p><strong>Email:</strong> legal@pixdot.com</p>
-                        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                        <p><strong>Address:</strong> 123 Business St, City, State 12345</p>
+                        <p><strong>Email:</strong> info@pixdotsolutions.com</p>
+                        <p><strong>Phone:</strong> +91 87789 96278</p>
+                        <p><strong>Address:</strong> No:40, First Floor, G.K Industrial Estate,
+                        Alapakkam, Porur, Chennai - 600 116.</p>
                       </div>
                     </div>
                   </div>

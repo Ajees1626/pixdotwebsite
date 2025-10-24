@@ -159,7 +159,7 @@ const Solutions = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
             {filteredSolutions.map((solution, index) => {
               const IconComponent = iconMap[solution.icon] || FaUsers // Fallback icon
               if (!iconMap[solution.icon]) {
@@ -168,10 +168,10 @@ const Solutions = () => {
               return (
                 <div
                   key={index}
-                  className={`rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border ${isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-white border-gray-200'} hover:shadow-2xl`}
+                  className={`rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border ${isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-white border-gray-200'} hover:shadow-2xl`}
                 >
-                  <div className={`w-16 h-16 bg-gradient-to-r ${solution.color} rounded-2xl flex items-center justify-center mb-6 transform hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                    <IconComponent className="text-white text-2xl" />
+                  <div className={`w-14 h-14 md:w-16 md:h-16 bg-gradient-to-r ${solution.color} rounded-2xl flex items-center justify-center mb-4 md:mb-6 transform hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                    <IconComponent className="text-white text-xl md:text-2xl" />
                   </div>
                 
                 <div className="mb-4">
@@ -180,27 +180,27 @@ const Solutions = () => {
                   </span>
                 </div>
                 
-                <h3 className={`text-2xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{solution.title}</h3>
-                <p className={`mb-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{solution.description}</p>
+                <h3 className={`text-xl md:text-2xl font-bold mb-3 md:mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{solution.title}</h3>
+                <p className={`mb-4 md:mb-6 text-sm md:text-base ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{solution.description}</p>
                 
-                <div className="mb-6">
-                  <h4 className={`font-semibold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'}`}>Key Features:</h4>
-                  <ul className="space-y-2">
+                <div className="mb-4 md:mb-6">
+                  <h4 className={`font-semibold mb-2 md:mb-3 text-sm md:text-base ${isDarkMode ? 'text-white' : 'text-primary'}`}>Key Features:</h4>
+                  <ul className="space-y-1 md:space-y-2">
                     {solution.features.map((feature, idx) => (
-                      <li key={idx} className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                        <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
+                      <li key={idx} className={`flex items-center text-xs md:text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                        <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-secondary rounded-full mr-2 md:mr-3"></div>
                         {feature}
                       </li>
                     ))}
                   </ul>
                 </div>
                 
-                <div className={`rounded-lg p-4 ${isDarkMode ? 'bg-gray-600/50' : 'bg-gray-50'} border ${isDarkMode ? 'border-gray-500' : 'border-gray-200'}`}>
-                  <h4 className={`font-semibold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'}`}>Benefits:</h4>
+                <div className={`rounded-lg p-3 md:p-4 ${isDarkMode ? 'bg-gray-600/50' : 'bg-gray-50'} border ${isDarkMode ? 'border-gray-500' : 'border-gray-200'}`}>
+                  <h4 className={`font-semibold mb-2 md:mb-3 text-sm md:text-base ${isDarkMode ? 'text-white' : 'text-primary'}`}>Benefits:</h4>
                   <ul className="space-y-1">
                     {solution.benefits.map((benefit, idx) => (
-                      <li key={idx} className={`flex items-center text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                        <div className={`w-1.5 h-1.5 ${isDarkMode ? 'bg-secondary' : 'bg-secondary'} rounded-full mr-2`}></div>
+                      <li key={idx} className={`flex items-center text-xs md:text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                        <div className={`w-1 h-1 md:w-1.5 md:h-1.5 ${isDarkMode ? 'bg-secondary' : 'bg-secondary'} rounded-full mr-1 md:mr-2`}></div>
                         {benefit}
                       </li>
                     ))}

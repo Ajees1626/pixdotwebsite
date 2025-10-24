@@ -91,7 +91,7 @@ const ProjectsSection = () => {
         </div>
 
         {/* 6 Category Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 mb-12">
           {categories.map((category, index) => (
             <div
               key={index}
@@ -99,13 +99,13 @@ const ProjectsSection = () => {
               className="group cursor-pointer animate-slideInUp"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`relative ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border overflow-hidden`}>
+              <div className={`relative ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-3xl p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border overflow-hidden`}>
                 {/* Background Gradient */}
                 <div className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                 
                 {/* Category Image */}
-                <div className="relative mb-6">
-                  <div className="w-full h-48 rounded-2xl overflow-hidden mb-4 group-hover:scale-105 transition-transform duration-300">
+                <div className="relative mb-4 md:mb-6">
+                  <div className="w-full h-40 md:h-48 rounded-2xl overflow-hidden mb-4 group-hover:scale-105 transition-transform duration-300">
                     <img
                       src={category.image}
                       alt={category.name}
@@ -117,26 +117,26 @@ const ProjectsSection = () => {
 
                 {/* Content */}
                 <div className="relative">
-                  <h3 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-3 group-hover:text-secondary transition-colors`}>
+                  <h3 className={`text-xl md:text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2 md:mb-3 group-hover:text-secondary transition-colors`}>
                     {category.name}
                   </h3>
-                  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-6 leading-relaxed`}>
+                  <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-4 md:mb-6 leading-relaxed text-sm md:text-base`}>
                     {projectsData[category.id]?.description || `Explore our ${category.name.toLowerCase()} projects and see how we create stunning visual designs that make brands stand out.`}
                   </p>
 
                   {/* Project Count */}
-                  <div className="flex justify-between items-center mb-6">
+                  <div className="flex justify-between items-center mb-4 md:mb-6">
                     <div>
-                      <div className={`text-lg font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>
+                      <div className={`text-base md:text-lg font-bold ${isDarkMode ? 'text-white' : 'text-primary'}`}>
                         {projectsData[category.id]?.varieties 
                           ? Object.values(projectsData[category.id].varieties).reduce((total, variety) => total + variety.projects.length, 0)
                           : projectsData[category.id]?.projects?.length || 0
                         } Projects
                       </div>
-                      <div className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Click to view all</div>
+                      <div className={`text-xs md:text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Click to view all</div>
                     </div>
-                    <div className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-12">
-                      <span className="text-secondary group-hover:text-white transition-colors font-bold">→</span>
+                    <div className="w-8 h-8 md:w-10 md:h-10 bg-secondary/10 rounded-full flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all duration-300 transform group-hover:scale-110 group-hover:rotate-12">
+                      <span className="text-secondary group-hover:text-white transition-colors font-bold text-sm md:text-base">→</span>
                     </div>
                   </div>
 
@@ -150,8 +150,8 @@ const ProjectsSection = () => {
 
         {/* Total Project Count */}
         <div className={`text-center transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className={`inline-flex items-center ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-full px-8 py-4 shadow-lg border transform hover:scale-105 transition-transform duration-300`}>
-            <span className={`text-3xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mr-3 animate-counter`}>
+          <div className={`inline-flex items-center ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-full px-6 md:px-8 py-3 md:py-4 shadow-lg border transform hover:scale-105 transition-transform duration-300`}>
+            <span className={`text-2xl md:text-3xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mr-2 md:mr-3 animate-counter`}>
               {Object.values(projectsData).reduce((total, category) => {
                 if (category.varieties) {
                   return total + Object.values(category.varieties).reduce((varietyTotal, variety) => varietyTotal + variety.projects.length, 0)
@@ -159,7 +159,7 @@ const ProjectsSection = () => {
                 return total + (category.projects?.length || 0)
               }, 0)}
             </span>
-            <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} font-semibold`}>Total Projects</span>
+            <span className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} font-semibold text-sm md:text-base`}>Total Projects</span>
           </div>
         </div>
       </div>

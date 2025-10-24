@@ -5,885 +5,706 @@
     "caseStudies": [
       {
         "id": "logo-1",
-        "title": "TechStart Logo Redesign",
-        "client": "TechStart Inc",
-        "industry": "Technology",
-        "challenge": "Outdated logo that didn't reflect the company's innovative approach and modern technology focus.",
-        "solution": "Created a modern, minimalist logo with geometric elements representing growth and innovation.",
+        "title": "Magnaa Interiors Digital Marketing",
+        "client": "Magnaa Modules & Interiors Pvt. Ltd.",
+        "industry": "Modular Workspace Interiors",
+        "challenge": "Despite strong offline recognition, Magnaa Interiors had very low online visibility. Social media activity was inconsistent, engagement was minimal, and digital lead generation was underperforming, limiting business growth opportunities.",
+        "solution": "Pixdot created a tailored social media strategy:\n\n• Produced engaging, high-quality posts showcasing completed projects and design expertise\n• Launched targeted Meta ad campaigns to reach potential clients effectively\n• Optimized campaigns continuously to focus on quality leads rather than quantity\n• Monitored analytics to improve engagement and maximize ROI\n",
         "results": [
-          { "metric": "Brand Recognition", "before": "45%", "after": "78%", "improvement": "+73%" },
-          { "metric": "Customer Trust", "before": "3.2/5", "after": "4.6/5", "improvement": "+44%" },
-          { "metric": "Website Traffic", "before": "2.1K", "after": "4.8K", "improvement": "+129%" }
+          { "metric": "Brand Visibility & Recognition", "before": "40%", "after": "68%", "improvement": "+68%" },
+          { "metric": "Customer Engagement & Trust", "before": "3.1/5", "after": "4.65/5", "improvement": "+50%" },
+          { "metric": "Sales Conversion / ROI", "before": "1X", "after": "3.8X", "improvement": "3.8X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "24 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287589/CASE_1_g4lpv9.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287590/CASE_1-1_vn7ifr.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287590/CASE_1-2_lbnfms.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287591/CASE_1-3_vcsmgd.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287589/CASE_1-4_c7uiku.webp" 
         ],
-        "fullDescription": "TechStart Inc needed a complete brand identity overhaul to compete in the modern tech market. Their existing logo was outdated and didn't communicate their innovative approach to technology solutions. We created a comprehensive logo system that works across all platforms and scales beautifully from business cards to billboards."
+        "fullDescription": "Magnaa Modules & Interiors Pvt. Ltd. is a leading workspace interiors company known for premium designs and exceptional offline reputation. Pixdot partnered with them to strengthen their online presence, attract high-quality leads, and boost sales via strategic social media marketing."
       },
       {
         "id": "logo-2",
-        "title": "EcoGreen Brand Identity",
-        "client": "EcoGreen Solutions",
-        "industry": "Environmental",
-        "challenge": "New company needed a logo that communicates sustainability and environmental responsibility.",
-        "solution": "Designed a nature-inspired logo with leaf elements and earth tones that conveys trust and environmental commitment.",
+        "title": "Naafi Unani Multi Speciality Clinic Branding",
+        "client": "Naafi Unani Multi Speciality Clinic",
+        "industry": "Healthcare / Unani Medicine",
+        "challenge": "The clinic had minimal online visibility and lacked a consistent brand identity. Social media engagement was low, and patient inquiries through digital channels were limited, which impacted overall growth.",
+        "solution": "Pixdot implemented a comprehensive branding and digital strategy:\n\n• Redesigned the clinic's branding with a modern, professional identity reflecting trust and expertise in Unani medicine\n• Developed a consistent social media plan with high-value, informative content about treatments and wellness tips\n• Launched targeted Meta ad campaigns to raise awareness and attract potential patients\n• Monitored and optimized campaigns continuously to maximize engagement and appointment conversions\n",
         "results": [
-          { "metric": "Brand Awareness", "before": "0%", "after": "65%", "improvement": "+100%" },
-          { "metric": "Market Position", "before": "Unknown", "after": "Top 3", "improvement": "New" },
-          { "metric": "Client Acquisition", "before": "0", "after": "150+", "improvement": "New" }
+          { "metric": "Brand Recognition & Trust", "before": "42%", "after": "71%", "improvement": "+68%" },
+          { "metric": "Patient Engagement", "before": "Low", "after": "High interactions", "improvement": "+53%" },
+          { "metric": "Appointments / Conversions", "before": "1X", "after": "3.4X", "improvement": "3.4X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "InDesign", "Brand Guidelines"],
-        "duration": "3 weeks",
-        "team": "3 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "7 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287801/CASE_2_wen96g.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287801/CASE_2-1_odwjby.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287800/CASE_2-2_fdhewu.webp"
         ],
-        "fullDescription": "EcoGreen Solutions was a startup focused on sustainable business practices. They needed a complete brand identity that would help them establish credibility in the competitive environmental services market. Our design team created a comprehensive logo system that reflects their commitment to sustainability while maintaining professional appeal."
+        "fullDescription": "Naafi Unani Multi Speciality Clinic provides traditional Unani treatments across multiple specialties. Pixdot partnered with them to modernize their brand identity, strengthen their digital presence, and attract more patients through strategic social media marketing and branding initiatives."
       },
       {
         "id": "logo-3",
-        "title": "FitnessFirst Logo Design",
-        "client": "FitnessFirst Gym",
-        "industry": "Fitness",
-        "challenge": "Local gym needed a strong, energetic logo to compete with national chains.",
-        "solution": "Created a dynamic logo with bold typography and fitness-inspired iconography.",
+        "title": "National College Digital Marketing",
+        "client": "National College",
+        "industry": "Education / Higher Education",
+        "challenge": "The college had limited online visibility, inconsistent social media content, and low engagement from prospective students. Digital lead generation was minimal, affecting student admissions.",
+        "solution": "Pixdot implemented a comprehensive social media strategy:\n\n• Created a consistent posting schedule across Instagram, Facebook, and LinkedIn\n• Designed visually appealing posts highlighting courses, campus facilities, and student success stories\n• Launched targeted Meta ad campaigns to reach prospective students and parents effectively\n• Monitored and optimized campaigns continuously to improve engagement and increase admissions\n",
         "results": [
-          { "metric": "Member Retention", "before": "65%", "after": "82%", "improvement": "+26%" },
-          { "metric": "Brand Recognition", "before": "30%", "after": "68%", "improvement": "+127%" },
-          { "metric": "New Members", "before": "45/month", "after": "78/month", "improvement": "+73%" }
+          { "metric": "Brand Visibility & Recognition", "before": "35%", "after": "58%", "improvement": "+65%" },
+          { "metric": "Student Engagement", "before": "Low", "after": "High interactions", "improvement": "+52%" },
+          { "metric": "Admissions / Conversions", "before": "1X", "after": "3.1X", "improvement": "3.1X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "8 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287856/CASE_3_jwmpos.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287856/CASE_3-1_wgqdsi.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287856/CASE_3-2_eak3db.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287838/CASE_3-3_yq0brf.webp"
         ],
-        "fullDescription": "FitnessFirst Gym needed a logo that would help them stand out in the competitive fitness industry. We created a bold, energetic design that conveys strength and motivation while maintaining professional appeal."
+        "fullDescription": "National College is a reputed educational institution aiming to attract more students and strengthen its online presence. Pixdot partnered with them to create a strategic digital marketing plan, manage social media, and design engaging posts to boost enrollment inquiries and campus engagement."
       },
       {
         "id": "logo-4",
-        "title": "CafeBella Logo Creation",
-        "client": "CafeBella",
-        "industry": "Food & Beverage",
-        "challenge": "New cafe needed a warm, inviting logo that reflects their artisanal coffee approach.",
-        "solution": "Designed a sophisticated logo with coffee bean elements and elegant typography.",
+        "title": "Hikmadh Technologies Digital Marketing",
+        "client": "Hikmadh Technologies",
+        "industry": "Technology / IT Services",
+        "challenge": "The company had low online visibility and minimal social media engagement. Digital lead generation was insufficient, which affected business growth and client acquisition.",
+        "solution": "Pixdot implemented a comprehensive digital marketing strategy:\n\n• Developed a consistent social media posting schedule showcasing services, client success stories, and project highlights\n• Created high-quality, engaging posts tailored for Instagram, Facebook, and LinkedIn\n• Launched targeted Meta ad campaigns to reach potential clients and generate quality leads\n• Continuously monitored analytics to optimize campaigns for maximum engagement and ROI\n",
         "results": [
-          { "metric": "Customer Recognition", "before": "0%", "after": "72%", "improvement": "New" },
-          { "metric": "Social Media Growth", "before": "0", "after": "5.2K", "improvement": "New" },
-          { "metric": "Daily Customers", "before": "0", "after": "180", "improvement": "New" }
+          { "metric": "Brand Visibility & Recognition", "before": "38%", "after": "65%", "improvement": "+70%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+50%" },
+          { "metric": "Sales Conversion / ROI", "before": "1X", "after": "3.5X", "improvement": "3.5X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "12 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287901/CASE_4_oxgkvl.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287902/CASE_4-1_kyu5ga.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287911/CASE_4-2_ia4t2u.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287901/CASE_4-3_q5ycx6.webp"
         ],
-        "fullDescription": "CafeBella was a new artisanal coffee shop that needed a logo that would reflect their premium quality and warm atmosphere. We created a sophisticated design that appeals to coffee enthusiasts while maintaining broad market appeal."
+        "fullDescription": "Hikmadh Technologies is a tech solutions company specializing in software development and IT services. Pixdot partnered with them to strengthen their online presence, attract quality leads, and increase engagement through strategic digital marketing campaigns."
       },
       {
         "id": "logo-5",
-        "title": "MediCare Plus Logo",
-        "client": "MediCare Plus",
-        "industry": "Healthcare",
-        "challenge": "Healthcare provider needed a trustworthy, professional logo for their clinic network.",
-        "solution": "Created a clean, medical-inspired logo with cross elements and professional typography.",
+        "title": "Crescent Halwa Digital Marketing",
+        "client": "Crescent Halwa",
+        "industry": "Food & Beverages / Sweets",
+        "challenge": "The brand had minimal social media presence and engagement. Online orders and inquiries were limited, and the digital identity did not reflect the premium quality of their products.",
+        "solution": "Pixdot implemented a strategic social media management plan:\n\n• Managed Instagram and Facebook pages with visually appealing posts showcasing products and festive promotions\n• Launched targeted Meta ad campaigns to reach potential customers and drive sales\n• Developed a consistent content strategy to improve audience interaction and engagement\n• Monitored performance through analytics to optimize campaigns and maximize ROI\n",
         "results": [
-          { "metric": "Patient Trust", "before": "3.1/5", "after": "4.5/5", "improvement": "+45%" },
-          { "metric": "Brand Recognition", "before": "40%", "after": "75%", "improvement": "+88%" },
-          { "metric": "New Patients", "before": "120/month", "after": "210/month", "improvement": "+75%" }
+          { "metric": "Brand Visibility & Recognition", "before": "36%", "after": "60%", "improvement": "+68%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+55%" },
+          { "metric": "Sales / Conversions", "before": "1X", "after": "3X", "improvement": "3X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "3 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "9 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287995/CASE_5_qlr8yi.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287995/CASE_5-1_dz6h84.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287996/CASE_5-2_pln9lx.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761287991/CASE_5-3_xicxec.webp"
         ],
-        "fullDescription": "MediCare Plus needed a logo that would convey trust, professionalism, and care in the healthcare industry. We created a clean, medical-inspired design that helps patients feel confident in their choice of healthcare provider."
+        "fullDescription": "Crescent Halwa is a traditional sweets brand specializing in premium halwa and festive treats. Pixdot partnered with them to manage social media pages, increase online engagement, and boost sales through targeted digital marketing strategies."
       },
       {
         "id": "logo-6",
-        "title": "EduTech Solutions Logo",
-        "client": "EduTech Solutions",
-        "industry": "Education",
-        "challenge": "Educational technology company needed a modern logo for their online learning platform.",
-        "solution": "Designed a tech-forward logo with educational elements and modern typography.",
+        "title": "Faasibees Snacks Digital Marketing",
+        "client": "Faasibees Snacks",
+        "industry": "Food & Beverages / Packaged Snacks",
+        "challenge": "The brand had limited online visibility, low engagement on social media, and minimal brand awareness for its snack products.",
+        "solution": "Pixdot implemented a targeted social media strategy:\n\n• Managed Instagram and Facebook pages with attractive product posts\n• Launched targeted Meta ad campaigns to reach the right audience and boost brand awareness\n• Developed consistent content and engagement strategies to increase customer interaction\n• Monitored analytics to optimize campaigns and improve performance\n",
         "results": [
-          { "metric": "Student Enrollment", "before": "2.1K", "after": "5.8K", "improvement": "+176%" },
-          { "metric": "Brand Recognition", "before": "25%", "after": "68%", "improvement": "+172%" },
-          { "metric": "Partner Schools", "before": "12", "after": "28", "improvement": "+133%" }
+          { "metric": "Brand Visibility & Recognition", "before": "38%", "after": "65%", "improvement": "+70%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+55%" },
+          { "metric": "Sales / Conversions", "before": "1X", "after": "3X", "improvement": "3X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "14 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288145/CASE_6_yefbk9.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288146/CASE_6-1_rxb5ij.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288146/CASE_6-2_iap9ly.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288074/CASE_6-3_gtfs2m.webp"
         ],
-        "fullDescription": "EduTech Solutions needed a logo that would appeal to both educators and students while conveying their innovative approach to online learning. We created a modern design that balances technology and education elements."
+        "fullDescription": "Faasibees is a snacks brand offering a variety of packaged products. Pixdot partnered with them to create a strong digital presence, showcase products online, and attract customers through social media marketing and page management."
       },
       {
         "id": "logo-7",
-        "title": "RealEstate Pro Logo",
-        "client": "RealEstate Pro",
-        "industry": "Real Estate",
-        "challenge": "Real estate agency needed a professional logo to establish credibility in the market.",
-        "solution": "Created a sophisticated logo with home elements and professional typography.",
+        "title": "Anna Nagar Cycles Digital Marketing",
+        "client": "Anna Nagar Cycles",
+        "industry": "E-commerce / Retail",
+        "challenge": "The brand had low online sales despite offering quality products. Social media presence was inconsistent, and lead conversion through digital channels was below expectations.",
+        "solution": "Pixdot implemented a comprehensive digital marketing strategy:\n\n• Consistent social media posting on Instagram and Facebook to engage cycling enthusiasts\n• Launched targeted Meta ad campaigns to attract potential customers and drive sales\n• Optimized the e-commerce platform to improve user experience and conversion rates\n• Monitored campaigns with analytics to make data-driven adjustments and maximize ROI\n",
         "results": [
-          { "metric": "Client Trust", "before": "3.3/5", "after": "4.7/5", "improvement": "+42%" },
-          { "metric": "Property Listings", "before": "45", "after": "89", "improvement": "+98%" },
-          { "metric": "Sales Volume", "before": "$2.1M", "after": "$4.8M", "improvement": "+129%" }
+          { "metric": "E-commerce Sales / Conversions", "before": "Low", "after": "High sales", "improvement": "3.5X increase" },
+          { "metric": "Customer Engagement & Reach", "before": "Low", "after": "High interactions", "improvement": "+60%" },
+          { "metric": "ROI / Cost per Lead", "before": "High", "after": "Optimized", "improvement": "Significantly optimized" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "E-commerce analytics & tracking tools"],
+        "duration": "36 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288186/CASE_7_wz9sro.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288186/CASE_7-1_xihfqh.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288195/CASE_7-2_bdfenf.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288195/CASE_7-3_unvw9j.webp"
         ],
-        "fullDescription": "RealEstate Pro needed a logo that would convey trust and professionalism in the competitive real estate market. We created a sophisticated design that helps clients feel confident in their choice of real estate services."
+        "fullDescription": "Anna Nagar Cycles is a retail and e-commerce brand selling bicycles and cycling accessories. Pixdot partnered with them to increase online sales, strengthen their digital presence, and drive high-quality traffic to their e-commerce platform through strategic marketing."
       },
       {
         "id": "logo-8",
-        "title": "AutoCare Plus Logo",
-        "client": "AutoCare Plus",
-        "industry": "Automotive",
-        "challenge": "Auto repair shop needed a logo that conveys reliability and expertise.",
-        "solution": "Designed a strong logo with automotive elements and trustworthy typography.",
+        "title": "Beetruk Logistics Digital Marketing",
+        "client": "Beetruk Logistics",
+        "industry": "Logistics & Transportation",
+        "challenge": "The brand had no social media presence, and there was no channel to communicate services, updates, or engage with potential clients online.",
+        "solution": "Pixdot implemented a complete social media management strategy:\n\n• Created Facebook and Instagram pages and managed them consistently\n• Posted service highlights, client testimonials, and industry-related content to build authority\n• Actively engaged with the audience by responding to queries and optimizing posts for visibility\n• Monitored analytics to adjust content strategy and maximize reach and engagement\n",
         "results": [
-          { "metric": "Customer Retention", "before": "60%", "after": "82%", "improvement": "+37%" },
-          { "metric": "Brand Recognition", "before": "35%", "after": "71%", "improvement": "+103%" },
-          { "metric": "Service Appointments", "before": "45/week", "after": "78/week", "improvement": "+73%" }
+          { "metric": "Brand Awareness & Visibility", "before": "No presence", "after": "Established online presence", "improvement": "From scratch" },
+          { "metric": "Audience Engagement", "before": "No interactions", "after": "High engagement", "improvement": "+50%" },
+          { "metric": "Client Queries / Leads", "before": "Low", "after": "Increased", "improvement": "Through social media" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Facebook / Instagram Page Management", "Adobe Illustrator", "Adobe Photoshop", "Social media analytics"],
+        "duration": "11 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288256/CASE_8_qgi1af.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288257/CASE_8-1_udapfe.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288257/CASE_8-2_ktl7f8.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288257/CASE_8-3_wfoio6.webp"
         ],
-        "fullDescription": "AutoCare Plus needed a logo that would convey reliability and automotive expertise. We created a strong, professional design that helps customers trust their vehicle maintenance services."
+        "fullDescription": "Beetruk Logistics is a logistics and transportation service provider. Pixdot partnered with them to create and manage their social media pages, build brand awareness, engage the audience, and establish a professional online presence."
       },
       {
         "id": "logo-9",
-        "title": "BeautyStudio Logo",
-        "client": "BeautyStudio",
-        "industry": "Beauty",
-        "challenge": "Beauty salon needed an elegant logo that reflects their premium services.",
-        "solution": "Created an elegant logo with beauty-inspired elements and sophisticated typography.",
+        "title": "Pillwe 97 Digital Marketing",
+        "client": "Pillwe 97",
+        "industry": "Restaurant / Food & Beverages",
+        "challenge": "The restaurant had low online presence and minimal engagement on social media. Customer reach and online orders were limited, affecting overall sales growth.",
+        "solution": "Pixdot implemented a full social media and ad strategy:\n\n• Managed Instagram and Facebook pages with attractive food posts, promotional content, and engaging stories\n• Ran targeted Meta ad campaigns to reach potential customers and increase orders\n• Optimized campaigns and content strategy using analytics for better performance and ROI\n",
         "results": [
-          { "metric": "Client Satisfaction", "before": "3.8/5", "after": "4.9/5", "improvement": "+29%" },
-          { "metric": "Brand Recognition", "before": "40%", "after": "76%", "improvement": "+90%" },
-          { "metric": "Appointment Bookings", "before": "65%", "after": "89%", "improvement": "+37%" }
+          { "metric": "Brand Awareness & Visibility", "before": "38%", "after": "65%", "improvement": "+70%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+60%" },
+          { "metric": "Sales / Conversions", "before": "1X", "after": "3.5X", "improvement": "3.5X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Social media analytics tools"],
+        "duration": "8 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288314/CASE_9_vzwpj5.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288316/CASE_9-1_ocmuda.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288315/CASE_9-2_ywknze.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288314/CASE_9-3_zprwcj.webp"
         ],
-        "fullDescription": "BeautyStudio needed a logo that would reflect their premium beauty services and elegant atmosphere. We created a sophisticated design that appeals to their target demographic while maintaining professional appeal."
+        "fullDescription": "Pillwe 97 is a non-vegetarian restaurant aiming to increase footfall and online orders. Pixdot partnered with them to manage social media pages and run targeted ad campaigns to enhance brand visibility and drive sales."
       },
       {
         "id": "logo-10",
-        "title": "LegalEagle Logo",
-        "client": "LegalEagle Law Firm",
-        "industry": "Legal",
-        "challenge": "Law firm needed a professional logo that conveys authority and trust.",
-        "solution": "Designed a strong, professional logo with legal elements and authoritative typography.",
+        "title": "Velan Bhaven Digital Marketing",
+        "client": "Velan Bhaven",
+        "industry": "Restaurant / Vegetarian Food",
+        "challenge": "The restaurant had low social media activity and minimal customer interaction, limiting its reach and online visibility.",
+        "solution": "Pixdot implemented a complete social media management strategy:\n\n• Managed Instagram and Facebook pages with visually appealing menu posts, promotional content, and engaging stories\n• Maintained regular posting and active follower interaction to establish a professional and appealing online presence\n• Monitored analytics to optimize content and maximize engagement\n",
         "results": [
-          { "metric": "Client Trust", "before": "3.5/5", "after": "4.8/5", "improvement": "+37%" },
-          { "metric": "Brand Recognition", "before": "30%", "after": "68%", "improvement": "+127%" },
-          { "metric": "Case Consultations", "before": "25/month", "after": "45/month", "improvement": "+80%" }
+          { "metric": "Brand Awareness & Visibility", "before": "35%", "after": "59%", "improvement": "+60%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+50%" },
+          { "metric": "Online Interaction", "before": "Low", "after": "Increased significantly", "improvement": "Through consistent content" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "3 weeks",
-        "team": "2 designers",
+        "technologies": ["Instagram & Facebook Page Management", "Adobe Illustrator", "Adobe Photoshop", "Social media analytics tools"],
+        "duration": "24 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288384/CASE_10_akkwxe.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288385/CASE_10-1_ayfwkz.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288388/CASE_10-2_qjjioy.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288384/CASE_10-3_ysdo84.webp"
         ],
-        "fullDescription": "LegalEagle Law Firm needed a logo that would convey authority, professionalism, and trust in the legal industry. We created a strong, professional design that helps clients feel confident in their legal representation."
+        "fullDescription": "Velan Bhaven is a vegetarian restaurant aiming to increase brand awareness and customer engagement. Pixdot partnered with them to manage social media pages, showcase menu items, highlight promotions, and maintain a consistent online presence."
       },
       {
         "id": "logo-11",
-        "title": "PetCare Clinic Logo",
-        "client": "PetCare Clinic",
-        "industry": "Veterinary",
-        "challenge": "Veterinary clinic needed a warm, caring logo for pet owners.",
-        "solution": "Created a friendly logo with pet elements and warm, approachable typography.",
+        "title": "Velan Non-Veg Digital Marketing",
+        "client": "Velan Non-Veg",
+        "industry": "Restaurant / Non-Vegetarian Food",
+        "challenge": "The restaurant had minimal online presence, low engagement on social media, and limited online orders, affecting overall revenue growth.",
+        "solution": "Pixdot implemented a full social media and advertising strategy:\n\n• Managed Instagram and Facebook pages with visually appealing food posts, promotional content, and engaging stories\n• Ran targeted Meta ad campaigns to reach potential customers and increase brand awareness\n• Optimized campaigns using analytics to maximize engagement, online orders, and ROI\n",
         "results": [
-          { "metric": "Pet Owner Trust", "before": "3.6/5", "after": "4.7/5", "improvement": "+31%" },
-          { "metric": "Brand Recognition", "before": "35%", "after": "72%", "improvement": "+106%" },
-          { "metric": "Appointment Bookings", "before": "120/month", "after": "210/month", "improvement": "+75%" }
+          { "metric": "Brand Awareness & Visibility", "before": "40%", "after": "69%", "improvement": "+72%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+60%" },
+          { "metric": "Sales / Conversions", "before": "1X", "after": "3.5X", "improvement": "3.5X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Social media analytics tools"],
+        "duration": "24 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288450/CASE_11_kyaw1u.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288451/CASE_11-1_pxsunx.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761308544/CASE_11-3_wx3rlo.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288449/CASE_11-2_uxboif.webp" 
         ],
-        "fullDescription": "PetCare Clinic needed a logo that would convey warmth, care, and professionalism to pet owners. We created a friendly design that helps pet owners feel confident in their choice of veterinary care."
+        "fullDescription": "Velan Non-Veg is a restaurant specializing in non-vegetarian dishes, aiming to increase footfall and online orders. Pixdot partnered with them to manage social media pages and run targeted ad campaigns to boost brand visibility and sales."
       },
       {
         "id": "logo-12",
-        "title": "TravelWise Logo",
-        "client": "TravelWise Agency",
-        "industry": "Travel",
-        "challenge": "Travel agency needed an adventurous logo that inspires wanderlust.",
-        "solution": "Designed a dynamic logo with travel elements and adventurous typography.",
+        "title": "Velan Sweets & Bakery Digital Marketing",
+        "client": "Velan Sweets & Bakery",
+        "industry": "Sweets & Bakery",
+        "challenge": "The brand had minimal social media presence and engagement. Customer interactions and online inquiries were limited, impacting overall business growth.",
+        "solution": "Pixdot implemented a strategic social media and digital marketing plan:\n\n• Managed Instagram and Facebook pages with attractive product posts, festive promotions, and bakery specials\n• Ran targeted Meta ad campaigns to reach potential customers and increase brand visibility\n• Monitored analytics to optimize content and campaign performance, improving engagement and ROI\n",
         "results": [
-          { "metric": "Booking Inquiries", "before": "45/month", "after": "89/month", "improvement": "+98%" },
-          { "metric": "Brand Recognition", "before": "25%", "after": "65%", "improvement": "+160%" },
-          { "metric": "Customer Satisfaction", "before": "3.7/5", "after": "4.8/5", "improvement": "+30%" }
+          { "metric": "Brand Awareness & Visibility", "before": "38%", "after": "65%", "improvement": "+70%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+60%" },
+          { "metric": "Sales / Conversions", "before": "1X", "after": "3X", "improvement": "3X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Social media analytics tools"],
+        "duration": "24 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop"
+         
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761308595/CASE_12_dozmol.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761308598/CASE_12-1_a9l4kf.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761308599/CASE_12-2_ezl8jj.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761308591/CASE_12-3_vyu4kk.webp"
         ],
-        "fullDescription": "TravelWise Agency needed a logo that would inspire wanderlust and convey their expertise in travel planning. We created a dynamic design that appeals to adventure seekers and travel enthusiasts."
+        "fullDescription": "Velan Sweets & Bakery is a popular sweets and bakery brand aiming to increase brand awareness, customer engagement, and online orders. Pixdot partnered with them to manage social media pages and implement targeted campaigns that boost visibility and drive sales."
       },
       {
         "id": "logo-13",
-        "title": "FinancePro Logo",
-        "client": "FinancePro Advisory",
-        "industry": "Finance",
-        "challenge": "Financial advisory firm needed a trustworthy logo for client confidence.",
-        "solution": "Created a professional logo with financial elements and trustworthy typography.",
+        "title": "Kummale Lala Digital Marketing",
+        "client": "Kummale Lala",
+        "industry": "Snacks / Food",
+        "challenge": "The brand had very little social media activity. Posts were not visually engaging, which made it difficult to attract new followers or interact with existing ones.",
+        "solution": "Pixdot created a complete social media plan tailored to Kummale Lala:\n\n• Managed Instagram & Facebook pages with bright and engaging poster designs for products, special offers, and promotions\n• Built a regular posting schedule to keep the audience engaged and informed\n• Monitored analytics to understand what works and adjusted content strategy for maximum impact\n",
         "results": [
-          { "metric": "Client Trust", "before": "3.4/5", "after": "4.6/5", "improvement": "+35%" },
-          { "metric": "Brand Recognition", "before": "30%", "after": "68%", "improvement": "+127%" },
-          { "metric": "Asset Management", "before": "$2.1M", "after": "$4.8M", "improvement": "+129%" }
+          { "metric": "Brand Visibility", "before": "35%", "after": "60%", "improvement": "+65%" },
+          { "metric": "Customer Engagement", "before": "Minimal", "after": "Strong interactions", "improvement": "+55%" },
+          { "metric": "Content Reach", "before": "Low", "after": "Significantly improved", "improvement": "Thanks to creative posts" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "3 weeks",
-        "team": "2 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Instagram & Facebook page management", "Analytics tools"],
+        "duration": "8 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761308727/CASE_13_cqujyz.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761308731/CASE_13-1_bjtrct.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761308736/CASE_13-2_m8yzsl.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761308726/CASE_13-3_pwivjh.webp"
         ],
-        "fullDescription": "FinancePro Advisory needed a logo that would convey trust, professionalism, and financial expertise. We created a sophisticated design that helps clients feel confident in their financial planning services."
+        "fullDescription": "Kummale Lala is a local snacks brand looking to grow its social media presence and make its online visuals more appealing. Pixdot took charge of their social media and designed creative posters to showcase their products and offers effectively."
       },
       {
         "id": "logo-14",
-        "title": "RestaurantBella Logo",
-        "client": "RestaurantBella",
-        "industry": "Restaurant",
-        "challenge": "Fine dining restaurant needed an elegant logo for their upscale brand.",
-        "solution": "Designed a sophisticated logo with culinary elements and elegant typography.",
+        "title": "Landster Real Estate Digital Marketing",
+        "client": "Landster Real Estate",
+        "industry": "Real Estate",
+        "challenge": "The client struggled with low online visibility and minimal engagement on social media and other digital channels. This limited property inquiries and slowed down lead generation.",
+        "solution": "Pixdot designed a focused digital ad strategy for Landster Real Estate:\n\n• Created targeted Meta ad campaigns showcasing properties, special offers, and promotions\n• Used analytics to continuously optimize ad performance, ensuring high-quality lead generation\n• Monitored campaigns closely and refined creatives and targeting for better reach and conversions\n",
         "results": [
-          { "metric": "Customer Recognition", "before": "40%", "after": "78%", "improvement": "+95%" },
-          { "metric": "Reservation Rate", "before": "65%", "after": "89%", "improvement": "+37%" },
-          { "metric": "Average Spend", "before": "$85", "after": "$142", "improvement": "+67%" }
+          { "metric": "Lead Generation", "before": "Low", "after": "High-quality leads", "improvement": "+150%" },
+          { "metric": "Customer Engagement", "before": "Minimal", "after": "Active interactions", "improvement": "+60%" },
+          { "metric": "Property Inquiries / Conversions", "before": "1X", "after": "3X", "improvement": "3X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "6 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288566/CASE_14_gy51bd.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288567/CASE_14-1_gnvi4d.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288570/CASE_14-2_a69awf.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288566/CASE_14-3_sfywxe.webp"
         ],
-        "fullDescription": "RestaurantBella needed a logo that would reflect their fine dining experience and upscale atmosphere. We created an elegant design that appeals to discerning diners while maintaining broad market appeal."
+        "fullDescription": "Landster Real Estate is a property development company focused on delivering premium homes and commercial spaces. Pixdot partnered with them to increase online inquiries, attract quality leads, and drive sales through effective digital campaigns."
       },
       {
         "id": "logo-15",
-        "title": "TechInnovate Logo",
-        "client": "TechInnovate",
-        "industry": "Technology",
-        "challenge": "Tech startup needed a cutting-edge logo for their innovation platform.",
-        "solution": "Created a modern logo with tech elements and futuristic typography.",
+        "title": "Orange Prompters Digital Marketing",
+        "client": "Orange Prompters",
+        "industry": "Real Estate",
+        "challenge": "The client faced low engagement and minimal presence on digital platforms, which limited property inquiries and affected lead generation.",
+        "solution": "Pixdot implemented a complete digital marketing plan tailored for real estate:\n\n• Launched targeted Meta ad campaigns highlighting properties, offers, and promotions\n• Managed social media pages with engaging content to attract potential buyers\n• Continuously tracked analytics to optimize campaigns for maximum ROI and better conversions\n",
         "results": [
-          { "metric": "Investor Interest", "before": "Low", "after": "High", "improvement": "Significant" },
-          { "metric": "Brand Recognition", "before": "0%", "after": "72%", "improvement": "New" },
-          { "metric": "User Registration", "before": "0", "after": "5.2K", "improvement": "New" }
+          { "metric": "Lead Generation", "before": "Low", "after": "High-quality leads", "improvement": "+145%" },
+          { "metric": "Customer Engagement", "before": "Minimal", "after": "High interactions", "improvement": "+60%" },
+          { "metric": "Property Inquiries / Conversions", "before": "1X", "after": "3X", "improvement": "3X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "9 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288646/CASE_15_vxw8l0.webp" 
         ],
-        "fullDescription": "TechInnovate needed a logo that would convey innovation, technology, and forward-thinking approach. We created a modern design that appeals to tech-savvy users and investors while maintaining professional appeal."
+        "fullDescription": "Orange Prompters is a real estate company focused on providing premium residential and commercial properties. Pixdot partnered with them to improve online visibility, generate high-quality leads, and increase customer inquiries."
       },
       {
         "id": "logo-16",
-        "title": "WellnessCenter Logo",
-        "client": "WellnessCenter",
-        "industry": "Wellness",
-        "challenge": "Wellness center needed a calming logo that promotes health and relaxation.",
-        "solution": "Designed a serene logo with wellness elements and calming typography.",
+        "title": "One Drop Cab Digital Marketing",
+        "client": "One Drop Cab",
+        "industry": "Transportation / Cab Service",
+        "challenge": "The client had a minimal social media presence, low engagement, and insufficient leads through digital channels, limiting business growth and customer acquisition.",
+        "solution": "Pixdot implemented a complete social media and lead generation strategy:\n\n• Managed Instagram and Facebook pages with eye-catching service posters and promotional content\n• Launched targeted Meta lead generation campaigns to attract potential passengers\n• Monitored performance through analytics to optimize ad campaigns, improve engagement, and increase bookings\n",
         "results": [
-          { "metric": "Client Satisfaction", "before": "3.8/5", "after": "4.9/5", "improvement": "+29%" },
-          { "metric": "Brand Recognition", "before": "35%", "after": "72%", "improvement": "+106%" },
-          { "metric": "Membership Growth", "before": "120", "after": "280", "improvement": "+133%" }
+          { "metric": "Brand Awareness & Visibility", "before": "38%", "after": "65%", "improvement": "+70%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+60%" },
+          { "metric": "Lead Generation / Inquiries", "before": "Low", "after": "Significant increase", "improvement": "+125%" },
+          { "metric": "Bookings / Conversions", "before": "1X", "after": "3X", "improvement": "3X increase" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "5 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288704/CASE_16_vjxbk9.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288705/CASE_16-1_s8lbjk.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288708/CASE_16-2_erygo6.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288703/CASE_16-3_tpkeva.webp"
         ],
-        "fullDescription": "WellnessCenter needed a logo that would convey calm, health, and relaxation. We created a serene design that helps clients feel peaceful and confident in their wellness journey."
+        "fullDescription": "One Drop Cab is a cab service provider focused on increasing bookings and building a strong online presence. Pixdot partnered with them to manage social media, create visually appealing content, and drive lead generation campaigns."
       },
       {
         "id": "logo-17",
-        "title": "EduLearn Logo",
-        "client": "EduLearn Academy",
-        "industry": "Education",
-        "challenge": "Online education platform needed a logo that inspires learning and growth.",
-        "solution": "Created an inspiring logo with educational elements and growth-oriented typography.",
+        "title": "Healthy Grow Digital Marketing",
+        "client": "Healthy Grow",
+        "industry": "Nutrition / Food Service",
+        "challenge": "The client had a low social media presence and minimal engagement, which limited their reach and potential customer interactions.",
+        "solution": "Pixdot implemented a complete social media strategy:\n\n• Managed Instagram and Facebook pages with visually appealing posters showcasing products, meal plans, and promotional offers\n• Maintained a consistent posting schedule and actively engaged with followers to build community\n• Used analytics to optimize content strategy and maximize audience interaction\n",
         "results": [
-          { "metric": "Student Enrollment", "before": "1.8K", "after": "4.2K", "improvement": "+133%" },
-          { "metric": "Brand Recognition", "before": "30%", "after": "68%", "improvement": "+127%" },
-          { "metric": "Course Completion", "before": "65%", "after": "89%", "improvement": "+37%" }
+          { "metric": "Brand Awareness & Visibility", "before": "38%", "after": "64%", "improvement": "+68%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+60%" },
+          { "metric": "Online Interaction / Inquiries", "before": "Low", "after": "Increased significantly", "improvement": "Through creative posts" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "2 weeks",
-        "team": "2 designers",
+        "technologies": ["Instagram & Facebook Page Management", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "7 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288784/CASE_17_lkgv6b.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288784/CASE_17-1_qhns2w.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288790/CASE_17-2_efrhao.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288782/CASE_17-3_i21qdq.webp"
         ],
-        "fullDescription": "EduLearn Academy needed a logo that would inspire learning and convey their commitment to education. We created an inspiring design that appeals to students and educators while maintaining professional appeal."
+        "fullDescription": "Healthy Grow is a nutrition-focused food service brand offering wholesome meal options. Pixdot partnered with them to manage social media and design creative posters to increase brand awareness and engage their audience online."
       },
       {
         "id": "logo-18",
-        "title": "GreenEnergy Logo",
-        "client": "GreenEnergy Solutions",
-        "industry": "Energy",
-        "challenge": "Renewable energy company needed a logo that conveys sustainability and innovation.",
-        "solution": "Designed a modern logo with energy elements and sustainable typography.",
+        "title": "SLR Bio Digital Marketing",
+        "client": "SLR Bio",
+        "industry": "Agriculture / Fertilizer",
+        "challenge": "SLR Bio had minimal online visibility, low engagement on social media, and limited lead generation, which affected overall sales growth.",
+        "solution": "Pixdot implemented a complete digital marketing plan:\n\n• Managed Instagram and Facebook pages with engaging posts, product highlights, and useful agricultural tips\n• Launched targeted Meta lead generation campaigns to reach farmers and distributors effectively\n• Continuously monitored performance and optimized campaigns using analytics to improve lead quality and ROI\n",
         "results": [
-          { "metric": "Brand Recognition", "before": "25%", "after": "68%", "improvement": "+172%" },
-          { "metric": "Client Acquisition", "before": "45", "after": "120", "improvement": "+167%" },
-          { "metric": "Market Position", "before": "Unknown", "after": "Top 5", "improvement": "New" }
+          { "metric": "Lead Generation", "before": "High cost", "after": "Optimized at ₹6", "improvement": "+75%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+60%" },
+          { "metric": "Sales Conversion", "before": "Low", "after": "Increased", "improvement": "Through consistent campaigns" }
         ],
-        "technologies": ["Adobe Illustrator", "Photoshop", "Brand Guidelines"],
-        "duration": "3 weeks",
-        "team": "2 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "14 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288857/CASE_18_darbwr.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288858/CASE_18-1_dfon54.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288864/CASE_18-2_hqj7en.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288857/CASE_18-3_gnd3ba.webp"
         ],
-        "fullDescription": "GreenEnergy Solutions needed a logo that would convey sustainability, innovation, and environmental responsibility. We created a modern design that appeals to environmentally conscious consumers and businesses."
-      }
-    ]
-  },
-  "design": {
-    "category": "UI/UX Design",
-    "description": "User-centered design solutions that enhance user experience and drive conversions",
-    "caseStudies": [
-      {
-        "id": "design-1",
-        "title": "Mobile Banking App Redesign",
-        "client": "SecureBank",
-        "industry": "Finance",
-        "challenge": "Mobile app with poor user experience leading to low adoption rates and customer complaints.",
-        "solution": "Complete UI/UX redesign focusing on user journey optimization and accessibility improvements.",
-        "results": [
-          { "metric": "User Adoption", "before": "23%", "after": "67%", "improvement": "+191%" },
-          { "metric": "User Satisfaction", "before": "2.8/5", "after": "4.7/5", "improvement": "+68%" },
-          { "metric": "Transaction Volume", "before": "1.2M", "after": "3.8M", "improvement": "+217%" }
-        ],
-        "technologies": ["Figma", "Adobe XD", "React Native", "User Testing"],
-        "duration": "4 months",
-        "team": "6 designers",
-        "images": [
-          "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "SecureBank's mobile banking app was suffering from poor user experience and low adoption rates. Users found the interface confusing and difficult to navigate. We conducted extensive user research and redesigned the entire app with a focus on simplicity, security, and user-friendly interactions."
+        "fullDescription": "SLR Bio is a fertilizer company focused on providing high-quality products to farmers and distributors. Pixdot partnered with them to strengthen their online presence, generate high-quality leads, and increase sales through targeted social media marketing."
       },
       {
-        "id": "design-2",
-        "title": "E-commerce Platform UX",
-        "client": "Fashion Forward",
-        "industry": "Retail",
-        "challenge": "High cart abandonment rates and poor mobile experience affecting sales.",
-        "solution": "Redesigned user journey with streamlined checkout process and mobile-first approach.",
+        "id": "logo-19",
+        "title": "GMT Jewellers Digital Marketing",
+        "client": "GMT Jewellers",
+        "industry": "Jewellery / Luxury Retail",
+        "challenge": "The brand had minimal online visibility and low engagement on social media, which limited potential customer reach and online sales opportunities.",
+        "solution": "Pixdot implemented a strategic social media and digital marketing plan:\n\n• Managed Instagram and Facebook pages with high-quality posts highlighting jewellery collections, festive promotions, and exclusive offers\n• Launched targeted Meta ad campaigns to reach potential buyers effectively\n• Monitored performance and optimized content and ads using analytics to maximize engagement, reach, and ROI\n",
         "results": [
-          { "metric": "Cart Abandonment", "before": "68%", "after": "32%", "improvement": "-53%" },
-          { "metric": "Mobile Conversion", "before": "1.8%", "after": "4.2%", "improvement": "+133%" },
-          { "metric": "Average Order Value", "before": "$85", "after": "$142", "improvement": "+67%" }
+          { "metric": "Brand Awareness & Visibility", "before": "40%", "after": "69%", "improvement": "+72%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High interactions", "improvement": "+65%" },
+          { "metric": "Lead Generation / Inquiries", "before": "Low", "after": "High-quality leads", "improvement": "+130%" },
+          { "metric": "Sales / Conversions", "before": "1X", "after": "3X", "improvement": "3X increase" }
         ],
-        "technologies": ["Sketch", "InVision", "React", "A/B Testing"],
-        "duration": "3 months",
-        "team": "5 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop", "Analytics tools"],
+        "duration": "6 Months",
+        "team": "Designers + Digital Marketer + Content Creator + Video Editor",
         "images": [
-          "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288917/CASE_19_qbjxd4.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288919/CASE_19-1_rchb0p.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288922/CASE_19-2_acsxkl.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288916/CASE_19-3_c4vnqr.webp"
         ],
-        "fullDescription": "Fashion Forward was experiencing high cart abandonment rates and poor mobile user experience. Our UX team analyzed user behavior and identified key pain points in the shopping journey. We redesigned the entire e-commerce experience with a focus on mobile-first design and streamlined checkout process."
+        "fullDescription": "GMT Jewellers is a premium jewellery brand looking to showcase its collections online, attract high-quality leads, and increase customer engagement. Pixdot partnered with them to create a strong digital presence and boost online sales."
       },
       {
-        "id": "design-3",
-        "title": "Healthcare Portal Design",
-        "client": "MediCare Plus",
-        "industry": "Healthcare",
-        "challenge": "Patient portal with confusing interface and low user engagement.",
-        "solution": "Redesigned portal with intuitive navigation and patient-centered design approach.",
+        "id": "logo-20",
+        "title": "Hot Chappathies Digital Marketing",
+        "client": "Hot Chappathies",
+        "industry": "Restaurant / Food",
+        "challenge": "The restaurant had low social media activity and minimal engagement from customers. Their online visibility was poor, resulting in fewer orders and limited brand reach.",
+        "solution": "Pixdot implemented a strategic social media management plan to strengthen their digital footprint:\n\n• Managed Instagram & Facebook pages with visually rich food posts, daily specials, and engaging stories\n• Created promotional campaigns to attract new followers and drive online orders\n• Used analytics to refine content timing, engagement strategy, and ad performance for better results\n",
         "results": [
-          { "metric": "User Engagement", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Patient Satisfaction", "before": "3.2/5", "after": "4.6/5", "improvement": "+44%" },
-          { "metric": "Portal Usage", "before": "45%", "after": "82%", "improvement": "+82%" }
+          { "metric": "Brand Awareness & Visibility", "before": "Low", "after": "High", "improvement": "+65%" },
+          { "metric": "Customer Engagement", "before": "Low", "after": "High", "improvement": "+55%" },
+          { "metric": "Online Orders / Traffic", "before": "Low", "after": "High", "improvement": "+120%" },
+          { "metric": "Customer Interaction", "before": "Low", "after": "Increased", "improvement": "Through consistent promotions" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React", "User Research"],
-        "duration": "3 months",
-        "team": "4 designers",
+        "technologies": ["Meta Ads Manager", "Adobe Illustrator", "Adobe Photoshop"],
+        "duration": "8 Months",
+        "team": "Designer + Digital Marketer + Content Creator",
         "images": [
-          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288966/CASE_20_h56mqs.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288969/CASE_20-1_kupvkh.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288970/CASE_20-2_zmic8q.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288965/CASE_20-3_tecmxj.webp"
         ],
-        "fullDescription": "MediCare Plus needed a patient portal that would be easy to use for patients of all ages and technical abilities. We redesigned the interface with a focus on accessibility, clear information hierarchy, and intuitive navigation."
+        "fullDescription": "Hot Chappathies is a popular North Indian vegetarian restaurant that wanted to attract more dine-in and online customers. Pixdot partnered with them to build a stronger digital presence, manage their social media pages, and create mouth-watering content that connects with food lovers."
       },
       {
-        "id": "design-4",
-        "title": "Educational Platform UX",
-        "client": "EduTech Solutions",
-        "industry": "Education",
-        "challenge": "Learning platform with poor user experience affecting student engagement.",
-        "solution": "Redesigned platform with gamification elements and intuitive learning paths.",
+        "id": "logo-21",
+        "title": "Stratovate Corporate Branding",
+        "client": "Stratovate",
+        "industry": "Business Consulting",
+        "challenge": "As a newly launched consulting brand, Stratovate needed a complete visual identity that positioned them as credible and corporate-ready. The brand had to look premium, minimal, and globally appealing to attract business clients.",
+        "solution": "Pixdot developed a complete branding system tailored for the consulting industry:\n\n• Designed a modern logotype with bold typography to communicate authority and clarity\n• Created corporate identity assets including business cards, ID cards, brochures, and digital templates\n• Maintained a minimal black & white design language to emphasize professionalism and confidence\n• Developed a website layout that focuses on services, expertise, and client trust-building\n",
         "results": [
-          { "metric": "Student Engagement", "before": "42%", "after": "89%", "improvement": "+112%" },
-          { "metric": "Course Completion", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Learning Outcomes", "before": "68%", "after": "91%", "improvement": "+34%" }
+          { "metric": "Brand Identity", "before": "None", "after": "Complete corporate identity", "improvement": "Established" },
+          { "metric": "Brand Perception", "before": "Unknown", "after": "Professional and premium", "improvement": "Enhanced" },
+          { "metric": "Brand Kit", "before": "None", "after": "Ready-to-launch", "improvement": "Complete system" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React", "Gamification"],
-        "duration": "4 months",
-        "team": "5 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "duration": "6 Weeks",
+        "team": "3 Designers",
         "images": [
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297182/1_slnxa3.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297178/1.1_cmv3qh.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297179/1.2_fwnaut.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297180/1.3_gvsb0x.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297190/1.4_m9cegg.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297183/1.5_mikoao.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297186/1.6_f5t9ip.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297187/1.7_zqsc2y.webp"
         ],
-        "fullDescription": "EduTech Solutions needed a learning platform that would engage students and improve learning outcomes. We redesigned the interface with gamification elements, progress tracking, and personalized learning paths."
+        "fullDescription": "Stratovate is a new-age business consulting firm offering strategic solutions for corporate growth, operations, and market positioning. They approached Pixdot to create a professional and modern brand identity that reflects trust, intelligence, and forward-thinking expertise."
       },
       {
-        "id": "design-5",
-        "title": "Real Estate App Design",
-        "client": "PropertyMax Group",
-        "industry": "Real Estate",
-        "challenge": "Property search app with poor user experience and low conversion rates.",
-        "solution": "Redesigned app with advanced filtering, virtual tours, and streamlined search experience.",
+        "id": "logo-22",
+        "title": "HIVORA SPACES Brand Identity Redesign",
+        "client": "HIVORA SPACES",
+        "industry": "Construction & Interior Design",
+        "challenge": "Old branding lacked visual consistency. Did not reflect the company's premium positioning in a competitive interiors market. Needed an identity that communicates trust, modernity, and design focus.",
+        "solution": "Pixdot redesigned the complete brand identity for HIVORA SPACES:\n\n• Redesigned the logo with minimal geometric elements and bold clarity to reflect structure and creativity\n• Developed corporate identity assets: business cards, ID cards, digital media templates, and outdoor branding\n• Established a cohesive visual system for consistent brand presentation across all touchpoints\n",
         "results": [
-          { "metric": "User Engagement", "before": "45%", "after": "82%", "improvement": "+82%" },
-          { "metric": "Property Inquiries", "before": "120/month", "after": "280/month", "improvement": "+133%" },
-          { "metric": "App Store Rating", "before": "3.2/5", "after": "4.7/5", "improvement": "+47%" }
+          { "metric": "Brand Perception", "before": "Traditional", "after": "Premium and design-focused", "improvement": "Transitioned" },
+          { "metric": "Brand Consistency", "before": "Inconsistent", "after": "Cohesive across all channels", "improvement": "Achieved" },
+          { "metric": "Client Confidence", "before": "Limited", "after": "Strengthened", "improvement": "Enhanced market presence" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React Native", "3D Integration"],
-        "duration": "3 months",
-        "team": "4 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "duration": "2 Weeks",
+        "team": "2 Designers",
         "images": [
-          "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297295/2_be8mlw.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297296/2.1_lpjipi.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297299/2.2_rrmif5.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297300/2.3_ud6x9o.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297303/2.4_vi5w08.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297326/2.5_kgxmfk.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297329/2.6_u18i8u.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297330/2.7_gl8vgy.webp"
         ],
-        "fullDescription": "PropertyMax Group needed a property search app that would provide an exceptional user experience for home buyers and renters. We redesigned the app with advanced filtering, virtual tours, and streamlined search functionality."
+        "fullDescription": "HIVORA SPACES, a well-established construction and interiors company, wanted to evolve their brand beyond traditional design and position themselves as a modern, design-driven identity. They approached Pixdot to create a cohesive and premium visual language that reflects elegance, creativity, and contemporary lifestyle design."
       },
       {
-        "id": "design-6",
-        "title": "Fitness App UX",
-        "client": "FitnessFirst Gym",
-        "industry": "Fitness",
-        "challenge": "Fitness app with poor user experience and low member engagement.",
-        "solution": "Redesigned app with personalized workout plans and social features.",
+        "id": "logo-23",
+        "title": "PureGro Brand Identity Design",
+        "client": "PureGro",
+        "industry": "Agriculture / Organic Farming",
+        "challenge": "New entrant in the agriculture market needing instant brand recognition. Required a visual language reflecting purity, sustainability, and growth. Needed design appeal for both farmers and eco-conscious consumers.",
+        "solution": "Pixdot created a complete brand identity for PureGro:\n\n• Designed a logo incorporating a leaf element symbolizing life and nature\n• Adopted a fresh green color palette to represent organic freshness and environmental care\n• Developed business cards, product packaging, notebooks, and uniforms for consistent branding\n• Established a cohesive brand identity suitable for all marketing touchpoints\n",
         "results": [
-          { "metric": "Member Engagement", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Workout Completion", "before": "45%", "after": "82%", "improvement": "+82%" },
-          { "metric": "Member Retention", "before": "65%", "after": "89%", "improvement": "+37%" }
+          { "metric": "Brand Identity", "before": "None", "after": "Strong visual identity", "improvement": "Reflects organic and sustainable values" },
+          { "metric": "Credibility & Trust", "before": "New entrant", "after": "Increased among target audiences", "improvement": "Enhanced" },
+          { "metric": "Brand Consistency", "before": "None", "after": "Unified packaging and marketing", "improvement": "Complete system" },
+          { "metric": "Future Growth", "before": "Limited", "after": "Foundation for expansion", "improvement": "Established" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React Native", "Wearable Integration"],
-        "duration": "3 months",
-        "team": "4 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "duration": "2 Weeks",
+        "team": "2 Designers",
         "images": [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297402/3_m24v0t.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297403/3.1_dnvlsw.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297406/3.2_k12u4u.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297407/3.3_soufqj.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297410/3.4_rotum1.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297412/3.5_ufj9ir.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297417/3.6_sdyekr.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297415/3.7_vfwq9l.webp"
         ],
-        "fullDescription": "FitnessFirst Gym needed a fitness app that would engage members and improve workout adherence. We redesigned the app with personalized workout plans, progress tracking, and social features to increase member engagement."
+        "fullDescription": "PureGro is a newly launched natural seed company focused on sustainable farming and organic cultivation. They approached Pixdot to create a brand identity that communicates purity, growth, and trust while appealing to both modern consumers and traditional farmers."
       },
       {
-        "id": "design-7",
-        "title": "Food Delivery App",
-        "client": "CafeBella",
-        "industry": "Food & Beverage",
-        "challenge": "Food delivery app with poor user experience and low order completion rates.",
-        "solution": "Redesigned app with streamlined ordering process and enhanced food discovery.",
+        "id": "logo-24",
+        "title": "Anvaya Collections Brand Identity",
+        "client": "Anvaya Collections",
+        "industry": "Fashion / Women's Apparel",
+        "challenge": "New brand entering a competitive fashion market. Needed a visual identity that communicates elegance, class, and modern aesthetics. Required branding that resonates with contemporary ethnic and western fusion wear buyers.",
+        "solution": "Pixdot created a complete brand identity for Anvaya Collections:\n\n• Designed a versatile logo with elegant typography and a minimal floral-inspired icon\n• Applied a soft color palette to enhance a luxurious and feminine feel\n• Extended branding across tags, packaging, store boards, apparel labels, and social media assets\n• Created a cohesive visual language for all customer touchpoints\n",
         "results": [
-          { "metric": "Order Completion", "before": "45%", "after": "78%", "improvement": "+73%" },
-          { "metric": "User Satisfaction", "before": "3.2/5", "after": "4.6/5", "improvement": "+44%" },
-          { "metric": "Average Order Value", "before": "$18", "after": "$32", "improvement": "+78%" }
+          { "metric": "Brand Recall", "before": "None", "after": "Strong brand recall", "improvement": "Elegant, minimal logo design" },
+          { "metric": "Brand Identity", "before": "None", "after": "Premium and consistent", "improvement": "Established" },
+          { "metric": "Customer Trust", "before": "New brand", "after": "Built trust and visibility", "improvement": "Among modern women shoppers" },
+          { "metric": "Future Growth", "before": "Limited", "after": "Foundation for expansion", "improvement": "Digital and retail expansion" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React Native", "Payment Integration"],
-        "duration": "2 months",
-        "team": "3 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "duration": "2 Weeks",
+        "team": "2 Designers",
         "images": [
-          "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297487/4_del00v.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297489/4.1_ssdhcr.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297492/4.2_vj2jng.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297494/4.3_fl1p9m.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297497/4.4_vixqwp.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297498/4.5_eq1rq0.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297502/4.6_efg5ab.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297503/4.7_owuljd.webp"
         ],
-        "fullDescription": "CafeBella needed a food delivery app that would provide an exceptional ordering experience. We redesigned the app with streamlined ordering process, enhanced food discovery, and improved payment flow."
+        "fullDescription": "Anvaya Collections is a modern women's clothing brand celebrating elegance, confidence, and individuality. They approached Pixdot to create a brand identity that reflects sophistication, femininity, and trend-forward energy while appealing to young, fashion-conscious women."
       },
       {
-        "id": "design-8",
-        "title": "Travel Booking Platform",
-        "client": "TravelWise Agency",
-        "industry": "Travel",
-        "challenge": "Travel booking platform with complex user interface and low conversion rates.",
-        "solution": "Redesigned platform with simplified booking flow and enhanced search experience.",
+        "id": "logo-25",
+        "title": "Switchly Smart Home Gadgets Brand Identity",
+        "client": "Switchly",
+        "industry": "Smart Home / Home Automation",
+        "challenge": "New entrant in the fast-growing smart home market. Needed a visual identity that communicates tech innovation and approachability. Required branding that aligns with smart devices and home automation solutions.",
+        "solution": "Pixdot created a complete brand identity for Switchly:\n\n• Designed a sleek, icon-based logo symbolizing connectivity and smart control\n• Adopted clean typography and a minimal, tech-inspired color palette\n• Extended branding across product packaging, app interface, business cards, and digital collaterals\n• Established a cohesive and futuristic brand presence across all touchpoints\n",
         "results": [
-          { "metric": "Booking Conversion", "before": "2.1%", "after": "5.8%", "improvement": "+176%" },
-          { "metric": "User Satisfaction", "before": "3.4/5", "after": "4.7/5", "improvement": "+38%" },
-          { "metric": "Average Booking Value", "before": "$450", "after": "$680", "improvement": "+51%" }
+          { "metric": "Brand Image", "before": "None", "after": "High-tech yet approachable", "improvement": "Built" },
+          { "metric": "Customer Trust", "before": "New entrant", "after": "Strengthened", "improvement": "Clean and modern design language" },
+          { "metric": "Visual Consistency", "before": "None", "after": "Achieved across all materials", "improvement": "Complete system" },
+          { "metric": "Market Position", "before": "Unknown", "after": "Reliable and innovative", "improvement": "Home automation brand" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React", "API Integration"],
-        "duration": "3 months",
-        "team": "4 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "duration": "2 Weeks",
+        "team": "2 Designers",
         "images": [
-          "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297573/5_ky6d9c.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297575/5.1_pflbgt.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297578/5.2_bbtlzc.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297579/5.3_sceidy.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297583/5.4_tom8lb.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297585/5.5_kb7may.webp"
         ],
-        "fullDescription": "TravelWise Agency needed a travel booking platform that would simplify the booking process and increase conversions. We redesigned the platform with a streamlined booking flow and enhanced search experience."
+        "fullDescription": "Switchly is a next-generation smart home solutions company that designs intelligent, connected, and user-friendly devices. They approached Pixdot to create a brand identity that reflects innovation, simplicity, and reliability while appealing to everyday users."
       },
       {
-        "id": "design-9",
-        "title": "Financial Dashboard UX",
-        "client": "FinancePro Advisory",
-        "industry": "Finance",
-        "challenge": "Financial dashboard with poor data visualization and low user engagement.",
-        "solution": "Redesigned dashboard with clear data visualization and personalized insights.",
+        "id": "logo-26",
+        "title": "The Brand Box Laundry Service Rebranding",
+        "client": "The Brand Box",
+        "industry": "Laundry / Lifestyle Services",
+        "challenge": "Inconsistent visual identity and weak online presence. Existing branding failed to communicate trust, efficiency, and quality. Needed a professional and approachable look for both digital and physical touchpoints.",
+        "solution": "Pixdot created a complete rebranding for The Brand Box:\n\n• Designed a fresh, minimalist logo representing cleanliness and purity\n• Introduced a soft blue and white color palette to convey freshness and trust\n• Adopted modern, rounded typography for approachability and care\n• Created cohesive visuals across uniforms, packaging, vehicles, and social media\n",
         "results": [
-          { "metric": "User Engagement", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Data Comprehension", "before": "45%", "after": "82%", "improvement": "+82%" },
-          { "metric": "Client Satisfaction", "before": "3.6/5", "after": "4.8/5", "improvement": "+33%" }
+          { "metric": "Brand Perception", "before": "Inconsistent", "after": "Improved recognition", "improvement": "Enhanced" },
+          { "metric": "Customer Inquiries", "before": "Low", "after": "2.5x increase", "improvement": "Within 2 months of launch" },
+          { "metric": "Social Media Engagement", "before": "Weak", "after": "Stronger engagement", "improvement": "Lifestyle-driven campaigns" },
+          { "metric": "Client Reach", "before": "Limited", "after": "Expanded", "improvement": "Both residential and corporate clients" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React", "Data Visualization"],
-        "duration": "3 months",
-        "team": "4 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "duration": "2 Weeks",
+        "team": "2 Designers",
         "images": [
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297649/6_flipbj.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297655/6.1_mgesuv.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297652/6.2_cz2yt0.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297656/6.3_p1gqko.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297660/6.4_udapea.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297666/6.5_wgzuig.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297661/6.6_k9ehka.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297665/6.7_typpzt.webp"
         ],
-        "fullDescription": "FinancePro Advisory needed a financial dashboard that would help clients understand their financial data and make informed decisions. We redesigned the dashboard with clear data visualization and personalized insights."
+        "fullDescription": "The Brand Box partnered with a professional laundry service to modernize its identity and appeal to urban customers. They approached Pixdot to create a clean, reliable, and premium lifestyle brand that resonates with both individual and corporate clients."
       },
       {
-        "id": "design-10",
-        "title": "Beauty Booking App",
-        "client": "BeautyStudio",
-        "industry": "Beauty",
-        "challenge": "Beauty booking app with poor user experience and low appointment bookings.",
-        "solution": "Redesigned app with streamlined booking process and enhanced service discovery.",
+        "id": "logo-27",
+        "title": "Pure Meat Premium Meat Shop Branding",
+        "client": "Pure Meat",
+        "industry": "Food & Beverage / Meat Retail",
+        "challenge": "Highly competitive meat industry with generic branding. Needed a distinct, premium yet approachable identity. Required trust-building visuals emphasizing freshness and hygiene.",
+        "solution": "Pixdot created a complete brand identity for Pure Meat:\n\n• Designed a bold, modern logo symbolizing freshness and strength\n• Developed a rich red and charcoal black color palette to convey flavor and confidence\n• Applied clean, sharp typography reflecting quality and professionalism\n• Created hygienic, minimal packaging and labels to enhance product appeal\n• Crafted visual language highlighting premium cuts, freshness, and sourcing transparency\n",
         "results": [
-          { "metric": "Booking Conversion", "before": "25%", "after": "68%", "improvement": "+172%" },
-          { "metric": "User Satisfaction", "before": "3.3/5", "after": "4.7/5", "improvement": "+42%" },
-          { "metric": "Appointment Bookings", "before": "65%", "after": "89%", "improvement": "+37%" }
+          { "metric": "Brand Perception", "before": "Generic", "after": "Trustworthy and premium", "improvement": "Elevated" },
+          { "metric": "In-Store Visibility", "before": "Low", "after": "Improved", "improvement": "Customer recall enhanced" },
+          { "metric": "Customer Feedback", "before": "Mixed", "after": "Positive", "improvement": "Retail and online buyers" },
+          { "metric": "Market Position", "before": "Generic", "after": "Benchmark setter", "improvement": "Premium meat branding in region" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React Native", "Calendar Integration"],
-        "duration": "2 months",
-        "team": "3 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "duration": "2 Weeks",
+        "team": "2 Designers",
         "images": [
-          "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297739/7_z1afim.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297745/7.3_o5kbq0.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297742/7.1_mgveij.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297758/7.2_btacne.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297746/7.4_fxdlzf.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297754/7.5_khxg0w.webp"
         ],
-        "fullDescription": "BeautyStudio needed a booking app that would provide an exceptional user experience for their clients. We redesigned the app with a streamlined booking process and enhanced service discovery."
+        "fullDescription": "Pure Meat is a modern non-veg meat brand dedicated to providing fresh, hygienic, and high-quality products. They approached Pixdot to create a strong visual identity that communicates freshness, trust, and premium quality to appeal to health-conscious and quality-driven customers."
       },
       {
-        "id": "design-11",
-        "title": "Legal Case Management",
-        "client": "LegalEagle Law Firm",
-        "industry": "Legal",
-        "challenge": "Legal case management system with poor user experience and low adoption rates.",
-        "solution": "Redesigned system with intuitive case management and client communication features.",
+        "id": "logo-28",
+        "title": "Jeevi Beauty Parlour Branding & Visual Identity",
+        "client": "Jeevi Beauty Parlour",
+        "industry": "Beauty & Personal Care / Salon",
+        "challenge": "Lacked a unified visual presence across touchpoints. Needed branding that emotionally connects with women and conveys trust, elegance, and modernity. Goal was to stand out both online and offline in a competitive beauty market.",
+        "solution": "Pixdot created a complete brand identity for Jeevi Beauty Parlour:\n\n• Designed a minimalist logo symbolizing femininity and self-care\n• Adopted a soft color palette with pinks, rose gold, and beige for warmth and luxury\n• Used elegant serif and sans-serif typography to reflect class and modernity\n• Applied consistent branding across signage, uniforms, and digital platforms\n• Created a premium social media aesthetic for posts and promotions\n",
         "results": [
-          { "metric": "System Adoption", "before": "45%", "after": "82%", "improvement": "+82%" },
-          { "metric": "User Satisfaction", "before": "3.2/5", "after": "4.6/5", "improvement": "+44%" },
-          { "metric": "Case Efficiency", "before": "65%", "after": "89%", "improvement": "+37%" }
+          { "metric": "Brand Perception", "before": "Inconsistent", "after": "Professional and elegant", "improvement": "Strengthened" },
+          { "metric": "Social Media Engagement", "before": "Low", "after": "Increased", "improvement": "Customer retention improved" },
+          { "metric": "Customer Trust", "before": "Limited", "after": "Built among local clientele", "improvement": "Consistent branding" },
+          { "metric": "Business Growth", "before": "Low", "after": "Improved", "improvement": "Walk-ins and inquiries post launch" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React", "Document Management"],
-        "duration": "4 months",
-        "team": "5 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "duration": "2 Weeks",
+        "team": "2 Designers",
         "images": [
-          "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297833/8_xuksy3.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297844/8.1_po7w5m.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297830/8.2_li1y6d.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297840/8.3_xpu069.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297843/8.4_a82frc.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297847/8.5_qji846.webp"
         ],
-        "fullDescription": "LegalEagle Law Firm needed a case management system that would improve efficiency and client communication. We redesigned the system with intuitive case management and enhanced client communication features."
+        "fullDescription": "Jeevi Beauty Parlour is a women-focused salon offering services from skincare to bridal makeovers. They approached Pixdot to create a modern, elegant, and trustworthy identity that reflects beauty, confidence, and sophistication."
       },
       {
-        "id": "design-12",
-        "title": "Pet Care App Design",
-        "client": "PetCare Clinic",
-        "industry": "Veterinary",
-        "challenge": "Pet care app with poor user experience and low pet owner engagement.",
-        "solution": "Redesigned app with pet health tracking and appointment management features.",
+        "id": "logo-29",
+        "title": "Amritham Multicuisine Restaurant Branding & Visual Identity",
+        "client": "Amritham Multicuisine Restaurant",
+        "industry": "Food & Beverage / Restaurant",
+        "challenge": "Needed a unique identity that reflects Kerala's heritage and houseboat elegance. Wanted to stand out from typical restaurant visuals. Required a cohesive design that connects tradition with a contemporary dining experience.",
+        "solution": "Pixdot created a complete brand identity for Amritham Multicuisine Restaurant:\n\n• Designed a logo combining Kerala boat silhouette with spoon-fork motifs to symbolize journey and taste\n• Adopted earthy greens, teak browns, and golden hues inspired by Kerala's nature and wooden houseboats\n• Used a mix of modern serif and hand-drawn scripts for authenticity and elegance\n• Created textured brand patterns inspired by boat wood carvings and traditional murals\n• Extended branding across wall graphics, menus, uniforms, and signage for a cohesive visual experience\n",
         "results": [
-          { "metric": "Pet Owner Engagement", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Appointment Bookings", "before": "45%", "after": "82%", "improvement": "+82%" },
-          { "metric": "Pet Health Tracking", "before": "25%", "after": "68%", "improvement": "+172%" }
+          { "metric": "Brand Identity", "before": "None", "after": "Strong visual identity", "improvement": "Established in local F&B market" },
+          { "metric": "Brand Recall", "before": "None", "after": "Emotional brand recall", "improvement": "Kerala boat-inspired design" },
+          { "metric": "Social Media Engagement", "before": "Low", "after": "Enhanced", "improvement": "Customer recognition improved" },
+          { "metric": "Market Position", "before": "Unknown", "after": "Cultural yet modern", "improvement": "Dining destination" }
         ],
-        "technologies": ["Figma", "Adobe XD", "React Native", "Health Tracking"],
-        "duration": "3 months",
-        "team": "4 designers",
+        "technologies": ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+        "duration": "2 Weeks",
+        "team": "2 Designers",
         "images": [
-          "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&h=600&fit=crop"
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297925/9_w3mogn.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297927/9.1_q4vnv0.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297930/9.2_r6w3uz.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297933/9.3_wzplv5.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297934/9.4_dzn51q.webp",
+          "https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761297938/9.5_jg7t2n.webp"
         ],
-        "fullDescription": "PetCare Clinic needed a pet care app that would engage pet owners and improve pet health tracking. We redesigned the app with comprehensive pet health tracking and streamlined appointment management."
-      },
-      {
-        "id": "design-13",
-        "title": "Restaurant Management System",
-        "client": "RestaurantBella",
-        "industry": "Restaurant",
-        "challenge": "Restaurant management system with poor user experience and low staff adoption.",
-        "solution": "Redesigned system with intuitive order management and staff communication features.",
-        "results": [
-          { "metric": "Staff Adoption", "before": "45%", "after": "82%", "improvement": "+82%" },
-          { "metric": "Order Accuracy", "before": "78%", "after": "95%", "improvement": "+22%" },
-          { "metric": "Customer Satisfaction", "before": "3.6/5", "after": "4.8/5", "improvement": "+33%" }
-        ],
-        "technologies": ["Figma", "Adobe XD", "React", "POS Integration"],
-        "duration": "3 months",
-        "team": "4 designers",
-        "images": [
-          "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "RestaurantBella needed a management system that would improve order accuracy and staff efficiency. We redesigned the system with intuitive order management and enhanced staff communication features."
-      },
-      {
-        "id": "design-14",
-        "title": "Tech Innovation Platform",
-        "client": "TechInnovate",
-        "industry": "Technology",
-        "challenge": "Innovation platform with poor user experience and low user engagement.",
-        "solution": "Redesigned platform with collaborative features and innovation tracking tools.",
-        "results": [
-          { "metric": "User Engagement", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Innovation Projects", "before": "45", "after": "120", "improvement": "+167%" },
-          { "metric": "User Satisfaction", "before": "3.4/5", "after": "4.7/5", "improvement": "+38%" }
-        ],
-        "technologies": ["Figma", "Adobe XD", "React", "Collaboration Tools"],
-        "duration": "4 months",
-        "team": "5 designers",
-        "images": [
-          "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "TechInnovate needed an innovation platform that would foster collaboration and track innovation projects. We redesigned the platform with collaborative features and comprehensive innovation tracking tools."
-      },
-      {
-        "id": "design-15",
-        "title": "Wellness Tracking App",
-        "client": "WellnessCenter",
-        "industry": "Wellness",
-        "challenge": "Wellness tracking app with poor user experience and low user retention.",
-        "solution": "Redesigned app with personalized wellness plans and progress tracking features.",
-        "results": [
-          { "metric": "User Retention", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Wellness Goals", "before": "45%", "after": "82%", "improvement": "+82%" },
-          { "metric": "User Satisfaction", "before": "3.6/5", "after": "4.8/5", "improvement": "+33%" }
-        ],
-        "technologies": ["Figma", "Adobe XD", "React Native", "Health Tracking"],
-        "duration": "3 months",
-        "team": "4 designers",
-        "images": [
-          "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "WellnessCenter needed a wellness tracking app that would engage users and help them achieve their wellness goals. We redesigned the app with personalized wellness plans and comprehensive progress tracking."
-      },
-      {
-        "id": "design-16",
-        "title": "Online Learning Platform",
-        "client": "EduLearn Academy",
-        "industry": "Education",
-        "challenge": "Online learning platform with poor user experience and low course completion rates.",
-        "solution": "Redesigned platform with interactive learning features and progress tracking.",
-        "results": [
-          { "metric": "Course Completion", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Student Engagement", "before": "45%", "after": "82%", "improvement": "+82%" },
-          { "metric": "Learning Outcomes", "before": "68%", "after": "91%", "improvement": "+34%" }
-        ],
-        "technologies": ["Figma", "Adobe XD", "React", "Interactive Learning"],
-        "duration": "4 months",
-        "team": "5 designers",
-        "images": [
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "EduLearn Academy needed an online learning platform that would engage students and improve learning outcomes. We redesigned the platform with interactive learning features and comprehensive progress tracking."
-      },
-      {
-        "id": "design-17",
-        "title": "Energy Management Dashboard",
-        "client": "GreenEnergy Solutions",
-        "industry": "Energy",
-        "challenge": "Energy management dashboard with poor data visualization and low user engagement.",
-        "solution": "Redesigned dashboard with clear energy metrics and sustainability tracking.",
-        "results": [
-          { "metric": "User Engagement", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Energy Efficiency", "before": "65%", "after": "89%", "improvement": "+37%" },
-          { "metric": "User Satisfaction", "before": "3.4/5", "after": "4.7/5", "improvement": "+38%" }
-        ],
-        "technologies": ["Figma", "Adobe XD", "React", "Data Visualization"],
-        "duration": "3 months",
-        "team": "4 designers",
-        "images": [
-          "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "GreenEnergy Solutions needed an energy management dashboard that would help users understand their energy consumption and improve efficiency. We redesigned the dashboard with clear energy metrics and sustainability tracking."
-      },
-      {
-        "id": "design-18",
-        "title": "Automotive Service App",
-        "client": "AutoCare Plus",
-        "industry": "Automotive",
-        "challenge": "Automotive service app with poor user experience and low customer engagement.",
-        "solution": "Redesigned app with service tracking and maintenance reminders.",
-        "results": [
-          { "metric": "Customer Engagement", "before": "35%", "after": "78%", "improvement": "+123%" },
-          { "metric": "Service Appointments", "before": "45/week", "after": "78/week", "improvement": "+73%" },
-          { "metric": "Customer Satisfaction", "before": "3.6/5", "after": "4.8/5", "improvement": "+33%" }
-        ],
-        "technologies": ["Figma", "Adobe XD", "React Native", "Service Tracking"],
-        "duration": "3 months",
-        "team": "4 designers",
-        "images": [
-          "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "AutoCare Plus needed an automotive service app that would engage customers and improve service efficiency. We redesigned the app with comprehensive service tracking and maintenance reminders."
-      }
-    ]
-  },
-  "poster": {
-    "category": "Poster Design",
-    "description": "Eye-catching poster designs for events, campaigns, and marketing materials",
-    "caseStudies": [
-      {
-        "id": "poster-1",
-        "title": "Music Festival Campaign",
-        "client": "SummerBeats Festival",
-        "industry": "Entertainment",
-        "challenge": "Need compelling poster design to attract 50,000+ attendees for annual music festival.",
-        "solution": "Created vibrant, energetic poster series with bold typography and dynamic visual elements.",
-        "results": [
-          { "metric": "Event Attendance", "before": "35K", "after": "52K", "improvement": "+49%" },
-          { "metric": "Social Media Shares", "before": "2.1K", "after": "8.7K", "improvement": "+314%" },
-          { "metric": "Brand Recognition", "before": "45%", "after": "78%", "improvement": "+73%" }
-        ],
-        "technologies": ["Adobe Photoshop", "Illustrator", "Print Design"],
-        "duration": "2 weeks",
-        "team": "3 designers",
-        "images": [
-          "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "SummerBeats Festival needed a poster campaign that would capture the energy and excitement of their annual music festival. We created a series of vibrant posters that worked across digital and print media, helping them achieve record attendance and increased brand recognition."
-      }
-    ]
-  },
-  "branding": {
-    "category": "Brand Identity",
-    "description": "Complete brand identity solutions including logos, guidelines, and brand strategy",
-    "caseStudies": [
-      {
-        "id": "branding-1",
-        "title": "Startup Brand Launch",
-        "client": "InnovateLab",
-        "industry": "Technology",
-        "challenge": "New tech startup needed complete brand identity to establish market presence.",
-        "solution": "Developed comprehensive brand identity including logo, guidelines, and brand strategy.",
-        "results": [
-          { "metric": "Brand Recognition", "before": "0%", "after": "72%", "improvement": "New" },
-          { "metric": "Investor Interest", "before": "Low", "after": "High", "improvement": "Significant" },
-          { "metric": "Market Position", "before": "Unknown", "after": "Top 5", "improvement": "New" }
-        ],
-        "technologies": ["Brand Strategy", "Adobe Creative Suite", "Brand Guidelines"],
-        "duration": "6 weeks",
-        "team": "4 designers",
-        "images": [
-          "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "InnovateLab was a new technology startup that needed a complete brand identity to establish themselves in the competitive tech market. We developed a comprehensive brand strategy that positioned them as innovative leaders in their field, creating a strong foundation for their market launch."
-      }
-    ]
-  },
-  "website": {
-    "category": "Website Development",
-    "description": "Custom website development with modern technologies and responsive design",
-    "caseStudies": [
-      {
-        "id": "website-1",
-        "title": "Corporate Website Redesign",
-        "client": "GlobalTech Corp",
-        "industry": "Technology",
-        "challenge": "Outdated corporate website with poor mobile experience and low conversion rates.",
-        "solution": "Complete website redesign with modern design, mobile optimization, and improved user experience.",
-        "results": [
-          { "metric": "Mobile Traffic", "before": "35%", "after": "68%", "improvement": "+94%" },
-          { "metric": "Conversion Rate", "before": "1.2%", "after": "3.8%", "improvement": "+217%" },
-          { "metric": "Page Load Speed", "before": "4.2s", "after": "1.8s", "improvement": "-57%" }
-        ],
-        "technologies": ["React", "Node.js", "MongoDB", "AWS", "SEO"],
-        "duration": "3 months",
-        "team": "8 developers",
-        "images": [
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
-        ],
-        "fullDescription": "GlobalTech Corp's corporate website was outdated and not optimized for mobile devices. We completely redesigned their website with a modern, responsive design that improved user experience and significantly increased conversion rates across all devices."
+        "fullDescription": "Amritham Multicuisine Restaurant is a newly launched dining brand inspired by Kerala's backwaters and traditional hospitality. They approached Pixdot to create a distinct brand identity that blends cultural authenticity with modern dining aesthetics, appealing to both locals and tourists."
       }
     ]
   }

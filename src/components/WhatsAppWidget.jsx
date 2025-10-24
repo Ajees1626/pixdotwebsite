@@ -24,7 +24,7 @@ const WhatsAppWidget = () => {
   }, [])
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "1234567890" // Replace with your WhatsApp number
+    const phoneNumber = "918778996278" // WhatsApp number without + and spaces
     const defaultMessage = "Hi! I'm interested in your services"
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`
     window.open(whatsappUrl, '_blank')

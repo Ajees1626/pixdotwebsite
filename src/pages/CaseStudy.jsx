@@ -104,7 +104,7 @@ const CaseStudy = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 mb-12">
             {currentCaseStudies.map((caseStudy, index) => (
               <div
                 key={caseStudy.id}
@@ -123,15 +123,16 @@ const CaseStudy = () => {
                   <img
                     src={caseStudy.images[0]}
                     alt={caseStudy.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-40 md:h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    style={{ aspectRatio: '1/1' }}
                   />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-3 left-3 md:top-4 md:left-4">
+                    <span className="bg-secondary text-white px-2 py-1 md:px-3 md:py-1 rounded-full text-xs md:text-sm font-semibold">
                       {caseStudy.industry}
                     </span>
                   </div>
-                  <div className="absolute top-4 right-4">
-                    <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
+                  <div className="absolute top-3 right-3 md:top-4 md:right-4">
+                    <span className={`px-2 py-1 md:px-3 md:py-1 rounded-full text-xs md:text-sm font-semibold ${
                       isDarkMode ? 'bg-gray-700 text-gray-300' : 'bg-white/90 text-gray-700'
                     }`}>
                       {caseStudy.category}
@@ -139,22 +140,22 @@ const CaseStudy = () => {
                   </div>
                 </div>
                 
-                <div className="p-6">
-                  <h3 className={`text-xl font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
+                <div className="p-4 md:p-6">
+                  <h3 className={`text-lg md:text-xl font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
                     {caseStudy.title}
                   </h3>
-                  <p className="text-secondary font-semibold mb-4">{caseStudy.client}</p>
-                  <p className={`mb-4 line-clamp-3 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+                  <p className="text-secondary font-semibold mb-3 md:mb-4 text-sm md:text-base">{caseStudy.client}</p>
+                  <p className={`mb-3 md:mb-4 line-clamp-3 text-sm md:text-base ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                     {caseStudy.challenge}
                   </p>
                   
                   <div className="flex items-center justify-between">
-                    <div className={`flex items-center text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                      <FaClock className="mr-2" />
+                    <div className={`flex items-center text-xs md:text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                      <FaClock className="mr-1 md:mr-2" />
                       {caseStudy.duration}
                     </div>
-                    <div className={`flex items-center text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
-                      <FaUsers className="mr-2" />
+                    <div className={`flex items-center text-xs md:text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
+                      <FaUsers className="mr-1 md:mr-2" />
                       {caseStudy.team}
                     </div>
                   </div>
@@ -228,6 +229,7 @@ const CaseStudy = () => {
                 src={selectedCase.images[0]}
                 alt={selectedCase.title}
                 className="w-full h-64 object-cover rounded-t-2xl"
+                style={{ aspectRatio: '1/1' }}
               />
               <div className="absolute top-4 left-4">
                 <span className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -244,22 +246,23 @@ const CaseStudy = () => {
             </div>
             
             {/* Title and Client */}
-            <div className="p-6 pb-4">
-              <h2 className={`text-2xl font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
+            <div className="p-4 md:p-6 pb-4">
+              <h2 className={`text-xl md:text-2xl font-bold mb-2 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
                 {selectedCase.title}
               </h2>
-              <p className="text-lg text-secondary font-semibold">{selectedCase.client}</p>
+              <p className="text-base md:text-lg text-secondary font-semibold">{selectedCase.client}</p>
             </div>
 
             {/* Three Images Grid */}
-            <div className="px-6 pb-6">
-              <div className="grid grid-cols-3 gap-4">
+            <div className="px-4 md:px-6 pb-6">
+              <div className="grid grid-cols-3 gap-2 md:gap-4">
                 {/* First Image */}
                 <div className="relative group">
                   <img
                     src={selectedCase.images[1] || selectedCase.images[0]}
                     alt={`${selectedCase.title} - Image 2`}
-                    className="w-full h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-24 md:h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                    style={{ aspectRatio: '1/1' }}
                   />
                 </div>
                 
@@ -268,7 +271,8 @@ const CaseStudy = () => {
                   <img
                     src={selectedCase.images[2] || selectedCase.images[0]}
                     alt={`${selectedCase.title} - Image 3`}
-                    className="w-full h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-24 md:h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                    style={{ aspectRatio: '1/1' }}
                   />
                   </div>
                   
@@ -277,7 +281,8 @@ const CaseStudy = () => {
                   <img
                     src={selectedCase.images[0]}
                     alt={`${selectedCase.title} - Main Image`}
-                    className="w-full h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-24 md:h-32 object-cover rounded-lg group-hover:scale-105 transition-transform duration-300"
+                    style={{ aspectRatio: '1/1' }}
                   />
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
                     <span className="text-white font-semibold text-sm">View More</span>
@@ -287,17 +292,17 @@ const CaseStudy = () => {
               </div>
               
             {/* Action Buttons */}
-            <div className="px-6 pb-6 flex justify-between items-center">
+            <div className="px-4 md:px-6 pb-6 flex flex-col sm:flex-row justify-between items-center gap-3">
               <Link
                 to={`/casestudy/${selectedCase.id}`}
-                className="btn-primary inline-flex items-center"
+                className="btn-primary inline-flex items-center text-sm md:text-base px-4 py-2 md:px-6 md:py-3"
               >
                 <FaEye className="mr-2" />
                 View Full Details
               </Link>
                 <button
                   onClick={() => setSelectedCase(null)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
+                className={`px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition-all duration-300 text-sm md:text-base ${
                   isDarkMode
                     ? 'bg-gray-700 text-white hover:bg-gray-600'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -324,22 +329,22 @@ const CaseStudy = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">90+</div>
-              <div className="text-lg text-white/90">Case Studies</div>
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 md:mb-2">90+</div>
+              <div className="text-sm md:text-lg text-white/90">Case Studies</div>
             </div>
             <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">150+</div>
-              <div className="text-lg text-white/90">Happy Clients</div>
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 md:mb-2">150+</div>
+              <div className="text-sm md:text-lg text-white/90">Happy Clients</div>
             </div>
             <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">98%</div>
-              <div className="text-lg text-white/90">Success Rate</div>
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 md:mb-2">98%</div>
+              <div className="text-sm md:text-lg text-white/90">Success Rate</div>
             </div>
             <div className="text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">$50M+</div>
-              <div className="text-lg text-white/90">Client ROI Generated</div>
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-1 md:mb-2">$50M+</div>
+              <div className="text-sm md:text-lg text-white/90">Client ROI Generated</div>
             </div>
           </div>
         </div>
@@ -348,22 +353,22 @@ const CaseStudy = () => {
       {/* CTA Section */}
       <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
         <div className="container-custom">
-          <div className={`rounded-3xl p-8 md:p-12 text-center text-white ${
+          <div className={`rounded-3xl p-6 md:p-8 lg:p-12 text-center text-white ${
             isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'
           } relative overflow-hidden`}>
             <div className="absolute inset-0 bg-black/20"></div>
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
                 Ready to Be Our Next Success Story?
               </h2>
-              <p className="text-xl mb-8 text-white/90">
+              <p className="text-lg md:text-xl mb-6 md:mb-8 text-white/90">
                 Let's discuss your project and create a custom solution that delivers exceptional results.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact" className="bg-white text-primary font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block">
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+                <Link to="/contact" className="bg-white text-primary font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 inline-block text-sm md:text-base">
                   Start Your Project
                 </Link>
-                <Link to="/solutions" className="border-2 border-white text-white font-bold py-3 px-6 rounded-lg hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 inline-block">
+                <Link to="/solutions" className="border-2 border-white text-white font-bold py-2 md:py-3 px-4 md:px-6 rounded-lg hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 inline-block text-sm md:text-base">
                   Explore Solutions
                 </Link>
               </div>

@@ -12,7 +12,7 @@ const HeroSection = () => {
   }, [])
   
   return (
-    <section className={`relative min-h-screen flex items-center overflow-hidden ${isDarkMode ? 'bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800' : 'bg-gradient-to-br from-gray-50 to-white'}`}>
+    <section className={`relative min-h-screen md:min-h-[50vh] lg:min-h-[80vh] xl:min-h-screen flex items-center overflow-hidden ${isDarkMode ? 'bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800' : 'bg-gradient-to-br from-gray-50 to-white'}`}>
       {/* Subtle Background Elements */}
       <div className="absolute inset-0">
         {/* Background tint overlay */}
@@ -26,10 +26,10 @@ const HeroSection = () => {
       </div>
 
       <div className="container-custom relative z-10 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-16 items-center min-h-screen py-4 sm:py-8 lg:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 lg:gap-16 items-center min-h-screen md:min-h-[50vh] lg:min-h-[80vh] xl:min-h-screen py-4 sm:py-6 md:py-8 lg:py-12 xl:py-16">
           
           {/* Left Content - Standing Lady PNG Image */}
-          <div className={`relative h-full flex items-end order-2 lg:order-1 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+          <div className={`relative h-full flex items-end order-2 md:order-1 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             {/* Circular Gradient Background - Mobile Optimized */}
             <div className="absolute inset-0 w-full h-full">
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 bg-gradient-to-br from-secondary to-primary rounded-full opacity-30 animate-pulse"></div>
@@ -58,10 +58,10 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content */}
-          <div className={`${isDarkMode ? 'text-white' : 'text-primary'} transition-all duration-1000 order-1 lg:order-2 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
+          <div className={`${isDarkMode ? 'text-white' : 'text-primary'} transition-all duration-1000 order-1 md:order-2 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             
-            {/* Main Heading - Mobile Optimized */}
-            <h1 className={`text-6xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6 md:mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            {/* Main Heading - Mobile & Tablet Optimized */}
+            <h1 className={`text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-4 sm:mb-6 md:mb-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <span className="block animate-fadeInUp">
                 We Don't Just Build <span className="text-secondary">Brands</span>
               </span>
@@ -70,8 +70,8 @@ const HeroSection = () => {
               </span>
             </h1>
             
-            {/* CTA Buttons - Mobile Optimized */}
-            <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8 md:mb-12 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            {/* CTA Buttons - Mobile & Tablet Optimized */}
+            <div className={`flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 mb-4 sm:mb-6 md:mb-8 lg:mb-10 xl:mb-12 transition-all duration-1000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <Link 
                 to="/contact" 
                 className="group bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white font-bold py-2.5 sm:py-3 md:py-4 px-4 sm:px-6 md:px-8 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl inline-flex items-center justify-center text-xs sm:text-sm md:text-base"
@@ -87,7 +87,7 @@ const HeroSection = () => {
               </Link>
             </div>
             
-            {/* Stats Grid - Mobile Optimized */}
+            {/* Stats Grid - Mobile & Tablet Optimized */}
             <div className={`grid grid-cols-3 gap-2 sm:gap-4 md:gap-6 lg:gap-8 transition-all duration-1000 delay-1200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="text-center group animate-counter">
                 <div className="text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-secondary mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">1000+</div>
@@ -106,8 +106,8 @@ const HeroSection = () => {
         </div>
       </div>
       
-      {/* Enhanced Scroll Indicator - Mobile Optimized */}
-      <div className="absolute bottom-2 sm:bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2">
+      {/* Enhanced Scroll Indicator - Mobile & Tablet Optimized */}
+      <div className="absolute bottom-2 sm:bottom-3 md:bottom-4 lg:bottom-6 xl:bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="flex flex-col items-center space-y-1 sm:space-y-2">
           <span className={`text-xs sm:text-sm font-medium ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Scroll</span>
           <div className={`w-4 h-6 sm:w-5 sm:h-8 md:w-6 md:h-10 border-2 ${isDarkMode ? 'border-gray-500/40' : 'border-gray-300'} rounded-full flex justify-center`}>
@@ -133,6 +133,35 @@ const HeroSection = () => {
         
         .animate-scroll-bg {
           animation: scrollBackground 30s ease-in-out infinite;
+        }
+        
+        @media (max-width: 1024px) {
+          .bg-fixed {
+            background-attachment: scroll !important;
+          }
+          .animate-scroll-bg {
+            animation-duration: 40s;
+          }
+          
+          /* Tablet optimizations */
+          .container-custom {
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+          
+          /* Reduce animation intensity on tablet */
+          .animate-float,
+          .animate-float-delayed,
+          .animate-float-slow,
+          .animate-float-reverse {
+            animation-duration: 8s;
+          }
+          
+          /* Tablet-specific adjustments */
+          .min-h-screen {
+            min-height: 50vh;
+            min-height: 50dvh; /* Dynamic viewport height for tablet */
+          }
         }
         
         @media (max-width: 768px) {

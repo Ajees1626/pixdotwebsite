@@ -347,50 +347,69 @@ const CaseStudyDetail = () => {
 
       {/* Image Modal */}
       {isImageModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-          <div className="relative max-w-6xl max-h-full">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/90">
+          <div className="relative bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl w-[90vw] h-[90vw] sm:w-[700px] sm:h-[700px] max-w-[90vw] max-h-[90vh] sm:max-w-[700px] sm:max-h-[700px]">
+            {/* Close Button */}
             <button
               onClick={() => setIsImageModalOpen(false)}
-              className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300 transition-colors z-10"
+              className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
             >
-              <FaTimes />
+              <FaTimes className="text-gray-700 text-sm sm:text-lg md:text-xl" />
             </button>
-            
-            <img
-              src={caseStudy.images[currentImageIndex]}
-              alt={caseStudy.title}
-              className="max-w-full max-h-full object-contain rounded-lg"
-            />
-            
+
+            {/* Left Navigation Arrow */}
             {caseStudy.images.length > 1 && (
-              <>
-                <button
-                  onClick={prevImage}
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition-colors"
-                >
-                  <FaChevronLeft />
-                </button>
-                <button
-                  onClick={nextImage}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 transition-colors"
-                >
-                  <FaChevronRight />
-                </button>
-                
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
-                  <div className="flex space-x-2">
-                    {caseStudy.images.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setCurrentImageIndex(index)}
-                        className={`w-3 h-3 rounded-full transition-colors ${
-                          index === currentImageIndex ? 'bg-white' : 'bg-white/50'
-                        }`}
-                      />
-                    ))}
-                  </div>
+              <button
+                onClick={prevImage}
+                className="absolute left-2 top-1/2 transform -translate-y-1/2 sm:left-3 md:left-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
+              >
+                <FaChevronLeft className="text-gray-700 text-sm sm:text-lg md:text-xl" />
+              </button>
+            )}
+
+            {/* Right Navigation Arrow */}
+            {caseStudy.images.length > 1 && (
+              <button
+                onClick={nextImage}
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 sm:right-3 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
+              >
+                <FaChevronRight className="text-gray-700 text-sm sm:text-lg md:text-xl" />
+              </button>
+            )}
+
+            {/* Full Image Display */}
+            <div className="relative w-full h-full bg-gray-50">
+              <img
+                src={caseStudy.images[currentImageIndex]}
+                alt={caseStudy.title}
+                className="w-full h-full object-contain"
+                style={{ 
+                  maxWidth: '100%', 
+                  maxHeight: '100%',
+                  objectFit: 'contain'
+                }}
+                onError={(e) => {
+                  e.target.style.display = 'none'
+                  e.target.nextSibling.style.display = 'flex'
+                }}
+              />
+              <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500 text-lg" style={{ display: 'none' }}>
+                <div className="text-center">
+                  <div className="text-4xl mb-2">📷</div>
+                  <div>Image not available</div>
                 </div>
-              </>
+              </div>
+            </div>
+
+            {/* Image Counter */}
+            {caseStudy.images.length > 1 && (
+              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 sm:bottom-3 md:bottom-4 z-10">
+                <div className="bg-white rounded-full px-3 py-1.5 sm:px-4 sm:py-2 shadow-lg">
+                  <span className="text-gray-700 text-xs sm:text-sm font-medium">
+                    {currentImageIndex + 1} / {caseStudy.images.length}
+                  </span>
+                </div>
+              </div>
             )}
           </div>
         </div>

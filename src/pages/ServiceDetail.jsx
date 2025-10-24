@@ -76,11 +76,11 @@ const ServiceDetail = () => {
               </h1>
               
               {service.overview && (
-                <p className={`text-lg mb-6 leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                <p className={`text-lg mb-6 leading-relaxed text-justify ${isDarkMode ? 'text-gray-700' : 'text-gray-700'}`}>
                   {service.overview}
                 </p>
               )}
-              <p className={`text-xl mb-8 leading-relaxed ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{service.longDescription}</p>
+              <p className={`text-xl mb-8 leading-relaxed text-justify ${isDarkMode ? 'text-gray-700' : 'text-gray-600'}`}>{service.longDescription}</p>
               
               <div className="flex flex-wrap gap-6">
                 <div className="flex items-center text-gray-600">

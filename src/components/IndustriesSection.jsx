@@ -91,12 +91,14 @@ const IndustriesSection = () => {
   // Responsive helper functions
   const getSlidesPerView = () => {
     if (windowWidth < 640) return 1 // Mobile: 1 slide
+    if (windowWidth < 768) return 1 // Small tablet: 1 slide
     if (windowWidth < 1024) return 2 // Tablet: 2 slides
     return 3 // Desktop: 3 slides
   }
 
   const getSlideWidth = () => {
     if (windowWidth < 640) return 'w-full' // Mobile: full width
+    if (windowWidth < 768) return 'w-full' // Small tablet: full width
     if (windowWidth < 1024) return 'w-1/2' // Tablet: half width
     return 'w-1/3' // Desktop: third width
   }
@@ -104,20 +106,20 @@ const IndustriesSection = () => {
   return (
     <section id="industries-section" className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-gradient-to-br from-gray-50 to-white'}`}>
       <div className="container-custom">
-        <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="inline-flex items-center bg-secondary/10 rounded-full px-6 py-3 mb-6 animate-fadeInUp">
-            <span className="text-secondary font-semibold text-sm">Our Expertise</span>
+        <div className={`text-center mb-16 md:mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+          <div className="inline-flex items-center bg-secondary/10 rounded-full px-4 md:px-6 py-2 md:py-3 mb-4 md:mb-6 animate-fadeInUp">
+            <span className="text-secondary font-semibold text-xs md:text-sm">Our Expertise</span>
           </div>
-          <h2 className={`text-4xl md:text-5xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6 animate-fadeInUp delay-200`}>
+          <h2 className={`text-3xl md:text-4xl lg:text-5xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-4 md:mb-6 animate-fadeInUp delay-200`}>
             Industries We <span className="text-gradient">Transform</span>
           </h2>
-          <p className={`text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto animate-fadeInUp delay-400`}>
+          <p className={`text-lg md:text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} max-w-3xl mx-auto animate-fadeInUp delay-400 px-4`}>
             We have extensive experience across various industries, delivering innovative solutions that drive growth and success.
           </p>
         </div>
 
         {/* Industries Slider */}
-        <div className="relative overflow-hidden mb-16">
+        <div className="relative overflow-hidden mb-12 md:mb-16">
           {/* Slider Container */}
           <div className="relative">
             <div 
@@ -127,18 +129,18 @@ const IndustriesSection = () => {
               }}
             >
               {industries.map((industry, index) => (
-                <div key={industry.id} className={`${getSlideWidth()} flex-shrink-0 px-2 sm:px-3 md:px-4`}>
+                <div key={industry.id} className={`${getSlideWidth()} flex-shrink-0 px-2 sm:px-3 md:px-4 lg:px-6`}>
                   <Link
                     to={`/industrie/${industry.id}`}
                     className="group block"
                   >
-                    <div className={`relative ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 sm:hover:-translate-y-4 border overflow-hidden`}>
+                    <div className={`relative ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'} rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-6 lg:p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 sm:hover:-translate-y-4 border overflow-hidden`}>
                       {/* Background Gradient */}
                       <div className={`absolute inset-0 bg-gradient-to-br ${industry.color} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
                       
                       {/* Industry Image */}
                       <div className="relative mb-4 sm:mb-6">
-                        <div className="w-full h-32 sm:h-40 md:h-48 rounded-xl sm:rounded-2xl overflow-hidden mb-3 sm:mb-4 group-hover:scale-105 transition-transform duration-300">
+                        <div className="w-full h-32 sm:h-40 md:h-44 lg:h-48 rounded-xl sm:rounded-2xl overflow-hidden mb-3 sm:mb-4 group-hover:scale-105 transition-transform duration-300">
                           <img
                             src={industry.image}
                             alt={industry.name}
@@ -150,10 +152,10 @@ const IndustriesSection = () => {
 
                       {/* Content */}
                       <div className="relative">
-                        <h3 className={`text-lg sm:text-xl md:text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2 sm:mb-3 group-hover:text-secondary transition-colors`}>
+                        <h3 className={`text-lg sm:text-xl md:text-xl lg:text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2 sm:mb-3 group-hover:text-secondary transition-colors`}>
                           {industry.name}
                         </h3>
-                        <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base line-clamp-2 sm:line-clamp-3`}>
+                        <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base md:text-sm lg:text-base line-clamp-2 sm:line-clamp-3`}>
                           {industry.description}
                         </p>
 
@@ -196,8 +198,8 @@ const IndustriesSection = () => {
           </div>
           
           {/* Slider Controls - Responsive */}
-          <div className="flex items-center justify-center mt-6 sm:mt-8">
-            <div className="flex items-center space-x-2 sm:space-x-4">
+          <div className="flex items-center justify-center mt-4 sm:mt-6 md:mt-8">
+            <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
               <button
                 onClick={prevSlide}
                 className={`p-2 sm:p-3 rounded-full transition-all duration-300 hover:scale-110 ${
@@ -236,12 +238,12 @@ const IndustriesSection = () => {
 
         {/* CTA Section */}
         <div className={`text-center transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 text-white transform hover:scale-105 transition-transform duration-500">
+          <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 text-white transform hover:scale-105 transition-transform duration-500">
             <div className="flex flex-col sm:flex-row items-center justify-center mb-4 sm:mb-6">
               <FaAward className="text-3xl sm:text-4xl text-secondary mr-0 sm:mr-4 mb-2 sm:mb-0 animate-bounce-slow" />
-              <h3 className="text-2xl sm:text-3xl font-bold animate-fadeInUp">Trusted by Industry Leaders</h3>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold animate-fadeInUp">Trusted by Industry Leaders</h3>
             </div>
-            <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 opacity-90 animate-fadeInUp delay-200 px-4">
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 opacity-90 animate-fadeInUp delay-200 px-4">
               Join hundreds of companies that trust us to deliver innovative solutions for their industry challenges.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">

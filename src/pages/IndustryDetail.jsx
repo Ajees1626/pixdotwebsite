@@ -91,7 +91,7 @@ const IndustryDetail = () => {
                 {industry.name} Solutions
               </h1>
               
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-600 text-justify mb-8 leading-relaxed">
                 {industry.longDescription}
               </p>
               

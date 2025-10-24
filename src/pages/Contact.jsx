@@ -1,24 +1,45 @@
 import React, { useState, useEffect } from 'react'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane, FaUser, FaBuilding, FaComment, FaWhatsapp, FaTelegram } from 'react-icons/fa'
+import { FaPhoneAlt , FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane, FaUser, FaBuilding, FaComment, FaWhatsapp, FaTelegram } from 'react-icons/fa'
 import { useTheme } from '../contexts/ThemeContext'
 
 const Contact = () => {
   const { isDarkMode } = useTheme()
   const [isVisible, setIsVisible] = useState(false)
   const [formData, setFormData] = useState({
-    name: '',
+    firstName: '',
+    lastName: '',
     email: '',
     company: '',
     phone: '',
-    service: '',
+    subject: '',
     message: ''
   })
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [submitError, setSubmitError] = useState('')
 
   useEffect(() => {
     setIsVisible(true)
+    
+    // Test backend connection on component mount
+    const testBackendConnection = async () => {
+      try {
+        const response = await fetch('/api/contact', {
+          method: 'OPTIONS',
+          mode: 'cors'
+        })
+        console.log('Backend test response:', response.status)
+        if (response.ok) {
+          const text = await response.text()
+          console.log('Backend response:', text)
+        }
+      } catch (error) {
+        console.error('Backend connection test failed:', error)
+      }
+    }
+    
+    testBackendConnection()
   }, [])
 
   const handleChange = (e) => {
@@ -31,45 +52,81 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitError('')
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false)
-      setIsSubmitted(true)
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        service: '',
-        message: ''
+    try {
+      console.log('Submitting form data:', formData)
+      
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+        },
+        mode: 'cors',
+        credentials: 'omit',
+        body: JSON.stringify(formData)
       })
-    }, 2000)
+
+      console.log('Response status:', response.status)
+      console.log('Response headers:', response.headers)
+
+      const result = await response.json()
+      console.log('Response data:', result)
+
+      if (response.ok) {
+        setIsSubmitted(true)
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          company: '',
+          phone: '',
+          subject: '',
+          message: ''
+        })
+      } else {
+        setSubmitError(result.error || 'Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error)
+      console.error('Error details:', {
+        name: error.name,
+        message: error.message,
+        stack: error.stack
+      })
+      setSubmitError(`Network error: ${error.message}. Please check your connection and try again.`)
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
     {
-      icon: FaPhone,
+      icon: FaPhoneAlt ,
       title: 'Phone',
-      details: ['+1 (555) 123-4567', '+1 (555) 987-6543'],
+      details: ['+91 87789 96278', '+91 87789 64644'],
       description: 'Call us for immediate assistance'
     },
     {
       icon: FaEnvelope,
       title: 'Email',
-      details: ['info@pixdot.com', 'support@pixdot.com'],
+      details: ['info@pixdotsolutions.com', 'pixdotsolutions@gmail.com'],
       description: 'Send us an email anytime'
     },
     {
       icon: FaMapMarkerAlt,
       title: 'Address',
-      details: ['123 Business Street', 'Suite 100', 'New York, NY 10001'],
+      details: ['No:40, First Floor,', 'G.K Industrial Estate,Alapakkam,', 'Porur, Chennai - 600 116.'],
       description: 'Visit our office'
     },
     {
       icon: FaClock,
       title: 'Business Hours',
-      details: ['Monday - Friday: 9:00 AM - 6:00 PM', 'Saturday: 10:00 AM - 4:00 PM', 'Sunday: Closed'],
+      details: ['Monday - Friday: 9:30 AM - 6:30 PM', 'Saturday: 10:00 AM - 5:00 PM', 'Sunday: Closed'],
       description: 'We\'re here to help'
     }
   ]
@@ -86,26 +143,7 @@ const Contact = () => {
     'Other'
   ]
 
-  const offices = [
-    {
-      city: 'New York',
-      address: '123 Business Street, Suite 100',
-      phone: '+1 (555) 123-4567',
-      email: 'ny@pixdot.com'
-    },
-    {
-      city: 'San Francisco',
-      address: '456 Tech Avenue, Floor 5',
-      phone: '+1 (555) 234-5678',
-      email: 'sf@pixdot.com'
-    },
-    {
-      city: 'London',
-      address: '789 Innovation Road, Level 3',
-      phone: '+44 20 7123 4567',
-      email: 'london@pixdot.com'
-    }
-  ]
+   
 
   return (
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
@@ -118,8 +156,7 @@ const Contact = () => {
               Get In <span className="text-white">Touch</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed animate-fadeInUp delay-300">
-              Ready to start your next project? Let's discuss how we can help 
-              transform your business with innovative digital solutions.
+            Let’s connect and grow your brand together.
             </p>
           </div>
         </div>
@@ -147,16 +184,32 @@ const Contact = () => {
                     <div>
                       <label className={`block text-sm font-semibold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2`}>
                         <FaUser className="inline mr-2" />
-                        Full Name *
+                        First Name *
                       </label>
                       <input
                         type="text"
-                        name="name"
-                        value={formData.name}
+                        name="firstName"
+                        value={formData.firstName}
                         onChange={handleChange}
                         required
                         className={`w-full px-4 py-3 border ${isDarkMode ? 'border-gray-600 bg-gray-700 text-white' : 'border-gray-300 bg-white'} rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-colors`}
-                        placeholder="Your full name"
+                        placeholder="Your first name"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className={`block text-sm font-semibold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2`}>
+                        <FaUser className="inline mr-2" />
+                        Last Name *
+                      </label>
+                      <input
+                        type="text"
+                        name="lastName"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        required
+                        className={`w-full px-4 py-3 border ${isDarkMode ? 'border-gray-600 bg-gray-700 text-white' : 'border-gray-300 bg-white'} rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-colors`}
+                        placeholder="Your last name"
                       />
                     </div>
                     
@@ -195,7 +248,7 @@ const Contact = () => {
                     
                     <div>
                       <label className={`block text-sm font-semibold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2`}>
-                        <FaPhone className="inline mr-2" />
+                        <FaPhoneAlt  className="inline mr-2" />
                         Phone Number
                       </label>
                       <input
@@ -211,19 +264,18 @@ const Contact = () => {
 
                   <div>
                     <label className={`block text-sm font-semibold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2`}>
-                      Service Interested In
+                      <FaComment className="inline mr-2" />
+                      Subject *
                     </label>
-                    <select
-                      name="service"
-                      value={formData.service}
+                    <input
+                      type="text"
+                      name="subject"
+                      value={formData.subject}
                       onChange={handleChange}
+                      required
                       className={`w-full px-4 py-3 border ${isDarkMode ? 'border-gray-600 bg-gray-700 text-white' : 'border-gray-300 bg-white'} rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent transition-colors`}
-                    >
-                      <option value="">Select a service</option>
-                      {services.map((service, index) => (
-                        <option key={index} value={service}>{service}</option>
-                      ))}
-                    </select>
+                      placeholder="What's this about?"
+                    />
                   </div>
 
                   <div>
@@ -241,6 +293,12 @@ const Contact = () => {
                       placeholder="Tell us about your project requirements..."
                     />
                   </div>
+
+                  {submitError && (
+                    <div className={`${isDarkMode ? 'bg-red-900/20 border-red-700' : 'bg-red-50 border-red-200'} border rounded-lg p-4`}>
+                      <p className="text-red-600 text-sm">{submitError}</p>
+                    </div>
+                  )}
 
                   <button
                     type="submit"
@@ -270,8 +328,8 @@ const Contact = () => {
               <div className="space-y-8">
                 {contactInfo.map((info, index) => (
                   <div key={index} className="flex items-start">
-                    <div className={`w-12 h-12 ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-lg flex items-center justify-center mr-4 flex-shrink-0 shadow-lg`}>
-                      <info.icon className="text-white text-xl" />
+                    <div className="flex items-center justify-center mr-4 flex-shrink-0">
+                      <info.icon className={`text-secondary text-xl`} />
                     </div>
                     <div>
                       <h3 className={`text-xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2`}>{info.title}</h3>
@@ -306,16 +364,18 @@ const Contact = () => {
             {/* Map */}
             <div className="relative">
               <div className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-8 shadow-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}>
-                <div className="aspect-video bg-gray-200 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <FaMapMarkerAlt className="text-4xl text-secondary mx-auto mb-4" />
-                    <p className={`text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                      Interactive Map
-                    </p>
-                    <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'} mt-2`}>
-                      Click to view location
-                    </p>
-                  </div>
+                <div className="aspect-video rounded-xl overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d971.7369330389853!2d80.16283126955499!3d13.03899899920518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526118c60dabc9%3A0x9e2278ded5a253e0!2s40%2C%20Arcot%20Rd%2C%20Ganesh%20Nagar%2C%20Porur%2C%20Chennai%2C%20Tamil%20Nadu%20600116!5e0!3m2!1sen!2sin!4v1752575633205!5m2!1sen!2sin"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Pixdot Solutions Location"
+                    className="w-full h-full"
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -324,30 +384,30 @@ const Contact = () => {
             <div className="space-y-8">
               <div className={`${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-8 shadow-lg border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'}`}>
                 <h3 className={`text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-6`}>
-                  Main Office
+                  Head Office
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <FaMapMarkerAlt className="text-secondary mr-3 mt-1" />
                     <div>
                       <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                        123 Business District<br />
-                        Chennai, Tamil Nadu 600001<br />
-                        India
+                      No:40, First Floor,G.K Industrial Estate,<br />
+                      Alapakkam, Porur, Chennai - 600 116.<br />
+                      Tamil Nadu, India
                       </p>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <FaPhone className="text-secondary mr-3" />
-                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+91 98765 43210</p>
+                    <FaPhoneAlt  className="text-secondary mr-3" />
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+91 87789 96278 , +91 87789 64644</p>
                   </div>
                   <div className="flex items-center">
                     <FaEnvelope className="text-secondary mr-3" />
-                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>info@pixdot.com</p>
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>info@pixdotsolutions.com</p>
                   </div>
                   <div className="flex items-center">
                     <FaClock className="text-secondary mr-3" />
-                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>Mon - Fri: 9:30 AM - 6:30 PM</p>
                   </div>
                 </div>
               </div>
@@ -359,11 +419,11 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <FaWhatsapp className="text-green-500 mr-3" />
-                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+91 98765 43210</p>
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>+91 87789 96278</p>
                   </div>
                   <div className="flex items-center">
                     <FaTelegram className="text-blue-500 mr-3" />
-                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>@pixdot_support</p>
+                    <p className={isDarkMode ? 'text-gray-300' : 'text-gray-600'}>info@pixdotsolutions.com</p>
                   </div>
                 </div>
               </div>
@@ -433,6 +493,9 @@ const Contact = () => {
               </a>
               <a href="/casestudy" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
                 View Our Work
+              </a>
+              <a href="https://pixdotbackend.onrender.com/api/contact" target="_blank" rel="noopener noreferrer" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
+                Backend API
               </a>
             </div>
           </div>

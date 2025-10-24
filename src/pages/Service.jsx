@@ -77,7 +77,7 @@ const Service = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {services.map((service, index) => {
               const IconComponent = iconMap[service.icon]
               return (
@@ -86,36 +86,36 @@ const Service = () => {
                   to={`/service/${service.id}`}
                   className="group block"
                 >
-                  <div className={`rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border group-hover:border-secondary ${isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-white border-gray-200'} hover:shadow-2xl`}>
-                    <div className={`w-16 h-16 ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-br from-white to-secondary'} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
-                      <IconComponent className="text-white text-2xl" />
+                  <div className={`rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border group-hover:border-secondary ${isDarkMode ? 'bg-gray-700/50 border-gray-600' : 'bg-white border-gray-200'} hover:shadow-2xl`}>
+                    <div className={`w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                      <IconComponent className="text-white text-2xl md:text-3xl" />
                     </div>
                     
-                    <h3 className={`text-2xl font-bold mb-4 group-hover:text-secondary transition-colors ${isDarkMode ? 'text-white' : 'text-primary'}`}>{service.title}</h3>
-                    <p className={`mb-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{service.description}</p>
+                    <h3 className={`text-xl md:text-2xl font-bold mb-3 md:mb-4 group-hover:text-secondary transition-colors ${isDarkMode ? 'text-white' : 'text-primary'}`}>{service.title}</h3>
+                    <p className={`mb-4 md:mb-6 text-sm md:text-base ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{service.description}</p>
                     
-                    <ul className="space-y-2 mb-6">
+                    <ul className="space-y-2 mb-4 md:mb-6">
                       {service.features.slice(0, 4).map((feature, idx) => (
                         <li key={idx} className={`flex items-center ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
                           <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
-                          <span className="text-sm">{feature}</span>
+                          <span className="text-xs md:text-sm">{feature}</span>
                         </li>
                       ))}
                       {service.features.length > 4 && (
-                        <li className="text-sm text-secondary font-medium">
+                        <li className="text-xs md:text-sm text-secondary font-medium">
                           +{service.features.length - 4} more features
                         </li>
                       )}
                     </ul>
                     
-                    <div className={`border-t pt-4 ${isDarkMode ? 'border-gray-600' : 'border-gray-200'}`}>
+                    <div className={`border-t pt-3 md:pt-4 ${isDarkMode ? 'border-gray-600' : 'border-gray-200'}`}>
                       <div className="flex justify-between items-center mb-2">
-                        <span className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Starting Price</span>
-                        <span className={`font-semibold ${isDarkMode ? 'text-white' : 'text-primary'}`}>{service.price}</span>
+                        <span className={`text-xs md:text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Starting Price</span>
+                        <span className={`font-semibold text-sm md:text-base ${isDarkMode ? 'text-white' : 'text-primary'}`}>{service.price}</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Duration</span>
-                        <span className={`font-semibold ${isDarkMode ? 'text-secondary' : 'text-secondary'}`}>{service.duration}</span>
+                        <span className={`text-xs md:text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>Duration</span>
+                        <span className={`font-semibold text-sm md:text-base ${isDarkMode ? 'text-secondary' : 'text-secondary'}`}>{service.duration}</span>
                       </div>
                     </div>
                   </div>
@@ -138,19 +138,19 @@ const Service = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {process.map((step, index) => (
-              <div key={index} className={`text-center ${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-6 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
-                <div className="relative mb-6">
-                  <div className={`w-20 h-20 ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-br from-white to-secondary'} rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg`}>
-                    <span className="text-white text-2xl font-bold">{step.step}</span>
+              <div key={index} className={`text-center ${isDarkMode ? 'bg-gray-800/50' : 'bg-white'} rounded-2xl p-4 md:p-6 border ${isDarkMode ? 'border-gray-700' : 'border-gray-200'} hover:shadow-xl transition-all duration-300 transform hover:scale-105`}>
+                <div className="relative mb-4 md:mb-6">
+                  <div className={`w-16 h-16 md:w-20 md:h-20 ${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-br from-white to-secondary'} rounded-full flex items-center justify-center mx-auto mb-3 md:mb-4 shadow-lg`}>
+                    <span className="text-white text-xl md:text-2xl font-bold">{step.step}</span>
                   </div>
                   {index < process.length - 1 && (
                     <div className={`hidden lg:block absolute top-10 left-full w-full h-0.5 ${isDarkMode ? 'bg-gradient-to-r from-primary to-secondary' : 'bg-gradient-to-r from-primary to-secondary'} transform translate-x-4`}></div>
                   )}
                 </div>
-                <h3 className={`text-xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{step.title}</h3>
-                <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{step.description}</p>
+                <h3 className={`text-lg md:text-xl font-bold mb-3 md:mb-4 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{step.title}</h3>
+                <p className={`text-sm md:text-base ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{step.description}</p>
               </div>
             ))}
           </div>
@@ -160,13 +160,13 @@ const Service = () => {
       {/* CTA Section */}
       <section className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
         <div className="container-custom">
-          <div className={`${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-3xl p-8 md:p-12 text-center text-white shadow-xl relative overflow-hidden`}>
+          <div className={`${isDarkMode ? 'bg-gradient-to-tr from-primary to-secondary' : 'bg-gradient-to-tr from-primary to-secondary'} rounded-3xl p-6 md:p-8 lg:p-12 text-center text-white shadow-xl relative overflow-hidden`}>
             <div className="absolute inset-0 bg-black/10"></div>
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6">
                 Ready to Get Started?
               </h2>
-              <p className="text-xl mb-8 text-white/90">
+              <p className="text-lg md:text-xl mb-6 md:mb-8 text-white/90">
                 Let's discuss your project requirements and create a custom solution for your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -55,8 +55,8 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          {/* Desktop & Tablet Navigation */}
+          <nav className="hidden lg:flex space-x-6 xl:space-x-8">
             {navigation.map((item, index) => (
               <Link
                 key={item.name}
@@ -74,7 +74,7 @@ const Header = () => {
           </nav>
 
           {/* Theme Toggle & CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-3 xl:space-x-4">
             <button
               onClick={toggleTheme}
               className={`p-2 rounded-lg ${isDarkMode ? 'bg-gray-800 text-gray-300 hover:bg-gray-700' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} transition-all duration-300 transform hover:scale-110 hover:rotate-12`}
@@ -82,13 +82,13 @@ const Header = () => {
             >
               {isDarkMode ? <FaSun size={18} className="animate-pulse" /> : <FaMoon size={18} className="animate-pulse" />}
             </button>
-            <Link to="/contact" className="btn-primary transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-out">
+            <Link to="/contact" className="btn-primary transform hover:scale-105 hover:shadow-lg transition-all duration-300 ease-out text-sm xl:text-base px-3 xl:px-4 py-2 xl:py-3">
               Get Started
             </Link>
           </div>
 
-          {/* Mobile menu button & theme toggle */}
-          <div className="md:hidden flex items-center space-x-2">
+          {/* Tablet & Mobile menu button & theme toggle */}
+          <div className="lg:hidden flex items-center space-x-2">
             <button
               onClick={toggleTheme}
               className={`p-2 rounded-lg ${isDarkMode ? 'bg-gray-800 text-gray-300 hover:bg-gray-700' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'} transition-all duration-300 transform hover:scale-110`}
@@ -106,9 +106,9 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Tablet & Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden animate-fadeInDown">
+          <div className="lg:hidden animate-fadeInDown">
             <div className={`px-4 pt-4 pb-4 space-y-2 ${isDarkMode ? 'bg-gray-900 border-gray-700' : 'bg-white border-gray-200'} border-t shadow-lg`}>
               {navigation.map((item, index) => (
                 <Link
