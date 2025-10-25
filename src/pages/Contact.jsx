@@ -25,8 +25,8 @@ const Contact = () => {
     // Test backend connection on component mount
     const testBackendConnection = async () => {
       try {
-        const response = await fetch('/api/contact', {
-          method: 'OPTIONS',
+        const response = await fetch('https://newpixdotbackend.onrender.com//', {
+          method: 'GET',
           mode: 'cors'
         })
         console.log('Backend test response:', response.status)
@@ -57,22 +57,13 @@ const Contact = () => {
     try {
       console.log('Submitting form data:', formData)
       
-      const response = await fetch('/api/contact', {
+      const response = await fetch('https://newpixdotbackend.onrender.com//api/contact', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json',
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'POST, GET, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type, Authorization'
+          'Content-Type': 'application/json'
         },
-        mode: 'cors',
-        credentials: 'omit',
         body: JSON.stringify(formData)
       })
-
-      console.log('Response status:', response.status)
-      console.log('Response headers:', response.headers)
 
       const result = await response.json()
       console.log('Response data:', result)
@@ -93,12 +84,7 @@ const Contact = () => {
       }
     } catch (error) {
       console.error('Error submitting form:', error)
-      console.error('Error details:', {
-        name: error.name,
-        message: error.message,
-        stack: error.stack
-      })
-      setSubmitError(`Network error: ${error.message}. Please check your connection and try again.`)
+      setSubmitError('Network error. Please try again.')
     } finally {
       setIsSubmitting(false)
     }
@@ -494,9 +480,9 @@ const Contact = () => {
               <a href="/casestudy" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
                 View Our Work
               </a>
-              <a href="https://pixdotbackend.onrender.com/api/contact" target="_blank" rel="noopener noreferrer" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
-                Backend API
-              </a>
+               <a href="https://newpixdotbackend.onrender.com/" target="_blank" rel="noopener noreferrer" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
+                 Backend API
+               </a>
             </div>
           </div>
         </div>
@@ -529,6 +515,6 @@ const Contact = () => {
       `}</style>
     </div>
   )
+ 
 }
-
 export default Contact
