@@ -25,7 +25,7 @@ const Contact = () => {
     // Test backend connection on component mount
     const testBackendConnection = async () => {
       try {
-        const response = await fetch('https://newpixdotbackend.onrender.com//', {
+        const response = await fetch('https://newpixdotbackend.onrender.com/', {
           method: 'GET',
           mode: 'cors'
         })
@@ -57,7 +57,7 @@ const Contact = () => {
     try {
       console.log('Submitting form data:', formData)
       
-      const response = await fetch('https://newpixdotbackend.onrender.com//api/contact', {
+      const response = await fetch('https://newpixdotbackend.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -480,7 +480,7 @@ const Contact = () => {
               <a href="/casestudy" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
                 View Our Work
               </a>
-               <a href="https://newpixdotbackend.onrender.com/" target="_blank" rel="noopener noreferrer" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
+               <a href="https://newpixdotbackend.onrender.com" target="_blank" rel="noopener noreferrer" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
                  Backend API
                </a>
             </div>
