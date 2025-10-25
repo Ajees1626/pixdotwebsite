@@ -166,83 +166,8 @@ const Industrie = () => {
         </div>
       </section>
 
-      {/* Industry Expertise */}
-      <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
-        <div className="container-custom">
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12 items-center">
-            <div>
-              <h2 className={`text-2xl md:text-3xl lg:text-4xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-4 md:mb-6`}>
-                Deep Industry <span className="text-gradient">Expertise</span>
-              </h2>
-              <p className={`text-base md:text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-4 md:mb-6 leading-relaxed`}>
-                Our team includes industry specialists who understand the unique challenges, 
-                regulations, and opportunities in each sector we serve.
-              </p>
-              <p className={`text-base md:text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} mb-6 md:mb-8 leading-relaxed`}>
-                We don't just build technology – we create solutions that address real 
-                industry pain points and drive meaningful business outcomes.
-              </p>
-              
-              <div className="space-y-3 md:space-y-4">
-                <div className="flex items-center">
-                  <div className="w-6 h-6 md:w-8 md:h-8 bg-secondary rounded-full flex items-center justify-center mr-3 md:mr-4">
-                    <span className="text-white font-bold text-xs md:text-sm">✓</span>
-                  </div>
-                  <span className={`text-sm md:text-base ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Industry-specific compliance and regulations</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-6 h-6 md:w-8 md:h-8 bg-secondary rounded-full flex items-center justify-center mr-3 md:mr-4">
-                    <span className="text-white font-bold text-xs md:text-sm">✓</span>
-                  </div>
-                  <span className={`text-sm md:text-base ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Proven methodologies and best practices</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-6 h-6 md:w-8 md:h-8 bg-secondary rounded-full flex items-center justify-center mr-3 md:mr-4">
-                    <span className="text-white font-bold text-xs md:text-sm">✓</span>
-                  </div>
-                  <span className={`text-sm md:text-base ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>Scalable and future-proof solutions</span>
-                </div>
-              </div>
-            </div>
-
-            <div className={`${isDarkMode ? 'bg-gray-800' : 'bg-white'} rounded-2xl p-4 md:p-6 lg:p-8 shadow-lg`}>
-              <h3 className={`text-lg md:text-xl lg:text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-primary'} mb-3 md:mb-4 lg:mb-6`}>Why Choose Industry Specialists?</h3>
-              
-              <div className="space-y-3 md:space-y-4 lg:space-y-6">
-                <div className="flex items-start">
-                  <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-gradient-secondary rounded-lg flex items-center justify-center mr-3 md:mr-4 flex-shrink-0">
-                    <span className="text-white font-bold text-xs md:text-sm lg:text-base">1</span>
-                  </div>
-                  <div>
-                    <h4 className={`font-semibold text-sm md:text-base ${isDarkMode ? 'text-white' : 'text-primary'} mb-1 md:mb-2`}>Domain Knowledge</h4>
-                    <p className={`text-xs md:text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Deep understanding of industry-specific challenges and opportunities.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-gradient-secondary rounded-lg flex items-center justify-center mr-3 md:mr-4 flex-shrink-0">
-                    <span className="text-white font-bold text-xs md:text-sm lg:text-base">2</span>
-                  </div>
-                  <div>
-                    <h4 className={`font-semibold text-sm md:text-base ${isDarkMode ? 'text-white' : 'text-primary'} mb-1 md:mb-2`}>Compliance Expertise</h4>
-                    <p className={`text-xs md:text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Knowledge of industry regulations and compliance requirements.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start">
-                  <div className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-gradient-secondary rounded-lg flex items-center justify-center mr-3 md:mr-4 flex-shrink-0">
-                    <span className="text-white font-bold text-xs md:text-sm lg:text-base">3</span>
-                  </div>
-                  <div>
-                    <h4 className={`font-semibold text-sm md:text-base ${isDarkMode ? 'text-white' : 'text-primary'} mb-1 md:mb-2`}>Proven Results</h4>
-                    <p className={`text-xs md:text-sm ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>Track record of successful implementations in your industry.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
+      
 
       {/* CTA Section */}
       <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>

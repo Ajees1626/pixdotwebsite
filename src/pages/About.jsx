@@ -125,86 +125,77 @@ const About = () => {
       </section>
 
       {/* Team */}
-      {/* Leadership Team */}
-      <section className={`relative overflow-hidden ${isDarkMode ? 'bg-gray-900' : 'bg-gradient-to-br from-gray-50 via-white to-gray-100'}`}>
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-20 left-10 w-32 h-32 bg-primary rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary rounded-full blur-3xl"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-accent rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="relative section-padding">
-          <div className="container-custom">
-            {/* Header */}
-            <div className="text-center mb-20">
-              <div className="inline-flex items-center bg-secondary/10 rounded-full px-6 py-3 mb-6">
-                <span className="text-secondary font-semibold text-sm uppercase tracking-wider">Leadership Team</span>
-              </div>
-              <h2 className={`text-4xl md:text-6xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
-                Meet Our <span className="text-gradient">Directors</span>
-              </h2>
-              <p className={`text-xl max-w-3xl mx-auto ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
-                Visionary leaders driving innovation and excellence in every project
-              </p>
+      {/* Professional Business Team */}
+      <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
+        <div className="container-custom">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center bg-primary/10 rounded-full px-6 py-3 mb-6">
+              <span className="text-primary font-semibold text-sm uppercase tracking-wider">Leadership Team</span>
             </div>
+            <h2 className={`text-4xl md:text-6xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
+              Meet Our <span className="text-gradient">Directors</span>
+            </h2>
+            <p className={`text-xl max-w-3xl mx-auto ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+              Visionary leaders driving innovation and excellence in every project
+            </p>
+          </div>
 
-            {/* Team Cards - Split Layout */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 max-w-full mx-auto">
-              {team.slice(0, 2).map((member, index) => (
-                <div key={index} className="group relative h-[80vh] overflow-hidden">
-                  {/* Image Section - 50% width, 50vh height */}
-                  <div className="relative w-full h-full">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
-                    />
-                    
-                    {/* Overlay Gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                    
-                    {/* Content Overlay */}
-                    <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-12">
-                      <div className="transform translate-y-8 group-hover:translate-y-0 transition-all duration-700">
-                        <h3 className={`text-3xl lg:text-5xl font-bold mb-4 text-secondary group-hover:text-white transition-colors duration-500`}>
-                          {member.name}
-                        </h3>
-                        
-                        <div className="mb-6">
-                          <span className="inline-block bg-gradient-to-r from-primary to-secondary text-white font-bold text-lg px-6 py-3 rounded-full shadow-lg group-hover:shadow-xl transition-all duration-500">
-                            {member.role}
-                          </span>
-                        </div>
-                        
-                        <p className="text-white/90 text-lg leading-relaxed max-w-md group-hover:text-white transition-colors duration-500">
-                          {member.description}
-                        </p>
-                      </div>
+          {/* Round Team Images with Hover Background */}
+          <div className='bg-primary/10 rounded-2xl p-6 sm:p-8 border border-primary/60'>
+          <div className="max-w-4xl mx-auto  bg border-primary/60 rounded">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+              {team.map((member, index) => (
+                <div key={index} className="group relative flex flex-col items-center rounded-full transition-all duration-500 hover:shadow-2xl hover:bg-primary/10">
+                  {/* Round Image */}
+                  <div className="relative w-80 h-80 mb-8 border-4 border-primary/60 rounded-full">
+                    <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-500">
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                      />
+                      
+                      {/* Light Gradient Overlay on Hover */}
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/10 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
-
-                    {/* Floating Decorative Elements */}
-                    <div className="absolute top-8 right-8 w-4 h-4 bg-secondary rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 transform group-hover:scale-125 group-hover:rotate-45"></div>
-                    <div className="absolute bottom-8 left-8 w-6 h-6 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-all duration-700 transform group-hover:scale-125 group-hover:rotate-45"></div>
-                    <div className="absolute top-1/2 right-4 w-3 h-3 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-all duration-1000 transform group-hover:scale-150"></div>
-                    
-                    {/* Border Effect */}
-                    <div className="absolute inset-0 border-4 border-transparent group-hover:border-gradient-to-r group-hover:from-primary group-hover:to-secondary transition-all duration-700"></div>
                   </div>
 
-                  {/* Background Glow */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700 transform group-hover:scale-110 -z-10"></div>
+                  {/* Hover Background - Colorful Outline Effects */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110 -z-10">
+                    {/* Blue Outline Circle */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[450px] h-[450px] border-4 border-primary/60 rounded-full animate-pulse"></div>
+                    
+                    {/* Cyan Outline Circle */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] border-3 border-secondary/70 rounded-full animate-ping"></div>
+                    
+                    {/* Accent Outline Circle */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] border-2 border-accent/80 rounded-full animate-bounce"></div>
+                    
+                    {/* Light Background Fill */}
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-gradient-to-br from-primary/20 to-secondary/15 rounded-full blur-2xl"></div>
+                  </div>
+
+                  {/* Name and Role - Simple */}
+                  <div className="text-center space-y-2">
+                    <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                      {member.name}
+                    </h3>
+                    <p className="text-gray-600 font-medium">
+                      {member.role}
+                    </p>
+                  </div>
                 </div>
               ))}
             </div>
-
-            {/* Bottom Decoration */}
-            <div className="text-center mt-16">
-              <div className="inline-flex items-center space-x-2">
-                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
-                <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
-              </div>
+          </div>
+          </div>
+          {/* Professional Bottom Section */}
+          <div className="text-center mt-16">
+            <div className="inline-flex items-center space-x-2">
+              <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+              <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
             </div>
           </div>
         </div>

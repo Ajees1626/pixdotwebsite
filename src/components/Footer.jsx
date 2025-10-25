@@ -84,9 +84,9 @@ const Footer = () => {
         {isDarkMode ? (
           <>
             {/* Dark Theme Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-purple-600/20"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-black/40"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-transparent to-primary/40"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-primary/40"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-transparent to-primary/40"></div>
           </>
         ) : (
           <>
@@ -242,13 +242,11 @@ const Footer = () => {
                     <a
                       key={social.label}
                       href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className={`w-14 h-14 flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group`}
                       aria-label={social.label}
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
-                      <social.icon size={28} className={`${isDarkMode ? 'text-secondary hover:text-primary' : 'text-primary hover:text-secondary'} group-hover:scale-110 transition-all duration-300`} />
+                      <social.icon size={28} className={`${isDarkMode ? 'text-secondary hover:text-white' : 'text-primary hover:text-secondary'} group-hover:scale-110 transition-all duration-300`} />
                     </a>
                   ))}
                 </div>

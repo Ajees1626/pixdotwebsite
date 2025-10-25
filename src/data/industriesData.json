@@ -92,14 +92,14 @@
     ],
     "caseStudies": [
       {
-        "title": "Digital Banking Platform",
-        "description": "Complete digital banking solution for regional bank",
-        "results": "50% increase in digital transactions"
+        "title": "University LMS",
+        "description": "Comprehensive learning management system for 50,000+ students",
+        "results": "90% student satisfaction rate"
       },
       {
-        "title": "Payment Gateway",
-        "description": "High-volume payment processing system",
-        "results": "99.9% uptime with 2M+ daily transactions"
+        "title": "K-12 Learning Platform",
+        "description": "Interactive learning platform for elementary schools",
+        "results": "35% improvement in test scores"
       }
     ]
   },
@@ -144,16 +144,17 @@
     ],
     "caseStudies": [
       {
-        "title": "Fashion E-commerce Platform",
-        "description": "Multi-brand fashion marketplace with 10,000+ products",
-        "results": "200% increase in online sales"
+        "title": "Digital Banking Platform",
+        "description": "Complete digital banking solution for regional bank",
+        "results": "50% increase in digital transactions"
       },
       {
-        "title": "B2B E-commerce Solution",
-        "description": "Enterprise platform for wholesale distribution",
-        "results": "80% reduction in order processing time"
+        "title": "Payment Gateway",
+        "description": "High-volume payment processing system",
+        "results": "99.9% uptime with 2M+ daily transactions"
       }
     ]
+   
   },
   "E-commerce": {
     "id": "E-commerce",
@@ -196,16 +197,17 @@
     ],
     "caseStudies": [
       {
-        "title": "University LMS",
-        "description": "Comprehensive learning management system for 50,000+ students",
-        "results": "90% student satisfaction rate"
+        "title": "Fashion E-commerce Platform",
+        "description": "Multi-brand fashion marketplace with 10,000+ products",
+        "results": "200% increase in online sales"
       },
       {
-        "title": "K-12 Learning Platform",
-        "description": "Interactive learning platform for elementary schools",
-        "results": "35% improvement in test scores"
+        "title": "B2B E-commerce Solution",
+        "description": "Enterprise platform for wholesale distribution",
+        "results": "80% reduction in order processing time"
       }
     ]
+   
   },
   "Retail": {
     "id": "Retail",

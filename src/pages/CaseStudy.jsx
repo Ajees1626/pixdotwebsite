@@ -62,7 +62,7 @@ const CaseStudy = () => {
         </div>
       </section>
 
-      {/* Category Filter */}
+      {/* Category Filter
       <section className={`section-padding ${isDarkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
         <div className="container-custom">
           <div className="text-center mb-8">
@@ -89,7 +89,7 @@ const CaseStudy = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Case Studies Grid */}
       <section className={`section-padding ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>

@@ -73,7 +73,7 @@ const CaseStudyDetail = () => {
                 {caseStudy.title}
               </h1>
               
-              <p className="text-xl text-white/90 mb-8 leading-relaxed">
+              <p className="text-xl text-white/90 text-justify mb-8 leading-relaxed">
                 {caseStudy.fullDescription}
               </p>
               

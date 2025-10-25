@@ -34,25 +34,25 @@ const ProjectsSection = () => {
   const categoryConfigs = {
     'logo-design': {
       name: 'Logo Design', 
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop&crop=center',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761384821/logo_jdhwzm.webp',
       color: 'from-blue-500 to-blue-600', 
       bgColor: 'bg-blue-50'
     },
     'poster-design': {
       name: 'Poster Design', 
-      image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=400&h=300&fit=crop&crop=center',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761384820/smp_jwkk4p.webp',
       color: 'from-green-500 to-green-600', 
       bgColor: 'bg-green-50'
     },
     'packaging-design': {
       name: 'Packaging Design', 
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop&crop=center',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761384820/packaging_yqj3l8.webp',
       color: 'from-purple-500 to-purple-600', 
       bgColor: 'bg-purple-50'
     },
     'branding': {
       name: 'Branding', 
-      image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=300&fit=crop&crop=center',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761384820/branding_hg3yzn.webp',
       color: 'from-pink-500 to-pink-600', 
       bgColor: 'bg-pink-50'
     }
