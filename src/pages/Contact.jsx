@@ -57,13 +57,12 @@ const Contact = () => {
     try {
       console.log('Submitting form data:', formData)
       
-      const response = await fetch('https://newpixdotbackend.onrender.com/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      })
+      const response = await fetch("https://newpixdotbackend.onrender.com/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      
 
       const result = await response.json()
       console.log('Response data:', result)
