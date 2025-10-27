@@ -18,6 +18,7 @@ import CaseStudyDetail from './pages/CaseStudyDetail'
 import Contact from './pages/Contact'
 import Project from './pages/Project'
 import ProjectsDetail from './pages/ProjectsDetail'
+import Privacy from './pages/Privacy'
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/project/:id" element={<Project />} />
               <Route path="/projects/:categoryId" element={<ProjectsDetail />} />
+              <Route path="/privacy" element={<Privacy />} />
             </Routes>
           </main>
           <Footer />

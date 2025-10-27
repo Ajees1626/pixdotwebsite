@@ -229,10 +229,6 @@ const Footer = () => {
                       <FaShieldAlt className={`group-hover:${isDarkMode ? 'text-blue-300' : 'text-blue-600'} transition-colors duration-300`} />
                       Privacy Policy
                     </Link>
-                    <Link to="/cookies" className={`${isDarkMode ? 'text-gray-200 hover:text-blue-300' : 'text-gray-600 hover:text-blue-600'} transition-colors duration-300 flex items-center gap-2 group hover:scale-105 transform`}>
-                      <FaLock className={`group-hover:${isDarkMode ? 'text-blue-300' : 'text-blue-600'} transition-colors duration-300`} />
-                      Cookie Policy
-                    </Link>
                   </div>
                 </div>
                 
@@ -242,6 +238,8 @@ const Footer = () => {
                     <a
                       key={social.label}
                       href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`w-14 h-14 flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:-translate-y-2 group`}
                       aria-label={social.label}
                       style={{ animationDelay: `${index * 0.1}s` }}
@@ -291,78 +289,92 @@ const Footer = () => {
             {/* Content */}
             <div className="p-6 overflow-y-auto max-h-[calc(90vh-120px)]">
               <div className="prose prose-lg max-w-none dark:prose-invert">
+                {/* Header */}
+                <div className="mb-8">
+                  <div className={`bg-gradient-to-r ${isDarkMode ? 'from-primary/20 to-secondary/20' : 'from-primary/10 to-secondary/10'} border ${isDarkMode ? 'border-secondary/30' : 'border-secondary/20'} p-6 rounded-lg mb-6`}>
+                    <h3 className={`text-2xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-3`}>
+                      <span className="w-10 h-10 bg-secondary text-white rounded-full flex items-center justify-center text-lg font-bold">P</span>
+                      Welcome to Pixdot!
+                    </h3>
+                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed mb-4`}>
+                      By accessing or using our website (www.pixdotsolutions.com), you agree to the following terms and conditions. Please read them carefully before continuing.
+                    </p>
+                    <div className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'} font-medium`}>
+                      Last Updated: October 2025
+                    </div>
+                  </div>
+                </div>
+
                 <div className="space-y-8">
                   <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
                       <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">1</span>
-                      Acceptance of Terms
+                      General
                     </h3>
                     <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                      By accessing and using Pixdot's services, you accept and agree to be bound by the terms and provision of this agreement. 
-                      If you do not agree to abide by the above, please do not use this service.
+                      Pixdot is a creative digital agency offering services in branding, digital marketing, website development, and related areas. 
+                      By using our website, you accept our terms and agree to follow them.
                     </p>
                   </div>
 
                   <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
                       <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">2</span>
-                      Use License
+                      Use of Our Website
                     </h3>
                     <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed mb-4`}>
-                      Permission is granted to temporarily download one copy of the materials on Pixdot's website for personal, 
-                      non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                      You agree not to misuse our website or attempt to disrupt its operation.
                     </p>
                     <ul className={`list-disc pl-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
-                      <li>Modify or copy the materials</li>
-                      <li>Use the materials for any commercial purpose or for any public display</li>
-                      <li>Attempt to reverse engineer any software contained on the website</li>
-                      <li>Remove any copyright or other proprietary notations from the materials</li>
+                      <li>All content, visuals, and data on this site are owned by Pixdot and protected by copyright laws.</li>
+                      <li>You may not copy, reproduce, or distribute our materials without written permission.</li>
                     </ul>
                   </div>
 
                   <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
                       <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">3</span>
-                      Service Description
+                      Services
                     </h3>
-                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                      Pixdot provides digital solutions including but not limited to web development, mobile applications, 
-                      digital marketing, and consulting services. We reserve the right to modify or discontinue any service 
-                      at any time without notice.
-                    </p>
+                    <ul className={`list-disc pl-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
+                      <li>All our services are offered based on project discussions and written agreements.</li>
+                      <li>Prices and timelines may vary depending on project requirements.</li>
+                      <li>Once a project is approved and payment is made, no refunds will be provided unless specifically stated.</li>
+                    </ul>
                   </div>
 
                   <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
                       <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">4</span>
-                      User Responsibilities
+                      Payments
                     </h3>
-                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                      Users are responsible for providing accurate information and maintaining the confidentiality of their account credentials. 
-                      Users must not use our services for any unlawful purpose or in any way that could damage, disable, or impair our services.
-                    </p>
+                    <ul className={`list-disc pl-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
+                      <li>All payments should be made as per the agreed proposal or quotation.</li>
+                      <li>Any delay in payment may affect project timelines or result in suspension of services.</li>
+                      <li>Taxes, if applicable, will be charged extra.</li>
+                    </ul>
                   </div>
 
                   <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
                       <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">5</span>
-                      Intellectual Property
+                      Client Responsibilities
                     </h3>
-                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                      All content, trademarks, and intellectual property on this website are the property of Pixdot or its licensors. 
-                      Users may not reproduce, distribute, or create derivative works without explicit written permission.
-                    </p>
+                    <ul className={`list-disc pl-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
+                      <li>Clients must provide accurate information, materials, and feedback on time.</li>
+                      <li>Any delay in providing content or approvals may impact delivery schedules.</li>
+                    </ul>
                   </div>
 
                   <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
                       <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">6</span>
-                      Privacy Policy
+                      Intellectual Property
                     </h3>
-                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                      Your privacy is important to us. Please review our Privacy Policy, which also governs your use of the website, 
-                      to understand our practices regarding the collection and use of your personal information.
-                    </p>
+                    <ul className={`list-disc pl-6 ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} space-y-2`}>
+                      <li>Final project files will be shared only after full payment.</li>
+                      <li>Pixdot retains the right to showcase completed works in our portfolio or social media, unless the client requests otherwise in writing.</li>
+                    </ul>
                   </div>
 
                   <div className="border-l-4 border-secondary pl-4">
@@ -371,42 +383,23 @@ const Footer = () => {
                       Limitation of Liability
                     </h3>
                     <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                      In no event shall Pixdot or its suppliers be liable for any damages (including, without limitation, 
-                      damages for loss of data or profit, or due to business interruption) arising out of the use or inability 
-                      to use the materials on Pixdot's website.
+                      Pixdot shall not be held responsible for any loss, damage, or delay caused by factors beyond our control 
+                      (e.g., internet issues, hosting downtime, or third-party failures).
                     </p>
                   </div>
 
                   <div className="border-l-4 border-secondary pl-4">
                     <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
                       <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">8</span>
-                      Governing Law
+                      Updates to Terms
                     </h3>
                     <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                      These terms and conditions are governed by and construed in accordance with the laws of the jurisdiction 
-                      in which Pixdot operates and you irrevocably submit to the exclusive jurisdiction of the courts in that state or location.
+                      We may update these Terms & Conditions occasionally. Changes will be effective once published on this page.
                     </p>
                   </div>
 
                   <div className="border-l-4 border-secondary pl-4">
-                    <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
-                      <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">9</span>
-                      Changes to Terms
-                    </h3>
-                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed`}>
-                      Pixdot reserves the right to revise these terms of service at any time without notice. By using this website, 
-                      you are agreeing to be bound by the then current version of these terms of service.
-                    </p>
-                  </div>
-
-                  <div className="border-l-4 border-secondary pl-4">
-                    <h3 className={`text-xl font-bold mb-3 ${isDarkMode ? 'text-white' : 'text-primary'} flex items-center gap-2`}>
-                      <span className="w-8 h-8 bg-secondary text-white rounded-full flex items-center justify-center text-sm font-bold">10</span>
-                      Contact Information
-                    </h3>
-                    <p className={`${isDarkMode ? 'text-gray-300' : 'text-gray-600'} leading-relaxed mb-4`}>
-                      If you have any questions about these Terms & Conditions, please contact us at:
-                    </p>
+                     
                     <div className={`bg-gradient-to-r ${isDarkMode ? 'from-primary/20 to-secondary/20' : 'from-primary/10 to-secondary/10'} border ${isDarkMode ? 'border-secondary/30' : 'border-secondary/20'} p-6 rounded-lg`}>
                       <div className="flex items-center gap-3 mb-4">
                         <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center">
