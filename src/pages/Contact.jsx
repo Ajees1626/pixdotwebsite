@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import emailjs from '@emailjs/browser'
 import { FaPhoneAlt , FaEnvelope, FaMapMarkerAlt, FaClock, FaPaperPlane, FaUser, FaBuilding, FaComment, FaWhatsapp, FaTelegram } from 'react-icons/fa'
 import { useTheme } from '../contexts/ThemeContext'
 
@@ -21,25 +22,13 @@ const Contact = () => {
 
   useEffect(() => {
     setIsVisible(true)
-    
-    // Test backend connection on component mount
-    const testBackendConnection = async () => {
-      try {
-        const response = await fetch('https://newpixdotbackend.onrender.com/', {
-          method: 'GET',
-          mode: 'cors'
-        })
-        console.log('Backend test response:', response.status)
-        if (response.ok) {
-          const text = await response.text()
-          console.log('Backend response:', text)
-        }
-      } catch (error) {
-        console.error('Backend connection test failed:', error)
-      }
+    // Initialize EmailJS with provided Public Key (no .env)
+    const PUBLIC_KEY = '1UlI_K6VyN44zkQTB'
+    try {
+      emailjs.init({ publicKey: PUBLIC_KEY })
+    } catch (e) {
+      console.error('EmailJS init failed:', e)
     }
-    
-    testBackendConnection()
   }, [])
 
   const handleChange = (e) => {
@@ -53,37 +42,52 @@ const Contact = () => {
     e.preventDefault()
     setIsSubmitting(true)
     setSubmitError('')
+
+    // Use hardcoded EmailJS configuration (no .env)
+    const PUBLIC_KEY = 'OaQyiIwnNSZKEAUH8'
+    const SERVICE_ID = 'service_g9evds3'
+    const TEMPLATE_ID_ADMIN = 'template_r23dbil'
+    const TEMPLATE_ID_CLIENT = 'template_y19ukqh'
     
+    
+
     try {
-      console.log('Submitting form data:', formData)
-      
-      const response = await fetch("https://newpixdotbackend.onrender.com/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      
-
-      const result = await response.json()
-      console.log('Response data:', result)
-
-      if (response.ok) {
-        setIsSubmitted(true)
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          company: '',
-          phone: '',
-          subject: '',
-          message: ''
-        })
-      } else {
-        setSubmitError(result.error || 'Failed to send message. Please try again.')
+      // 1) Send email to admin
+      const adminParams = {
+        from_firstName: formData.firstName,
+        from_lastName: formData.lastName,
+        from_email: formData.email,
+        company: formData.company,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message,
       }
+
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID_ADMIN, adminParams, PUBLIC_KEY);
+
+      // 2) Send thank-you email to client
+      const clientParams = {
+        client_name: formData.firstName,
+        to_email: formData.email, // ✅ Important
+      };
+      
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID_CLIENT, clientParams, PUBLIC_KEY);
+
+      setIsSubmitted(true)
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        company: '',
+        phone: '',
+        subject: '',
+        message: ''
+      })
     } catch (error) {
-      console.error('Error submitting form:', error)
-      setSubmitError('Network error. Please try again.')
+      // Surface the actual EmailJS error for easier debugging
+      console.error('EmailJS error:', error)
+      const detail = (error && (error.text || error.message)) ? ` (${error.text || error.message})` : ''
+      setSubmitError(`Failed to send message. Please try again${detail}`)
     } finally {
       setIsSubmitting(false)
     }
@@ -164,7 +168,7 @@ const Contact = () => {
                   <p className="text-green-600">Thank you for contacting us. We'll get back to you within 24 hours.</p>
                 </div>
               ) : (
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className={`block text-sm font-semibold ${isDarkMode ? 'text-white' : 'text-primary'} mb-2`}>
@@ -479,9 +483,7 @@ const Contact = () => {
               <a href="/casestudy" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
                 View Our Work
               </a>
-               <a href="https://newpixdotbackend.onrender.com" target="_blank" rel="noopener noreferrer" className={`${isDarkMode ? 'border-white text-white hover:bg-white hover:text-primary' : 'border-white text-white hover:bg-white hover:text-primary'} bg-transparent font-semibold py-3 px-6 rounded-lg border-2 transition-all duration-300 transform hover:scale-105`}>
-                 Backend API
-               </a>
+              
             </div>
           </div>
         </div>
