@@ -107,13 +107,13 @@ const Footer = () => {
                   <Link to="/" className="mb-6 block transform hover:scale-105 transition-transform duration-300">
                     {isDarkMode ? (
                       <img 
-                        src="/2.png" 
+                        src="https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761651795/2_e2r6xw.png" 
                         alt="Pixdot Logo" 
                         className="h-20 w-auto"
                       />
                     ) : (
                       <img 
-                        src="/1.png" 
+                        src="https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761651795/1_eyzdsa.png" 
                         alt="Pixdot Logo" 
                         className="h-20 w-auto"
                       />

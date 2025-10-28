@@ -41,13 +41,13 @@ const Header = () => {
             <div className="transform group-hover:scale-105 transition-transform duration-300 ease-out">
               {isDarkMode ? (
                 <img 
-                  src="/2.png" 
+                  src="https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761651795/2_e2r6xw.png" 
                   alt="Pixdot Logo" 
                   className="h-16 w-auto"
                 />
               ) : (
                 <img 
-                  src="/1.png" 
+                  src="https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761651795/1_eyzdsa.png" 
                   alt="Pixdot Logo" 
                   className="h-16  w-auto"
                 />

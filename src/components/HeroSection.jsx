@@ -41,7 +41,7 @@ const HeroSection = () => {
                 {/* PNG Image - Standing Lady */}
                 <div className="w-full h-full rounded-lg sm:rounded-xl md:rounded-2xl relative overflow-hidden bg-transparent flex items-center justify-center">
                   <img 
-                    src="/hero.png" 
+                    src="https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761651797/hero_tweuqo.png" 
                     alt="Professional Business Lady"
                     className="w-full h-full object-cover rounded-lg sm:rounded-xl md:rounded-2xl"
                   />

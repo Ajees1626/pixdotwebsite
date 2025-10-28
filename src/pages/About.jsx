@@ -14,13 +14,13 @@ const About = () => {
     {
       name: 'MOHAMED MUSTAFA N',
       role: 'DIRECTOR- BUSINESS AND BRAND CONSULTENT',
-      image: '/mustafa.jpg',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761651795/mustafa_jexpx3.jpg',
        
     },
     {
       name: 'IBRAHIM ASHIK A',
       role: 'DIRECTOR- BRAND AND BUSINESS CONSULTENT',
-      image: '/ashik.webp',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761651796/ashik_dfahm4.webp',
        
     } 
   ]
@@ -143,11 +143,11 @@ const About = () => {
           {/* Round Team Images with Hover Background */}
           <div className='bg-primary/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border border-primary/60'>
           <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 md:gap-12 items-start">
               {team.map((member, index) => (
-                <div key={index} className="group relative flex flex-col items-center rounded-full transition-all duration-500 hover:shadow-2xl hover:bg-primary/10">
+                <div key={index} className="group relative flex flex-col items-center rounded-2xl transition-all duration-500 hover:shadow-2xl hover:bg-primary/10 overflow-hidden">
                   {/* Round Image */}
-                  <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 mb-6 sm:mb-8 border-2 sm:border-4 border-primary/60 rounded-full">
+                  <div className="relative w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 mb-6 sm:mb-8 border-2 sm:border-4 border-primary/60 rounded-full">
                     <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all duration-500">
                       <img
                         src={member.image}
@@ -161,18 +161,18 @@ const About = () => {
                   </div>
 
                   {/* Hover Background - Colorful Outline Effects */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-110 -z-10">
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-105 -z-10 pointer-events-none">
                     {/* Blue Outline Circle */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[400px] md:w-[450px] h-[300px] sm:h-[400px] md:h-[450px] border-2 sm:border-4 border-primary/60 rounded-full animate-pulse"></div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[260px] sm:w-[340px] md:w-[360px] h-[260px] sm:h-[340px] md:h-[360px] border-2 sm:border-4 border-primary/60 rounded-full animate-pulse"></div>
                     
                     {/* Cyan Outline Circle */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[250px] sm:w-[350px] md:w-[380px] h-[250px] sm:h-[350px] md:h-[380px] border-2 sm:border-3 border-secondary/70 rounded-full animate-ping"></div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[220px] sm:w-[300px] md:w-[320px] h-[220px] sm:h-[300px] md:h-[320px] border-2 sm:border-3 border-secondary/70 rounded-full animate-ping"></div>
                     
                     {/* Accent Outline Circle */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[200px] sm:w-[300px] md:w-[320px] h-[200px] sm:h-[300px] md:h-[320px] border-2 border-accent/80 rounded-full animate-bounce"></div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[190px] sm:w-[260px] md:w-[280px] h-[190px] sm:h-[260px] md:h-[280px] border-2 border-accent/80 rounded-full animate-bounce"></div>
                     
                     {/* Light Background Fill */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[280px] sm:w-[380px] md:w-[400px] h-[280px] sm:h-[380px] md:h-[400px] bg-gradient-to-br from-primary/20 to-secondary/15 rounded-full blur-2xl"></div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[240px] sm:w-[320px] md:w-[340px] h-[240px] sm:h-[320px] md:h-[340px] bg-gradient-to-br from-primary/20 to-secondary/15 rounded-full blur-2xl"></div>
                   </div>
 
                   {/* Name and Role - Simple */}
