@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Add your sitemap URL if available, e.g.:
+# Sitemap: https://pixdotsolutions.com/sitemap.xml
+
+

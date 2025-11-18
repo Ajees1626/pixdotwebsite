@@ -54,7 +54,23 @@ const ReviewsSection = () => {
       image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761202249/Bhavani_Gopinath-01_oejgu9.jpg',
       rating: 5,
       text: 'Working with Pixdot team for my Store Branding nd Marketing. Professional Team .Their work was excellent beyond my expectations. Very much comfortable for communication nd approchable . Happy with their work . Much recommended for businesses looking to grow online ..'
-    } 
+    },
+    {
+      name: 'Umar Faruk',
+      company: 'GMT Jewellers',
+      role: 'Founder',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288917/CASE_19_qbjxd4.webp',
+      rating: 5,
+      text: 'We are very happy with Pixdot, the best digital marketing and branding company in Chennai and Tenkasi. They helped us grow our jewellery business with creative logo design, poster design, and social media marketing. Their team gives very good support and ideas. If anyone is searching for the best branding company or digital marketing service in Tamil Nadu, we strongly recommend Pixdot.'
+    },
+    {
+      name: 'prakash s',
+      company: 'Landster pvt ltd',
+      role: 'Founder',
+      image: 'https://res.cloudinary.com/dxiwvcfs5/image/upload/v1761288566/CASE_14_gy51bd.webp',
+      rating: 5,
+      text: 'Pixsot they are Best digital Marketing in chennai giving best leads and work related support for our real-estate company Landster pvt ltd. We are very happy and recommend for any one improve business in online.'
+    }
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
