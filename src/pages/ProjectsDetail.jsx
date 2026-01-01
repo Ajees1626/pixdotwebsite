@@ -123,7 +123,7 @@ const ProjectsDetail = () => {
         <div className="mb-8 px-4 sm:px-6 lg:py-6">
           <button
             onClick={() => navigate('/')}
-            className="inline-flex items-center text-primary hover:text-secondary transition-colors"
+            className={`inline-flex items-center ${isDarkMode ? 'text-gray-300 hover:text-secondary' : 'text-primary hover:text-secondary'} transition-colors`}
           >
             <FaArrowLeft className="mr-2" />
             Back to Categories
@@ -132,15 +132,15 @@ const ProjectsDetail = () => {
 
         {/* Category Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-secondary/10 rounded-full px-6 py-3 mb-6">
+          <div className={`inline-flex items-center ${isDarkMode ? 'bg-secondary/20' : 'bg-secondary/10'} rounded-full px-6 py-3 mb-6`}>
             <span className="text-secondary font-semibold text-sm">
               {categoryData.category} Projects
             </span>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            {categoryData.category} <span className="text-gradient">Portfolio</span>
+          <h1 className={`text-4xl md:text-5xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
+            {categoryData.category} <span className="text-secondary">Portfolio</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className={`text-xl max-w-3xl mx-auto ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>
             {categoryData.description}
           </p>
         </div>
@@ -155,14 +155,14 @@ const ProjectsDetail = () => {
               onClick={() => openModal(project)}
               className="group cursor-pointer"
             >
-              <div className="relative bg-white rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 overflow-hidden">
+              <div className={`relative rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border overflow-hidden ${isDarkMode ? 'bg-gray-800 border-gray-700 hover:border-gray-600' : 'bg-white border-gray-100'}`}>
                 {/* Project Image */}
                 <div className="relative">
-                  <div className="w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden bg-gray-100">
+                  <div className={`w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden ${isDarkMode ? 'bg-gray-700' : 'bg-gray-100'}`}>
                     <img
                       src={project.image}
                       alt="Project"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                       style={{ 
                         objectFit: 'cover',
@@ -174,7 +174,7 @@ const ProjectsDetail = () => {
                         e.target.nextSibling.style.display = 'flex'
                       }}
                     />
-                    <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500 text-sm" style={{ display: 'none' }}>
+                    <div className={`absolute inset-0 flex items-center justify-center text-sm ${isDarkMode ? 'bg-gray-700 text-gray-400' : 'bg-gray-200 text-gray-500'}`} style={{ display: 'none' }}>
                       Image not available
                     </div>
                   </div>
@@ -186,9 +186,9 @@ const ProjectsDetail = () => {
 
         {/* Category Stats */}
         <div className="text-center">
-          <div className="inline-flex items-center bg-white rounded-full px-8 py-4 shadow-lg border border-gray-100">
-            <span className="text-3xl font-bold text-primary mr-3">{projects.length}</span>
-            <span className="text-gray-600 font-semibold">{categoryData.category} Projects</span>
+          <div className={`inline-flex items-center rounded-full px-8 py-4 shadow-lg border ${isDarkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-100'}`}>
+            <span className={`text-3xl font-bold mr-3 ${isDarkMode ? 'text-white' : 'text-primary'}`}>{projects.length}</span>
+            <span className={`font-semibold ${isDarkMode ? 'text-gray-300' : 'text-gray-600'}`}>{categoryData.category} Projects</span>
           </div>
         </div>
       </div>
@@ -196,17 +196,17 @@ const ProjectsDetail = () => {
       {/* Modal for Full Project View */}
       {isModalOpen && selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/90">
-         <div className={`relative bg-white rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl ${
+         <div className={`relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl ${
            categoryId === 'branding' 
              ? 'w-[90vw] h-[90vw] sm:w-[700px] sm:h-[700px] max-w-[90vw] max-h-[90vh] sm:max-w-[700px] sm:max-h-[700px]' 
              : 'w-[90vw] h-[90vw] sm:w-[650px] sm:h-[650px] max-w-[90vw] max-h-[90vh] sm:max-w-[650px] sm:max-h-[650px]'
-         }`}>
+         } ${isDarkMode ? 'bg-gray-800' : 'bg-white'}`}>
            {/* Close Button */}
            <button
              onClick={closeModal}
-             className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
+             className={`absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-colors duration-200 shadow-lg ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-white hover:bg-gray-100'}`}
            >
-             <FaTimes className="text-gray-700 text-sm sm:text-lg md:text-xl" />
+             <FaTimes className={`text-sm sm:text-lg md:text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`} />
            </button>
 
            {/* Left Navigation Arrow */}
@@ -219,9 +219,9 @@ const ProjectsDetail = () => {
                    navigateProject('prev')
                  }
                }}
-               className="absolute left-2 top-1/2 transform -translate-y-1/2 sm:left-3 md:left-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
+               className={`absolute left-2 top-1/2 transform -translate-y-1/2 sm:left-3 md:left-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-colors duration-200 shadow-lg ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-white hover:bg-gray-100'}`}
              >
-               <FaChevronLeft className="text-gray-700 text-sm sm:text-lg md:text-xl" />
+               <FaChevronLeft className={`text-sm sm:text-lg md:text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`} />
              </button>
            )}
 
@@ -235,14 +235,14 @@ const ProjectsDetail = () => {
                    navigateProject('next')
                  }
                }}
-               className="absolute right-2 top-1/2 transform -translate-y-1/2 sm:right-3 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors duration-200 shadow-lg"
+               className={`absolute right-2 top-1/2 transform -translate-y-1/2 sm:right-3 md:right-4 z-10 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center transition-colors duration-200 shadow-lg ${isDarkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-white hover:bg-gray-100'}`}
              >
-               <FaChevronRight className="text-gray-700 text-sm sm:text-lg md:text-xl" />
+               <FaChevronRight className={`text-sm sm:text-lg md:text-xl ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`} />
              </button>
            )}
 
            {/* Full Image Display */}
-           <div className="relative w-full h-full bg-gray-50">
+           <div className={`relative w-full h-full ${isDarkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
              <img
                src={selectedProject.currentImage || selectedProject.image}
                alt="Project"
@@ -257,7 +257,7 @@ const ProjectsDetail = () => {
                  e.target.nextSibling.style.display = 'flex'
                }}
              />
-             <div className="absolute inset-0 bg-gray-200 flex items-center justify-center text-gray-500 text-lg" style={{ display: 'none' }}>
+             <div className={`absolute inset-0 flex items-center justify-center text-lg ${isDarkMode ? 'bg-gray-900 text-gray-400' : 'bg-gray-200 text-gray-500'}`} style={{ display: 'none' }}>
                <div className="text-center">
                  <div className="text-4xl mb-2">📷</div>
                  <div>Image not available</div>
@@ -268,8 +268,8 @@ const ProjectsDetail = () => {
            {/* Project Counter */}
            {(projects.length > 1 || (selectedProject.relatedImages && selectedProject.relatedImages.length > 1)) && (
              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 sm:bottom-3 md:bottom-4 z-10">
-               <div className="bg-white rounded-full px-3 py-1.5 sm:px-4 sm:py-2 shadow-lg">
-                 <span className="text-gray-700 text-xs sm:text-sm font-medium">
+               <div className={`rounded-full px-3 py-1.5 sm:px-4 sm:py-2 shadow-lg ${isDarkMode ? 'bg-gray-700' : 'bg-white'}`}>
+                 <span className={`text-xs sm:text-sm font-medium ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                    {selectedProject.relatedImages && selectedProject.relatedImages.length > 1 
                      ? `${selectedProject.relatedImages.findIndex(img => img === selectedProject.currentImage) + 1} / ${selectedProject.relatedImages.length}`
                      : `${projects.findIndex(p => p.id === selectedProject.id) + 1} / ${projects.length}`

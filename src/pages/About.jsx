@@ -141,7 +141,7 @@ const About = () => {
           </div>
 
           {/* Round Team Images with Hover Background */}
-          <div className='bg-primary/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border border-primary/60'>
+          <div className='bg-primary/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border border-white/60'>
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 md:gap-12 items-start">
               {team.map((member, index) => (
@@ -163,24 +163,24 @@ const About = () => {
                   {/* Hover Background - Colorful Outline Effects */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-105 -z-10 pointer-events-none">
                     {/* Blue Outline Circle */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[260px] sm:w-[340px] md:w-[360px] h-[260px] sm:h-[340px] md:h-[360px] border-2 sm:border-4 border-primary/60 rounded-full animate-pulse"></div>
+                    <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[260px] sm:w-[340px] md:w-[360px] h-[260px] sm:h-[340px] md:h-[360px] border-2 sm:border-4 ${isDarkMode ? 'border-primary/90' : 'border-primary/60'} rounded-full animate-pulse`}></div>
                     
                     {/* Cyan Outline Circle */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[220px] sm:w-[300px] md:w-[320px] h-[220px] sm:h-[300px] md:h-[320px] border-2 sm:border-3 border-secondary/70 rounded-full animate-ping"></div>
+                    <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[220px] sm:w-[300px] md:w-[320px] h-[220px] sm:h-[300px] md:h-[320px] border-2 sm:border-3 ${isDarkMode ? 'border-secondary/90' : 'border-secondary/70'} rounded-full animate-ping`}></div>
                     
                     {/* Accent Outline Circle */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[190px] sm:w-[260px] md:w-[280px] h-[190px] sm:h-[260px] md:h-[280px] border-2 border-accent/80 rounded-full animate-bounce"></div>
+                    <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[190px] sm:w-[260px] md:w-[280px] h-[190px] sm:h-[260px] md:h-[280px] border-2 ${isDarkMode ? 'border-accent/90' : 'border-accent/80'} rounded-full animate-bounce`}></div>
                     
                     {/* Light Background Fill */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[240px] sm:w-[320px] md:w-[340px] h-[240px] sm:h-[320px] md:h-[340px] bg-gradient-to-br from-primary/20 to-secondary/15 rounded-full blur-2xl"></div>
+                    <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[240px] sm:w-[320px] md:w-[340px] h-[240px] sm:h-[320px] md:h-[340px] bg-gradient-to-br ${isDarkMode ? 'from-primary/40 to-secondary/30' : 'from-primary/20 to-secondary/15'} rounded-full blur-2xl`}></div>
                   </div>
 
                   {/* Name and Role - Simple */}
                   <div className="text-center space-y-1 sm:space-y-2 px-4">
-                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
+                    <h3 className={`text-lg sm:text-xl md:text-2xl font-bold ${isDarkMode ? 'text-white' : 'text-gray-900'} group-hover:text-secondary transition-colors duration-300`}>
                       {member.name}
                     </h3>
-                    <p className="text-sm sm:text-base text-gray-600 font-medium">
+                    <p className={`text-sm sm:text-base ${isDarkMode ? 'text-gray-300' : 'text-gray-600'} font-medium`}>
                       {member.role}
                     </p>
                   </div>

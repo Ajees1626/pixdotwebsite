@@ -17,6 +17,7 @@ import CaseStudy from './pages/CaseStudy'
 import CaseStudyDetail from './pages/CaseStudyDetail'
 import Contact from './pages/Contact'
 import Project from './pages/Project'
+import ProjectPage from './pages/ProjectPage'
 import ProjectsDetail from './pages/ProjectsDetail'
 import Privacy from './pages/Privacy'
 
@@ -30,14 +31,15 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/service" element={<Service />} />
+              <Route path="/services" element={<Service />} />
               <Route path="/service/:id" element={<ServiceDetail />} />
-              <Route path="/industrie" element={<Industrie />} />
+              <Route path="/Industries" element={<Industrie />} />
               <Route path="/industrie/:id" element={<IndustryDetail />} />
               <Route path="/solutions" element={<Solutions />} />
               <Route path="/casestudy" element={<CaseStudy />} />
               <Route path="/casestudy/:id" element={<CaseStudyDetail />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/projectpage" element={<ProjectPage />} />
               <Route path="/project/:id" element={<Project />} />
               <Route path="/projects/:categoryId" element={<ProjectsDetail />} />
               <Route path="/privacy" element={<Privacy />} />

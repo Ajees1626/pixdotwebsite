@@ -21,11 +21,11 @@ const Header = () => {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Service', href: '/service' },
-    { name: 'Industrie', href: '/industrie' },
+    { name: 'Services', href: '/services' },
+    { name: 'Industries', href: '/Industries' },
     { name: 'Solutions', href: '/solutions' },
     { name: 'Case Study', href: '/casestudy' },
-    { name: 'Contact', href: '/contact' }
+    { name: 'Projects', href: '/projectpage' }
   ]
 
   const toggleMenu = () => {
