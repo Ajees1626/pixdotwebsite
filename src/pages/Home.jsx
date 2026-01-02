@@ -23,8 +23,8 @@ const Home = () => {
     <div className={`min-h-screen transition-colors duration-300 ${isDarkMode ? 'bg-gray-900' : 'bg-white'}`}>
       <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
         <HeroSection />
-        <ServicesSection />
         <ProjectsSection />
+        <ServicesSection />
         <IndustriesSection />
         <ReviewsSection />
         <AboutPreviewSection />
