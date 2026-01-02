@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react'
+import React, { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { FaArrowLeft, FaTimes, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { FaArrowLeft, FaTimes, FaChevronLeft, FaChevronRight, FaChevronDown } from 'react-icons/fa'
 import { useTheme } from '../contexts/ThemeContext'
 import projectsData from '../data/projectsData.json'
 
@@ -9,7 +9,45 @@ const ProjectsDetail = () => {
   const navigate = useNavigate()
   const [selectedProject, setSelectedProject] = useState(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const dropdownRef = useRef(null)
   const { isDarkMode } = useTheme()
+
+  // Category options
+  const categoryOptions = [
+    { id: 'logo-design', name: 'Logo Design' },
+    { id: 'packaging-design', name: 'Packaging Design' },
+    { id: 'branding', name: 'Branding' },
+    { id: 'poster-design', name: 'Poster Design' }
+  ]
+
+  // Get current category name
+  const currentCategoryName = categoryOptions.find(cat => cat.id === categoryId)?.name || projectsData[categoryId]?.category || 'Projects'
+
+  // Handle category change
+  const handleCategoryChange = (newCategoryId) => {
+    localStorage.setItem('projectsData', JSON.stringify(projectsData))
+    localStorage.setItem('selectedCategory', newCategoryId)
+    navigate(`/projects/${newCategoryId}`)
+    setIsDropdownOpen(false)
+  }
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false)
+      }
+    }
+
+    if (isDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [isDropdownOpen])
 
   const openModal = useCallback((project) => {
     setSelectedProject({
@@ -122,7 +160,7 @@ const ProjectsDetail = () => {
         {/* Back Button */}
         <div className="mb-8 px-4 sm:px-6 lg:py-6">
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/projectpage')}
             className={`inline-flex items-center ${isDarkMode ? 'text-gray-300 hover:text-secondary' : 'text-primary hover:text-secondary'} transition-colors`}
           >
             <FaArrowLeft className="mr-2" />
@@ -132,10 +170,41 @@ const ProjectsDetail = () => {
 
         {/* Category Header */}
         <div className="text-center mb-16">
-          <div className={`inline-flex items-center ${isDarkMode ? 'bg-secondary/20' : 'bg-secondary/10'} rounded-full px-6 py-3 mb-6`}>
-            <span className="text-secondary font-semibold text-sm">
-              {categoryData.category} Projects
-            </span>
+          <div className="flex justify-center mb-6">
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className={`inline-flex items-center gap-2 ${isDarkMode ? 'bg-secondary/20' : 'bg-secondary/10'} rounded-full px-6 py-3 transition-all duration-300 hover:scale-105`}
+              >
+                <span className="text-secondary font-semibold text-sm">
+                  {currentCategoryName} Projects
+                </span>
+                <FaChevronDown className={`text-secondary text-xs transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {/* Dropdown Menu */}
+              {isDropdownOpen && (
+                <div className={`absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-50 min-w-[200px] rounded-xl shadow-2xl overflow-hidden ${isDarkMode ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-200'}`}>
+                  {categoryOptions.map((category) => (
+                    <button
+                      key={category.id}
+                      onClick={() => handleCategoryChange(category.id)}
+                      className={`w-full text-left px-6 py-3 transition-all duration-200 ${
+                        categoryId === category.id
+                          ? isDarkMode 
+                            ? 'bg-secondary/30 text-secondary font-semibold' 
+                            : 'bg-secondary/20 text-secondary font-semibold'
+                          : isDarkMode
+                            ? 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                            : 'text-gray-700 hover:bg-gray-100 hover:text-primary'
+                      }`}
+                    >
+                      {category.name}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
           <h1 className={`text-4xl md:text-5xl font-bold mb-6 ${isDarkMode ? 'text-white' : 'text-primary'}`}>
             {categoryData.category} <span className="text-secondary">Portfolio</span>

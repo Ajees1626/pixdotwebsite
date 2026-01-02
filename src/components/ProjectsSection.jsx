@@ -80,14 +80,13 @@ const ProjectsSection = () => {
     setAllImages(interleavedImages)
   }, [])
 
-  // Handle image click - navigate to category page
-  const handleImageClick = (categoryId) => {
+  // Handle image click - navigate to project page
+  const handleImageClick = () => {
     // Store the projects data in localStorage for the next page
     localStorage.setItem('projectsData', JSON.stringify(projectsData))
-    localStorage.setItem('selectedCategory', categoryId)
     
-    // Navigate to projects page
-    navigate(`/projects/${categoryId}`)
+    // Navigate to project page
+    navigate('/projectpage')
   }
 
   useEffect(() => {
@@ -146,7 +145,7 @@ const ProjectsSection = () => {
             {allImages.map((imageData, index) => (
               <div
                 key={`first-${index}`}
-                onClick={() => handleImageClick(imageData.categoryId)}
+                onClick={handleImageClick}
                 className="relative flex-shrink-0 w-64 h-64 md:w-80 md:h-80 rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300 cursor-pointer hover:scale-105"
               >
                 <img
@@ -165,7 +164,7 @@ const ProjectsSection = () => {
             {allImages.map((imageData, index) => (
               <div
                 key={`second-${index}`}
-                onClick={() => handleImageClick(imageData.categoryId)}
+                onClick={handleImageClick}
                 className="relative flex-shrink-0 w-64 h-64 md:w-80 md:h-80 rounded-xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300 cursor-pointer hover:scale-105"
               >
                 <img
